@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="scenes.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="8.9972125"
+     inkscape:cy="471.00236"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g874"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1012"
+     inkscape:window-x="3840"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g874"
+       transform="matrix(0,0.20792383,-0.20792383,0,148.97265,147.44742)">
+      <image
+         sodipodi:absref="/home/s-lemaignan/data/projects/ERC/media/render2.png"
+         xlink:href="render2.png"
+         y="-233.82951"
+         x="-657.67853"
+         id="image834"
+         preserveAspectRatio="none"
+         height="381"
+         width="677.33331" />
+      <image
+         sodipodi:absref="/home/s-lemaignan/data/projects/ERC/media/render3.png"
+         xlink:href="render3.png"
+         y="-238.91951"
+         x="19.654785"
+         id="image845"
+         preserveAspectRatio="none"
+         height="381"
+         width="677.33331" />
+      <image
+         sodipodi:absref="/home/s-lemaignan/data/projects/ERC/media/render4.png"
+         xlink:href="render4.png"
+         y="195.52545"
+         x="19.654785"
+         id="image856"
+         preserveAspectRatio="none"
+         height="381"
+         width="677.33331" />
+      <image
+         sodipodi:absref="/home/s-lemaignan/data/projects/ERC/media/render5.png"
+         xlink:href="render5.png"
+         y="198.07045"
+         x="-657.67853"
+         id="image867"
+         preserveAspectRatio="none"
+         height="381"
+         width="677.33331" />
+    </g>
+  </g>
+</svg>
