@@ -12,6 +12,8 @@ of vulnerable children in a foreign country, and in particular, migrant children
 who might lack the otherwise needed support (shared culture; already well
 integrated relatives) for a successful integration.
 
+![A robot in the backpack](figs/render5.png)
+
 Overview of the interaction
 ---------------------------
 
@@ -41,6 +43,18 @@ assessment is conducted that includes meaningful mitigation strategies.
 Key scientific research questions
 ---------------------------------
 
+- explore the novel concept of robot-supported human-human interactions:
+- establish trust between the child and the robot
+- mediation of cross-cultural interactions
+- modalities of interactions that are well suited for the field
+- privacy
+- ...
+
+Project milestones
+------------------
+
+- week-long tests with local children in local schools
+- field deployment with one child in one school
 
 
 Impact
