@@ -106,7 +106,7 @@ Build a robot for social interaction on the field
 
 #### Cozmo
 
-![Anki's Cozmo](figs/cozmo)
+![Anki's Cozmo](figs/anki-cozmo.jpg)
 
 ![Cozmo facial expressions](figs/cozmo-expression-sheet.jpg)
 
