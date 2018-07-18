@@ -1,0 +1,6 @@
+*.docx
+*.pdf
+*.aux
+*.log
+media/
+
