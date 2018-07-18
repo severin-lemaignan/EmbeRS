@@ -1,4 +1,4 @@
-OUTPUT ?= docx
+OUTPUT ?= pdf
 TARGET=project.md
 BIBS=biblio.bib my-publications.bib
 

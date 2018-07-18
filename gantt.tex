@@ -56,14 +56,37 @@
         \gantttitlecalendar{year, month} \\
         %\gantttitlelist{0,5,...,60}{1} \\
 
-        \ganttgroup[]{WP 1 Summary Element 1}{2019-05}{2024-04} \\
-            \ganttbar[name=WBS1A]{\textbf{WP 1.1} Activity A}{2019-05}{2020-04} \\
-            \ganttbar[name=WBS1B]{\textbf{WP 1.2} Activity B}{2019-05}{2020-12} \\
+        %% WP1
+        \ganttgroup[]{WP 1: Management}{2019-05}{2024-04} \\
+        %\ganttlink[link type=f-s]{WBS1A}{WBS1B}
 
-        \ganttgroup[]{WP 2 Summary Element 2}{2020-01}{2023-09} \\
+        %% WP2
+        \ganttgroup[]{WP 2 Sociology of Technologies for Integration}{2020-01}{2023-09} \\
+            \ganttbar[name=WP21]{\textbf{WP 2.1} Analyse of needs}{2020-01}{2022-09} \\
+            \ganttbar[name=WP22]{\textbf{WP 2.2} Cross-cultural interactions}{2020-01}{2022-09} \\
 
-        \ganttbar[]{\textbf{WP 2.1} Activity E}{2020-01}{2022-09} \\
-        \ganttlink[link type=f-s]{WBS1A}{WBS1B}
+
+        %% WP3
+        \ganttgroup[]{WP 3 Robot design}{2020-06}{2023-06} \\
+            \ganttbar[name=WP31]{\textbf{WP 3.1} Mechatronics}{2020-06}{2021-09} \\
+            \ganttbar[name=WP32]{\textbf{WP 3.2} Sensing}{2020-06}{2021-09} \\
+            \ganttbar[name=WP33]{\textbf{WP 3.3} On-board dataprocessing}{2020-06}{2021-09} \\
+
+        %% WP4
+        \ganttgroup[]{WP 4 AI for Social Cognition}{2019-06}{2023-09} \\
+            \ganttbar[name=WP41]{\textbf{WP 4.1} Multi-modal communication}{2019-06}{2020-09} \\
+            \ganttbar[name=WP42]{\textbf{WP 4.2} Automatic learning of social interactions}{2020-07}{2022-09} \\
+            \ganttbar[name=WP43]{\textbf{WP 4.3} Interaction design}{2020-06}{2023-06} \\
+
+
+        %% WP5
+        \ganttgroup[]{WP 5 Field testing \& deployments}{2021-01}{2023-09} \\
+            \ganttbar[name=WP51]{\textbf{WP 5.1} Study 1: Robot acceptance}{2020-01}{2022-09} \\
+            \ganttbar[name=WP52]{\textbf{WP 5.2} Study 2: Robots at school}{2021-10}{2021-12} \\
+            \ganttbar[name=WP53]{\textbf{WP 5.3} Study 3: Robots at school}{2021-10}{2021-12} \\
+
+
+
         %\ganttlink[link type=f-s]{WBS1B}{WBS1C}
         %\ganttlink[link type=f-f,link label node/.append style=left]{WBS1C}{WBS1D}
 \end{ganttchart}
