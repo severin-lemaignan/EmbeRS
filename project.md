@@ -56,6 +56,7 @@ Project milestones
 - week-long tests with local children in local schools
 - field deployment with one child in one school
 
+![Gantt chart](gantt.pdf)
 
 Impact
 ------

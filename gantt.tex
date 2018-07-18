@@ -1,0 +1,70 @@
+\documentclass[tikz,border=2mm]{standalone} 
+\usepackage{pgfgantt}
+
+\begin{document}
+
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+\renewcommand\sfdefault{phv}
+\renewcommand\mddefault{mc}
+\renewcommand\bfdefault{bc}
+\setganttlinklabel{s-s}{START-TO-START}
+\setganttlinklabel{f-s}{FINISH-TO-START}
+\setganttlinklabel{f-f}{FINISH-TO-FINISH}
+
+\sffamily
+\begin{ganttchart}[
+        canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+        hgrid style/.style={draw=black!5, line width=.75pt},
+        vgrid={*1{draw=black!5, line width=.75pt}},
+        x unit=.35cm,
+        time slot format=isodate-yearmonth,
+        time slot unit=month,
+        %today=2019-04,
+        %today rule/.style={
+        %    draw=black!64,
+        %    dash pattern=on 3.5pt off 4.5pt,
+        %    line width=1.5pt
+        %    },
+        %today label font=\small\bfseries,
+        title/.style={draw=none, fill=none},
+        title label font=\bfseries\footnotesize,
+        title label node/.append style={below=7pt},
+        include title in canvas=false,
+        bar label font=\mdseries\small\color{black!70},
+        bar label node/.append style={left=2cm},
+        bar/.append style={draw=none, fill=barblue},
+        bar incomplete/.append style={fill=black!63},
+        bar progress label font=\mdseries\footnotesize\color{black!70},
+        group/.append style={fill=groupblue},
+        group incomplete/.append style={fill=black},
+        group left shift=0,
+        group right shift=0,
+        group height=.5,
+        group peaks tip position=0,
+        group label node/.append style={left=.6cm},
+        group progress label font=\bfseries\small,
+        link/.style={-latex, line width=1.5pt, linkred},
+        link label font=\scriptsize\bfseries,
+        link label node/.append style={below left=-2pt and 0pt}
+    ]{2019-05}{2024-04}
+    
+        %\gantttitle[
+        %    title label node/.append style={below left=7pt and -3pt}
+        %]{Month:\quad1}{1}
+        \gantttitlecalendar{year, month} \\
+        %\gantttitlelist{0,5,...,60}{1} \\
+
+        \ganttgroup[]{WP 1 Summary Element 1}{2019-05}{2024-04} \\
+            \ganttbar[name=WBS1A]{\textbf{WP 1.1} Activity A}{2019-05}{2020-04} \\
+            \ganttbar[name=WBS1B]{\textbf{WP 1.2} Activity B}{2019-05}{2020-12} \\
+
+        \ganttgroup[]{WP 2 Summary Element 2}{2020-01}{2023-09} \\
+
+        \ganttbar[]{\textbf{WP 2.1} Activity E}{2020-01}{2022-09} \\
+        \ganttlink[link type=f-s]{WBS1A}{WBS1B}
+        %\ganttlink[link type=f-s]{WBS1B}{WBS1C}
+        %\ganttlink[link type=f-f,link label node/.append style=left]{WBS1C}{WBS1D}
+\end{ganttchart}
+\end{document}
