@@ -12,6 +12,28 @@
 \usepackage[margin=2cm]{geometry}
 \usepackage{longtable,booktabs}
 
+\usepackage{pgfgantt}
+\usepackage{rotating}
+
+
+\newcommand{\TODO}[1]{{\color{red}\textbf{TODO: #1}}}
+
+\newcommand{\severin}[1]{{\color{red}\textbf{Severin: #1}}}
+\newcommand{\toseverin}[1]{{\color{red}\textbf{To Severin: #1}}}
+\newcommand{\manuel}[1]{{\color{orange}\textbf{Manuel: #1}}}
+\newcommand{\tomanuel}[1]{{\color{orange}\textbf{To Manuel: #1}}}
+\newcommand{\tony}[1]{{\color{violet}\textbf{Tony: #1}}}
+\newcommand{\totony}[1]{{\color{violet}\textbf{To Tony: #1}}}
+\newcommand{\jelle}[1]{{\color{magenta}\textbf{Jelle: #1}}}
+\newcommand{\tojelle}[1]{{\color{magenta}\textbf{To Jelle: #1}}}
+\newcommand{\pierre}[1]{{\color{olive}\textbf{Pierre: #1}}}
+\newcommand{\topierre}[1]{{\color{olive}\textbf{To Pierre: #1}}}
+\newcommand{\ana}[1]{{\color{green}\textbf{Ana: #1}}}
+\newcommand{\toana}[1]{{\color{green}\textbf{To Ana: #1}}}
+\newcommand{\epsrc}[1]{{\color{teal}\textbf{EU H2020: #1}}}
+\newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
+
+
 
 \begin{document}
 \title{WizMe}
@@ -723,7 +745,7 @@ Dissemination level:
 
 \subsubsection{Gantt chart}\label{gantt-chart}
 
-\includegraphics[width=\textwidth,height=25cm]{gantt.pdf}\\
+\include{gantt}
 
 \subsubsection{Workpackage interrelations}\label{workpackage-interrelations}
 

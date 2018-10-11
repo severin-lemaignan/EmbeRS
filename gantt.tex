@@ -1,33 +1,27 @@
-\documentclass[tikz,border=2mm]{standalone} 
-\usepackage{pgfgantt}
 
-\begin{document}
 
 \definecolor{barblue}{RGB}{153,204,254}
 \definecolor{groupblue}{RGB}{51,102,254}
 \definecolor{linkred}{RGB}{165,0,33}
-\renewcommand\sfdefault{phv}
-\renewcommand\mddefault{mc}
-\renewcommand\bfdefault{bc}
+%\renewcommand\sfdefault{phv}
+%\renewcommand\mddefault{mc}
+%\renewcommand\bfdefault{bc}
 \setganttlinklabel{s-s}{START-TO-START}
 \setganttlinklabel{f-s}{FINISH-TO-START}
 \setganttlinklabel{f-f}{FINISH-TO-FINISH}
 
-\sffamily
+\begin{sidewaysfigure}[!ht]
+
+%\sffamily
 \begin{ganttchart}[
         canvas/.append style={fill=none, draw=black!5, line width=.75pt},
         hgrid style/.style={draw=black!5, line width=.75pt},
         vgrid={*1{draw=black!5, line width=.75pt}},
-        x unit=.35cm,
+        x unit=.30cm,
+        y unit chart=.65cm,
         time slot format=isodate-yearmonth,
-        time slot unit=month,
-        %today=2019-04,
-        %today rule/.style={
-        %    draw=black!64,
-        %    dash pattern=on 3.5pt off 4.5pt,
-        %    line width=1.5pt
-        %    },
-        %today label font=\small\bfseries,
+        time slot unit=month, % pgfgantt >= 5.0
+        %compress calendar, % pgfgantt < 5.0 => overleaf
         title/.style={draw=none, fill=none},
         title label font=\bfseries\footnotesize,
         title label node/.append style={below=7pt},
@@ -90,4 +84,5 @@
         %\ganttlink[link type=f-s]{WBS1B}{WBS1C}
         %\ganttlink[link type=f-f,link label node/.append style=left]{WBS1C}{WBS1D}
 \end{ganttchart}
-\end{document}
+
+\end{sidewaysfigure}
