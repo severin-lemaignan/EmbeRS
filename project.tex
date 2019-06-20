@@ -1,13 +1,20 @@
 \documentclass[]{article}
 \usepackage{amssymb,amsmath}
 
+\usepackage[style=verbose]{biblatex}
+\addbibresource{biblio.bib}
+
+\usepackage{pdflscape}
+
 \usepackage{fontspec}
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \setmainfont[]{cantarell}
 
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \usepackage{hyperref}
 \urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=4pt]{subcaption}
 
 \usepackage[margin=2cm]{geometry}
 \usepackage{longtable,booktabs}
@@ -15,74 +22,121 @@
 \usepackage{pgfgantt}
 \usepackage{rotating}
 
+\usepackage{tocloft}
+
+\renewcommand{\thesubsubsection}{}
+
+
+\newcommand{\task}[2]{\vspace{0.5cm}\noindent\emph{Task T#1}: {\bf #2}\par}
+
+\newcommand{\D}[3]{\emph{Deliverable D#1} (M#2): #3\\}
 
 \newcommand{\TODO}[1]{{\color{red}\textbf{TODO: #1}}}
 
 \newcommand{\severin}[1]{{\color{red}\textbf{Severin: #1}}}
 \newcommand{\toseverin}[1]{{\color{red}\textbf{To Severin: #1}}}
-\newcommand{\manuel}[1]{{\color{orange}\textbf{Manuel: #1}}}
-\newcommand{\tomanuel}[1]{{\color{orange}\textbf{To Manuel: #1}}}
-\newcommand{\tony}[1]{{\color{violet}\textbf{Tony: #1}}}
-\newcommand{\totony}[1]{{\color{violet}\textbf{To Tony: #1}}}
-\newcommand{\jelle}[1]{{\color{magenta}\textbf{Jelle: #1}}}
-\newcommand{\tojelle}[1]{{\color{magenta}\textbf{To Jelle: #1}}}
-\newcommand{\pierre}[1]{{\color{olive}\textbf{Pierre: #1}}}
-\newcommand{\topierre}[1]{{\color{olive}\textbf{To Pierre: #1}}}
-\newcommand{\ana}[1]{{\color{green}\textbf{Ana: #1}}}
-\newcommand{\toana}[1]{{\color{green}\textbf{To Ana: #1}}}
-\newcommand{\epsrc}[1]{{\color{teal}\textbf{EU H2020: #1}}}
+\newcommand{\eu}[1]{{\color{teal}\textbf{Guidelines EU FET: #1}}}
 \newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
 
 
+\title{WizMe - Part B}
 
 \begin{document}
-\title{WizMe}
+\maketitle
 
-\href{https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/fetopen-01-2018-2019-2020;freeTextSearchKeyword=;typeCodes=1;statusCodes=31094501,31094502;programCode=null;programDivisionCode=null;focusAreaCode=null;crossCuttingPriorityCode=null;callCode=31088571;sortQuery=openingDate;onlyTenders=false}{\textbf{FET
-Open} call details on EU website}
+\subsection{Notes}
 
-\hypertarget{title-of-the-proposal}{%
-\subsection{Title of the proposal}\label{title-of-the-proposal}}
+\paragraph ACAMH conference on Mental health and refugees:
+
+Keywords:
+\begin{itemize}
+    \item Trauma
+    \item Unaccompanied Asylum Seeking Children
+\end{itemize}
+
+Discussion with Helen Peden, Refugee Council, happy to contact
+\begin{itemize}
+    \item litteracy issues; example -> learn to read a map
+    \item need to be primarily verbal
+    \item work with 16/20 yo
+
+\end{itemize}
+
+\begin{itemize}
+    \item 25M refugees, 50\% under 18
+\end{itemize}
+
+Good talk b Sarah Hunt (Uni Leicester)
+
+\begin{itemize}
+    \item Participatory Action Research ("From voice to agency", Rodriguez and
+        Brown 2009)
+    \item focus on post-migratory risk factors to mental health
+    \item hceck photo of litterature review
+    \item check participatory methodology (photos of slides)
+    \item 3 themes emerging from her research: understanding trauma; need for
+        responsive/individualised pathways; need for housing + basic needs
+        provisions
+    \item she mention lack of privacy in some provided housing as a permanent
+        threat and a source of stress/trauma: \textbf{relation to privacy by
+        design}
+    \item point out the need to support not only the children but also the
+        schools
+    \item reference to World Awarness Children in Trauma Model (WACIT, Vostanis
+        2012-2018)
+    \item example of social integration issues: lack of knowledge of school
+        rules (like raising ones' hands, perceived as bad behaviours/threatening
+        behaviour); difficulty to meet with peers
+    \item point raised about need for refugee children to 'fit in a new
+        identity, matching local norms/expectation, at the cost of the previous,
+        original identity -> source of suffering: importance of \emph{securing
+        identity}, as done by some schools (example of school inviting parents
+        of diverse background to come and cook home dishes at school, with
+        different background every week)
+\end{itemize}
+
+
+Prof Ravi Kohli (child welfare):
+
+\begin{itemize}
+    \item Safety <-> belonging <-> success (cf photo)
+    \item ...but not a straight line! Comes and go!
+    \item underline the need by refugees to reciprocate
+    \item make a strong point on individual identities instead of being just a label (cf
+        photo)
+    \item \textbf{importance of individual stories}
+\end{itemize}
+
+Powerful presentation by Bobby Lloyds; she stayed 2 days/week for 4 years in
+Calais camp; visual artist + art therapist; large archive of field experience on
+Facebook account (ArtRefuge UK)
+
+She points out the importance of mobile phones -> communication, story telling,
+etc
+
+
+\subsection*{Title of the proposal}\label{title-of-the-proposal}
 
 \textbf{Social robots to support human-human interactions}
 
-\hypertarget{acronym}{%
-\subsection{Acronym}\label{acronym}}
+\subsection*{Acronym}\label{acronym}
 
 WizMe
 
-\hypertarget{consortium}{%
-\subsection{Consortium}\label{consortium}}
-
-\begin{itemize}
-
-\item
-  Bristol Robotics Lab (BRL), \emph{Séverin Lemaignan, Manuel Giuliani}
-\item
-  Univeristy of Ghent (GHE), \emph{Tony Belpaeme, Jelle Saldien}
-\item
-  École Polytechnique Fédérale de Lausanne (EPFL), \emph{Pierre
-  Dillenbourg} (tentative)
-\item
-  Instituto Superior Técnico, University of Lisbon (IST), \emph{Ana
-  Paiva} (tentative)
-\item
-  Academic partner in sociology -- Radboud University Nijmegen?
-\item
-  RedCross UK (RCUK), \emph{Alex Fraser} (first contact; tentative)
-\end{itemize}
-
-\subsection{Abstract}\label{abstract}
+\subsection*{Abstract}\label{abstract}
 
 WizMe is a future-looking project that aims at investigating how social
-robots can help building stronger \emph{human} relationships: robots to
-support human-human social interactions.
+robots can shape and support stronger \emph{human-human} relationships:
+in a time where robots are on the verge of becoming pervasive in our
+environment, can we use them as powerful tool to develop rich, positive human
+interactions as well?
+
 
 Such robots require unique, beyond state-of-the-art, capabilities to
 \emph{(1)} understand the social interactions (\emph{social situation
 awareness}), \emph{(2)} decide the best course of action for short-term
 and longer-term social influence, and \emph{(3)} perform the appropriate
-social acts.
+social acts and exert adequate, ethical social influence.
 
 In the WizMe project, we propose to scaffold this radically novel line
 of research with an original application of high societal impact: we
@@ -114,14 +168,20 @@ RedCross UK, one of the largest NGO world-wide.
 
 \pagebreak
 
-\textbf{{[}Sections 1, 2, 3 are 15 pages max{]}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Excellence}\label{part1}
+\eu{(max 5 pages)}
 
-\section{Excellence}\label{excellence}
 
-\subsection{Long-term vision and targeted breakthrough towards that
-vision}\label{long-term-vision-and-targeted-breakthrough-towards-that-vision}
 
-\includegraphics{figs/render5.png}~
+\subsection{Long-term vision and targeted breakthrough towards that vision}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figs/render5-colors.png}
+\end{figure}
 
 WizMe is a project that aims at helping to build strong human
 relationships with the help of technology.
@@ -134,87 +194,23 @@ particular, migrant children who might lack the otherwise needed support
 (shared culture; already well integrated relatives) for a successful
 integration.
 
-\subsubsection{Key scientific research
-questions}\label{key-scientific-research-questions}
+\subsubsection{Key scientific research questions}
 
-\begin{itemize}
+\begin{enumerate}
+\item research the role of social influence to scaffold positive human-human
+    interactions (including its ethical ramifications) in the context of migrant
+    integration;
+\item explore how a small robot companion can be endowed with social
+    competencies to positively influence human interactions; design and
+    implement the corresponding artificial social behaviours;
+\item design and build a small rugged and autonomous companion robot that
+    realise this goal for child-child interactions; test the technology in
+    school with actual migrant children.
+\end{enumerate}
 
-\item
-  explore the novel concept of robot-supported human-human interactions:
-\item
-  establish trust between the child and the robot
-\item
-  mediation of cross-cultural interactions
-\item
-  modalities of interactions that are well suited for the field
-\item
-  privacy
-\item
-  \ldots{}
-\end{itemize}
+\subsubsection{Vision of a novel form of interaction ``human-(robot)-human''}
 
-\subsection{Novelty, non-incrementality, plausibility and foundational
-character}\label{novelty-non-incrementality-plausibility-and-foundational-character}
-
-\paragraph{Existing robots}\label{existing-robots}
-
-\subparagraph{Miro}\label{miro}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth,height=\textheight]{figs/miro.jpg}
-\caption{Consequential Miro robot}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth,height=\textheight]{figs/miro-spec.png}
-\caption{Consequential Miro specifications}
-\end{figure}
-
-\subparagraph{Hatchnimals}\label{hatchnimals}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth,height=\textheight]{figs/hatchnimals.jpg}
-\caption{Hatchnimals}
-\end{figure}
-
-\subparagraph{Tega}\label{tega}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth,height=\textheight]{figs/tega.jpg}
-\caption{MediaLab's Tega robot}
-\end{figure}
-
-\subparagraph{Cellulo}\label{cellulo}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth,height=\textheight]{figs/cellulo.jpg}
-\caption{EPFL's Cellulo robot}
-\end{figure}
-
-(Özgür et al. 2017)
-
-\subparagraph{Cozmo}\label{cozmo}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth,height=\textheight]{figs/anki-cozmo.jpg}
-\caption{Anki's Cozmo}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics{figs/cozmo-expression-sheet.jpg}
-\caption{Cozmo facial expressions}
-\end{figure}
-
-\subsection{Research methodology}\label{research-methodology}
-
-\subsubsection{Overview of the interaction}\label{overview-of-the-interaction}
+\paragraph{The case of the social integration of migrant children}
 
 A robot is left with the child when he or she starts their journey in
 their new host country, and becomes a companion for the child during the
@@ -243,170 +239,153 @@ within the project, avoiding critical failure points that would put the
 whole project at risk, and a careful risk assessment is conducted that
 includes meaningful mitigation strategies.
 
-\subsubsection{Deployments in schools}\label{deployments-in-schools}
 
-\subsection{Interdisciplinarity}\label{interdisciplinarity}
+\subsection{Novelty, non-incrementality, plausibility and foundational character}
 
+\subsubsection{Companion robots}
+
+One example of a small, rugged robot designed for intensive use in school
+environments is Cellulo~\footcite{ozgur2017cellulo}.
+
+\begin{figure}[!htbp]
+    \begin{minipage}[b]{.3\linewidth}
+        \centering\includegraphics[height=4cm]{figs/cellulo.jpg}
+        \subcaption{EPFL's Cellulo robot}\label{fig:cellulo}
+    \end{minipage}%
+    \hspace{0.5cm}
+    \begin{minipage}[b]{.3\linewidth}
+        \centering
+        \includegraphics[height=4cm]{figs/tega.jpg}
+        \subcaption{MediaLab's Tega robot}\label{fig:tega}
+    \end{minipage}
+    \hspace{0.5cm}
+    \begin{minipage}[b]{.3\linewidth}
+        \centering
+        \includegraphics[height=4cm]{figs/ono.png}
+        \subcaption{OPSORO's Ono robot}\label{fig:ono}
+    \end{minipage}
+    \caption{Existing research-level companion robots}\label{fig:research-robots}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \begin{minipage}[b]{.3\linewidth}
+        \centering\includegraphics[height=4cm]{figs/miro.jpg}
+        \subcaption{Consequential's Miro robot}\label{fig:miro}
+    \end{minipage}%
+    \hspace{0.1cm}
+    \begin{minipage}[b]{.3\linewidth}
+        \centering
+        \includegraphics[height=4cm]{figs/hatchnimals.jpg}
+        \subcaption{SpinMaster's Hatchimals}\label{fig:hatchimals}
+    \end{minipage}%
+    \hspace{0.1cm}
+    \begin{minipage}[b]{.3\linewidth}
+        \centering
+        \includegraphics[height=4cm]{figs/anki-vector.jpg}
+        \subcaption{Anki's Vector}\label{fig:vector}
+    \end{minipage}
+    \caption{Existing commercial companion robots}\label{fig:commercial-robots}
+\end{figure}
+
+\subsubsection{Social influence}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.7\textwidth]{figs/cozmo-expression-sheet.jpg}
+\caption{Cozmo facial expressions}
+\end{figure}
+
+
+\subsection{Research methodology}\label{research-methodology}
+
+
+\subsubsection{Deployments in schools}
+
+\subsection{Interdisciplinarity}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
 \section{Impact}\label{impact}
 
-\subsection{Impact on society and technology: building an inclusive
-society}\label{impact-on-society-and-technology-building-an-inclusive-society}
+\subsection{Impact on society and technology: building an inclusive society}
 
-\subsection{Impact on future leadership}\label{impact-on-future-leadership}
+\subsection{Impact on future leadership}
 
-\subsection{Measures for achieving impact}\label{measures-for-achieving-impact}
+\subsection{Measures for achieving impact}
 
-\subsubsection{Dissemination and exploitation of results}\label{dissemination-and-exploitation-of-results}
+\subsubsection{Dissemination and exploitation of results}
 
-\subsubsection{Communication activities}\label{communication-activities}
+\subsubsection{Communication activities}
 
-\section{Implementation}\label{implementation}
 
-\subsection{Workplan and intermediate targets}\label{workplan-and-intermediate-targets}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Implementation}\label{part3}
 
-\subsubsection{Project structure}\label{project-structure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Names of the Work packages
 
-\begin{longtable}[]{@{}lllllll@{}}
+\newcommand{\wpOne}{Project management}
+\newcommand{\wpOneShort}{\wpOne{}}
+
+\newcommand{\wpTwo}{Technology to socially influence human-human interactions}
+\newcommand{\wpTwoShort}{Social influence}
+
+
+\newcommand{\wpThree}{Interaction design for robot-supported human-human interactions}
+\newcommand{\wpThreeShort}{Interaction design}
+
+\newcommand{\wpFour}{Design and building of a companion robot for social interaction in the field}
+\newcommand{\wpFourShort}{Companion robot creation}
+
+\newcommand{\wpFive}{AI for social cognition}
+\newcommand{\wpFiveShort}{AI for social cognition}
+
+\newcommand{\wpSix}{Dissemination and exploitation}
+\newcommand{\wpSixShort}{Dissemination}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Workplan and intermediate targets}
+
+\subsubsection{Project structure}
+
+\begin{table}[!htbp]
+    \begin{tabular}{@{}p{1cm}p{6cm}p{2cm}p{2cm}p{1.5cm}p{1.5cm}p{1.5cm}@{}}
 \toprule
-\begin{minipage}[b]{0.11\columnwidth}\raggedright
-Work package No\strut
-\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedright
-Work package title\strut
-\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
-Lead participant No\strut
-\end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\raggedright
-Lead participant short name\strut
-\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
-Person-Months\strut
-\end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\raggedright
-Start month\strut
-\end{minipage} & \begin{minipage}[b]{0.07\columnwidth}\raggedright
-End month\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.11\columnwidth}\raggedright
-1\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.11\columnwidth}\raggedright
-2\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.11\columnwidth}\raggedright
-3\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.11\columnwidth}\raggedright
-4\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.11\columnwidth}\raggedright
-5\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.11\columnwidth}\raggedright
-6\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.11\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-Total months\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+\textbf{WP} & \textbf{Work package title} & \textbf{Lead participant No} & \textbf{Lead participant short name} & \textbf{Person-Months} & \textbf{Start month} & \textbf{End month} \\ \midrule
+1                        & \wpOne                      &                              &                                      &                        &                      &                    \\
+2                        & \wpTwo                      &                              &                                      &                        &                      &                    \\
+3                        & \wpThree                    &                              &                                      &                        &                      &                    \\
+4                        & \wpFour                     &                              &                                      &                        &                      &                    \\
+5                        & \wpFive                     &                              &                                      &                        &                      &                    \\
+6                        & \wpSix                      &                              &                                      &                        &                      &                    \\
+                         &                             &                              &                                      & \textbf{Total months}  &                      &                    \\ \bottomrule
+\end{tabular}
+\end{table}
 
-\subsubsection{Work package 1: Project management}\label{work-package-1-project-management}
 
-\begin{longtable}[]{@{}llllllll@{}}
-\toprule
-Work package number & 1 & Lead beneficiary & & & & &\tabularnewline
-\midrule
-\endhead
-Work package title & & & & & & &\tabularnewline
-Participant number & & & & & & &\tabularnewline
-Short name of participant & & & & & & &\tabularnewline
-Person/months per participant: & & & & & & &\tabularnewline
-Start month & & & & End month & & &\tabularnewline
-\bottomrule
-\end{longtable}
+\subsubsection{Work package 1: \wpOne}
+
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+Work package number            & 1 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{\bf BRL} \\ \hline
+Work package title             & \multicolumn{7}{l|}{\wpOne}                                             \\ \hline
+Participant number             &     &         &         &                  &       &       &      \\ \hline
+Short name of participant      &     &         &         &                  &       &       &      \\ \hline
+Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
+Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
+\end{tabular}
+\end{table}
+
 
 \textbf{Objectives:}
 
@@ -414,167 +393,146 @@ Start month & & & & End month & & &\tabularnewline
 
 \ldots{}description\ldots{}
 
-\begin{itemize}
+\task{1.1}{}
 
-\item
-  \emph{Task T1.1}:
-\end{itemize}
-
-\textbf{Deliverables:}
+\vspace{0.5cm}\textbf{Deliverables:}
 
 \begin{itemize}
 
-\item
-  \emph{Deliverable D1.1} (Month 2): website and logo
+\item   \emph{Deliverable D1.1} (Month 2): website and logo
 \end{itemize}
 
-\subsubsection{Work package 2: Interaction design for robot-supported
-human-human interactions}\label{work-package-2-interaction-design-for-robot-supported-human-human-interactions}
+\subsubsection{Work package 2: \wpTwo}
 
-\begin{longtable}[]{@{}llllllll@{}}
-\toprule
-Work package number & 2 & Lead beneficiary & IST & & & &\tabularnewline
-\midrule
-\endhead
-Work package title & & & & & & &\tabularnewline
-Participant number & & & & & & &\tabularnewline
-Short name of participant & IST & GHE & RCUK & & & &\tabularnewline
-Person/months per participant: & & & & & & &\tabularnewline
-Start month & & & & End month & & &\tabularnewline
-\bottomrule
-\end{longtable}
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+Work package number            & 2 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
+Work package title             & \multicolumn{7}{l|}{\wpTwo}                                       \\ \hline
+Participant number             &     &         &         &                  &       &       &      \\ \hline
+Short name of participant      &     &         &         &                  &       &       &      \\ \hline
+Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
+Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
+\end{tabular}
+\end{table}
 
 \textbf{Objectives:}
-
-\begin{itemize}
-
-\item
-  Role of the interaction designer: refine interaction modalities (in
-  particular, the non-verbal speech), details cross-modal interactions,
-  define interaction patterns with the child
-\end{itemize}
-
 \textbf{Description of work:}
 
 \ldots{}description\ldots{}
 
-\begin{itemize}
+\task{2.1}{Identification of the dimensions of social influence for human interpersonal interactions}
 
-\item
-  \emph{Task T2.1}:
+\task{2.2}{Ethics of social influence}
+Blah blah
+
+\task{2.3}{Study 1 -- Socially influencing companion robot}
+First study, using Anki's Vector robot.
+
+\vspace{0.5cm}\textbf{Deliverables:}
+
+\begin{itemize}
+    \item \D{2.1}{12}{great report}
 \end{itemize}
 
-\textbf{Deliverables:}
+\subsubsection{Work package 3: \wpThree}
 
-\begin{itemize}
-
-\item
-  \emph{Deliverable D2.1} (Month ..):
-\end{itemize}
-
-\subsubsection{Work package 3: Design and build a companion robot for
-social interaction in the field}\label{work-package-3-design-and-build-a-companion-robot-for-social-interaction-in-the-field}
-
-\begin{longtable}[]{@{}llllllll@{}}
-\toprule
-Work package number & 3 & Lead beneficiary & GHE & & & &\tabularnewline
-\midrule
-\endhead
-Work package title & & & & & & &\tabularnewline
-Participant number & & & & & & &\tabularnewline
-Short name of participant & GHE & EPFL & & & & &\tabularnewline
-Person/months per participant: & & & & & & &\tabularnewline
-Start month & & & & End month & & &\tabularnewline
-\bottomrule
-\end{longtable}
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+Work package number            & 3 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
+Work package title             & \multicolumn{7}{l|}{\wpThree}                                     \\ \hline
+Participant number             &     &         &         &                  &       &       &      \\ \hline
+Short name of participant      &     &         &         &                  &       &       &      \\ \hline
+Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
+Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
+\end{tabular}
+\end{table}
 
 \textbf{Objectives:}
 
 \begin{itemize}
-
-\item
-  long term interaction
-\item
-  one full day of autonomy
-\item
-  rugged (Özgür et al. 2017)
-\item
-  child friendly: mechanical constraints + design
+    \item refine interaction modalities (in
+    particular, the non-verbal speech), details cross-modal interactions,
+    define interaction patterns with the child
 \end{itemize}
-
-(Özgür, Johal, and Dillenbourg 2016) (Hostettler et al. 2016)
-
-\textbf{Description of work:}
-
-Develop a novel platform, including - chassis - power autonomy for one
-day - on-board compute suitable for deep learning (NVidia TX2?) - vision
-(embedded RGB-D camera) - audio processing
 
 \ldots{}description\ldots{}
 
-\begin{itemize}
+\task{3.1}{Analysis of needs}
+\task{3.2}{Cross-cultural interactions}
 
-\item
-  \emph{Task T3.1}:
-\end{itemize}
-
-\textbf{Deliverables:}
+\vspace{0.5cm}\textbf{Deliverables:}
 
 \begin{itemize}
-
-\item
-  \emph{Deliverable D3.1} (Month ..):
+    \item \D{3.1}{12}{great report}
 \end{itemize}
 
-\subsubsection{Work package 4: AI for social cognition}\label{work-package-4-ai-for-social-cognition}
+\subsubsection{Work package 4: \wpFour}
 
-\begin{longtable}[]{@{}llllllll@{}}
-\toprule
-Work package number & 4 & Lead beneficiary & & & & &\tabularnewline
-\midrule
-\endhead
-Work package title & & & & & & &\tabularnewline
-Participant number & & & & & & &\tabularnewline
-Short name of participant & & & & & & &\tabularnewline
-Person/months per participant: & & & & & & &\tabularnewline
-Start month & & & & End month & & &\tabularnewline
-\bottomrule
-\end{longtable}
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+Work package number            & 4 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
+Work package title             & \multicolumn{7}{l|}{\wpFour}                                      \\ \hline
+Participant number             &     &         &         &                  &       &       &      \\ \hline
+Short name of participant      &     &         &         &                  &       &       &      \\ \hline
+Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
+Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
+\end{tabular}
+\end{table}
 
-\textbf{Objectives:}
+
+\begin{itemize}
+    \item long term interaction
+    \item one full day of autonomy
+    \item rugged \footcite{ozgur2017cellulo, hostettler2016realtime}
+    \item child friendly: mechanical constraints~\footcite{ozgur2016permanent} + design
+\end{itemize}
+
 
 \textbf{Description of work:}
 
-\ldots{}description\ldots{}
+Develop a novel platform, including:
 
 \begin{itemize}
-
-\item
-  \emph{Task T4.1}:
+    \item chassis
+    \item power autonomy for one day
+    \item on-board compute suitable for deep learning (NVidia Xavier?)
+    \item vision (embedded RGB-D camera)
+    \item audio processing
 \end{itemize}
 
-\textbf{Deliverables:}
+\ldots{}
+
+\task{4.1}{Physical design of the robot companion}
+\task{4.2}{Interaction design}
+\task{4.3}{Mechatronics \& Sensing}
+\task{4.4}{On-board data processing}
+\task{4.5}{System integration}
 
 \begin{itemize}
-
-\item
-  \emph{Deliverable D4.1} (Month ..):
+    \item \D{4.1}{12}{great report}
 \end{itemize}
 
-\subsubsection{Work package 5: Field testing and deployments}\label{work-package-5-field-testing-and-deployments}
+\subsubsection{Work package 5: \wpFive}
 
-\begin{longtable}[]{@{}llllllll@{}}
-\toprule
-Work package number & 5 & Lead beneficiary & & & & &\tabularnewline
-\midrule
-\endhead
-Work package title & & & & & & &\tabularnewline
-Participant number & & & & & & &\tabularnewline
-Short name of participant & & & & & & &\tabularnewline
-Person/months per participant: & & & & & & &\tabularnewline
-Start month & & & & End month & & &\tabularnewline
-\bottomrule
-\end{longtable}
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+Work package number            & 5 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
+Work package title             & \multicolumn{7}{l|}{\wpFive}                                      \\ \hline
+Participant number             &     &         &         &                  &       &       &      \\ \hline
+Short name of participant      &     &         &         &                  &       &       &      \\ \hline
+Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
+Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
+\end{tabular}
+\end{table}
+
 
 \textbf{Objectives:}
 
@@ -582,34 +540,32 @@ Start month & & & & End month & & &\tabularnewline
 
 \ldots{}description\ldots{}
 
-\begin{itemize}
+\task{5.1}{Multi-modal communication}
+\task{5.2}{Social awareness}
+\task{5.3}{Machine learning of social behaviours}
+\task{5.4}{Social controller}
 
-\item
-  \emph{Task T5.1}:
+\vspace{0.5cm}\textbf{Deliverables:}
+
+\begin{itemize}
+    \item \D{5.1}{12}{great report}
 \end{itemize}
 
-\textbf{Deliverables:}
+\subsubsection{Work package 6: \wpSix}
 
-\begin{itemize}
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+Work package number            & 6 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
+Work package title             & \multicolumn{7}{l|}{\wpSix}                                       \\ \hline
+Participant number             &     &         &         &                  &       &       &      \\ \hline
+Short name of participant      &     &         &         &                  &       &       &      \\ \hline
+Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
+Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
+\end{tabular}
+\end{table}
 
-\item
-  \emph{Deliverable D5.1} (Month ..):
-\end{itemize}
-
-\subsubsection{Work package 6: Dissemination and exploitation}\label{work-package-6-dissemination-and-exploitation}
-
-\begin{longtable}[]{@{}llllllll@{}}
-\toprule
-Work package number & 6 & Lead beneficiary & & & & &\tabularnewline
-\midrule
-\endhead
-Work package title & & & & & & &\tabularnewline
-Participant number & & & & & & &\tabularnewline
-Short name of participant & & & & & & &\tabularnewline
-Person/months per participant: & & & & & & &\tabularnewline
-Start month & & & & End month & & &\tabularnewline
-\bottomrule
-\end{longtable}
 
 \textbf{Objectives:}
 
@@ -617,139 +573,67 @@ Start month & & & & End month & & &\tabularnewline
 
 \ldots{}description\ldots{}
 
-\begin{itemize}
+\task{6.1}{Academic dissemination}
+\task{6.2}{General public dissemination}
+\task{6.3}{Commercial exploitation}
 
-\item
-  \emph{Task T6.1}:
-\end{itemize}
-
-\textbf{Deliverables:}
+\vspace{0.5cm}\textbf{Deliverables:}
 
 \begin{itemize}
-
-\item
-  \emph{Deliverable D6.1} (Month ..):
+    \item \D{6.1}{12}{website and logo}
 \end{itemize}
 
 \subsubsection{Deliverables overview}\label{deliverables-overview}
 
-\begin{longtable}[]{@{}lllllll@{}}
+\begin{table}[!htbp]
+\caption{List of deliverables}
+\begin{tabular}{@{}lllllll@{}}
 \toprule
-\begin{minipage}[b]{0.08\columnwidth}\raggedright
-Deliverable\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
-Deliverable name\strut
-\end{minipage} & \begin{minipage}[b]{0.12\columnwidth}\raggedright
-Work package No\strut
-\end{minipage} & \begin{minipage}[b]{0.19\columnwidth}\raggedright
-Lead participant short name\strut
-\end{minipage} & \begin{minipage}[b]{0.04\columnwidth}\raggedright
-Type\strut
-\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
-Dissemination level\strut
-\end{minipage} & \begin{minipage}[b]{0.10\columnwidth}\raggedright
-Delivery date\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.08\columnwidth}\raggedright
-D1.1\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.08\columnwidth}\raggedright
-D1.2\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.08\columnwidth}\raggedright
-D2.1\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.08\columnwidth}\raggedright
-\ldots{}\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.19\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.10\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+\textbf{Deliverable} & \textbf{Deliverable name} & \textbf{Work package No} & \textbf{Lead participant short name} & \textbf{Type} & \textbf{Dissemination level} & \textbf{Delivery date} \\ \midrule
+D1.1                 &                           &                          &                                      &               &                              &                        \\
+D1.2                 &                           &                          &                                      &               &                              &                        \\
+D2.1                 &                           &                          &                                      &               &                              &                        \\
+...                  &                           &                          &                                      &               &                              &                        \\ \bottomrule
+\end{tabular}
+\end{table}
 
 Type:
 
 \begin{itemize}
 
-\item
-  R: Document, report (excluding the periodic and final reports)
-\item
-  DEM: Demonstrator, pilot, prototype, plan designs
-\item
-  DEC: Websites, patents filing, press \& media actions, videos, etc.
-\item
-  OTHER: Software, technical diagram, etc.
+\item   R: Document, report (excluding the periodic and final reports)
+\item   DEM: Demonstrator, pilot, prototype, plan designs
+\item   DEC: Websites, patents filing, press \& media actions, videos, etc.
+\item   OTHER: Software, technical diagram, etc.
 \end{itemize}
 
 Dissemination level:
 
 \begin{itemize}
 
-\item
-  PU = Public, fully open, e.g.~web
-\item
-  CO = Confidential, restricted under conditions set out in Model Grant
+\item   PU = Public, fully open, e.g.~web
+\item   CO = Confidential, restricted under conditions set out in Model Grant
   Agreement
-\item
-  CI = Classified, information as referred to in Commission Decision
+\item   CI = Classified, information as referred to in Commission Decision
   2001/844/EC.
 \end{itemize}
 
 \subsubsection{Gantt chart}\label{gantt-chart}
 
+\begin{landscape}
 \include{gantt}
+\end{landscape}
 
 \subsubsection{Workpackage interrelations}\label{workpackage-interrelations}
 
-\includegraphics{figs/wp-interrelations.png}\\
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figs/wp-interrelations}
+    \caption{Inter-dependencies between work packages and main tasks}
+    \label{}
+\end{figure}
+
+
 
 \subsection{Management structure, milestones and procedures}\label{management-structure-milestones-and-procedures}
 
@@ -757,226 +641,89 @@ Dissemination level:
 
 \begin{itemize}
 
-\item
-  week-long tests with local children in local schools
-\item
-  field deployment with one child in one school
+\item   week-long tests with local children in local schools
+\item   field deployment with one child in one school
 \end{itemize}
 
-\begin{longtable}[]{@{}lllll@{}}
+\begin{table}[!htbp]
+\caption{List of milestones}
+\centering
+\begin{tabular}{@{}lllll@{}}
 \toprule
-\begin{minipage}[b]{0.16\columnwidth}\raggedright
-Milestone number\strut
-\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
-Milestone name\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-Related work package(s)\strut
-\end{minipage} & \begin{minipage}[b]{0.14\columnwidth}\raggedright
-Estimated date\strut
-\end{minipage} & \begin{minipage}[b]{0.20\columnwidth}\raggedright
-Means of verification\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.20\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+\textbf{Milestone number} & \textbf{Milestone name} & \textbf{Related work package(s)} & \textbf{Estimated date} & \textbf{Means of verification} \\ \midrule
+                          &                         &                                  &                         &                                \\
+                          &                         &                                  &                         &                                \\
+                          &                         &                                  &                         &                                \\
+                          &                         &                                  &                         &                                \\ \bottomrule
+\end{tabular}
+\end{table}
+
 
 \subsubsection{Risks}\label{risks}
 
-\begin{longtable}[]{@{}lll@{}}
+\begin{table}[!htbp]
+\caption{Identified risks and proposed mitigations}
+\centering
+\begin{tabular}{@{}lll@{}}
 \toprule
-\begin{minipage}[b]{0.26\columnwidth}\raggedright
-Description of risk\strut
-\end{minipage} & \begin{minipage}[b]{0.28\columnwidth}\raggedright
-Work package(s) involved\strut
-\end{minipage} & \begin{minipage}[b]{0.37\columnwidth}\raggedright
-Proposed risk mitigation measures\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-risk 1 (low/medium/high)\strut
-\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.28\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
+\textbf{Description of risk} & \textbf{Work package(s) involved} & \textbf{Proposed risk mitigation measures} \\ \midrule
+risk 1 (low/medium/high)     &                                   &                                            \\
+                             &                                   &                                            \\
+                             &                                   &                                            \\
+                             &                                   &                                            \\ \bottomrule
+\end{tabular}
+\end{table}
 
-\subsection{Relevance of expertise in the consortium}\label{relevance-of-expertise-in-the-consortium}
 
-This project is ambitious, and brings together five leading groups in
-social human-robot interaction, interaction design and human
-socio-developmental psychology, with unique expertise and contributions:
-The Bristol Robotics Lab, the largest UK robotic lab, has a long history
-of running and leading complex projects involving hardware, software and
-AI, with a strong track record in human-robot interaction and assistive
-robotics; the University of Ghent will provide world-leading expertise
-on robot design for interaction with children; the EPFL's CHILI lab has
-a unique expertise in blending technology (and social robotics in
-particular) in teaching environments, with a focus on rich social
-interaction; the IST is recognised as a leading group in expressive
-social agents and also has a very strong track record in child-robot
-interactions; finally {[}socio-psychology partner{]}.
 
-Critically, the complex interaction design that lies at the core of the
-project will be informed and co-led by the Refugee Support department of
-RedCross UK, one of the largest NGO world-wide.
 
-\subsection{Appropriate allocation and justification of resources}\label{appropriate-allocation-and-justification-of-resources}
 
-(person-months, equipment, budget)
+\begin{itemize}
+    \item week-long tests with local children in local schools
+    \item field deployment with one child in one school
+\end{itemize}
 
-\textbf{Summary of staff effort}
 
-\begin{longtable}[]{@{}llllllll@{}}
-\toprule
-& WP1 & WP2 & WP3 & WP4 & WP5 & WP6 & Total person/months per
-participant\tabularnewline
-\midrule
-\endhead
-BRL & & & & & & &\tabularnewline
-GHE & & & & & & &\tabularnewline
-EPFL & & & & & & &\tabularnewline
-IST & & & & & & &\tabularnewline
-RUN & & & & & & &\tabularnewline
-RCUK & & & & & & &\tabularnewline
-Total person/ month & & & & & & &\tabularnewline
-\bottomrule
-\end{longtable}
+Plan to hire one mechatronics engineer and one interaction designer
 
-\textbf{Other direct cost}
+Role of the mechatronics engineer: develop a novel platform, including -
+chassis - power autonomy for one day - on-board compute suitable for
+deep learning (NVidia TX2?) - vision (embedded RGB-D camera) - audio
+processing
 
-\begin{longtable}[]{@{}lll@{}}
-\toprule
-BRL & Cost & Justification\tabularnewline
-\midrule
-\endhead
-Travel & &\tabularnewline
-Equipment & &\tabularnewline
-Other goods and services & &\tabularnewline
-Total & &\tabularnewline
-\bottomrule
-\end{longtable}
+Role of the interaction designer: refine interaction modalities (in
+particular, the non-verbal speech), details cross-modal interactions,
+define interaction patterns with the child
+
+\hypertarget{measuring-how-effective-the-project-is}{%
+\subsubsection{Measuring how effective the project
+is}\label{measuring-how-effective-the-project-is}}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \newpage
 
-\section{Members of the consortium}\label{members-of-the-consortium}
+\hypertarget{the-principal-investigator}{%
+\section{The principal Investigator}\label{the-principal-investigator}}
 
-\subsection{Participants}\label{participants}
+\hypertarget{curriculum-vitae}{%
+\subsection{Curriculum vitae}\label{curriculum-vitae}}
 
-For each partners:
+(max 2 pages)
 
-\begin{itemize}
+\hypertarget{early-achievements-track-record}{%
+\subsection{Early achievements
+track-record}\label{early-achievements-track-record}}
 
-\item
-  a description of the legal entity and its main tasks, with an
-  explanation of how its profile matches the tasks in the proposal;
-\item
-  a curriculum vitae or description of the profile of the persons,
-  including their gender, who will be primarily responsible for carrying
-  out the proposed research and/or innovation activities;
-\item
-  a list of up to 5 relevant publications, and/or products, services
-  (including widely-used datasets or software), or other achievements
-  relevant to the call content;
-\item
-  a list of up to 5 relevant previous projects or activities, connected
-  to the subject of this proposal;
-\item
-  a description of any significant infrastructure and/or any major items
-  of technical equipment, relevant to the proposed work;
-\end{itemize}
-
-\subsubsection{Bristol Robotics Lab}\label{bristol-robotics-lab}
-
-\paragraph{Institution}
-
-The \emph{Bristol Robotics Laboratory (BRL)} is the largest co-located
-and most comprehensive advanced robotics research establishment in the
-UK. It is a joint venture between the University of the West of England
-and the University of Bristol. BRL's multidisciplinary approach aims to
-create autonomous devices capable of working independently, with each
-other, or with humans. BRL draws on robotics, electrical \& mechanical
-engineering, computer science, psychology, cognitive science and
-sociology. BRL has an international reputation as a leading research
-centre in advanced robotics research and has over 250 researchers
-working on a broad portfolio of topics: HRI, collective robotics, aerial
-robotics, neuro-inspired control, haptics, control systems, energy
-harvesting and self-sustaining systems, rehabilitation robotics, soft
-robotics and biomedical systems. BRL has many collaboration
-partnerships, both national and international, and is experienced in
-managing large multi-site projects. BRL has support from two embedded
-units specialising in business and enterprise, together with an
-incubator and successful track record of spin-outs.
-
-\paragraph{Principal investigators}
+(max 2 pages)
 
 Dr Séverin Lemaignan is Senior Researcher at the Bristol Robotics
 Laboratory, University of the West of England, Bristol. Previously, he
@@ -999,64 +746,49 @@ been focusing his experimental work on child-robot interactions in
 educative settings, exploring how robots can support teachers and
 therapists to develop effective and engaging novel learning paradigms.
 
-Pr Manuel Giuliani\ldots{}
+\hypertarget{part-b2-the-scientific-proposal}{%
+\section{{[}part B2{]} The scientific
+proposal}\label{part-b2-the-scientific-proposal}}
 
-\subsubsection{University of Ghent}\label{university-of-ghent}
+(max 15 pages)
 
-\emph{Tony Belpaeme, Jelle Saldien}
+\hypertarget{a.-state-of-the-art-and-objectives}{%
+\subsection{a. State of the art and
+objectives}\label{a.-state-of-the-art-and-objectives}}
 
-\subsubsection{École Polytechnique Fédérale de Lausanne}\label{uxe9cole-polytechnique-fuxe9duxe9rale-de-lausanne}
+\hypertarget{b.-methodology}{%
+\subsection{b. Methodology}\label{b.-methodology}}
 
-\emph{Pierre Dillenbourg}
+\hypertarget{risk-assessment}{%
+\subsubsection{Risk assessment}\label{risk-assessment}}
 
-\subsubsection{Instituto Superior Técnico, University of Lisbon}\label{instituto-superior-tuxe9cnico-university-of-lisbon}
+\hypertarget{c.-resources}{%
+\subsection{c. Resources}\label{c.-resources}}
 
-\emph{Ana Paiva}
+\hypertarget{host-institution}{%
+\subsubsection{Host institution}\label{host-institution}}
 
-\subsubsection{Academic partner in sociology -- Radboud University Nijmegen?}\label{academic-partner-in-sociology-radboud-university-nijmegen}
+The \emph{Bristol Robotics Laboratory (BRL)} is the largest co-located
+and most comprehensive advanced robotics research establishment in the
+UK. It is a joint venture between the University of the West of England
+and the University of Bristol. BRL's multidisciplinary approach aims to
+create autonomous devices capable of working independently, with each
+other, or with humans. BRL draws on robotics, electrical \& mechanical
+engineering, computer science, psychology, cognitive science and
+sociology. BRL has an international reputation as a leading research
+centre in advanced robotics research and has over 250 researchers
+working on a broad portfolio of topics: HRI, collective robotics, aerial
+robotics, neuro-inspired control, haptics, control systems, energy
+harvesting and self-sustaining systems, rehabilitation robotics, soft
+robotics and biomedical systems. BRL has many collaboration
+partnerships, both national and international, and is experienced in
+managing large multi-site projects. BRL has support from two embedded
+units specialising in business and enterprise, together with an
+incubator and successful track record of spin-outs.
 
-\subsubsection{RedCross UK (RCUK)}\label{redcross-uk-rcuk}
+\newpage
 
-\emph{Alex Fraser}
-
-\subsection{Third parties involved in the
-project}\label{third-parties-involved-in-the-project}
-
-No third parties involved? maybe for some subcontracting?
-
-\section{Ethics and Security}\label{ethics-and-security}
-
-\subsection{Ethics}\label{ethics}
-
-\subsection{Security}\label{security}
-
-\begin{itemize}
-
-\item
-  this project involves activities or results raising security issues:
-  NO
-\item
-  this project involves `EU-classified information' as background or
-  results: NO
-\end{itemize}
-
-\hypertarget{refs}{}
-\leavevmode\hypertarget{ref-hostettler2016realtime}{}%
-Hostettler, L., A. Özgür, S. Lemaignan, P. Dillenbourg, and F. Mondada.
-2016. ``Real-Time High-Accuracy 2D Localization with Structured
-Patterns.'' In \emph{Proceedings of the 2016 Ieee International
-Conference on Robotics and Automation}.
-
-\leavevmode\hypertarget{ref-ozgur2017cellulo}{}%
-Özgür, A., S. Lemaignan, W. Johal, M. Beltran, M. Briod, L. Pereyre, F.
-Mondada, and P. Dillenbourg. 2017. ``Cellulo: Versatile Handheld Robots
-for Education.'' In \emph{Proceedings of the 2017 Acm/Ieee Human-Robot
-Interaction Conference}. \url{https://doi.org/10.1145/2909824.3020247}.
-
-\leavevmode\hypertarget{ref-ozgur2016permanent}{}%
-Özgür, Ayberk, Wafa Johal, and Pierre Dillenbourg. 2016. ``Permanent
-Magnet-Assisted Omnidirectional Ball Drive.'' In \emph{2016 Ieee/Rsj
-International Conference on Intelligent Robots and Systems (Iros)},
-1061--6. \url{https://doi.org/10.1109/IROS.2016.7759180}.
+\hypertarget{references}{%
+\section{References}\label{references}}
 
 \end{document}

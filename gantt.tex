@@ -1,7 +1,4 @@
-
-
-\definecolor{barblue}{RGB}{153,204,254}
-\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{barcolor}{RGB}{153,204,254}
 \definecolor{linkred}{RGB}{165,0,33}
 %\renewcommand\sfdefault{phv}
 %\renewcommand\mddefault{mc}
@@ -10,14 +7,15 @@
 \setganttlinklabel{f-s}{FINISH-TO-START}
 \setganttlinklabel{f-f}{FINISH-TO-FINISH}
 
-\begin{sidewaysfigure}[!ht]
+%\begin{sidewaysfigure}[!ht]
+\begin{figure}[!ht]
 
 %\sffamily
 \begin{ganttchart}[
         canvas/.append style={fill=none, draw=black!5, line width=.75pt},
         hgrid style/.style={draw=black!5, line width=.75pt},
         vgrid={*1{draw=black!5, line width=.75pt}},
-        x unit=.30cm,
+        x unit=.35cm,
         y unit chart=.65cm,
         time slot format=isodate-yearmonth,
         time slot unit=month, % pgfgantt >= 5.0
@@ -28,10 +26,9 @@
         include title in canvas=false,
         bar label font=\mdseries\small\color{black!70},
         bar label node/.append style={left=2cm},
-        bar/.append style={draw=none, fill=barblue},
-        bar incomplete/.append style={fill=black!63},
+        bar/.append style={draw=none, fill=barcolor!50},
         bar progress label font=\mdseries\footnotesize\color{black!70},
-        group/.append style={fill=groupblue},
+        group/.append style={fill=barcolor},
         group incomplete/.append style={fill=black},
         group left shift=0,
         group right shift=0,
@@ -42,7 +39,7 @@
         link/.style={-latex, line width=1.5pt, linkred},
         link label font=\scriptsize\bfseries,
         link label node/.append style={below left=-2pt and 0pt}
-    ]{2019-05}{2024-04}
+    ]{2019-09}{2023-08}
     
         %\gantttitle[
         %    title label node/.append style={below left=7pt and -3pt}
@@ -51,33 +48,47 @@
         %\gantttitlelist{0,5,...,60}{1} \\
 
         %% WP1
-        \ganttgroup[]{WP 1: Management}{2019-05}{2024-04} \\
+        \ganttgroup[]{WP1 \wpOneShort}{2019-09}{2023-08} \\
         %\ganttlink[link type=f-s]{WBS1A}{WBS1B}
 
         %% WP2
-        \ganttgroup[]{WP 2 Sociology of Technologies for Integration}{2020-01}{2023-09} \\
-            \ganttbar[name=WP21]{\textbf{WP 2.1} Analyse of needs}{2020-01}{2022-09} \\
-            \ganttbar[name=WP22]{\textbf{WP 2.2} Cross-cultural interactions}{2020-01}{2022-09} \\
+        \definecolor{barcolor}{RGB}{153,2,254}
+        \ganttgroup[]{WP2 \wpTwoShort}{2020-01}{2023-08} \\
+            \ganttbar[name=WP21]{\textbf{WP 2.1}}{2020-01}{2022-09} \\
+            \ganttbar[name=WP22]{\textbf{WP 2.2}}{2020-01}{2022-09} \\
 
 
         %% WP3
-        \ganttgroup[]{WP 3 Robot design}{2020-06}{2023-06} \\
-            \ganttbar[name=WP31]{\textbf{WP 3.1} Mechatronics}{2020-06}{2021-09} \\
-            \ganttbar[name=WP32]{\textbf{WP 3.2} Sensing}{2020-06}{2021-09} \\
-            \ganttbar[name=WP33]{\textbf{WP 3.3} On-board dataprocessing}{2020-06}{2021-09} \\
+        \definecolor{barcolor}{RGB}{50,220,134}
+        \ganttgroup[]{WP3 \wpThreeShort}{2020-06}{2023-06} \\
+            \ganttbar[name=WP31]{\textbf{WP 3.1}}{2020-06}{2021-09} \\
+            \ganttbar[name=WP32]{\textbf{WP 3.2}}{2020-06}{2021-09} \\
+            \ganttbar[name=WP33]{\textbf{WP 3.3}}{2020-06}{2021-09} \\
 
         %% WP4
-        \ganttgroup[]{WP 4 AI for Social Cognition}{2019-06}{2023-09} \\
-            \ganttbar[name=WP41]{\textbf{WP 4.1} Multi-modal communication}{2019-06}{2020-09} \\
-            \ganttbar[name=WP42]{\textbf{WP 4.2} Automatic learning of social interactions}{2020-07}{2022-09} \\
-            \ganttbar[name=WP43]{\textbf{WP 4.3} Interaction design}{2020-06}{2023-06} \\
+        \definecolor{barcolor}{RGB}{244,50,20}
+        \ganttgroup[]{WP4 \wpFourShort}{2019-09}{2023-08} \\
+            \ganttbar[name=WP41]{\textbf{WP 4.1}}{2019-09}{2020-09} \\
+            \ganttbar[name=WP42]{\textbf{WP 4.2}}{2020-07}{2022-09} \\
+            \ganttbar[name=WP43]{\textbf{WP 4.3}}{2020-06}{2023-06} \\
+            \ganttbar[name=WP44]{\textbf{WP 4.4}}{2020-06}{2023-06} \\
+            \ganttbar[name=WP45]{\textbf{WP 4.5}}{2020-06}{2023-06} \\
 
 
         %% WP5
-        \ganttgroup[]{WP 5 Field testing \& deployments}{2021-01}{2023-09} \\
-            \ganttbar[name=WP51]{\textbf{WP 5.1} Study 1: Robot acceptance}{2020-01}{2022-09} \\
-            \ganttbar[name=WP52]{\textbf{WP 5.2} Study 2: Robots at school}{2021-10}{2021-12} \\
-            \ganttbar[name=WP53]{\textbf{WP 5.3} Study 3: Robots at school}{2021-10}{2021-12} \\
+        \definecolor{barcolor}{RGB}{234,200,20}
+        \ganttgroup[]{WP5 \wpFiveShort}{2021-01}{2023-08} \\
+            \ganttbar[name=WP51]{\textbf{WP 5.1}}{2020-01}{2022-09} \\
+            \ganttbar[name=WP52]{\textbf{WP 5.2}}{2021-10}{2021-12} \\
+            \ganttbar[name=WP53]{\textbf{WP 5.3}}{2021-10}{2021-12} \\
+            \ganttbar[name=WP54]{\textbf{WP 5.4}}{2021-10}{2021-12} \\
+
+        %% WP6
+        \definecolor{barcolor}{RGB}{75,50,60}
+        \ganttgroup[]{WP6 \wpSixShort}{2021-01}{2023-08} \\
+            \ganttbar[name=WP61]{\textbf{WP 6.1}}{2020-01}{2022-09} \\
+            \ganttbar[name=WP62]{\textbf{WP 6.2}}{2021-10}{2021-12} \\
+            \ganttbar[name=WP63]{\textbf{WP 6.3}}{2021-10}{2021-12} \\
 
 
 
@@ -85,4 +96,5 @@
         %\ganttlink[link type=f-f,link label node/.append style=left]{WBS1C}{WBS1D}
 \end{ganttchart}
 
-\end{sidewaysfigure}
+%\end{sidewaysfigure}
+\end{figure}
