@@ -9,6 +9,9 @@ all: latex
 %.png: %.svg
 	inkscape -d 200 --export-png $(@) $(<)
 
+%.pdf: %.svg
+	inkscape --export-pdf $(@) $(<)
+
 
 latex: $(SVG:.svg=.pdf)
 	lualatex $(TARGET)

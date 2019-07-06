@@ -26,6 +26,8 @@
 
 \renewcommand{\thesubsubsection}{}
 
+\usepackage{xspace}
+\newcommand{\project}{WizMe\xspace}
 
 \newcommand{\task}[2]{\vspace{0.5cm}\noindent\emph{Task T#1}: {\bf #2}\par}
 
@@ -35,11 +37,11 @@
 
 \newcommand{\severin}[1]{{\color{red}\textbf{Severin: #1}}}
 \newcommand{\toseverin}[1]{{\color{red}\textbf{To Severin: #1}}}
-\newcommand{\eu}[1]{{\color{teal}\textbf{Guidelines EU FET: #1}}}
+\newcommand{\eu}[1]{{\color{teal}\textbf{Guidelines EU ERC: #1}}}
 \newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
 
 
-\title{WizMe - Part B}
+\title{\project - Part B}
 
 \begin{document}
 \maketitle
@@ -172,69 +174,230 @@ develop multi-lingual capabilities.
 
 \subsection*{Acronym}\label{acronym}
 
-WizMe
+\project
 
 \subsection*{Abstract}\label{abstract}
-
-WizMe is a future-looking project that aims at investigating how social
-robots can shape and support stronger \emph{human-human} relationships:
-in a time where robots are on the verge of becoming pervasive in our
-environment, can we use them as powerful tool to develop rich, positive human
-interactions as well?
-
-
-Such robots require unique, beyond state-of-the-art, capabilities to
-\emph{(1)} understand the social interactions (\emph{social situation
-awareness}), \emph{(2)} decide the best course of action for short-term
-and longer-term social influence, and \emph{(3)} perform the appropriate
-social acts and exert adequate, ethical social influence.
-
-In the WizMe project, we propose to scaffold this radically novel line
-of research with an original application of high societal impact: we
-will create a small set of novel personal companion robots designed to
-facilitate human-human interactions. These robots will be deployed in
-selected school to support the social and cultural integration of
-vulnerable children, with a particular focus on migrant children who
-might lack the otherwise needed support for a successful integration
-(different cultures and social norms; absence of local, culturally
-integrated, relatives; language barriers; etc.).
-
-This project is ambitious, and brings together five leading groups in
-social human-robot interaction, interaction design and human
-socio-developmental psychology, with unique expertise and contributions:
-The Bristol Robotics Lab, the largest UK robotic lab, has a long history
-of running and leading complex projects involving hardware, software and
-AI, with a strong track record in human-robot interaction and assistive
-robotics; the University of Ghent will provide world-leading expertise
-on robot design for interaction with children; the EPFL's CHILI lab has
-a unique expertise in blending technology (and social robotics in
-particular) in teaching environments, with a focus on rich social
-interaction; the IST is recognised as a leading group in expressive
-social agents and also has a very strong track record in child-robot
-interactions; finally {[}socio-psychology partner{]}.
-
-Critically, the complex interaction design that lies at the core of the
-project will be informed and co-led by the Refugee Support department of
-RedCross UK, one of the largest NGO world-wide.
 
 \pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Excellence}\label{part1}
+\section{B1.a. Extended Synopsis of the scientific proposal}\label{part1}
 \eu{(max 5 pages)}
+
+\eu{The Extended Synopsis should give a concise presentation of the scientific
+proposal, with particular attention to the ground-breaking nature of the
+research project and the feasibility of the outlined scientific approach.
+Describe the proposed work in the context of the state of the art of the field.
+References to literature should also be included. References do not count
+towards the page limits. It is important that this extended synopsis contains
+all essential information including the feasibility of the scientific proposal
+since the panel will only evaluate Part B1 at step 1.}
+
+
+
+\project is a future-looking project that aims at investigating how social
+robots can shape and support stronger \emph{human-human} relationships. In a
+time where robots are on the verge of becoming pervasive in our daily, human
+environment, can we ensure 'by design' that they will become powerful tools to
+foster rich, positive interactions between the people themselves, and build a
+stronger, more cohesive society?
+
+'Socially intelligent' robots require unique, beyond state-of-the-art,
+capabilities to \emph{(1)} understand the social interactions (social
+situation awareness), \emph{(2)} decide the best course of action for
+short-term and longer-term social influence, and \emph{(3)} perform the
+appropriate social actions and exert adequate, ethical social influence.
+
+However, extreme complexity hides behind these seemingly well-delineated
+technical steps: not only the technology itself is beyond state-of-the-art, but
+the interplay between technology, socio-cognitive psychology, privacy and ethics
+is only starting to be researched and understood. \project offers a ambitious
+vision and a strong, evidenced-based, methodology to significantly advance our
+understanding of this difficult question. A conceptual framework, grounded in
+actual technology and field experience, to discuss and evaluated the role and
+impact of social robots in tomorrow's society.
+
 
 
 
 \subsection{Long-term vision and targeted breakthrough towards that vision}
+
+While the original idea of the
+'multi-function-household-robot-that-does-the-dishes' has yet to materialise --
+physical manipulation of objects in an unstructured environment is hard, as it
+happens --, social robots are nevertheless in the process of establishing
+themselves as important tools in a variety of other situations, where they play
+a key role as social agents.
+
+As a researcher who has been working for the last 12 years in the field of
+human-robot interaction, I have been both a witness and an actor of the crossing
+of a critical milestone: the emergence of \textbf{durable social interactions}
+between artificial intelligences embodied in robots, and humans. We have been
+witnessing over the last two years an explosion of the number of studies
+involving social robots, deployed in real-world settings (schools, care centres)
+over relatively long periods of time (up to 2 or 3 months at a time). In most of
+these experiments, robots are not fully autonomous, even though full autonomy is
+in sight as well.
+
+While many see these developments positively, or even as a turning point [...]
+other express skeptism or worry that this might lead to a deshumanization of our
+society. Indeed, if artificial agents are to engage into social interactions
+with us, and enter as such our human 'pré carré', pressing ethical questions
+need to be answered.
+
+\begin{itemize}
+    \item how to ensure that social robots are not used to simply replace humans
+        (like social workers) to cut costs?
+    \item can we guarantee that the use of social robots will always be ethically motivated?
+    \item even further, can we implement some ethical safeguarding at the core
+        of the system?
+    \item what about privacy? how to trust that robots in our home or school or
+        hospital will not eavedrop on our private lives?
+\end{itemize}
+
+These questions are not only legitimate, but also pressing: the recent rise of
+personal assistants like Alexa or Google Home, with the major privacy concerns
+that accompanied their deployments in people home, shows that letting the
+industry set the agenda on these questions is not wise -- and robots can
+potentially be much more intrusive than immobile smart speakers.
+
+Social robots have two unique properties which distinguish them from these smart
+speakers, and significantly complexify their conceptual framing. First, they are
+fully embodied, and they physically interact with their environment, from moving
+around, to picking up objects, to looking at you; second, willingly or not, they
+are ascribed \emph{agency} by people.  This second difference has far-reaching
+consequences, from affective bonding to over-trust, to over-disclosure of
+personnal, possibly sensitive, informations [cite paper HRI children
+disclosure].
+
+
+
+This progress raises questions, both practical and more fundamental:
+
+inventing and building a principled cognitive architecture for tomorrow's social
+robots, nutrured by decades of research in understanding human social cognition,
+and where ethics and privacy are intrinsic to the system.
+
+Due to the complex interplay between the technical implementation, the
+socio-psychological determinants of the interactions, and the multiple ethical
+mechanisms that have to be built-in the system, it is difficult to build one
+coherent and consistent perspective on the whole question. As a consequence, a
+conceptual, intellectual framework emcompassing both the internal cognitive
+mechanisms required by socially intelligent robots, as well as their role and
+impact in the society, only exists in fragmented pieces  is essentially missing.
+
+The lack of such a proper conceptual framing is a critical issue: for robots to
+have a positive impact on the society, with strict ethical and privacy-related
+safeguarding, it is urgent that the wider academic and intellectual communities,
+beyond technologist, embrace this question and build up the debate on the
+acceptability of robots in our society.
+
+As such, the foundational ambitious of \project is to create a conceptual
+framework around social robots in the human society, by reframing the widely
+accepted, yet sorely unspecific, idea of \emph{human-robot interaction} into the
+more specific idea of \emph{robot-supported human-human interactions}: the robot
+is considered from the perspective of how it can \emph{support} humans, and in
+particular, support stronger, positive interactions between humans.
+
+Critically, though, \project will ground this conceptual frame into the reality
+of socio-cognitive AI and real-world deployments of social robots.
+
+
+\subsubsection{Three pilars}
+
+To achieve the vision of a natural and harmonious \emph{co-habitation} between
+social robots and humans, ...
+
+The \project project will, for the first time, take a broad, holistic approach
+to these questions, and as such, is build around three pilars:
+
+\begin{enumerate}
+    \item AI architecture for decision making
+    \item socio-psychological design of the interaction, from 1-to-1
+        interaction, to group interaction, to interaction with the eco-system
+    \item built-in privacy and ethics
+\end{enumerate}
+
+The difficulty comes from the fact that these pilars do not represent independent
+research questions: they are deeply woven together, in intricate ways.
+
+
+Taken independently, these three pilars are already intrinsically complex.
+
+The first pilar, AI Architecture for Decision Making, for instance:
+state-of-the-art decision making processes for social robots are build from
+multiple algorithmic layers: classical machine learning (like classifiers, or
+SLAM) for low-level sensori-motor processing; probabilistic data processing (for
+e.g. localisation or point cloud processing); deep neural networks for object
+recognition, scene understanding, speech and dialogue processing; classical
+symbolic reasoning (for instance, for task planning); high-level knowledge
+representation and reasoning (semantic webs); hybrid spatial/symbolic reasoning
+for motion planning; etc.
+
+Importantly, these layers are not typically combined in a simple, linear
+fashion: modern control architectures are distributed, loosely coupled, and
+design so that information flows in multiple directions, at different levels of
+abstraction, in order to create complex feedback loops, and achieve systems that are
+both goal-directed \emph{and} reactive (event-driven).
+
+
+The real complexity of such AI architectures is however striking when one tries
+to answer \emph{how} such an architecture can enable the realisation of the
+desired socio-cognitive functions, i.e. our second pilar. Social behaviours and
+social situations are highly dynamic, loosely structured, underspecified (no
+pre-made rulebook exists), uncertain.
+
+Our best answer is for the robot to learn to become social: a human expert teaches
+the robot how to socially behave, in-situ, with the robot embedded in the
+interaction. I have conducted two recent and high-profile experiments in this
+direction
+
+\subsection{Evidence-based research: social robots
+to support young asylum seekers on the field}
+
+
+In the \project project, I will scaffold this radically novel line of
+research with an original application of high societal impact: we will create a
+small set of novel personal companion robots designed to facilitate human-human
+interactions. These robots will be deployed in selected school to support the
+social and cultural integration of vulnerable children, with a particular focus
+
+
+
+\project will develop and demonstrate the need for a global approach to social
+HRI with an ambitious, high-impact, socially meaningful application. Over the
+duration of the project, I will create a new companion robot to support young,
+isolated refugees in their asylum-seeking process.
+
+The robots will be used by field practionners (charities and NGO) in refugee
+camps and safe-houses across Europe to support the children by offering a
+one-to-one social interaction, in their language. The robots will be designed in
+close cooperation with designers and visual artists with exceptional experience
+of the refugees' realities, and one of the key role of the robots will be to
+collect the children's stories, as these stories are
+
+, designed from the
+ground-up with privacy and stringent ethical principles
+
+migrant children who might lack the otherwise needed support for a successful
+integration (different cultures and social norms; absence of local, culturally
+integrated, relatives; language barriers; etc.).
+
+
+Importance of establishing long-term trust; relation to privacy.
+
+
+\subsection{The long-term vision: robot-supported human-human interactions}
+
 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{figs/render5-colors.png}
 \end{figure}
 
-WizMe is a project that aims at helping to build strong human
+\project is a project that aims at helping to build strong human
 relationships with the help of technology.
 
 The core idea of the project is to build small companion robots whose
@@ -291,6 +454,171 @@ whole project at risk, and a careful risk assessment is conducted that
 includes meaningful mitigation strategies.
 
 
+
+
+\subsection{A principled architecture for socially intelligent robots}
+
+
+\begin{itemize}
+    \item Intrinsic social motivation: do good
+    \item bottom-up grounding for situation assessment and social situation
+        assessment
+    \item symbolic grounding of both environment and social situation using
+        'human in the loop' OR data-driven symbolic grounding
+    \item knowledge representation and symbolic reasoning for dialogue
+        grounding, goal planning, knowledge exchange and linked data
+    \item action execution using human-in-the-loop ML
+\end{itemize}
+
+
+\subsection{Cross-disciplinary team, research methodology, and research
+infrastructure}
+
+The project's ambitious scientific and technical goals are expected to deliver
+major scientific, societal and technical impact, that extends beyond the
+boundaries of the fellowship. While ambitious, the project's feasibility is
+ensured through a strong combination of cross-disciplinary expertise and
+support from the host's unique research infrastructure. Scaffolded by a
+participatory and iterative research methodology, and the PI experience in
+managing teams and complex projects through his recognised leadership, \project
+is set to deliver.
+
+\project is indeed an interdisciplinary endeavour, and requires several
+complementary expertises to be successfull. I have assembled a strong and
+diverse team, with exceptional expertise both on working with vulnerable refugee
+populations, and on designing social robots. The team comprises of institutional
+partners with strong expertise in supporting asylum seeker (UK Refugee Council
+and [Katheryn Cronin - lawyer]), charities with extensive experience using art
+to support refugee populations (ArtRefuge UK), an interaction designer working
+on memory collection and recollection with vulnerable children, and several
+close academic collaboration: with Dave Meckin (University of the West of
+England), senior researcher in media tecnologies with a unique expertise working
+with vulnerable children; with Jérémy Bonvoisin (University of Bath), senior
+research on sustainable and open hardware development; and finally with Katie
+Winkle (University of Bristol/University of the West of England), junior
+scientist with a unique expertise in social robotics.
+
+To mirror the cross-disciplinary team, the research methodology developped for
+\project will rely heavily on \emph{mutual shaping}, through co-design and
+participatory design, and multi-disciplinary development sprints.
+
+\subsubsection{Technical infrastructure}
+
+The \project project sets an ambitious target in term of technical development.
+The project indeed requires unique technical skills, both software and
+hardware-wise, to create, design and build the envisonned robotic systems.
+
+Software-wise, Dr Lemaignan, the principal investigator, is a leading
+developer of software for intelligent robots, with numerous contributions to
+the major software platforms used in robotic (including major contributions to
+ROS, OpenCV, authoring of widely-used pieces of software like the ROS-naoqi
+bridge used by hundred of researchers using the Nao and Pepper robots or the
+MORSE robotic simulator). He has been teaching various modules related to
+software development for robotics, and the breadth and depth of his knowledge of
+robotic software development is well established. He will be leading the
+software development, and, as part of the fellowship, he will also seek for
+additional expert knowledge on (1) interaction design and (2) low-level
+micro-programming to complete the set of required programming needs.
+
+Hardware-wise, the Bristol Robotics Lab, where this fellowship will take place,
+offer unique support and facilities for robotic hardware development: the
+laboratory's dedicated equipment includes two industrial-grade rapid prototyping
+machine, a laser cutter, one 5-axis digital milling machine, all the required
+facilities for PCB prototyping, and a team of six full-time technicians,
+specialised in hardware development. The BRL has indeed a long track-record of
+designing and building new and original robots (from the BERT humanoid in the
+FP7 CHRIS project, to micro-robotics [in...?], to [...]). \project will directly
+benefit of this expertise, which will ensure a feasible and realistic technical
+implementation of the \project robots. Besides, an hardware engineer, dedicated
+to the project, will be recruited in the frame of the project.
+
+The BRL also include a hardware incubator and is co-located with 70 start-ups
+and SMEs specialising in robotic hardware and mechatronics (Bristol's
+\emph{FutureSpace}). This combination of excellent research and vast industry
+expertise on one site is unique in the UK, and is will play an instrumental role
+in providing a coherent and strong pathway to impact to the project, including
+further engagement with industrial partners and spin-off opportunities.
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\section{B1.b The principal Investigator}\label{the-principal-investigator}
+
+\hypertarget{curriculum-vitae}{%
+\subsection{Curriculum vitae}\label{curriculum-vitae}}
+
+\eu{(max 2 pages)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{B1.2 Early achievements track-record}\label{early-achievements-track-record}
+
+\eu{(max 2 pages)}
+
+Dr Séverin Lemaignan is Senior Researcher at the Bristol Robotics
+Laboratory, University of the West of England, Bristol. Previously, he
+obtained a joint PhD in Cognitive Robotics from the CNRS/LAAS (France)
+and the Technical University of Munich (Germany) for which he received
+the Best PhD in Robotics 2012 award from French CNRS. He then conducted
+his research as Research Fellow at EPFL (Switzerland) and Plymouth
+University (UK) where he was Lecturer in Robotics until 2018. Dr Séverin
+Lemaignan has been involved in several European projects related to
+social and cognitive robotics: CHRIS (Cooperative Human Robot
+Interaction Systems), DREAM (Development of Robot-Enhanced therapy for
+children with AutisM spectrum disorders), L2TOR (Second language
+TutOring using social Robots). He has also been awarded in 2015 a EU
+H2020 Marie Sklodowska-Curie Individual Fellowship for his project
+DoRoThy (Donating Robots a Theory of Mind). His research interests
+primarily concern the socio-cognitive aspects of human-robot
+interaction, both from the perspective of the human cognition and the
+design of cognitive architectures for the robots. More recently, he has
+been focusing his experimental work on child-robot interactions in
+educative settings, exploring how robots can support teachers and
+therapists to develop effective and engaging novel learning paradigms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\section{B2. The scientific proposal}\label{part-b2-the-scientific-proposal}
+
+\eu{(max 15 pages)}
+
+\hypertarget{a.-state-of-the-art-and-objectives}{%
+\subsection{a. State of the art and
+objectives}\label{a.-state-of-the-art-and-objectives}}
+
+\hypertarget{b.-methodology}{%
+\subsection{b. Methodology}\label{b.-methodology}}
+
 \subsection{Novelty, non-incrementality, plausibility and foundational character}
 
 \subsubsection{Companion robots}
@@ -312,7 +640,7 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
     \hspace{0.5cm}
     \begin{minipage}[b]{.3\linewidth}
         \centering
-        \includegraphics[height=4cm]{figs/ono.png}
+        %\includegraphics[height=4cm]{figs/ono.png}
         \subcaption{OPSORO's Ono robot}\label{fig:ono}
     \end{minipage}
     \caption{Existing research-level companion robots}\label{fig:research-robots}
@@ -759,56 +1087,6 @@ is}\label{measuring-how-effective-the-project-is}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\newpage
-
-\hypertarget{the-principal-investigator}{%
-\section{The principal Investigator}\label{the-principal-investigator}}
-
-\hypertarget{curriculum-vitae}{%
-\subsection{Curriculum vitae}\label{curriculum-vitae}}
-
-(max 2 pages)
-
-\hypertarget{early-achievements-track-record}{%
-\subsection{Early achievements
-track-record}\label{early-achievements-track-record}}
-
-(max 2 pages)
-
-Dr Séverin Lemaignan is Senior Researcher at the Bristol Robotics
-Laboratory, University of the West of England, Bristol. Previously, he
-obtained a joint PhD in Cognitive Robotics from the CNRS/LAAS (France)
-and the Technical University of Munich (Germany) for which he received
-the Best PhD in Robotics 2012 award from French CNRS. He then conducted
-his research as Research Fellow at EPFL (Switzerland) and Plymouth
-University (UK) where he was Lecturer in Robotics until 2018. Dr Séverin
-Lemaignan has been involved in several European projects related to
-social and cognitive robotics: CHRIS (Cooperative Human Robot
-Interaction Systems), DREAM (Development of Robot-Enhanced therapy for
-children with AutisM spectrum disorders), L2TOR (Second language
-TutOring using social Robots). He has also been awarded in 2015 a EU
-H2020 Marie Sklodowska-Curie Individual Fellowship for his project
-DoRoThy (Donating Robots a Theory of Mind). His research interests
-primarily concern the socio-cognitive aspects of human-robot
-interaction, both from the perspective of the human cognition and the
-design of cognitive architectures for the robots. More recently, he has
-been focusing his experimental work on child-robot interactions in
-educative settings, exploring how robots can support teachers and
-therapists to develop effective and engaging novel learning paradigms.
-
-\hypertarget{part-b2-the-scientific-proposal}{%
-\section{{[}part B2{]} The scientific
-proposal}\label{part-b2-the-scientific-proposal}}
-
-(max 15 pages)
-
-\hypertarget{a.-state-of-the-art-and-objectives}{%
-\subsection{a. State of the art and
-objectives}\label{a.-state-of-the-art-and-objectives}}
-
-\hypertarget{b.-methodology}{%
-\subsection{b. Methodology}\label{b.-methodology}}
 
 \hypertarget{risk-assessment}{%
 \subsubsection{Risk assessment}\label{risk-assessment}}
