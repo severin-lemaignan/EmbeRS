@@ -1,6 +1,25 @@
 \documentclass[]{article}
 \usepackage{amssymb,amsmath}
 
+%% enable markdown's stars to bold/italic sections of code -- requires lualatex!
+\usepackage{luacode,luatexbase}
+\begin{luacode}
+   -- Use Lua captures to extract material affected by markdown
+   function allstars (line) 
+      line = string.gsub( line, "(%*%*%*)(.-)(%*%*%*)", "{\\bfseries\\itshape %2}")
+      line = string.gsub( line, "(%*%*)(.-)(%*%*)", "{\\bfseries %2}" )
+      line = string.gsub( line, "(%*)(.-)(%*)", "{\\itshape %2}" )
+      return line
+   end
+\end{luacode}
+
+\newcommand\markdownon{%
+   \directlua{luatexbase.add_to_callback( "process_input_buffer", allstars, "allstars" )}}
+\newcommand\markdownoff{%
+   \directlua{luatexbase.remove_from_callback( "process_input_buffer", "allstars" )}}
+
+
+
 \usepackage[style=verbose]{biblatex}
 \addbibresource{biblio.bib}
 
@@ -44,6 +63,7 @@
 \title{\project - Part B}
 
 \begin{document}
+\markdownon
 \maketitle
 
 \subsection{Notes}
@@ -196,27 +216,29 @@ all essential information including the feasibility of the scientific proposal
 since the panel will only evaluate Part B1 at step 1.}
 
 
-
-\project is a future-looking project that aims at investigating how social
-robots can shape and support stronger \emph{human-human} relationships. In a
-time where robots are on the verge of becoming pervasive in our daily, human
-environment, can we ensure 'by design' that they will become powerful tools to
-foster rich, positive interactions between the people themselves, and build a
-stronger, more cohesive society?
+In a time where robots are on the verge of becoming pervasive in our daily human
+environment, can we ensure 'by design' that robots are to become powerful tools
+to foster rich, positive interactions \emph{between the people themselves}, and
+build a stronger, more cohesive society? Beyond Human-Computer Interaction (HCI)
+and Human-Robot Interaction (HRI), \project is a forward-looking,
+ground-breaking project that aims at establishing \textbf{Robot-supported
+Human-Human Interactions (r-HHI)} as the next step toward a Responsible AI: the
+scientific investigation of how social robots can create, shape and support
+strong, sustained, positive \emph{human-human} relationships.
 
 'Socially intelligent' robots require unique, beyond state-of-the-art,
 capabilities to \emph{(1)} understand the social interactions (social
 situation awareness), \emph{(2)} decide the best course of action for
 short-term and longer-term social influence, and \emph{(3)} perform the
-appropriate social actions and exert adequate, ethical social influence.
+appropriate social actions and exert appropriate, responsible social influence.
 
 However, extreme complexity hides behind these seemingly well-delineated
 technical steps: not only the technology itself is beyond state-of-the-art, but
 the interplay between technology, socio-cognitive psychology, privacy and ethics
 is only starting to be researched and understood. \project offers a ambitious
 vision and a strong, evidenced-based, methodology to significantly advance our
-understanding of this difficult question. A conceptual framework, grounded in
-actual technology and field experience, to discuss and evaluated the role and
+understanding of this difficult question. r-HHI A conceptual framework, grounded in
+actual technology and field experience, to discuss and evaluate the role and
 impact of social robots in tomorrow's society.
 
 
