@@ -46,7 +46,7 @@
 \renewcommand{\thesubsubsection}{}
 
 \usepackage{xspace}
-\newcommand{\project}{WizMe\xspace}
+\newcommand{\project}{WizUs\xspace}
 
 \newcommand{\task}[2]{\vspace{0.5cm}\noindent\emph{Task T#1}: {\bf #2}\par}
 
@@ -190,7 +190,7 @@ develop multi-lingual capabilities.
 
 \subsection*{Title of the proposal}\label{title-of-the-proposal}
 
-\textbf{Social robots to support human-human interactions}
+\textbf{WizUs: Socially Intelligent Robots to Support Human-Human Interactions}
 
 \subsection*{Acronym}\label{acronym}
 
@@ -215,6 +215,9 @@ towards the page limits. It is important that this extended synopsis contains
 all essential information including the feasibility of the scientific proposal
 since the panel will only evaluate Part B1 at step 1.}
 
+\subsection{Long-term vision and targeted breakthrough towards that vision}
+
+\subsubsection{Overview}
 
 In a time where robots are on the verge of becoming pervasive in our daily human
 environment, can we ensure 'by design' that robots are to become powerful tools
@@ -232,42 +235,92 @@ situation awareness), \emph{(2)} decide the best course of action for
 short-term and longer-term social influence, and \emph{(3)} perform the
 appropriate social actions and exert appropriate, responsible social influence.
 
-However, extreme complexity hides behind these seemingly well-delineated
-technical steps: not only the technology itself is beyond state-of-the-art, but
-the interplay between technology, socio-cognitive psychology, privacy and ethics
-is only starting to be researched and understood. \project offers a ambitious
+However, extreme complexity hides behind these seemingly well-delineated steps:
+not only the required technology is itself beyond state-of-the-art, but the
+interplay between technology, socio-cognitive psychology, privacy and ethics is
+only starting to be researched and understood. \project offers a ambitious
 vision and a strong, evidenced-based, methodology to significantly advance our
-understanding of this difficult question. r-HHI A conceptual framework, grounded in
+understanding of this \emph{wicked problem} -– a problem whose social complexity
+means that it has no determinable stopping point~\cite{tonkinwise2015design}.
+
+The \project project will build this investigation with two major contributions.
+
+First, the scientific understanding and formalisation of the \emph{social
+fabric} in which the robot is embedded, in its full complexity: spatial
+characteristics (proxemics; group dynamics, complex, dynamic attentional
+mechanisms); psycho-social characteristics (social roles and hierarchies; social
+groups; mental modelling; anthropomorphic ascriptions); temporal characteristics
+(effects of novelty, dynamics of anthropomorphism and mental ascriptions,
+shifting group dynamics). This work will result in the formulation of a
+socio-cognitive model of the social environment of the robot and the effective
+implementation of the model, including the development of the technical
+pre-requisites (like automatic attention tracking, face recognition, sound
+localisation, etc.).
+
+Second, the work will be applied and demonstrated on two complex, high impact
+scenarios. The first scenario will takes place in Bristol's Children
+Hospital: a social robot will be permanently deployed in one of ward, supporting
+isolated children, in close cooperation with the hospital staff. The second
+scenario involves the deployment of a social robot in a refugee camp, where it
+will engage with the children to help to tell and collect the stories of their
+journey. This second scenario will be co-developed in close partnership with
+ArtRefuge, one of the leading charity working with refugee children in camps and
+safe houses.
+
+These two application scenarios are ambitious and risky -- one could argue they
+are whole projects in their own rights. Demonstrating the importance of social
+modelling and the effectiveness of our model does however
+require complex social situations, and complex social dynamics. These scenarios,
+with complementary social situations, provide both. They also have a very high
+societal impact. The Principal Investigator, Dr. Séverin Lemaignan, has been
+working for 12+ years in human-robot interaction, and specifically, over the
+last 6 years in child-robot interaction. His profile is both highly technical,
+with hundreds of hardware and software contributions to the worldwide robotic community,
+and highly experimental, running dozens of studies and experiments with children, including
+long-term ones, in schools and in healthcare environments. He is in a unique
+position to deliver both a scientific breakthrough on social situation
+assessment for robots, and a very high-impact societal change.
+
+
+
+
+. r-HHI A conceptual framework, grounded in
 actual technology and field experience, to discuss and evaluate the role and
 impact of social robots in tomorrow's society.
 
 
 
 
-\subsection{Long-term vision and targeted breakthrough towards that vision}
 
-While the original idea of the
+
+
+
+\subsubsection{The case for robot-supported human-human interactions}
+
+While the original aspiration to a
 'multi-function-household-robot-that-does-the-dishes' has yet to materialise --
 physical manipulation of objects in an unstructured environment is hard, as it
-happens --, social robots are nevertheless in the process of establishing
-themselves as important tools in a variety of other situations, where they play
-a key role as social agents.
+happens --, social robots are certainly in the process of establishing
+themselves as important agents in a variety of other situations, for their
+intrinsic \emph{social} features: source of comfort, tutors, entertainers. The
+robot as a \emph{social agent} is a reality, within laboratories at least.
 
 As a researcher who has been working for the last 12 years in the field of
-human-robot interaction, I have been both a witness and an actor of the crossing
-of a critical milestone: the emergence of \textbf{durable social interactions}
-between artificial intelligences embodied in robots, and humans. We have been
-witnessing over the last two years an explosion of the number of studies
-involving social robots, deployed in real-world settings (schools, care centres)
-over relatively long periods of time (up to 2 or 3 months at a time). In most of
-these experiments, robots are not fully autonomous, even though full autonomy is
-in sight as well.
+human-robot interaction, I have been directly involved, and as a result, I have
+witnessed in the crossing of a critical milestone: the emergence of
+\textbf{durable social interactions} between robots (artificial intelligent
+agents) and humans. Over the last two years in particular, we observe an
+explosion of the number of studies involving social robots, deployed in
+real-world settings (schools, care centres) over relatively long periods of time
+(up to 2 or 3 months at a time). Even though these robots are rarely fully
+autonomous, they do already show high levels of autonomy~\cite{emmanuel}, and complete autonomy
+is in sight as well~\cite{strands}.\TODO{litt review}
 
 While many see these developments positively, or even as a turning point [...]
-other express skeptism or worry that this might lead to a deshumanization of our
-society. Indeed, if artificial agents are to engage into social interactions
-with us, and enter as such our human 'pré carré', pressing ethical questions
-need to be answered.
+other express skepticism or worry that this technology might lead to a
+dehumanisation of our society. Indeed, if artificial agents are to engage into
+social interactions with us, and enter what many view as a form of a 'private
+domain', reserved to humans, pressing ethical questions need to be answered:
 
 \begin{itemize}
     \item how to ensure that social robots are not used to simply replace humans
@@ -276,14 +329,14 @@ need to be answered.
     \item even further, can we implement some ethical safeguarding at the core
         of the system?
     \item what about privacy? how to trust that robots in our home or school or
-        hospital will not eavedrop on our private lives?
+        hospital will not eavesdrop on our private lives?
 \end{itemize}
 
 These questions are not only legitimate, but also pressing: the recent rise of
 personal assistants like Alexa or Google Home, with the major privacy concerns
 that accompanied their deployments in people home, shows that letting the
 industry set the agenda on these questions is not wise -- and robots can
-potentially be much more intrusive than immobile smart speakers.
+potentially be much more intrusive than non-mobile smart speakers.
 
 Social robots have two unique properties which distinguish them from these smart
 speakers, and significantly complexify their conceptual framing. First, they are
