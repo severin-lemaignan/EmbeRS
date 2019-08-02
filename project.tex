@@ -1,4 +1,4 @@
-\documentclass[]{article}
+\documentclass[11pt]{article}
 \usepackage{amssymb,amsmath}
 
 %% enable markdown's stars to bold/italic sections of code -- requires lualatex!
@@ -35,7 +35,7 @@
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage[margin=4pt]{subcaption}
 
-\usepackage[margin=2cm]{geometry}
+\usepackage[a4paper,left=2cm,right=2cm,top=1.5cm,bottom=1.5cm]{geometry}
 \usepackage{longtable,booktabs}
 
 \usepackage{pgfgantt}
@@ -275,20 +275,6 @@ children to help to tell and collect the stories of their journey. This second
 scenario will be co-developed in close partnership with ArtRefuge, one of the
 leading charity working with refugee children in camps and safe houses.
 
-These two application scenarios are ambitious and risky -- one could argue they
-are whole projects in their own rights. Demonstrating the importance of social
-modelling and the effectiveness of our model does however require complex social
-situations, and complex social dynamics. These scenarios, with complementary
-social situations, provide both. They also have a very high societal impact. The
-Principal Investigator, Dr. Séverin Lemaignan, has been working for 12+ years in
-human-robot interaction, and specifically, over the last 6 years in child-robot
-interaction. His profile is both highly technical, with hundreds of hardware and
-software contributions to the worldwide robotic community, and highly
-experimental, running dozens of studies and experiments with children, including
-long-term ones, in schools and in healthcare environments. He is in a unique
-position to deliver both a scientific breakthrough on social situation
-assessment for robots, and a very high-impact societal change.
-
 \subsubsection{The case for robot-supported human-human interactions}
 
 While the original aspiration to a
@@ -423,40 +409,111 @@ the robot how to socially behave, in-situ, with the robot embedded in the
 interaction. I have conducted two recent and high-profile experiments in this
 direction
 
-\subsection{Evidence-based research: social robots
-to support young asylum seekers on the field}
+\subsection{Evidence-based research: demonstrable usefulness of social robots in
+real-world, complex scenarios}
 
+\project aims at developping and demonstrating the need for a global approach to
+social HRI with ambitious, high-impact, socially meaningful, applications. Over
+the course of the project, I will achieve that aim through two ambitious
+applications: the creation and deployment of a robot companion to support
+isolated children during their hospital stay, fully integrated and aware of the
+hospital ecosystem; the creation and deployment of a small robotic friend to
+support young, vulnerable refugees during their asylum-seeking process.
 
-In the \project project, I will scaffold this radically novel line of
-research with an original application of high societal impact: we will create a
-small set of novel personal companion robots designed to facilitate human-human
-interactions. These robots will be deployed in selected school to support the
-social and cultural integration of vulnerable children, with a particular focus
+\subsubsection{Scenario 1: A robot companion at the children's hospital}
 
+\subsubsection{Scenario 2: A robot-guide to supporting young asylum seekers in
+becoming the tellers of their own stories}
 
+This second application scenario is about using a small, social, friendly robot
+to help refugee children to turn the complex experience of their journey across
+the world into a powerful story that they will be able to show and tell while
+seeking asylum.
 
-\project will develop and demonstrate the need for a global approach to social
-HRI with an ambitious, high-impact, socially meaningful application. Over the
-duration of the project, I will create a new companion robot to support young,
-isolated refugees in their asylum-seeking process.
+The robot (while the exact platform is yet to be decided, it will likely be
+similar to the Bluefrog's Buddy or Asus' Zenbo) will be used by field
+practitioners (primarily by ArtRefuge UK, with possible extensions to other
+charities and NGOs) in refugee camps and safe-houses across Europe to support
+the children. Supported by the staff, the robot and the child engage into a
+non-threatening social interaction, in which the child is invited, little by
+little, to recount her/his journey and personal life. The duration and frequency
+of the interventions is flexible and would be tailored to each child's needs;
+over the course of one to three weeks, we would typically envision one 30-min
+long interaction every day.
 
-The robots will be used by field practionners (charities and NGO) in refugee
-camps and safe-houses across Europe to support the children by offering a
-one-to-one social interaction, in their language. The robots will be designed in
-close cooperation with designers and visual artists with exceptional experience
-of the refugees' realities, and one of the key role of the robots will be to
-collect the children's stories, as these stories are
+Following the ArtRefuge approach, as well as the interactions created by Chloé
+Meineck on her previous Trove project\footnote{\url{https://bit.ly/2ZlZL5W}},
+the child is invited to tell her/his story in many different way, using a
+variety of supports: narration, drawings, paintings, plasticine, small toy
+figures, etc.  The robot records (pictures, videos, sounds) these
+representations, and also actively engage with the child, showing curiosity,
+non-judgmental emotional responses, and nudging the child to tell more, show
+more.
 
-, designed from the
-ground-up with privacy and stringent ethical principles
+Critically, while the robot will be able to understand and record the textual
+transcription of the what the child says (multi-lingual speech recognition),
+the robot itself is purposefully designed *not* to speak, using instead *non-verbal*
+communication mechanisms (non-verbal utterances using sounds, gaze, joint
+attention, expressive motions, etc). In particular, the *soundscape* of the
+robot will be designed by Dave Meckin, an expert on sound design for vulnerable
+children. The purpose is to create an approachable, non-threatening,
+non-judgmental, *social* interaction with the child, and effectively establish
+the interaction into a trusted physical and emotional *safe-space* for the
+child.
 
-migrant children who might lack the otherwise needed support for a successful
-integration (different cultures and social norms; absence of local, culturally
-integrated, relatives; language barriers; etc.).
+The work will initially focus on one-to-one interactions, and might evolve
+towards interactions with small groups (2-3) of children if deemed desirable
+after the first field deployments.
 
+Another critical aspect of the project relates to how the robot will store and
+protect the potentially highly sensitive data that is recorded during the
+interactions. Data will only be stored on the robot itself (no external cloud
+storage), and records will be strongly encrypted (i.e. even if the robot is
+seized, the data will not be accessible). We will research secure, yet
+child-friendly, mechanisms to identify the child and ensure that only her/him
+can access her/his personal data. This will likely involve a combination of
+picture-based passwords and facial recognition.
 
-Importance of establishing long-term trust; relation to privacy.
+The created digital record will ultimately belong to the child. We will research
+and create practical means (paper copy, bracelet with a SD card,...) for the
+child to access this record when he needs it, and take it with her/him, even
+after she/he has left the camp or safe-house. The devised solution will have to
+ensure that no abuse or misuse of the record against the child is possible.
 
+\subsubsection{Experimental deployments: risks and mitigations}
+
+These two application scenarios are ambitious and risky -- one could argue they
+are whole projects in their own rights. Demonstrating the importance of social
+modelling and convincingly proving the effectiveness of our approach to it does
+however require complex social situations, and complex social dynamics. These
+two scenarios, which complement each other, provide both.
+
+Working with vulnerable populations, in constrained (the hospital) or difficult
+environments (refugee camps) adds significant risks to the project. It is also
+what make the project in the unique position of delivering a very high societal
+impact. An direct positive impact on children's lives (we anticipate 100+
+hospitalised children and 50+ refugee children interacting with a robot over the
+course of the project), and a broader impact on the society, showing how robots
+can have a lasting, strong, positive impact on the society, establishing the
+idea of \emph{robots supporting human interactions} instead of dehumanising our
+social relationships.
+
+The two main mitigations are an early and continuous engagement with our
+end-users, and the very experienced, multi-disc
+
+early continuous engagement with all the
+stakeholders, and in particular, the end-users (hospital staff and refugee
+charities)
+
+The Principal Investigator, Dr.
+Séverin Lemaignan, has been working for 12+ years in human-robot interaction,
+and over the last 6 years, specifically in the field of child-robot interaction.
+His profile is both highly technical, with hundreds of hardware and software
+contributions to the worldwide robotic community; and highly experimental,
+running dozens of studies and experiments with children, including long-term
+ones, in muliple schools and in healthcare environments. He is in a unique
+position to deliver both a scientific breakthrough on social situation
+assessment for robots, and a high-impact societal change.
 
 \subsection{The long-term vision: robot-supported human-human interactions}
 
