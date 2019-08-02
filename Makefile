@@ -12,6 +12,9 @@ all: latex
 %.pdf: %.svg
 	inkscape --export-pdf $(@) $(<)
 
+bib: $(TARGET:.tex=.aux)
+
+	biber $(TARGET:.tex=)
 
 latex: $(SVG:.svg=.pdf)
 	lualatex $(TARGET)
