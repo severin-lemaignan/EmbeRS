@@ -68,7 +68,7 @@
 
 \subsection*{Title of the proposal}\label{title-of-the-proposal}
 
-\textbf{WizUs: Socially Intelligent Robots to Support Human-Human Interactions}
+\textbf{\project: Socially Intelligent Robots to Support Human-Human Interactions}
 
 \subsection*{Acronym}\label{acronym}
 
@@ -118,40 +118,90 @@ not only the required technology is itself beyond state-of-the-art, but the
 interplay between technology, socio-cognitive psychology, privacy and ethics is
 only starting to be researched and understood. \project offers a ambitious
 vision and a strong, evidenced-based, methodology to significantly advance our
-understanding of this \emph{wicked problem} -– a problem whose social complexity
+understanding of this \emph{wicked problem} -- a problem whose social complexity
 means that it has no determinable stopping point~\cite{tonkinwise2015design}.
 
 The \project project unfolds along three main axes:
 
-First, the foundational ambitious of \project is to create a conceptual
+Firstly, the basic ambition of \project is to create a conceptual
 framework around social robots in the human society, by reframing the widely
 accepted, yet sorely unspecific, idea of \emph{human-robot interaction} into the
 more specific idea of \emph{robot-supported human-human interactions}: the robot
 is considered from the perspective of how it can \emph{support} humans, and in
 particular, support stronger, positive interactions between humans.
 
-My second axis is the key scientific and technical underpinning of the first
-axis:  the scientific understanding and formalisation of the \emph{social
-fabric} in which the robot is embedded, in its full complexity: spatial
-characteristics (proxemics; group dynamics, complex, dynamic attentional
+Secondly, the project addresses the key scientific and technical underpinnings
+of the first axis:  the scientific understanding and formalisation of the
+\emph{social fabric} in which the robot is embedded, in its full complexity:
+spatial characteristics (proxemics; group dynamics, complex, dynamic attentional
 mechanisms); psycho-social characteristics (social roles and hierarchies; social
 groups; mental modelling; anthropomorphic ascriptions); temporal characteristics
 (effects of novelty, dynamics of anthropomorphism and mental ascriptions,
 shifting group dynamics). This work will result in the formulation of a
 socio-cognitive model of the social environment of the robot and the effective
-implementation of the model, including the development of the technical
-pre-requisites (like automatic attention tracking, face recognition, sound
-localisation, etc.).
+implementation of the model, including the development of a complete social
+assessment pipeline, from social signal perception (like automatic attention
+tracking, face recognition, sound localisation, etc.) to higher-level
+socio-cognitive constructs, including group dynamics and theory of mind. As
+detailled in Section B2, this will rely on hybrid AI techniques, including
+symbolic (ontologies and first-order logic), sub-symbolic (neural nets) and
+hybrid (conceptors) modelling.
 
-Third, an ambitious, effective demonstration of the research: the first two axis
-will be applied and demonstrated on two complex, high impact scenarios. The
-first scenario will takes place in Bristol's Children Hospital: a social robot
-will be permanently deployed in one of ward, supporting isolated children, in
-close cooperation with the hospital staff. The second scenario involves the
-deployment of a social robot in a refugee camp, where it will engage with the
-children to help to tell and collect the stories of their journey. This second
-scenario will be co-developed in close partnership with ArtRefuge, one of the
-leading charity working with refugee children in camps and safe houses.
+Third, the project will address the question of social behaviour generation.
+Indeed, designing behaviours that enable sustained, long-term engagement in a
+social human-robot interaction is essentially an open research question. Three
+main approaches to social behaviours generation exist today:
+\textbf{user-induced}, where the end-user interacts with the robot and ascribes
+(knowingly or not) complex behaviours to the machine, while in reality the
+robot's behaviours are simple and non-goal oriented (eg generating a noise or
+a small movement when being touched). This has been used to great effect in
+therapy robots, for instance (eg Paro). \textbf{Off-the-shelf behaviours}, where
+the robot relies on a set library of behaviours (that might be individually
+relatively complex). The approach can elicit a strong initial social response
+from the user, but this social response tends to vanish rapidly once the
+'tricks' of the robot have been all discovered and become repetitive.  Besides,
+as the robot does not typically maintain a long-term socio-cognitive plan of the
+interaction, the behaviours are typically perceived as fun, yet pointless. This is often
+observed in toy-like robots (eg Vector, Dot \& Dash). Finally, many social
+robots avoid altogether the problem of generating behaviours by simply offering
+to the end-user control over \textbf{low-level behaviours} (eg, control of the
+joints of the robot). This means that, even when the robot has relatively powerful
+social perception capabilities (like recognising people and voice), no real
+social behaviours is generated.
+
+None of these three approach is satisfactory, and indeed, no approach to date
+has been able to engage human users in long-term, sustained interactions.
+\project aims at significantly advancing the state of the art in this regard, by
+developing a new data-driven, continuous approach: instead of special events
+triggering the replay of a pre-programmed behaviours (as in the current state-of-art), we
+will use machine learning (specifically, a combination of Learning from
+Demonstration and Interactive Machine Learning) to teach robots to generate
+continuous \emph{expressive \& social motions} (including gestures and gazes).
+
+\TODO{discuss Liveliness (Pepper/Nao), Curiosity-based (\cite{kaplan}),
+human-in-the-loop (\cite{senft, winkle})}
+
+Critically, the scientific investigation of these three axes (\emph{conceptual
+framing of robot-supported human-human interaction}, \emph{online social
+situation assessment} and \emph{online social behaviour generation}) will be
+grounded in real-world applications. Indeed, two complex, high impact
+applications are detailled in the project. The first one takes place in
+Bristol's Children Hospital: a social robot will be permanently deployed in one
+of ward, supporting isolated children who suffer long-term conditions, in close
+cooperation with the hospital staff. The second one involves the deployment of 
+social robots in special need schools (SEN schools) in Bristol. Building on a
+rigorous participatory approach involving the school teachers, as well as the
+parents, we will seek to integrate the robot in the daily life of the school,
+supporting the development of the students' physical and social skills.
+
+These two applications, detailled hereafter, aim at supporting
+socially-vulnerable populations: this entails specific risks (detailled and
+addressed in the Section~\ref{risks}), but also offers a unique opportunity to
+demonstrate in a real-world, impactful case, how social robots can effectively
+have a positive, ethical impact, and support in-fine stronger, richer
+human-human interactions.
+
+
 
 \subsubsection{The case for robot-supported human-human interactions}
 
@@ -164,15 +214,16 @@ intrinsic \emph{social} features: source of comfort, tutors, entertainers. The
 robot as a \emph{social agent} is a reality, within laboratories at least.
 
 As a researcher who has been working for the last 12 years in the field of
-human-robot interaction, I have been directly involved, and as a result, I have
-witnessed in the crossing of a critical milestone: the emergence of
-\textbf{durable social interactions} between robots (artificial intelligent
-agents) and humans. Over the last two years in particular, we observe an
-explosion of the number of studies involving social robots, deployed in
-real-world settings (schools, care centres) over relatively long periods of time
-(up to 2 or 3 months at a time). Even though these robots are rarely fully
-autonomous, they do already show high levels of autonomy~\cite{emmanuel}, and complete autonomy
-is in sight as well~\cite{strands}.\TODO{litt review}
+human-robot interaction (and child-robot interaction in particular), I have been
+a direct witness -- through being one of the architects -- of the crossing of a
+critical milestone: the emergence of \textbf{durable social interactions}
+between robots (artificial intelligent agents) and humans. Over the last two
+years in particular, we observe an explosion of the number of studies involving
+social robots, deployed in real-world settings (schools, care centres) over
+relatively long periods of time (up to 2 or 3 months at a time). Even though
+these robots are rarely fully autonomous, they do already show high levels of
+autonomy~\cite{emmanuel}, and complete autonomy is in sight as
+well~\cite{strands}.\TODO{litt review}
 
 While many see these developments positively, or even as a turning point [...]
 other express skepticism or worry that this technology might lead to a
@@ -185,14 +236,15 @@ domain', reserved to humans, pressing ethical questions need to be answered:
         (like social workers) to cut costs?
     \item can we guarantee that the use of social robots will always be ethically motivated?
     \item even further, can we implement some ethical safeguarding at the core
-        of the system?
+        of the system (like an ethical \emph{black-box}~\cite{winfield})?
     \item what about privacy? how to trust that robots in our home or school or
-        hospital will not eavesdrop on our private lives?
+        hospital will not eavesdrop on our private lives, and, in the worst
+        case, will not used \emph{against} us?
 \end{itemize}
 
 These questions are not only legitimate, but also pressing: the recent rise of
 personal assistants like Alexa or Google Home, with the major privacy concerns
-that accompanied their deployments in people home, shows that letting the
+that accompanies their deployments in people home, shows that letting the
 industry set the agenda on these questions is not wise -- and robots can
 potentially be much more intrusive than non-mobile smart speakers.
 
@@ -238,7 +290,7 @@ Critically, though, \project will ground this conceptual frame into the reality
 of socio-cognitive AI and real-world deployments of social robots.
 
 
-\subsubsection{Three pilars}
+\subsubsection{Three pillars}
 
 To achieve the vision of a natural and harmonious \emph{co-habitation} between
 social robots and humans, ...
