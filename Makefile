@@ -22,3 +22,14 @@ latex: $(SVG:.svg=.pdf)
 
 pandoc: $(SVG:.svg=.png) gantt.pdf
 	pandoc $(TARGET) -McodeBlockCaptions=true -MfigureTitle=Figure -MtableTitle=Table -MlistingTitle=Listing -F pandoc-crossref -F pandoc-citeproc -o $(TARGET:.md=.$(OUTPUT))  $(foreach b,$(BIBS),--bibliography=$(b)) --reference-doc=eu-template-reference.docx --pdf-engine=lualatex --dpi=300 --standalone 
+
+touch:
+	touch $(TARGET)
+
+force: touch latex
+
+clean:
+	rm -f *.spl *.bcf *.idx *.aux *.log *.snm *.out *.toc *.nav *intermediate *~ *.glo *.ist *.bbl *.blg $(SVG:.svg=.pdf) $(DOT:.dot=.svg) $(DOT:.dot=.pdf)
+
+distclean: clean
+	rm -f $(TARGET:.tex=.pdf) $(TARGET:.tex=.docx)
