@@ -680,15 +680,12 @@ therapists to develop effective and engaging novel learning paradigms.
 
 \eu{(max 15 pages)}
 
-\hypertarget{a.-state-of-the-art-and-objectives}{%
-\subsection{a. State of the art and
-objectives}\label{a.-state-of-the-art-and-objectives}}
 
-\hypertarget{b.-methodology}{%
-\subsection{b. Methodology}\label{b.-methodology}}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Novelty, non-incrementality, plausibility and foundational character}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Companion robots}
 
 One example of a small, rugged robot designed for intensive use in school
@@ -734,6 +731,31 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
     \caption{Existing commercial companion robots}\label{fig:commercial-robots}
 \end{figure}
 
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{figs/wizme+dolls}
+    \caption{Early prototyping for the \project: a pet-like robot that could
+    mediate child-child interactions}
+    \label{}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Social situation assessment}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{images/archi}
+\caption{Overview of the technical architecture enabling social situation
+    assessment: social situation assessment builds on strong \emph{situation
+    assessment}, on top of which humans and human interactions are layered.}
+\label{fig:social-situation-assessment}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Social influence}
 
 \begin{figure}[!htbp]
@@ -743,12 +765,163 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
 \end{figure}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Research methodology}\label{research-methodology}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Data-driven continuous behaviour generation}
 
+
+At a time where companion robots are coming to the market, one important
+question remains fully open: how to design robot behaviours that foster
+lasting engagement? A vast body of academic literature identifies that
+robots evoke an initial phase of high user engagement (the
+\emph{novelty} phase) that vanishes as the user realises that the robot
+is actually quite predictable and repetitive. The \emph{agency}
+initially ascribed by the user to the robot quickly fades (Lemaignan et
+al. 2014), leading to critical user disengagement from the technology.
+
+%\begin{wrapfigure}[23]{l}{6.5cm}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\paperwidth]{figs/husky.jpg}
+    \caption{\label{fig:robot}
+    Provisional appearance of the \project robot that we ill use to collect
+    data. A tablet, displaying facial animations, is mounted on a robotic arm.
+    It can freely orient its `gaze' and use expressive movements. The mobile
+    base (a Segway Husky) can autonomously navigate in the various parts of the
+    BRL open-space}
+\end{figure}
+%\end{wrapfigure}
+
+The (often limited) library of behaviours available to the robot is
+often cited as a key factor in causing this issue. However, another,
+more profound issue affecting long term engagement with robot companions
+is the question of \emph{purpose.} Without clear \emph{purpose}, social
+robot companions can lack \emph{usefulness}. Indeed, robot
+\emph{companions} might not have explicit goals that would dictate or
+motivate their behaviours: they aim at providing a social presence, a
+social comfort, as cats or dogs would do, without necessarily being
+goal-oriented.
+
+Recent attempts -- and failures -- to convert social robotics research
+into commercial platforms (Jibo, Kuri and most recently Anki's Cozmo and
+Vector robots) reflect exactly this, with reasons for their failure
+typically citing an under-delivery of the user experience they promised,
+and/or the lack of a `real need' to justify their price point. The
+\project project addresses these two key issues by:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Taking inspiration from human-pet relationships which also have no
+  explicit \emph{purpose} beyond their potential for enjoyable,
+  \emph{affective} interactions;
+\item
+  Working with creative professionals who excel at storytelling and
+  emotional engagement to overcome the problems in sustaining
+  engagement, as proposed by Hoffman\footnote{\url{https://spectrum.ieee.org/automaton/robotics/home-robots/anki-jibo-and-kuri-what-we-can-learn-from-social-robotics-failures}};
+\item
+  Blending these two sources of inspiration using a radically novel
+  combination of immersive teleoperation and machine learning.
+\end{enumerate}
+
+The project is \emph{not} about replicating a pet's behaviour per se. It
+is instead about identifying, modeling and automatically generating the
+social behaviours required to recreate pet-like social dynamics between
+robots and humans, drawing inspiration from ethology (Stanton, Sullivan,
+and Fazio 2015). Using animal behaviours to inform the design of robots
+is not new, the most remarkable example being the Sony AIBO robot dog,
+whose behaviours were directly designed around those of actual dogs
+(Arkin et al. 2003). However, to go beyond the repetitive interactions
+associated with such robots, we propose to employ a creative
+professional to actively participate in design and automation of \project
+behaviour. The concept of using creative professionals to `teach' social
+robot behaviour is not new either (Knight and Gray 2012), however it is
+only recent advances in human-in-the-loop, online machine learning that
+make this type of real-time `social training' a feasible approach to
+generating and automating engaging social behaviours (Senft et al.
+2019).
+
+Our project has the following goals, addressed by the workplan presented
+below:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  assemble a non-anthropomorphic social robot that can autonomously
+  navigate in a complex and living lab environment, taking inspiration
+  from ethology to inspire the robot's behaviour;
+\item
+  develop an immersive teleoperation system, enabling a creative
+  professional to `take control' of the robot (i.e.~puppet the robot) in
+  a completely intuitive way (using whole body motion tracking);
+\item
+  record (and make publicly available) a large dataset of social
+  behaviours (created through immersive teleoperation) that foster
+  long-term social and affective engagement. The dataset will also
+  include the social \emph{signals} implicitly used by the puppeteer to
+  drive his/her choice of actions (recorded through eg eye-tracking);
+\item
+  using machine learning, map these social signals (input state) to the
+  robot behaviours (output state) such that the robot can operate
+  autonomously.
+\end{enumerate}
+
+A creative professional (puppeteer, dancer or comedian --
+corresponding financial compensation is budgeted) will join the group.
+First she/he will take part to a one-week co-design workshop (4) aiming
+at finalising the immersive teleoperation controller and the behaviours
+of the robot. Then, she/he will interact for about 4 hours a day during
+a month, with the BRL lab members (200+ researchers). She/he will do so
+by remotely operating the robot (5) from an (out-of-sight) control room
+(the BRL CAVE room). The aim will be for the puppeteer to pro-actively
+engage with people in the lab, attempting to engage in \emph{social,
+affective} interactions. This will be achieved by creating/inventing
+in-situ a new `grammar' of social behaviour, loosely inspired by those
+of cats and other pets. These interactions will be fully recorded
+(including eye-tracking on the puppeeter) (6), in order to create a
+unique dataset of complex social interactions, suitable for machine
+learning. The PI has already extensive experience in recording such
+datasets (see (Lemaignan et al. 2018) for instance).
+
+%\begin{wrapfigure}[17]{l}{8cm}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\paperwidth]{figs/dev.pdf}
+    \caption{\label{fig:support}
+    Social behaviours will be learned from immersive `puppetering' of the
+    robot, performed by a professional actor. The `puppetering' takes place
+    in a CAVE (or VR) environment, where what the robot `sees' and `hears'
+    is streamed live}
+\end{figure}
+%\end{wrapfigure}
+
+Over the following four months, a deep neural network will be designed
+and trained (7) for the regression task of generating continuous social
+behaviours from perceived social signals. In parallel, a software
+controller will be developed (8) to enable generic autonomous
+capabilities (like autonomous navigation) for which the BRL has
+extensive expertise.
+
+Finally, the last four months will be dedicated to in-situ testing of
+the autonomous system (9). We will seek to conduct a large scale study
+within the lab, over a period of several weeks. For this study, the
+robot is expected to be fully autonomous. However sufficient amount of
+time is planned for additional iterations on the development of the
+robot controller if deemed necessary. We aim at publishing the results
+of this main study shortly after the end of the one-year period.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Deployments in schools}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Interdisciplinarity}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -757,6 +930,45 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
 \section{Impact}\label{impact}
 
 \subsection{Impact on society and technology: building an inclusive society}
+
+
+\project will deliver new and fundamental knowledge to the fields of robotics,
+computer science and psychology, in addition to improving trans-disciplinary
+understanding between these disciplines. More specifically, the project will
+contribute to a better understanding of the following research areas:
+human-robot interaction; human-machine interaction; human error making and
+handling in assembly tasks; theory of mind and its transfer to cognitive robots;
+natural language processing; explainability and language generation; machine
+vision and human activity detection; and action planning under uncertainty. New
+interaction paradigms will be developed for handling error situations where
+machines interact with non-expert humans. The integration of perception and
+sensing into cognitive robot architectures will be critically reviewed and
+extended. Novel, empirically informed methods to transfer findings from
+human-human interaction studies to human-machine interactions will be developed.
+Furthermore, the national and international psychology, robotics and computer
+science research communities will benefit from the project results. We will
+publish \project results in interdisciplinary and discipline-specific journals
+and conferences, and organise \project-themed workshops. Please refer to Section
+\ref{sec:impact} about our concrete action plan to maximise impact. 
+
+
+
+
+Academically, the \project project represents a timely combination of
+very recent advances in supervised machine learning for social robot
+behaviour with a creative and interdisciplinary approach to the design
+and automation of social robot behaviour. We therefore expect to publish
+results in high-class scientific journals and conferences.
+
+The dataset of social behaviours and social signals we will create and
+distribute represents a one-in-a-kind resource for the human robot
+interaction community, and the human data collection will be
+transferable to research in other domains such as human-computer
+interaction.
+
+As \project will be deployed in a living lab environment, there is
+significant scope for public outreach/engagement and media coverage,
+which we will work with the BRL's media manager to maximise.
 
 \subsection{Impact on future leadership}
 
