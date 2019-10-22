@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[11pt]{report}
 \usepackage{amssymb,amsmath}
 
 %% enable markdown's stars to bold/italic sections of code -- requires lualatex!
@@ -43,6 +43,12 @@
 
 \usepackage{tocloft}
 
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\LARGE\bfseries}{\hsp\textcolor{gray75}{|}\hsp}{0pt}{\LARGE\bfseries}
+
+
 \renewcommand{\thesubsubsection}{}
 
 \usepackage{xspace}
@@ -59,6 +65,7 @@
 \newcommand{\eu}[1]{{\color{teal}\textbf{Guidelines EU ERC: #1}}}
 \newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
 
+\setcounter{secnumdepth}{0} % prevent section numbering, but still add sections to ToC
 
 \title{\project - Part B}
 
@@ -66,22 +73,24 @@
 \markdownon
 \maketitle
 
-\subsection*{Title of the proposal}\label{title-of-the-proposal}
+\section*{Title of the proposal}\label{title-of-the-proposal}
 
 \textbf{\project: Socially Intelligent Robots to Support Human-Human Interactions}
 
-\subsection*{Acronym}\label{acronym}
+\section*{Acronym}\label{acronym}
 
 \project
 
-\subsection*{Abstract}\label{abstract}
+\section*{Abstract}\label{abstract}
+
+\tableofcontents
 
 \pagebreak
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{B1.a. Extended Synopsis of the scientific proposal}\label{part1}
+\chapter{B1.a. Extended Synopsis of the scientific proposal}\label{part1}
 \eu{(max 5 pages)}
 
 \eu{The Extended Synopsis should give a concise presentation of the scientific
@@ -93,9 +102,9 @@ towards the page limits. It is important that this extended synopsis contains
 all essential information including the feasibility of the scientific proposal
 since the panel will only evaluate Part B1 at step 1.}
 
-\subsection{Long-term vision and targeted breakthrough towards that vision}
+\section{Long-term vision and targeted breakthrough towards that vision}
 
-\subsubsection{Overview}
+\subsection{Overview}
 
 In a time where robots are on the verge of becoming pervasive in our daily human
 environment, can we ensure 'by design' that robots are to become powerful tools
@@ -203,7 +212,7 @@ human-human interactions.
 
 
 
-\subsubsection{The case for robot-supported human-human interactions}
+\subsection{The case for robot-supported human-human interactions}
 
 While the original aspiration to a
 'multi-function-household-robot-that-does-the-dishes' has yet to materialise --
@@ -290,7 +299,7 @@ Critically, though, \project will ground this conceptual frame into the reality
 of socio-cognitive AI and real-world deployments of social robots.
 
 
-\subsubsection{Three pillars}
+\subsection{Three pillars}
 
 To achieve the vision of a natural and harmonious \emph{co-habitation} between
 social robots and humans, ...
@@ -339,7 +348,7 @@ the robot how to socially behave, in-situ, with the robot embedded in the
 interaction. I have conducted two recent and high-profile experiments in this
 direction
 
-\subsection{Evidence-based research: demonstrable usefulness of social robots in
+\section{Evidence-based research: demonstrable usefulness of social robots in
 real-world, complex scenarios}
 
 \project aims at developping and demonstrating the need for a global approach to
@@ -350,10 +359,9 @@ isolated children during their hospital stay, fully integrated and aware of the
 hospital ecosystem; the creation and deployment of a small robotic friend to
 support young, vulnerable refugees during their asylum-seeking process.
 
-\subsubsection{Scenario 1: A robot companion at the children's hospital}
+\subsection{Application 1: A robot companion at the children's hospital}
 
-\subsubsection{Scenario 2: A robot-guide to supporting young asylum seekers in
-becoming the tellers of their own stories}
+\subsection{Application 2: Social robots in SEN schools}
 
 This second application scenario is about using a small, social, friendly robot
 to help refugee children to turn the complex experience of their journey across
@@ -410,7 +418,7 @@ child to access this record when he needs it, and take it with her/him, even
 after she/he has left the camp or safe-house. The devised solution will have to
 ensure that no abuse or misuse of the record against the child is possible.
 
-\subsubsection{Experimental deployments: risks and mitigations}
+\subsection{Experimental deployments: risks and mitigations}
 
 These two application scenarios are ambitious and risky -- one could argue they
 are whole projects in their own right. However, first, demonstrating the
@@ -455,7 +463,7 @@ environments. He is in a unique position to deliver both a scientific
 breakthrough on social situation assessment for robots, and a high-impact
 societal change.
 
-\subsection{The long-term vision: robot-supported human-human interactions}
+\section{The long-term vision: robot-supported human-human interactions}
 
 
 \begin{figure}[!htbp]
@@ -474,7 +482,7 @@ particular, migrant children who might lack the otherwise needed support
 (shared culture; already well integrated relatives) for a successful
 integration.
 
-\subsubsection{Key scientific research questions}
+\subsection{Key scientific research questions}
 
 \begin{enumerate}
 \item research the role of social influence to scaffold positive human-human
@@ -488,9 +496,9 @@ integration.
     school with actual migrant children.
 \end{enumerate}
 
-\subsubsection{Vision of a novel form of interaction ``human-(robot)-human''}
+\subsection{Vision of a novel form of interaction ``human-(robot)-human''}
 
-\paragraph{The case of the social integration of migrant children}
+\subsubsection{The case of the social integration of migrant children}
 
 A robot is left with the child when he or she starts their journey in
 their new host country, and becomes a companion for the child during the
@@ -522,7 +530,7 @@ includes meaningful mitigation strategies.
 
 
 
-\subsection{A principled architecture for socially intelligent robots}
+\section{A principled architecture for socially intelligent robots}
 
 
 \begin{itemize}
@@ -537,7 +545,7 @@ includes meaningful mitigation strategies.
 \end{itemize}
 
 
-\subsection{Cross-disciplinary team, research methodology, and research
+\section{Cross-disciplinary team, research methodology, and research
 infrastructure}
 
 The project's ambitious scientific and technical goals are expected to deliver
@@ -568,7 +576,7 @@ To mirror the cross-disciplinary team, the research methodology developped for
 \project will rely heavily on \emph{mutual shaping}, through co-design and
 participatory design, and multi-disciplinary development sprints.
 
-\subsubsection{Technical infrastructure}
+\subsection{Technical infrastructure}
 
 The \project project sets an ambitious target in term of technical development.
 The project indeed requires unique technical skills, both software and
@@ -620,19 +628,28 @@ further engagement with industrial partners and spin-off opportunities.
 
 \newpage
 
-\section{B1.b The principal Investigator}\label{the-principal-investigator}
+\chapter{B1.b Curriculum-vitae}\label{the-principal-investigator}
 
-\hypertarget{curriculum-vitae}{%
-\subsection{Curriculum vitae}\label{curriculum-vitae}}
-
+\eu{should follow the suggested template. Include any career
+breaks or unconventional career paths, so that your career stage is fairly assessed by the evaluation
+panels. You should as well list your current grants and on-going and submitted grant applications in
+the funding ID table (this table will not count towards the page limits).}
 \eu{(max 2 pages)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\subsection{B1.2 Early achievements track-record}\label{early-achievements-track-record}
+\chapter{B1.c Early achievements track-record}\label{early-achievements-track-record}
 
+\eu{should list your important achievements,
+including your most important publications 20 (up to five for Starting Grant and up to ten for
+Consolidator Grant) highlighting those as main author and/or without the co-authorship of your PhD
+supervisor. The publications should be properly referenced, including all authors in the published
+order (Please see section 1.1 on Research integrity). Field relevant bibliometric indicators as well as
+research monographs and any translations thereof may also be included. If applicable include:
+granted patent(s); invited presentations to internationally established conferences and/or
+international advanced schools; Prizes/Awards/Academy memberships etc.}
 \eu{(max 2 pages)}
 
 Dr Séverin Lemaignan is Senior Researcher at the Bristol Robotics
@@ -663,6 +680,26 @@ therapists to develop effective and engaging novel learning paradigms.
 
 
 
+%\subsection{Host institution}\label{host-institution}}
+%
+%The \emph{Bristol Robotics Laboratory (BRL)} is the largest co-located
+%and most comprehensive advanced robotics research establishment in the
+%UK. It is a joint venture between the University of the West of England
+%and the University of Bristol. BRL's multidisciplinary approach aims to
+%create autonomous devices capable of working independently, with each
+%other, or with humans. BRL draws on robotics, electrical \& mechanical
+%engineering, computer science, psychology, cognitive science and
+%sociology. BRL has an international reputation as a leading research
+%centre in advanced robotics research and has over 250 researchers
+%working on a broad portfolio of topics: HRI, collective robotics, aerial
+%robotics, neuro-inspired control, haptics, control systems, energy
+%harvesting and self-sustaining systems, rehabilitation robotics, soft
+%robotics and biomedical systems. BRL has many collaboration
+%partnerships, both national and international, and is experienced in
+%managing large multi-site projects. BRL has support from two embedded
+%units specialising in business and enterprise, together with an
+%incubator and successful track record of spin-outs.
+
 
 
 
@@ -672,21 +709,20 @@ therapists to develop effective and engaging novel learning paradigms.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\chapter{B2.a State-of-the-art and objectives}
 
-\section{B2. The scientific proposal}\label{part-b2-the-scientific-proposal}
-
-\eu{(max 15 pages)}
-
+\eu{(B2.a and B2.b: max 15 pages)}
+\eu{Specify the proposal objectives in the context of the state
+of the art in the research field. It should be clear how and why the proposed work is important for
+the field, and what impact it will have if successful, such as how it may open up new horizons or
+opportunities for science, technology or scholarship. Specify any particularly challenging or
+unconventional aspects of the proposal, including multi- or inter-disciplinary aspects.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Novelty, non-incrementality, plausibility and foundational character}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Companion robots}
+\section{Companion robots}
 
 One example of a small, rugged robot designed for intensive use in school
 environments is Cellulo~\footcite{ozgur2017cellulo}.
@@ -743,7 +779,7 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Social situation assessment}
+\section{Social situation assessment}
 
 \begin{figure}
 \centering
@@ -756,7 +792,7 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Social influence}
+\section{Social influence}
 
 \begin{figure}[!htbp]
 \centering
@@ -765,12 +801,64 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Research methodology}\label{research-methodology}
+\section{Impact}\label{impact}
+
+\subsection{Impact on society and technology: building an inclusive society}
+
+
+\project will deliver new and fundamental knowledge to the fields of robotics,
+computer science and psychology, in addition to improving trans-disciplinary
+understanding between these disciplines. More specifically, the project will
+contribute to a better understanding of the following research areas:
+human-robot interaction; human-machine interaction; human error making and
+handling in assembly tasks; theory of mind and its transfer to cognitive robots;
+natural language processing; explainability and language generation; machine
+vision and human activity detection; and action planning under uncertainty. New
+interaction paradigms will be developed for handling error situations where
+machines interact with non-expert humans. The integration of perception and
+sensing into cognitive robot architectures will be critically reviewed and
+extended. Novel, empirically informed methods to transfer findings from
+human-human interaction studies to human-machine interactions will be developed.
+Furthermore, the national and international psychology, robotics and computer
+science research communities will benefit from the project results. We will
+publish \project results in interdisciplinary and discipline-specific journals
+and conferences, and organise \project-themed workshops. Please refer to Section
+\ref{sec:impact} about our concrete action plan to maximise impact. 
+
+
+
+
+Academically, the \project project represents a timely combination of
+very recent advances in supervised machine learning for social robot
+behaviour with a creative and interdisciplinary approach to the design
+and automation of social robot behaviour. We therefore expect to publish
+results in high-class scientific journals and conferences.
+
+The dataset of social behaviours and social signals we will create and
+distribute represents a one-in-a-kind resource for the human robot
+interaction community, and the human data collection will be
+transferable to research in other domains such as human-computer
+interaction.
+
+As \project will be deployed in a living lab environment, there is
+significant scope for public outreach/engagement and media coverage,
+which we will work with the BRL's media manager to maximise.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Data-driven continuous behaviour generation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{B2.b Methodology}\label{research-methodology}
+
+\eu{Describe the proposed methodology in detail including any key intermediate
+goals. Explain and justify the methodology in relation to the state of the art,
+and particularly novel or unconventional aspects addressing the
+'high-risk/high-gain' balance. Highlight any intermediate stages where results
+may require adjustments to the project planning. In case you ask that team
+members are engaged by another host institution their participation has to be
+fully justified by the scientific added value they bring to the project.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data-driven continuous behaviour generation}
 
 
 At a time where companion robots are coming to the market, one important
@@ -915,75 +1003,19 @@ of this main study shortly after the end of the one-year period.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Deployments in schools}
+\subsection{Deployments in schools}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Interdisciplinarity}
+\section{Interdisciplinarity}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newpage
-\section{Impact}\label{impact}
-
-\subsection{Impact on society and technology: building an inclusive society}
-
-
-\project will deliver new and fundamental knowledge to the fields of robotics,
-computer science and psychology, in addition to improving trans-disciplinary
-understanding between these disciplines. More specifically, the project will
-contribute to a better understanding of the following research areas:
-human-robot interaction; human-machine interaction; human error making and
-handling in assembly tasks; theory of mind and its transfer to cognitive robots;
-natural language processing; explainability and language generation; machine
-vision and human activity detection; and action planning under uncertainty. New
-interaction paradigms will be developed for handling error situations where
-machines interact with non-expert humans. The integration of perception and
-sensing into cognitive robot architectures will be critically reviewed and
-extended. Novel, empirically informed methods to transfer findings from
-human-human interaction studies to human-machine interactions will be developed.
-Furthermore, the national and international psychology, robotics and computer
-science research communities will benefit from the project results. We will
-publish \project results in interdisciplinary and discipline-specific journals
-and conferences, and organise \project-themed workshops. Please refer to Section
-\ref{sec:impact} about our concrete action plan to maximise impact. 
-
-
-
-
-Academically, the \project project represents a timely combination of
-very recent advances in supervised machine learning for social robot
-behaviour with a creative and interdisciplinary approach to the design
-and automation of social robot behaviour. We therefore expect to publish
-results in high-class scientific journals and conferences.
-
-The dataset of social behaviours and social signals we will create and
-distribute represents a one-in-a-kind resource for the human robot
-interaction community, and the human data collection will be
-transferable to research in other domains such as human-computer
-interaction.
-
-As \project will be deployed in a living lab environment, there is
-significant scope for public outreach/engagement and media coverage,
-which we will work with the BRL's media manager to maximise.
-
-\subsection{Impact on future leadership}
-
-\subsection{Measures for achieving impact}
-
-\subsubsection{Dissemination and exploitation of results}
-
-\subsubsection{Communication activities}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{Implementation}\label{part3}
+\section{Workplan and intermediate targets}\label{workplan}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Names of the Work packages
@@ -1011,7 +1043,6 @@ which we will work with the BRL's media manager to maximise.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Workplan and intermediate targets}
 
 \subsubsection{Project structure}
 
@@ -1030,7 +1061,7 @@ which we will work with the BRL's media manager to maximise.
 \end{table}
 
 
-\subsubsection{Work package 1: \wpOne}
+\subsection{Work package 1: \wpOne}
 
 \begin{table}[!htbp]
 \centering
@@ -1061,7 +1092,7 @@ Start month                    & \multicolumn{3}{l|}{}  & End month        & \mu
 \item   \emph{Deliverable D1.1} (Month 2): website and logo
 \end{itemize}
 
-\subsubsection{Work package 2: \wpTwo}
+\subsection{Work package 2: \wpTwo}
 
 \begin{table}[!htbp]
 \centering
@@ -1095,7 +1126,7 @@ First study, using Anki's Vector robot.
     \item \D{2.1}{12}{great report}
 \end{itemize}
 
-\subsubsection{Work package 3: \wpThree}
+\subsection{Work package 3: \wpThree}
 
 \begin{table}[!htbp]
 \centering
@@ -1129,7 +1160,7 @@ Start month                    & \multicolumn{3}{l|}{}  & End month        & \mu
     \item \D{3.1}{12}{great report}
 \end{itemize}
 
-\subsubsection{Work package 4: \wpFour}
+\subsection{Work package 4: \wpFour}
 
 \begin{table}[!htbp]
 \centering
@@ -1177,7 +1208,7 @@ Develop a novel platform, including:
     \item \D{4.1}{12}{great report}
 \end{itemize}
 
-\subsubsection{Work package 5: \wpFive}
+\subsection{Work package 5: \wpFive}
 
 \begin{table}[!htbp]
 \centering
@@ -1210,7 +1241,7 @@ Start month                    & \multicolumn{3}{l|}{}  & End month        & \mu
     \item \D{5.1}{12}{great report}
 \end{itemize}
 
-\subsubsection{Work package 6: \wpSix}
+\subsection{Work package 6: \wpSix}
 
 \begin{table}[!htbp]
 \centering
@@ -1242,7 +1273,7 @@ Start month                    & \multicolumn{3}{l|}{}  & End month        & \mu
     \item \D{6.1}{12}{website and logo}
 \end{itemize}
 
-\subsubsection{Deliverables overview}\label{deliverables-overview}
+\subsection{Deliverables overview}\label{deliverables-overview}
 
 \begin{table}[!htbp]
 \caption{List of deliverables}
@@ -1277,13 +1308,13 @@ Dissemination level:
   2001/844/EC.
 \end{itemize}
 
-\subsubsection{Gantt chart}\label{gantt-chart}
+\subsection{Gantt chart}\label{gantt-chart}
 
 \begin{landscape}
 \include{gantt}
 \end{landscape}
 
-\subsubsection{Workpackage interrelations}\label{workpackage-interrelations}
+\subsection{Workpackage interrelations}\label{workpackage-interrelations}
 
 \begin{figure}[!htbp]
     \centering
@@ -1294,9 +1325,9 @@ Dissemination level:
 
 
 
-\subsection{Management structure, milestones and procedures}\label{management-structure-milestones-and-procedures}
+\section{Management structure, milestones and procedures}\label{management-structure-milestones-and-procedures}
 
-\subsubsection{Milestones}\label{milestones}
+\subsection{Milestones}\label{milestones}
 
 \begin{itemize}
 
@@ -1318,7 +1349,7 @@ Dissemination level:
 \end{table}
 
 
-\subsubsection{Risks}\label{risks}
+\subsection{Risks}\label{risks}
 
 \begin{table}[!htbp]
 \caption{Identified risks and proposed mitigations}
@@ -1354,50 +1385,19 @@ Role of the interaction designer: refine interaction modalities (in
 particular, the non-verbal speech), details cross-modal interactions,
 define interaction patterns with the child
 
-\hypertarget{measuring-how-effective-the-project-is}{%
-\subsubsection{Measuring how effective the project
-is}\label{measuring-how-effective-the-project-is}}
 
 
 
+\section{Measures for achieving impact}
 
+\subsection{Dissemination and exploitation of results}
 
+\subsection{Communication activities}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\hypertarget{risk-assessment}{%
-\subsubsection{Risk assessment}\label{risk-assessment}}
-
-\hypertarget{c.-resources}{%
-\subsection{c. Resources}\label{c.-resources}}
-
-\hypertarget{host-institution}{%
-\subsubsection{Host institution}\label{host-institution}}
-
-The \emph{Bristol Robotics Laboratory (BRL)} is the largest co-located
-and most comprehensive advanced robotics research establishment in the
-UK. It is a joint venture between the University of the West of England
-and the University of Bristol. BRL's multidisciplinary approach aims to
-create autonomous devices capable of working independently, with each
-other, or with humans. BRL draws on robotics, electrical \& mechanical
-engineering, computer science, psychology, cognitive science and
-sociology. BRL has an international reputation as a leading research
-centre in advanced robotics research and has over 250 researchers
-working on a broad portfolio of topics: HRI, collective robotics, aerial
-robotics, neuro-inspired control, haptics, control systems, energy
-harvesting and self-sustaining systems, rehabilitation robotics, soft
-robotics and biomedical systems. BRL has many collaboration
-partnerships, both national and international, and is experienced in
-managing large multi-site projects. BRL has support from two embedded
-units specialising in business and enterprise, together with an
-incubator and successful track record of spin-outs.
 
 \newpage
 
 \hypertarget{references}{%
-\section{References}\label{references}}
+\chapter{References}\label{references}}
 
 \end{document}
