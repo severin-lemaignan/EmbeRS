@@ -1,6 +1,6 @@
 OUTPUT ?= pdf
 TARGET=project.tex
-BIBS=biblio.bib my-publications.bib
+BIBS=biblio.bib my-publications.bib mutual-modelling.bib
 
 SVG=$(wildcard figs/*.svg)
 
