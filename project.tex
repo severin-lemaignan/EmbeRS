@@ -78,13 +78,32 @@
 
 \section*{Title of the proposal}\label{title-of-the-proposal}
 
-\textbf{\project: Socially Intelligent Robots to Support Human-Human Interactions}
+\textbf{\project: Socially-Driven Robots to Support Human-Human Interactions}
 
 \section*{Acronym}\label{acronym}
 
 \project
 
-\section*{Abstract}\label{abstract}
+\section*{Short summary}\label{abstract}
+
+
+The \project project investigates how socially-driven robots can have a lasting, 
+positive impact on the society. It defines the concept of \emph{robot-supported
+human-human interactions} as a general framework to study and implement 
+socially-aware intelligent robots, able to foster rich and positive interactions
+between people.
+
+Grounded in the psycho-social literature of human cognition, the project delivers
+major conceptual, technical and experimental contributions to the field of AI, 
+with a special focus on having ethical safeguarding mechanisms built-in 'by 
+design' into the robot.
+
+Doing so entails conceptual and technological breakthroughs, as well as a research
+methodology that puts the end-user needs at the centre of the design process. 
+Building on a range of multidisciplinary techniques, including novel interactive 
+machine learning techniques, \project paves the way for a better understanding of 
+the societal challenges raised by the rapid development of AI and robotics.
+
 
 \tableofcontents
 
@@ -117,8 +136,6 @@
 \newcommand{\wpSeven}{Study 2: robot-supported SEN chools}
 \newcommand{\wpSevenShort}{SEN schools study}
 
-\newcommand{\wpEight}{WP8: TBD}
-\newcommand{\wpEightShort}{WP8}
 
 
 
@@ -138,11 +155,14 @@ towards the page limits. It is important that this extended synopsis contains
 all essential information including the feasibility of the scientific proposal
 since the panel will only evaluate Part B1 at step 1.}
 
-\TODO{add page/table with required expertise and corresponding publications}
 \TODO{why is it groundbreaking?}
+
 \TODO{impact/outcomes?}
+
 \TODO{discuss r-HHI more: what does it really mean to use a robot to support
 HHI? link to responsible AI?}
+
+\TODO{make sure everything in B1 is strongly grounded in litt}
 
 \section{Long-term vision and targeted breakthrough towards that vision}
 
@@ -302,6 +322,8 @@ research questions:
 
 \section{Implementation}
 
+\subsection{Work programme}
+
 Indeed, the \project vision unfolds along four main axes, reflected in the
 structure of the workpackages: \textbf{WP2} is dedicated to the conceptual
 framing of the project (R1); \textbf{WP3} grows from WP2 to transpose the
@@ -316,8 +338,26 @@ supervision of the dissemination activities planned in the project.
 \paragraph{WP1: \textbf{\wpOne}} (covers the duration of the whole project).
 This workpackage encompasses
 
+\TODO{complete this section}
+
 \paragraph{WP2: \textbf{\wpTwo}} (Y1-3)
 
+The basic ambition of \project is to create a conceptual framework
+around social robots in the human society, by re-framing the widely accepted, yet
+sorely unspecific, idea of \emph{human-robot interaction} into the more specific
+idea of \emph{robot-supported human-human interactions}: the robot is considered
+from the perspective of how it can \emph{support} humans, and in particular,
+support stronger, positive interactions between humans. WP2's purpose is to research
+and define such a framework that will
+provide the (currently missing) conceptual frame around questions like: what role
+for social robots? where to set the boundaries of artificial social
+interactions? what does 'ethical-by-design', 'responsible-by-design' might mean
+in the context of social human-robot interactions? 
+
+
+\paragraph{WP3: \textbf{\wpThree}} (Y2-5)
+
+\TODO{complete section architecture}
 
 \begin{itemize}
     \item Intrinsic social motivation: do good
@@ -330,217 +370,158 @@ This workpackage encompasses
     \item action execution using human-in-the-loop ML
 \end{itemize}
 
-\paragraph{WP3: \textbf{\wpThree}} (Y2-5)
 \paragraph{WP4: \textbf{\wpFour}} (Y1-4)
+
+In WP4, the project addresses the key scientific and technical underpinnings
+required to effectively implement WP3's architecture:  the scientific
+understanding and formalisation of the \emph{social fabric} in which the robot
+is embedded, in its full complexity: spatial characteristics (proxemics; group
+dynamics, complex, dynamic attentional mechanisms); psycho-social
+characteristics (social roles and hierarchies; social groups; mental modelling;
+anthropomorphic ascriptions); temporal characteristics (effects of novelty,
+dynamics of anthropomorphism and mental ascriptions, shifting group dynamics).
+This work will result in the formulation of a socio-cognitive model of the
+social environment of the robot and the effective implementation of the model,
+including the development of a complete social assessment pipeline, from social
+signal perception (like automatic attention tracking, face recognition, sound
+localisation, etc.) to higher-level socio-cognitive constructs, including group
+dynamics and theory of mind. As detailled in Section B2, this will rely on
+hybrid AI techniques, including symbolic (ontologies and first-order logic),
+sub-symbolic (neural nets) and hybrid (conceptors) modelling.
+
 \paragraph{WP5: \textbf{\wpFive}} (Y1-4)
-\paragraph{WP6: \textbf{\wpSix}} (Y3-4)
-\paragraph{WP7: \textbf{\wpSeven}} (Y4-5)
-\paragraph{WP8: \textbf{\wpEight}} (Y1-5)
 
-
-Firstly, the basic ambition of \project is to create a conceptual framework
-around social robots in the human society, by reframing the widely accepted, yet
-sorely unspecific, idea of \emph{human-robot interaction} into the more specific
-idea of \emph{robot-supported human-human interactions}: the robot is considered
-from the perspective of how it can \emph{support} humans, and in particular,
-support stronger, positive interactions between humans. This framework will
-create the (currently missing) conceptual frame around questions like: what role
-for social robots? where to set the boundaries of artificial social
-interactions? what does 'ethical-by-design', 'responsible-by-design' might mean
-in the context of social human-robot interactions? 
-
-Secondly, the project addresses the key scientific and technical underpinnings
-of the first axis:  the scientific understanding and formalisation of the
-\emph{social fabric} in which the robot is embedded, in its full complexity:
-spatial characteristics (proxemics; group dynamics, complex, dynamic attentional
-mechanisms); psycho-social characteristics (social roles and hierarchies; social
-groups; mental modelling; anthropomorphic ascriptions); temporal characteristics
-(effects of novelty, dynamics of anthropomorphism and mental ascriptions,
-shifting group dynamics). This work will result in the formulation of a
-socio-cognitive model of the social environment of the robot and the effective
-implementation of the model, including the development of a complete social
-assessment pipeline, from social signal perception (like automatic attention
-tracking, face recognition, sound localisation, etc.) to higher-level
-socio-cognitive constructs, including group dynamics and theory of mind. As
-detailled in Section B2, this will rely on hybrid AI techniques, including
-%symbolic (ontologies and first-order logic), sub-symbolic (neural nets) and
-%hybrid (conceptors) modelling.
-interactive machine learning, where the robot learns from and with the
-end-users, while interacting with them.
-
-Third, the project will address the question of social behaviour generation.
+Mirroring WP4, WP5 addresses the question of social behaviour \emph{generation}.
 Indeed, designing behaviours that enable sustained, long-term engagement in a
 social human-robot interaction is essentially an open research question. Three
 main approaches to social behaviours generation exist today:
-\textbf{user-induced}, where the end-user interacts with the robot and ascribes
+\emph{user-induced}, where the end-user interacts with the robot and ascribes
 (knowingly or not) complex behaviours to the machine, while in reality the
-robot's behaviours are simple and non-goal oriented (eg generating a noise or
-a small movement when being touched). This has been used to great effect in
-therapy robots, for instance (eg Paro). \textbf{Off-the-shelf behaviours}, where
+robot's behaviours are simple and non-goal oriented (eg generating a noise or a
+small movement when being touched). This has been used to great effect in
+therapy robots, for instance (eg Paro). \emph{Off-the-shelf behaviours}, where
 the robot relies on a set library of behaviours (that might be individually
 relatively complex). The approach can elicit a strong initial social response
 from the user, but this social response tends to vanish rapidly once the
 'tricks' of the robot have been all discovered and become repetitive.  Besides,
 as the robot does not typically maintain a long-term socio-cognitive plan of the
-interaction, the behaviours are typically perceived as fun, yet pointless. This is often
-observed in toy-like robots (eg Vector, Dot \& Dash). Finally, many social
-robots avoid altogether the problem of generating behaviours by simply offering
-to the end-user control over \textbf{low-level behaviours} (eg, control of the
-joints of the robot). This means that, even when the robot has relatively powerful
-social perception capabilities (like recognising people and voice), no real
-social behaviours is generated.
+interaction, the behaviours are typically perceived as fun, yet pointless. This
+is often observed in toy-like robots (eg Vector, Dot \& Dash). Finally, many
+social robots avoid altogether the problem of generating behaviours by simply
+offering to the end-user control over \emph{low-level behaviours} (eg, control
+of the joints of the robot). This means that, even when the robot has relatively
+powerful social perception capabilities (like recognising people and voice), no
+real social behaviours is generated.
 
 None of these three approach is satisfactory, and indeed, no approach to date
 has been able to engage human users in long-term, sustained interactions.
 \project aims at significantly advancing the state of the art in this regard, by
-developing a new data-driven, continuous approach: instead of special events
-triggering the replay of a pre-programmed behaviours (as in the current state-of-art), we
-will use machine learning (specifically, a combination of Learning from
-Demonstration and Interactive Machine Learning) to teach robots to generate
-continuous \emph{expressive \& social motions} (including gestures and gazes).
+combining two emerging techniques: (1) a new data-driven, continuous approach to
+behaviour generation inspired by Learning from
+Demonstration~\cite{citationneeded}; (2) interactive machine learning in
+high-dimensional input/output spaces~\cite{senft2020woz}, where I have shown
+with my students promising results for generating complex social
+behaviours~\cite{senft2019teaching, winkle2020coach} that fully involve the
+end-users~\cite{winkle2020methodology}. By combining the two, \textbf{I target a
+breakthrough in robots' social behaviours generation: the generation of
+non-repetitive, socially congruent and transparent social
+behaviours} (including gestures and gazes).
 
 \TODO{discuss Liveliness (Pepper/Nao), Curiosity-based (\cite{kaplan}),
 human-in-the-loop (\cite{senft, winkle})}
 
-Critically, the scientific investigation of these three axes (\emph{conceptual
-framing of robot-supported human-human interaction}, \emph{online social
-situation assessment} and \emph{online social behaviour generation}) will be
-grounded in real-world applications. Indeed, two complex, high impact
-applications are detailled in the project. The first one takes place in
-Bristol's Children Hospital: a social robot will be permanently deployed in one
-of ward, supporting isolated children who suffer long-term conditions, in close
-cooperation with the hospital staff. The second one involves the deployment of 
-social robots in special need schools (SEN schools) in Bristol. Building on a
-rigorous participatory approach involving the school teachers, as well as the
-parents, we will seek to integrate the robot in the daily life of the school,
-supporting the development of the students' physical and social skills.
-
-These two applications, detailled hereafter, aim at supporting
-socially-vulnerable populations: this entails specific risks (detailled and
-addressed in the Section~\ref{risks}), but also offers a unique opportunity to
-demonstrate in a real-world, impactful case, how social robots can effectively
-have a positive, ethical impact, and support in-fine stronger, richer
-human-human interactions.
-
-
-\section{Evidence-based research: demonstrable usefulness of social robots in
+\paragraph{Evidence-based research: demonstrable usefulness of social robots in
 real-world, complex scenarios}
 
-\project aims at developping and demonstrating the need for a global approach to
+\project aims at developing and demonstrating the need for a global approach to
 social HRI with ambitious, high-impact, socially meaningful, applications. Over
 the course of the project, I will achieve that aim through two ambitious
 applications: the creation and deployment of a small robot companion to support
 isolated children during their hospital stay, fully integrated and aware of the
-wider hospital ecosystem; the creation and deployment of a robot companion to
+wider hospital ecosystem (WP6); the creation and deployment of a robot companion to
 support physical and mental well-being, as well as foster social interactions,
-in SEN schools.
-
-\TODO{probably useful to give specific examples of interventions}
-
-\subsection{Application 1: A robot companion at the children's hospital}
-
-\subsection{Application 2: Social robots in SEN schools}
-
-\TODO{explain that these 2 large experiments will be scaffolded by many smaller
-ones}
-
-\subsection{Experimental deployments: risks and mitigations}
+in SEN schools (WP7).
 
 These two application scenarios are ambitious and inherently risky, as they
-target vulnerable populations. However, first, demonstrating the
-importance of advanced social modelling, and convincingly proving the
-effectiveness of our approach does require accordingly complex social
-situations, and complex social dynamics. The two scenarios, which complement
-each other, provide both.
+target vulnerable populations. This is an however informed choice: first, we
+already have established partnerships with Bristol's children hospital on one
+hand, and a network of Bristol-based SEN schools on the other hand. As such, and
+from a practical perspective, we do not foresee any institutional issues -- on
+the contrary, our partners are excited at the prospect of taking part to the
+project. Besides, convincingly demonstrating the importance and positive impact
+of socially-driven, socially-responsible robotics does accordingly require
+complex social situations, and complex social dynamics. The two scenarios, which
+complement each other, provide both. These scenarios also put the project in the
+unique position of actually delivering high societal impact: we anticipate 100+
+hospitalised children with long-term conditions, and 50+ SEN-educated children
+to directly benefit of the project, showing how robots can have a lasting,
+strong, positive impact on the society, also establishing the idea of
+\emph{robots supporting human interactions} instead of dehumanising our social
+relationships.
 
-Second, working with vulnerable populations, in constrained (the hospital) or
-difficult environments (refugee camps) adds significant risks to the project.
-But it is also what make the project in the unique position of delivering a very
-high societal impact: a direct positive impact on children's lives (we
-anticipate 100+ hospitalised children and 50+ refugee children interacting over
-long periods of time with a robot over the course of the project), and a broader
-impact on the society, showing how robots can have a lasting, strong, positive
-impact on the society, also establishing the idea of \emph{robots supporting
-human interactions} instead of dehumanising our social relationships.
-
-The two main mitigations are (1) early and continuous engagement with the
-stakeholders, and (2) the decoupling of the two applications, meaning that the
-risks associated to each of them do not impact the other one.
-
-Early engagement will be ensured by relying on a participatory design
-methodology, involving all the stakeholders from the onset of the project; the
-methodology will involve regular joint workshops; on-site (hospital and refugee
-camps) research stay including engagement with the staff/charities and the
-children themselves; use of art-based participatory techniques like puppetering.
-I will also perform field testing early on in the project, relying if necessary
-on provisional robot platforms available at the host institution (for instance,
-Softbank Nao and Pepper). This user-centered approach will be championed by one
-of the post-doc recruited on the project, who will have recognised expertise in
-user-centered design.
+\paragraph{WP6: \textbf{\wpSix}} (Y3-4)
+\paragraph{WP7: \textbf{\wpSeven}} (Y4-5)
 
 
-The Principal Investigator, Dr.  Séverin Lemaignan, has been working for 12+
-years in human-robot interaction, and over the last 6 years, specifically in the
-field of child-robot interaction.  His profile is both highly technical, with
-hundreds of hardware and software contributions to the worldwide robotic
-community; and highly experimental, running dozens of studies and experiments
-with children, including long-term ones, in muliple schools and in healthcare
-environments. He is in a unique position to deliver both a scientific
-breakthrough on social situation assessment for robots, and a high-impact
-societal change.
 
-\section{Impact}
 
-\subsection{Adequacy of the Principal Investigator; Cross-disciplinary team}
+\subsection{Capacity of the Principal Investigator to deliver on the work programme}
 
 The project's ambitious scientific and technical goals are expected to deliver
 major scientific, societal and technical impact, that extends beyond the
-boundaries of the fellowship. While ambitious, the project's feasibility is
-ensured through a strong combination of cross-disciplinary expertise and
-support from the host's unique research infrastructure. Scaffolded by a
-participatory and iterative research methodology, and the PI experience in
-managing teams and complex projects through his recognised leadership, \project
-is set to deliver.
+end of the fellowship. At the end of the fellowship, the PI is expected to be a
+world-leader in the emerging field of socially-driven, responsible robotics.
+This leadership is required to address and inform policies related to the key
+emerging societal challenge of AI and intelligent robots.
 
-\project is indeed an interdisciplinary endeavour, and requires several
-complementary expertises to be successfull. I have assembled a strong and
-diverse team, with exceptional expertise both on working with vulnerable refugee
-populations, and on designing social robots. The team comprises of institutional
-partners with strong expertise in supporting asylum seeker (UK Refugee Council
-and [Katheryn Cronin - lawyer]), charities with extensive experience using art
-to support refugee populations (ArtRefuge UK), an interaction designer working
-on memory collection and recollection with vulnerable children, and several
-close academic collaboration: with Dave Meckin (University of the West of
-England), senior researcher in media tecnologies with a unique expertise working
-with vulnerable children; with Jérémy Bonvoisin (University of Bath), senior
-research on sustainable and open hardware development; and finally with Katie
-Winkle (University of Bristol/University of the West of England), junior
-scientist with a unique expertise in social robotics.
-
-To mirror the cross-disciplinary team, the research methodology developped for
-\project will rely heavily on \emph{mutual shaping}, through co-design and
-participatory design, and multi-disciplinary development sprints.
+PI Lemaignan is in a unique position to deliver on the \project work plan.  He
+has already established international recognition in human-robot interaction and
+has likewise demonstrated strong leadership by leading research teams in three
+different institutions (see Sections B1.b and B1.c). Importantly, and as
+illustrated in Table~\ref{pi-expertise}, the breadth of
+his interdiscplinary research covers the scientific expertise required by the
+project, providing him with a unique overall perspective and understanding of
+the domain. PI Lemaignan is also a technology expert, with major software and
+hardware contributions to the robotic community (see Section B1.c).
 
 
 \begin{table}[h]
     \centering
-    \begin{tabular}{p{0.4\linewidth}p{0.5\linewidth}}
+    \begin{tabular}{rp{0.6\linewidth}}
         \toprule
-        Expertise domain                  & Corresponding publications by PI          \\
+        %\bf Expertise domain                  & \bf Corresponding publications by PI          \\
+        %\midrule
+        \textbf{Psycho-social underpinnings of HRI} \\  
+        anthropomorphism & \small dynamics of
+        anthropomorphism~\cite{lemaignan2014dynamics}, \newline cognitive correlates of anthropomorphism~\cite{lemaignan2014cognitive} \\
+        trust, engagement & \small \cite{flook2019impact,lemaignan2015youre,fink2014which} \\
+        theory of mind & \small perspective taking~\cite{ros2010which, warnier2012when}, social mutual modelling~\cite{lemaignan2015mutual,dillenbourg2016symmetry} \\
+        social influence & \small persuasion~\cite{winkle2019effective} \\
         \midrule
-        Psycho-social underpinnings of HRI: anthropomorphism & dynamics of anthropomorphism~\cite{lemaignan2014dynamics}, cognitive correlates of anthropomorphism~\cite{lemaignan2014cognitive} \\
-        Psycho-social underpinnings of HRI: trust, engagement & \cite{flook2019impact,lemaignan2015youre,fink2014which} \\
-        Psycho-social underpinnings of HRI: theory of mind & perspective taking~\cite{ros2010which, warnier2012when}, social mutual modelling~\cite{lemaignan2015mutual,dillenbourg2016symmetry} \\
-        Psycho-social underpinnings: social influence & persuasion~\cite{winkle2019effective} \\
-        Social signal processing: non-verbal behaviours & attention tracking~\cite{lemaignan2016realtime}, child-child interactions dataset~\cite{lemaignan2018pinsoro}, internal socio-psychological state estimation~\cite{bartlett2019what} \\
-        Social signal processing: verbal interactions & speech recognition~\cite{kennedy2017child}, dialogue grounding~\cite{lemaignan2011grounding} \\
-        Situation assessment & object detection~\cite{wallbridge2017qualitative}, spatio-temporal representations~\cite{lemaignan2018underworlds,sallami2019simulation} \\
-        Knowledge representation & ontologies~\cite{lemaignan2010oro, lemaignan2013explicit} \\
-        Artificial socio-cognitive architecture & \cite{lemaignan2017artificial, baxter2016cognitive,lemaignan2014challenges,lallee2012towards, mallet2010genom3} \\
-        Behaviour generation & \cite{lallee2011towards}, verbal interactions~\cite{wallbridge2019generating, wallbridge2019towards}, physical interactions~\cite{gharbi2013natural} \\
-        Behaviour generation: reinforcement learning & Interactive reinforcement learning~\cite{senft2017leveraging,senft2017supervised, senft2019teaching} \\
-        In-situ human-robot interactions & in classrooms~\cite{hood2015when, lemaignan2016learning, jacq2016building, baxter2015wider,kennedy2016cautious,senft2018robots}, at home~\cite{mondada2015ranger}\\
-        Robot hardware design for interaction & \cite{ozgur2017cellulo, hostettler2016realtime} \\
+        \textbf{Socio-cognitive architectures} \\
+        architecture design & \small \cite{lemaignan2017artificial, baxter2016cognitive,lemaignan2014challenges,lallee2012towards, mallet2010genom3} \\
+        knowledge representation & \small
+        ontologies~\cite{lemaignan2010oro, lemaignan2013explicit} \\    
+        spatio-temporal modelling & \small object
+        detection~\cite{wallbridge2017qualitative}, \newline physics-aware situation
+        assessment~\cite{lemaignan2018underworlds,sallami2019simulation} \\
+        \midrule
+        \textbf{Social signal processing}\\
+        non-verbal behaviours & \small attention
+        tracking~\cite{lemaignan2016realtime}, child-child interactions
+        dataset~\cite{lemaignan2018pinsoro}, \newline internal socio-psychological state estimation~\cite{bartlett2019what} \\
+        verbal interactions & \small speech recognition~\cite{kennedy2017child}, dialogue grounding~\cite{lemaignan2011grounding} \\
+        \midrule
+        \textbf{Behaviour generation} \\
+        social behaviours & \small \cite{lallee2011towards}, verbal interactions~\cite{wallbridge2019generating, wallbridge2019towards}, physical interactions~\cite{gharbi2013natural} \\
+        \midrule
+        interactive reinforcement learning & \small \cite{senft2017leveraging,senft2017supervised, senft2019teaching} \\
+        \midrule
+        \textbf{Experimental human-robot interaction} & \small in
+        classrooms~\cite{hood2015when, lemaignan2016learning, jacq2016building,
+        baxter2015wider,kennedy2016cautious,senft2018robots},\newline at home~\cite{mondada2015ranger}\\
+        %\midrule
+        %Robot hardware design for interaction & \small \cite{ozgur2017cellulo, hostettler2016realtime} \\
         \bottomrule
     \end{tabular}
     \caption{\small PI's domains of expertise relevant to the \project project}
@@ -550,44 +531,17 @@ participatory design, and multi-disciplinary development sprints.
 
 
 
-\subsection{Research methodology}
+While ambitious, the project's feasibility is ensured through a strong
+combination of cross-disciplinary expertise and support from the host's unique
+research infrastructure. Scaffolded by a participatory and iterative research
+methodology, and the PI experience in managing teams and complex projects
+through his recognised leadership, \project is set to deliver.
 
-\subsection{Ambition in engineering and technical infrastructure}
+To mirror the cross-disciplinary team, the research methodology developped for
+\project will rely heavily on \emph{mutual shaping}, through co-design and
+participatory design, and multi-disciplinary development sprints.
 
-The \project project sets an ambitious target in term of technical development.
-The project indeed requires unique technical skills, both software and
-hardware-wise, to create, design and build the envisonned robotic systems.
 
-Software-wise, Dr Lemaignan, the principal investigator, is a leading
-developer of software for intelligent robots, with numerous contributions to
-the major software platforms used in robotic (including major contributions to
-ROS, OpenCV, authoring of widely-used pieces of software like the ROS-naoqi
-bridge used by hundred of researchers using the Nao and Pepper robots or the
-MORSE robotic simulator). He has been teaching various modules related to
-software development for robotics, and the breadth and depth of his knowledge of
-robotic software development is well established. He will be leading the
-software development, and, as part of the fellowship, he will also seek for
-additional expert knowledge on (1) interaction design and (2) low-level
-micro-programming to complete the set of required programming needs.
-
-Hardware-wise, the Bristol Robotics Lab, where this fellowship will take place,
-offer unique support and facilities for robotic hardware development: the
-laboratory's dedicated equipment includes two industrial-grade rapid prototyping
-machine, a laser cutter, one 5-axis digital milling machine, all the required
-facilities for PCB prototyping, and a team of six full-time technicians,
-specialised in hardware development. The BRL has indeed a long track-record of
-designing and building new and original robots (from the BERT humanoid in the
-FP7 CHRIS project, to micro-robotics [in...?], to [...]). \project will directly
-benefit of this expertise, which will ensure a feasible and realistic technical
-implementation of the \project robots. Besides, an hardware engineer, dedicated
-to the project, will be recruited in the frame of the project.
-
-The BRL also include a hardware incubator and is co-located with 70 start-ups
-and SMEs specialising in robotic hardware and mechatronics (Bristol's
-\emph{FutureSpace}). This combination of excellent research and vast industry
-expertise on one site is unique in the UK, and is will play an instrumental role
-in providing a coherent and strong pathway to impact to the project, including
-further engagement with industrial partners and spin-off opportunities.
 
 
 
@@ -611,6 +565,125 @@ breaks or unconventional career paths, so that your career stage is fairly asses
 panels. You should as well list your current grants and on-going and submitted grant applications in
 the funding ID table (this table will not count towards the page limits).}
 \eu{(max 2 pages)}
+
+
+{\LARGE \bf Lemaignan, Séverin}:
+
+\begin{itemize}
+    \item ORCID: 0000-0002-3391-8876
+    \item Date of birth: 17 Jan 1983
+    \item Nationality: French
+    \item URL for web site:
+        \href{https://academia.skadge.org}{academia.skadge.org} -- \href{https://twitter.com/skadge}{twitter.com/skadge}
+\end{itemize}
+
+
+\section{EDUCATION}
+
+200? 	PhD
+	Name of Faculty/ Department, Name of University/ Institution, Country
+	Name of PhD Supervisor
+199? 	Master
+	Name of Faculty/ Department, Name of University/ Institution, Country
+	 
+
+\section{CURRENT POSITION}
+
+201? –	Current Position
+	Name of Faculty/ Department, Name of University/ Institution/ Country
+200? – 	Current Position
+	Name of Faculty/ Department, Name of University/ Institution/ Country
+
+
+\section{PREVIOUS POSITIONS}
+
+200? – 200? 	Position held 
+	Name of Faculty/ Department, Name of University/ Institution/ Country
+200? – 200? 	Position held
+	Name of Faculty/ Department, Name of University/ Institution/ Country
+
+
+\section{FELLOWSHIPS AND AWARDS}
+
+200? – 200?      Scholarship, Name of Faculty/ Department/Centre, Name of University/ Institution/ Country 
+199? – 199? 	Scholarship, Name of Faculty/ Department/Centre, Name of University/ Institution/ Country
+
+    • SUPERVISION OF GRADUATE STUDENTS AND POSTDOCTORAL FELLOWS (if applicable)
+
+200? – 200? 	Number of Postdocs/ PhD/ Master Students
+Name of Faculty/ Department/ Centre, Name of University/ Institution/ Country
+
+
+\section{TEACHING ACTIVITIES}
+
+200? – 	Teaching position – Topic, Name of University/ Institution/ Country
+200? – 200? 	Teaching position – Topic, Name of University/ Institution/ Country
+
+
+
+\section{ORGANISATION OF SCIENTIFIC MEETINGS}
+
+201?	Please specify your role and the name of event / Country 
+200? 	Please specify type of event / number of participants / Country
+
+
+\section{INSTITUTIONAL RESPONSIBILITIES}
+
+201? – 	Faculty member, Name of University/ Institution/ Country
+201? – 201? 	Graduate Student Advisor, Name of University/ Institution/ Country
+200? – 200? 	Member of the Faculty Committee, Name of University/ Institution/ Country 
+200? – 200? 	Organizer of the Internal Seminar, Name of University/ Institution/ Country
+200? – 200? 	Member of a Committee; role, Name of University/ Institution/ Country
+
+
+\section{REVIEWING ACTIVITIES}
+
+201? – 	Scientific Advisory Board, Name of University/ Institution/ Country
+201? – 	Review Board, Name of University/ Institution/ Country
+201? –	Review panel member, Name of University/ Institution/ Country
+201? – 	Editorial Board, Name of University/ Institution/ Country
+200? – 	Scientific Advisory Board, Name of University/ Institution/ Country
+200? –	Reviewer, Name of University/ Institution/ Country 
+200? –	Scientific Evaluation, Name of University/ Institution/ Country
+200? –	Evaluator, Name of University/ Institution/ Country
+
+
+\section{MEMBERSHIPS OF SCIENTIFIC SOCIETIES}
+
+201? –	Member, Research Network “Name of Research Network”
+200? –	Associated Member, Name of Faculty/ Department/Centre, Name of University/ Institution/ Country
+200? –	Founding Member, Name of Faculty/ Department/Centre, Name of University/ Institution/ Country 
+
+\section{MAJOR COLLABORATIONS}
+
+Name of collaborators, Topic, Name of Faculty/ Department/Centre, Name of University/ Institution/ Country
+
+
+\newpage
+
+\section{Appendix: Current research grants and any on-going applications related
+to the proposal}
+
+\subsection{Current Grants}
+
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\textbf{Project Title} & \textbf{Funding source} & \textbf{Amount (Euros)} & \textbf{Period} & \textbf{Role of the PI} & \textbf{Relation to current  ERC proposal} \\ \midrule
+                       &                         &                         &                 &                         &                                            \\ \bottomrule
+\end{tabular}
+
+\TODO{update with result Amazon + ERC}
+
+\subsection{On-going and submitted grant applications}
+
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\textbf{Project Title} & \textbf{Funding source} & \textbf{Amount (Euros)} & \textbf{Period} & \textbf{Role of the PI} & \textbf{Relation to current  ERC proposal} \\ \midrule
+                       &                         &                         &                 &                         &                                            \\ \bottomrule
+\end{tabular}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -649,6 +722,16 @@ been focusing his experimental work on child-robot interactions in
 educative settings, exploring how robots can support teachers and
 therapists to develop effective and engaging novel learning paradigms.
 
+Software-wise, PI Lemaignan is a leading
+developer of software for intelligent robots, with numerous contributions to
+the major software platforms used in robotic (including major contributions to
+ROS, OpenCV, authoring of widely-used pieces of software like the ROS-naoqi
+bridge used by hundred of researchers using the Nao and Pepper robots or the
+MORSE robotic simulator). He has been teaching various modules related to
+software development for robotics, and the breadth and depth of his knowledge of
+robotic software development is well established. 
+
+\subsection{Significant outputs}
 
 \vspace{0.2em}{Senft, E., Lemaignan, S., Baxter, P., Bartlett, M., Belpaeme, T. \\ \textbf{Teaching robots social autonomy from in situ human guidance} \\ \textit{Science Robotics} 2019. DOI:~\texttt{\href{https://doi.org/10.1126/scirobotics.aat1186}{10.1126/scirobotics.aat1186}}.}
 
@@ -1372,7 +1455,87 @@ of this main study shortly after the end of the one-year period.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Deployments in schools}
+\subsection{Evidence-based research: demonstrable usefulness of social robots in
+real-world, complex scenarios}
+
+
+Critically, the scientific investigation of these questions (\emph{conceptual
+framing of robot-supported human-human interaction}, \emph{socially-driven
+cognitive architecture},  \emph{online social situation assessment and social
+behaviour generation}) has to be
+grounded in real-world applications. Indeed, two complex, high impact
+applications are detailed in the project. The first one takes place in
+Bristol's Children Hospital: a social robot will be permanently deployed in one
+of ward, supporting isolated children who suffer long-term conditions, in close
+cooperation with the hospital staff. The second one involves the deployment of 
+social robots in special need schools (SEN schools) in Bristol. Building on a
+rigorous participatory approach involving the school teachers, as well as the
+parents, we will seek to integrate the robot in the daily life of the school,
+supporting the development of the students' physical and social skills.
+
+These two applications, detailed hereafter, aim at supporting
+socially-vulnerable populations: this entails specific risks (detailed and
+addressed in the Section~\ref{risks}), but also offers a unique opportunity to
+demonstrate in a real-world, impactful case, how social robots can effectively
+have a positive, ethical impact, and support in-fine stronger, richer
+human-human interactions.
+
+
+
+\TODO{probably useful to give specific examples of interventions}
+
+\subsection{Application 1: A robot companion at the children's hospital}
+
+\subsection{Application 2: Social robots in SEN schools}
+
+\TODO{explain that these 2 large experiments will be scaffolded by many smaller
+ones}
+
+\subsection{Experimental deployments: risks and mitigations}
+
+These two application scenarios are ambitious and inherently risky, as they
+target vulnerable populations. However, first, demonstrating the
+importance of advanced social modelling, and convincingly proving the
+effectiveness of our approach does require accordingly complex social
+situations, and complex social dynamics. The two scenarios, which complement
+each other, provide both.
+
+Second, working with vulnerable populations, in constrained and complex
+environments (children hospital and SEN schools) adds significant risks to the
+project. But it is also what make the project in the unique position of
+delivering a high societal impact: a direct positive impact on children's
+lives (we anticipate 100+ hospitalised children and 50+ refugee children
+interacting over long periods of time with a robot over the course of the
+project), and a broader impact on the society, showing how robots can have a
+lasting, strong, positive impact on the society, also establishing the idea of
+\emph{robots supporting human interactions} instead of dehumanising our social
+relationships.
+
+The two main mitigations are (1) early and continuous engagement with the
+stakeholders, and (2) the decoupling of the two applications, meaning that the
+risks associated to each of them do not impact the other one.
+
+Early engagement will be ensured by relying on a participatory design
+methodology, involving all the stakeholders from the onset of the project; the
+methodology will involve regular joint workshops; on-site (hospital and refugee
+camps) research stay including engagement with the staff/charities and the
+children themselves; use of art-based participatory techniques like puppetering.
+I will also perform field testing early on in the project, relying if necessary
+on provisional robot platforms available at the host institution (for instance,
+Softbank Nao and Pepper). This user-centered approach will be championed by one
+of the post-doc recruited on the project, who will have recognised expertise in
+user-centered design.
+
+
+The Principal Investigator, Dr.  Séverin Lemaignan, has been working for 12+
+years in human-robot interaction, and over the last 6 years, specifically in the
+field of child-robot interaction.  His profile is both highly technical, with
+hundreds of hardware and software contributions to the worldwide robotic
+community; and highly experimental, running dozens of studies and experiments
+with children, including long-term ones, in muliple schools and in healthcare
+environments. He is in a unique position to deliver both a scientific
+breakthrough on social situation assessment for robots, and a high-impact
+societal change.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1404,7 +1567,6 @@ of this main study shortly after the end of the one-year period.
 5                        & \wpFive                     &                              &                                      &                        &                      &                    \\
 6                        & \wpSix                      &                              &                                      &                        &                      &                    \\
 7                        & \wpSeven                      &                              &                                      &                        &                      &                    \\
-8                        & \wpEight                      &                              &                                      &                        &                      &                    \\
                          &                             &                              &                                      & \textbf{Total months}  &                      &                    \\ \bottomrule
 \end{tabular}
 \end{table}
@@ -1576,24 +1738,6 @@ Develop a novel platform, including:
 \end{itemize}
 
 
-\subsection{Work package 8: \wpEight}
-
-\textbf{Objectives:}
-
-\textbf{Description of work:}
-
-\ldots{}description\ldots{}
-
-\task{8.1}{Academic dissemination}
-\task{8.2}{General public dissemination}
-\task{8.3}{Commercial exploitation}
-
-\vspace{0.5cm}\textbf{Deliverables:}
-
-\begin{itemize}
-    \item \D{8.1}{12}{website and logo}
-\end{itemize}
-
 \subsection{Deliverables overview}\label{deliverables-overview}
 
 \begin{table}[!htbp]
@@ -1725,6 +1869,43 @@ define interaction patterns with the child
 
 \hypertarget{c.-resources}{%
 \subsection{c. Resources}\label{c.-resources}}
+
+
+The \project project sets an ambitious target in term of technical development.
+The project indeed requires unique technical skills, both software and
+hardware-wise, to create, design and build the envisioned robotic systems.
+
+Software-wise, PI Lemaignan is a leading
+developer of software for intelligent robots, with numerous contributions to
+the major software platforms used in robotic (including major contributions to
+ROS, OpenCV, authoring of widely-used pieces of software like the ROS-naoqi
+bridge used by hundred of researchers using the Nao and Pepper robots or the
+MORSE robotic simulator). He has been teaching various modules related to
+software development for robotics, and the breadth and depth of his knowledge of
+robotic software development is well established. He will be leading the
+software development, and, as part of the fellowship, he will also seek for
+additional expert knowledge on (1) interaction design and (2) low-level
+micro-programming to complete the set of required programming needs.
+
+Hardware-wise, the Bristol Robotics Lab, where this fellowship will take place,
+offer unique support and facilities for robotic hardware development: the
+laboratory's dedicated equipment includes two industrial-grade rapid prototyping
+machine, a laser cutter, one 5-axis digital milling machine, all the required
+facilities for PCB prototyping, and a team of six full-time technicians,
+specialised in hardware development. The BRL has indeed a long track-record of
+designing and building new and original robots (from the BERT humanoid in the
+FP7 CHRIS project, to micro-robotics [in...?], to [...]). \project will directly
+benefit of this expertise, which will ensure a feasible and realistic technical
+implementation of the \project robots. Besides, an hardware engineer, dedicated
+to the project, will be recruited in the frame of the project.
+
+The BRL also include a hardware incubator and is co-located with 70 start-ups
+and SMEs specialising in robotic hardware and mechatronics (Bristol's
+\emph{FutureSpace}). This combination of excellent research and vast industry
+expertise on one site is unique in the UK, and is will play an instrumental role
+in providing a coherent and strong pathway to impact to the project, including
+further engagement with industrial partners and spin-off opportunities.
+
 
 \hypertarget{host-institution}{%
 \subsubsection{Host institution}\label{host-institution}}
