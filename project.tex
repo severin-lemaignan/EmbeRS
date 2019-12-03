@@ -20,7 +20,8 @@
 
 
 
-\usepackage[style=authoryear]{biblatex}
+%\usepackage[style=authoryear]{biblatex}
+\usepackage[style=numeric]{biblatex}
 \addbibresource{biblio.bib}
 \addbibresource{my-publications.bib}
 \addbibresource{mutual-modelling.bib}
@@ -92,6 +93,39 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Names of the Work packages
+
+\newcommand{\wpOne}{Project management \& dissemination}
+\newcommand{\wpOneShort}{\wpOne{}}
+
+\newcommand{\wpTwo}{Framing robot-supported human-human interaction}
+\newcommand{\wpTwoShort}{Framing r-HHI}
+
+
+\newcommand{\wpThree}{Ethical-by-design socio-cognitive architecture for robot-supported human-human interactions}
+\newcommand{\wpThreeShort}{Socio-cognitive architecture}
+
+\newcommand{\wpFour}{Social situation assessment}
+\newcommand{\wpFourShort}{\wpFour{}}
+
+\newcommand{\wpFive}{Data-driven social behaviour generation}
+\newcommand{\wpFiveShort}{Social behaviours}
+
+\newcommand{\wpSix}{Study 1: social companion at the hospital}
+\newcommand{\wpSixShort}{Hospital study}
+
+\newcommand{\wpSeven}{Study 2: robot-supported SEN chools}
+\newcommand{\wpSevenShort}{SEN schools study}
+
+\newcommand{\wpEight}{WP8: TBD}
+\newcommand{\wpEightShort}{WP8}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newrefsection
+
 \chapter{B1.a. Extended Synopsis of the scientific proposal}\label{part1}
 \eu{(max 5 pages)}
 
@@ -368,8 +402,13 @@ societal change.
 
 \subsection{Overview of the workplan}
 
+\project is a 5-years project, split into 8 workpackages. While Section B2 will provide extensive details on each of these workpackages,
+we summarise their content hereafter.
 
-\paragraph{WP2: A principled architecture for socially intelligent robots}
+\paragraph{WP1: \textbf{\wpOne}} (covers the duration of the whole project).
+This workpackage encompasses
+
+\paragraph{WP2: \textbf{\wpTwo}} (Y1-3)
 
 
 \begin{itemize}
@@ -382,6 +421,13 @@ societal change.
         grounding, goal planning, knowledge exchange and linked data
     \item action execution using human-in-the-loop ML
 \end{itemize}
+
+\paragraph{WP3: \textbf{\wpThree}} (Y2-5)
+\paragraph{WP4: \textbf{\wpFour}} (Y1-4)
+\paragraph{WP5: \textbf{\wpFive}} (Y1-4)
+\paragraph{WP6: \textbf{\wpSix}} (Y3-4)
+\paragraph{WP7: \textbf{\wpSeven}} (Y4-5)
+\paragraph{WP8: \textbf{\wpEight}} (Y1-5)
 
 
 \subsection{Adequacy of the Principal Investigator; Cross-disciplinary team}
@@ -597,6 +643,7 @@ therapists to develop effective and engaging novel learning paradigms.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\newrefsection
 \chapter{B2.a State-of-the-art and objectives}
 
 \eu{(B2.a and B2.b: max 15 pages)}
@@ -1278,28 +1325,6 @@ of this main study shortly after the end of the one-year period.
 \newpage
 \section{Workplan and intermediate targets}\label{workplan}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Names of the Work packages
-
-\newcommand{\wpOne}{Project management}
-\newcommand{\wpOneShort}{\wpOne{}}
-
-\newcommand{\wpTwo}{Technology to socially influence human-human interactions}
-\newcommand{\wpTwoShort}{Social influence}
-
-
-\newcommand{\wpThree}{Interaction design for robot-supported human-human interactions}
-\newcommand{\wpThreeShort}{Interaction design}
-
-\newcommand{\wpFour}{Design and building of a companion robot for social interaction in the field}
-\newcommand{\wpFourShort}{Companion robot creation}
-
-\newcommand{\wpFive}{AI for social cognition}
-\newcommand{\wpFiveShort}{AI for social cognition}
-
-\newcommand{\wpSix}{Dissemination and exploitation}
-\newcommand{\wpSixShort}{Dissemination}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1317,6 +1342,8 @@ of this main study shortly after the end of the one-year period.
 4                        & \wpFour                     &                              &                                      &                        &                      &                    \\
 5                        & \wpFive                     &                              &                                      &                        &                      &                    \\
 6                        & \wpSix                      &                              &                                      &                        &                      &                    \\
+7                        & \wpSeven                      &                              &                                      &                        &                      &                    \\
+8                        & \wpEight                      &                              &                                      &                        &                      &                    \\
                          &                             &                              &                                      & \textbf{Total months}  &                      &                    \\ \bottomrule
 \end{tabular}
 \end{table}
@@ -1324,18 +1351,18 @@ of this main study shortly after the end of the one-year period.
 
 \subsection{Work package 1: \wpOne}
 
-\begin{table}[!htbp]
-\centering
-\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-\hline
-Work package number            & 1 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{\bf BRL} \\ \hline
-Work package title             & \multicolumn{7}{l|}{\wpOne}                                             \\ \hline
-Participant number             &     &         &         &                  &       &       &      \\ \hline
-Short name of participant      &     &         &         &                  &       &       &      \\ \hline
-Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
-Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
-\end{tabular}
-\end{table}
+%\begin{table}[!htbp]
+%\centering
+%\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+%\hline
+%Work package number            & 1 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{\bf BRL} \\ \hline
+%Work package title             & \multicolumn{7}{l|}{\wpOne}                                             \\ \hline
+%Participant number             &     &         &         &                  &       &       &      \\ \hline
+%Short name of participant      &     &         &         &                  &       &       &      \\ \hline
+%Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
+%Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
+%\end{tabular}
+%\end{table}
 
 
 \textbf{Objectives:}
@@ -1354,19 +1381,6 @@ Start month                    & \multicolumn{3}{l|}{}  & End month        & \mu
 \end{itemize}
 
 \subsection{Work package 2: \wpTwo}
-
-\begin{table}[!htbp]
-\centering
-\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-\hline
-Work package number            & 2 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
-Work package title             & \multicolumn{7}{l|}{\wpTwo}                                       \\ \hline
-Participant number             &     &         &         &                  &       &       &      \\ \hline
-Short name of participant      &     &         &         &                  &       &       &      \\ \hline
-Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
-Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
-\end{tabular}
-\end{table}
 
 \textbf{Objectives:}
 \textbf{Description of work:}
@@ -1389,19 +1403,6 @@ First study, using Anki's Vector robot.
 
 \subsection{Work package 3: \wpThree}
 
-\begin{table}[!htbp]
-\centering
-\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-\hline
-Work package number            & 3 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
-Work package title             & \multicolumn{7}{l|}{\wpThree}                                     \\ \hline
-Participant number             &     &         &         &                  &       &       &      \\ \hline
-Short name of participant      &     &         &         &                  &       &       &      \\ \hline
-Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
-Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
-\end{tabular}
-\end{table}
-
 \textbf{Objectives:}
 
 \begin{itemize}
@@ -1422,19 +1423,6 @@ Start month                    & \multicolumn{3}{l|}{}  & End month        & \mu
 \end{itemize}
 
 \subsection{Work package 4: \wpFour}
-
-\begin{table}[!htbp]
-\centering
-\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-\hline
-Work package number            & 4 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
-Work package title             & \multicolumn{7}{l|}{\wpFour}                                      \\ \hline
-Participant number             &     &         &         &                  &       &       &      \\ \hline
-Short name of participant      &     &         &         &                  &       &       &      \\ \hline
-Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
-Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
-\end{tabular}
-\end{table}
 
 
 \begin{itemize}
@@ -1471,19 +1459,6 @@ Develop a novel platform, including:
 
 \subsection{Work package 5: \wpFive}
 
-\begin{table}[!htbp]
-\centering
-\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-\hline
-Work package number            & 5 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
-Work package title             & \multicolumn{7}{l|}{\wpFive}                                      \\ \hline
-Participant number             &     &         &         &                  &       &       &      \\ \hline
-Short name of participant      &     &         &         &                  &       &       &      \\ \hline
-Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
-Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
-\end{tabular}
-\end{table}
-
 
 \textbf{Objectives:}
 
@@ -1504,19 +1479,6 @@ Start month                    & \multicolumn{3}{l|}{}  & End month        & \mu
 
 \subsection{Work package 6: \wpSix}
 
-\begin{table}[!htbp]
-\centering
-\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-\hline
-Work package number            & 6 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{} \\ \hline
-Work package title             & \multicolumn{7}{l|}{\wpSix}                                       \\ \hline
-Participant number             &     &         &         &                  &       &       &      \\ \hline
-Short name of participant      &     &         &         &                  &       &       &      \\ \hline
-Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
-Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
-\end{tabular}
-\end{table}
-
 
 \textbf{Objectives:}
 
@@ -1532,6 +1494,43 @@ Start month                    & \multicolumn{3}{l|}{}  & End month        & \mu
 
 \begin{itemize}
     \item \D{6.1}{12}{website and logo}
+\end{itemize}
+
+\subsection{Work package 7: \wpSeven}
+
+\textbf{Objectives:}
+
+\textbf{Description of work:}
+
+\ldots{}description\ldots{}
+
+\task{7.1}{Academic dissemination}
+\task{7.2}{General public dissemination}
+\task{7.3}{Commercial exploitation}
+
+\vspace{0.5cm}\textbf{Deliverables:}
+
+\begin{itemize}
+    \item \D{7.1}{12}{website and logo}
+\end{itemize}
+
+
+\subsection{Work package 8: \wpEight}
+
+\textbf{Objectives:}
+
+\textbf{Description of work:}
+
+\ldots{}description\ldots{}
+
+\task{8.1}{Academic dissemination}
+\task{8.2}{General public dissemination}
+\task{8.3}{Commercial exploitation}
+
+\vspace{0.5cm}\textbf{Deliverables:}
+
+\begin{itemize}
+    \item \D{8.1}{12}{website and logo}
 \end{itemize}
 
 \subsection{Deliverables overview}\label{deliverables-overview}
@@ -1689,7 +1688,5 @@ incubator and successful track record of spin-outs.
 
 \newpage
 
-\hypertarget{references}{%
-\chapter{References}\label{references}}
-
+\printbibliography
 \end{document}
