@@ -24,6 +24,7 @@
 %\usepackage[style=authoryear]{biblatex}
 \usepackage[style=numeric]{biblatex}
 \addbibresource{biblio.bib}
+\addbibresource{cogarch.bib}
 \addbibresource{my-publications.bib}
 \addbibresource{mutual-modelling.bib}
 
@@ -1661,7 +1662,145 @@ members are engaged by another host institution their participation has to be
 fully justified by the scientific added value they bring to the project.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Data-driven continuous behaviour generation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{WP1: \wpOne{}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{WP2: \wpTwo{}}
+
+\subsection{Disembodied Cognitive Architectures}
+
+Reviews: \cite{chong2007integrated}, \cite{vernon2007survey} --
+extended in \cite{kingdon2008review}, \cite{duch2008cognitive},
+\cite{langley2009cognitive}, \cite{taatgen2010past},
+\cite{thorisson2012cognitive}.
+
+
+\subsection{Social Robotics Architectures}\label{sec:robots}
+
+
+\paragraph{The \emph{Society of Mind}-inspired paradigm underpinning practical architectures}
+
+Mostly functional architectures: integration models rather than cognitive
+architectures per se.
+
+\begin{figure}
+    \centering
+
+    \resizebox{\linewidth}{!}{%
+
+        \tikzset{subpart/.style={draw, font=\scriptsize, fill opacity=0.5, text opacity=1, fill=white!50}}
+    \begin{tikzpicture}[
+            >=latex,
+        every edge/.style={draw, very thick},
+        skill/.style={draw, align=center, inner sep=5pt, fill=black!20},
+        stmt/.style={align=center, font=\bf},
+        label/.style={midway, align=center, font=\scriptsize, fill=white}]
+
+        %%% Knowledge base
+        \node at (0,0)[skill] (kb) {\bf Memory/Knowledge Base(s)\\ \footnotesize for instance, a symbolic blackboard};
+
+        %%% Symbolic task planner
+        \node at (-6, 2.5)[skill] (taskplanner) {{\bf Symbolic Task planner}\\ \footnotesize possibly human-aware};
+
+        %%% Communication
+        \node at (-6, -3) [skill] (communication) {{\bf Multi-modal communication}\\NLP, back-channel,...};
+
+        %%% Abstract world model
+        \node at (4,-3.5)[skill] (abstractenv) {%
+            \begin{tikzpicture}
+                \node at (0,0) (geom) {\bf Amodal Model of the Environment};
+                \node [subpart, below=0.2 of geom.south west, anchor=north] (world-update) {Sensors fusion};
+                \node [subpart, right=0.2 of world-update] (geom-model) {Situation assessment};
+                \node [subpart, right=0.2 of geom-model] (fact-prod) {Temporal reasoning};
+            \end{tikzpicture}
+        };
+
+        %%% Motion planner
+        \node at (8.5,0)[skill] (motionplanner) {\bf Motion and manipulation \\ \bf planning};
+
+        %%% Supervision
+        \node at (4,4.5)[skill] (supervisor) {%
+            \begin{tikzpicture}
+                \node at (0,0) (exec) {\bf Supervisor};
+                \node [subpart, below=0.2 of exec.south west, anchor=north west] (plans) {Goal \& Plans \\ management};
+                \node [subpart, right=0.2 of plans] (sit-asses) {Context management};
+                \node [subpart, right=0.2 of sit-asses] {Action instantiation, \\ execution and monitoring};
+            \end{tikzpicture}
+        };
+
+
+        %%% LOWLEVEL
+        \node [skill, below=0.7 of abstractenv,minimum width=6cm,minimum height=1.5cm,fill=black!30] (lowlevel) {\bf Sensorimotor layer};
+
+        %%% Separation between deliberative layer and sensori-motor layer
+        \draw[dotted, thick] (-8,-5) -- (12, -5);
+
+        %%% Relations between components
+        \path (supervisor.340) edge [<->, bend left] node[label] {motion plan \\ requests} (motionplanner);
+        \path (supervisor.west) edge [<->, bend right] node[label] {plans} (taskplanner);
+        \path (taskplanner) edge [<->, bend right] node[label] (domain) {world model and \\ agents beliefs} (kb.170);
+        \path (communication) edge [<->, bend left] node[label] (nlp) {communication \\ grounding} (kb.190);
+        \path (abstractenv.100) edge [->, bend right] node[label] (symfact) {abstract world\\ description} (kb);
+        \path (abstractenv.5) edge [->, bend right] node[label] {geometric\\model} (motionplanner);
+        \path (supervisor) edge [<->, bend left] node[label] (evts) {events, \\ world model and \\ agents beliefs} (kb);
+        \path (lowlevel) edge [->] (abstractenv);
+        \path (lowlevel.east) edge [<-, bend right=80, looseness=1.2] node[label] {atomic\\actions} (supervisor.east);
+
+    \end{tikzpicture}
+    }
+    \caption{High-level representation of a typical \emph{practical} software
+    architecture found in social human-robot interaction (based
+    on~\cite{lemaignan2016artificial}). Arrows represent interfaces
+    between independent software modules. They evidence the engineering
+    perspective often favoured in robotic: cognition is seen as the result of a
+    collection of individual cognitive skills, each implemented as an
+    independent software component.}
+
+    \label{fig:robot-archi}
+\end{figure}
+
+ACT-R/E~\cite{trafton2013act}, HAMMER~\cite{demiris2006hierarchical}, PEIS
+Ecology~\cite{saffiotti2005peis,daoutis2012cooperative},
+CRAM/KnowRob~\cite{beetz2010cram, tenorth2009knowrob},
+KeJia~\cite{chen2010developing}
+
+
+\paragraph{To be sorted...}
+
+To check -- they may or may not be all relevant to sHRI.
+
+Architectures that...
+
+\begin{itemize}
+    \item ...reason about other agent mental state
+    \begin{itemize}
+        \item Scone~\cite{fahlman2011using}
+        \item Polyscheme~\cite{bello2011shared}
+    \end{itemize}
+    \item ...'represent knowledge'
+        \begin{itemize}
+            \item \cite{zhang2014towards}
+        \end{itemize}
+    \item ...cover the 'whole interaction stack'
+        \begin{itemize}
+            \item POETICON++ arch~\cite{antunes2016from} 
+        \end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{WP3: \wpThree{}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{WP4: \wpFour{}}
+
+\textbf{Data-driven continuous behaviour generation}
 
 
 At a time where companion robots are coming to the market, one important
@@ -1803,6 +1942,11 @@ robot is expected to be fully autonomous. However sufficient amount of
 time is planned for additional iterations on the development of the
 robot controller if deemed necessary. We aim at publishing the results
 of this main study shortly after the end of the one-year period.
+
+
+
+
+\section{WP5: \wpFive{}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
