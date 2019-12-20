@@ -49,10 +49,16 @@
 
 \usepackage{tocloft}
 
-\usepackage{titlesec, blindtext, color}
+\usepackage[compact]{titlesec}
+\usepackage{blindtext, color}
 \definecolor{gray75}{gray}{0.75}
 \newcommand{\hsp}{\hspace{20pt}}
 \titleformat{\chapter}[hang]{\LARGE\bfseries}{\hsp\textcolor{gray75}{|}\hsp}{0pt}{\LARGE\bfseries}
+
+%\titlespacing*{\section}
+%{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+%\titlespacing*{\subsection}
+%{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
 
 
 \renewcommand{\thesubsubsection}{}
@@ -166,8 +172,8 @@ positive role social robots could play in our future societies}.
 \newcommand{\wpTwo}{Ethical-by-design socio-cognitive architecture for robot-supported human-human interactions}
 \newcommand{\wpTwoShort}{Socio-cognitive architecture}
 
-\newcommand{\wpThree}{Social situation assessment}
-\newcommand{\wpThreeShort}{\wpThree{}}
+\newcommand{\wpThree}{Real-world Social Situation Assessment}
+\newcommand{\wpThreeShort}{Social Situation Assessment}
 
 \newcommand{\wpFour}{Data-driven social behaviour generation}
 \newcommand{\wpFourShort}{Social behaviours}
@@ -378,7 +384,8 @@ research questions:
 
     \item \textbf{R2} [conceptual \& technology level]: how do these principles
         can be integrated into a principled, socially-driven teleological
-        architecture for autonomous robots? What additional principles need to
+        architecture for autonomous robots? What additional principles (like
+        human-in-the-loop machine learning) need to
         be considered to ensure, \emph{by design}, a responsible, trustworthy,
         human-centered robot behaviour?
 
@@ -411,18 +418,25 @@ real-world situations (R4).
 
 \paragraph{WP1: \textbf{\wpOne}} (Y1-3)
 
-The basic ambition of \project is to create a conceptual framework
-around social robots in the human society, by re-framing the widely accepted, yet
-sorely unspecific, idea of \emph{human-robot interaction} into the more specific
-idea of \emph{robot-supported human-human interactions}: the robot is considered
-from the perspective of how it can \emph{support} humans, and in particular,
-support stronger, positive interactions between humans. WP2's purpose is to research
-and define such a framework that will
-provide the (currently missing) conceptual frame around questions like: what role
-for social robots? where to set the boundaries of artificial social
-interactions? what does 'ethical-by-design', 'responsible-by-design' might mean
-in the context of social human-robot interactions? 
+The basic ambition of \project is to create a conceptual framework around social
+robots in the human society, by re-framing the widely accepted, yet sorely
+unspecific, idea of \emph{human-robot interaction} into the more specific idea
+of \emph{robot-supported human-human interactions} (r-HHI): the robot is
+considered from the perspective of how it can \emph{support} humans, and in
+particular, support stronger, positive interactions between humans.
 
+\textbf{T1.1 -- Conceptual framing of r-HHI} The first task in WP1 is to research and
+define such a framework that will provide the (currently missing) conceptual
+frame around questions like: what role for social robots? where to set the
+boundaries of artificial social interactions? what does 'ethical-by-design',
+'responsible-by-design' might mean in the context of social human-robot
+interactions? 
+
+\textbf{T1.2 -- Determinants and principles of robot-supported social
+interactions} The conceptual framework identified in T1.1 is translated into a
+set of \emph{interaction design principles}, \emph{determinants} and
+\emph{parameters} that will together form a set of requirements and objectives
+for the socio-cognitive architecture developed in WP2.
 
 \paragraph{WP2: \textbf{\wpTwo}} (Y2-5)
 
@@ -439,6 +453,27 @@ in the context of social human-robot interactions?
     \item action execution using human-in-the-loop ML
 \end{itemize}
 
+\textbf{T2.1 -- Socially-driven architecture} The socio-cognitive architecture
+of \project robots is built around two principles: \emph{human-taught autonomy},
+and a \emph{social teleology}. This task covers the overall design of the
+architecture. It builds from the principles identified in T1.2, and relies on a
+combination of socially-driven intrinsic motivation, and human-in-the-loop
+machine learning to progressively learn an autonomous social policy.  One
+additional outcome of this design stage is a set of cognitive requirements that
+will inform WP3 and WP4.
+
+\textbf{T2.2 -- Learning from humans to achieve 'by-design' responsible \&
+trustworthy AI} Building on my recent, promising results on human-in-the-loop
+social learning~\cite{senft2019teaching}, this task implements the learning
+mechanics (including the critical aspect of the interface with the human
+teacher) to allow human participants to progressivly teach the robot a social
+policy to become a good social helper. This task also research whether and how
+human-in-the-loop machine learning, by involving the end-users in the creation
+of the robot behaviours, enables a more trustworthy AI system.
+
+\textbf{T2.3 -- Hybrid situation assessment and knowledge representation}
+
+
 \paragraph{WP3: \textbf{\wpThree}} (Y1-4)
 
 In WP3, the project addresses the key scientific and technical underpinnings
@@ -449,7 +484,8 @@ dynamics, complex, dynamic attentional mechanisms); psycho-social
 characteristics (social roles and hierarchies; social groups; mental modelling;
 anthropomorphic ascriptions); temporal characteristics (effects of novelty,
 dynamics of anthropomorphism and mental ascriptions, shifting group dynamics).
-This work will result in the formulation of a socio-cognitive model of the
+
+This WP will result in the formulation of a socio-cognitive model of the
 social environment of the robot and the effective implementation of the model,
 including the development of a complete social assessment pipeline, from social
 signal perception (like automatic attention tracking, face recognition, sound
@@ -457,6 +493,17 @@ localisation, etc.) to higher-level socio-cognitive constructs, including group
 dynamics and theory of mind. As detailled in Section B2, this will rely on
 hybrid AI techniques, including symbolic (ontologies and first-order logic),
 sub-symbolic (neural nets) and hybrid (conceptors) modelling.
+
+\textbf{T3.1 -- Social dynamics}
+
+\textbf{T3.2 -- Interaction dynamics}
+
+\textbf{T3.3 -- Social situation assessment} knowledge representation and
+grounding is a fundamental building block for cognitive
+architectures~\cite{lemaignan2017artificial}. This task builds on existing
+state-of-art (eg~\cite{sallami2019simulation}) and extend it to include the
+representation of the social situation. This entails hybrid
+symbolic/sub-symbolic representations.
 
 \paragraph{WP4: \textbf{\wpFour}} (Y1-4)
 
@@ -606,27 +653,20 @@ access to two of the long-term conditions wards for the duration of the studies.
 
 
 
-The project is build 
-The investigation of social dynamics can not
-The project is built 
-
-
-
-
-
 \subsection{Capacity of the Principal Investigator to deliver on the work programme}
 
 The project's ambitious scientific and technical goals are expected to deliver
-major scientific, societal and technical impact, that extends beyond the
-end of the fellowship. At the end of the fellowship, the PI is expected to be a
-world-leader in the emerging field of socially-driven, responsible robotics.
-This leadership is required to address and inform policies related to the key
-emerging societal challenge of AI and intelligent robots.
+major scientific, societal and technical impact, that extends beyond the end of
+the fellowship. At the end of the fellowship, the PI is expected to be a
+world-leader in the emerging field of socially-driven, responsible autonomous
+service \& companion robots. This leadership is required to address and inform
+policies related to the key emerging societal challenge of AI and intelligent
+robots.
 
 PI Lemaignan is in a unique position to deliver on the \project work plan.  He
 has already established international recognition in human-robot interaction and
 has likewise demonstrated strong leadership by leading research teams in three
-different institutions (see Sections B1.b and B1.c). Importantly, and as
+different institutions (see Sections B1.b and B1.c). Importantly, as
 illustrated in Table~\ref{pi-expertise}, the breadth of
 his interdiscplinary research covers the scientific expertise required by the
 project, providing him with a unique overall perspective and understanding of
@@ -1676,7 +1716,9 @@ fully justified by the scientific added value they bring to the project.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{WP2: \wpTwo{}}
 
-\subsection{Disembodied Cognitive Architectures}
+\subsection{T2.1}
+
+\paragraph{Disembodied Cognitive Architectures}
 
 Reviews: \cite{chong2007integrated}, \cite{vernon2007survey} --
 extended in \cite{kingdon2008review}, \cite{duch2008cognitive},
@@ -1684,10 +1726,10 @@ extended in \cite{kingdon2008review}, \cite{duch2008cognitive},
 \cite{thorisson2012cognitive}.
 
 
-\subsection{Social Robotics Architectures}\label{sec:robots}
+\paragraph{Social Robotics Architectures}\label{sec:robots}
 
 
-\paragraph{The \emph{Society of Mind}-inspired paradigm underpinning practical architectures}
+\emph{Society of Mind}-inspired paradigm underpinning practical architectures
 
 Mostly functional architectures: integration models rather than cognitive
 architectures per se.
@@ -1795,6 +1837,35 @@ Architectures that...
             \item POETICON++ arch~\cite{antunes2016from} 
         \end{itemize}
 \end{itemize}
+
+\subsection{T2.2}
+
+The current state-of-the-art is limited in this respect: sub-symbolic
+approaches focus on identifying low-level social signals (for instance,
+gazing, gesture recognition) while symbolic approaches have focused on
+classical symbolic problems like language understanding. Some attempts
+have been made to bridge both (for instance, multi-modal dialogue
+\cite{lemaignan2011grounding, lemaignan2017artificial}), but no work to
+date has been able to interpret the social dynamics themselves (for
+instance, \emph{are the partners getting along well?}, \emph{Is there
+any frustration?}, \emph{Are they collaborating or not?}, \emph{Are they
+engaged in their joint task?}). This is likely due to the complexity of
+the problem, mixing sub-symbolic and symbolic reasoning in intricate
+ways. Understanding social dynamics in naturalistic conditions entails
+identifying a complex net of overlapping social cues, at multiple time
+scales. Reasoning about these ever-changing, sometimes contradictory,
+dynamics, is an essential skill for an artificial socio-cognitive
+system, yet an essentially open research question.
+
+I have recently introduced a dataset of social
+interaction~\cite{lemaignan2018pinsoro} that enables for the first time a
+quantitative, data-driven investigation of social dynamics. Promising initial
+results led me to uncover three latent constructs that underpin social
+interactions~\cite{bartlett2019what}. This dataset and the related on-going
+scientific investigations will form the starting point of my approach to this
+challenge.
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
