@@ -1,4 +1,4 @@
-\documentclass[11pt]{report}
+\documentclass[11pt,a4paper]{report}
 \usepackage{amssymb,amsmath}
 \usepackage{enumitem}
 
@@ -440,18 +440,19 @@ for the socio-cognitive architecture developed in WP2.
 
 \paragraph{WP2: \textbf{\wpTwo}} (Y2-5)
 
-\TODO{complete section architecture}
+These part of the work is the technical core of the project: I will create a
+novel socio-cognitive architecture for the robots, bringing together advanced
+perception of the human social dynamics, intrinsic motivation to support human
+interactions, and human-in-the-loop machine learning to create transparent,
+trustworthy action policies. This part is high-risk/high-gain, as no such
+combined approach has been attempted before in real-world, complex social
+situations. I will mitigate the risk by ensuring cognitive functions are
+decoupled from each other where sensible, and in particular, ensure that action
+policies can be generated independently through intrinsic motivation or
+human-taught social policies, hence creating a level of cognitive redundancy.
 
-\begin{itemize}
-    \item Intrinsic social motivation: do good
-    \item bottom-up grounding for situation assessment and social situation
-        assessment
-    \item symbolic grounding of both environment and social situation using
-        'human in the loop' OR data-driven symbolic grounding
-    \item knowledge representation and symbolic reasoning for dialogue
-        grounding, goal planning, knowledge exchange and linked data
-    \item action execution using human-in-the-loop ML
-\end{itemize}
+\TODO{explain why intrinsic motivation OR human-in-the-loop ML alone are not
+sufficient}
 
 \textbf{T2.1 -- Socially-driven architecture} The socio-cognitive architecture
 of \project robots is built around two principles: \emph{human-taught autonomy},
