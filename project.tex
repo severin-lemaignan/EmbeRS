@@ -172,11 +172,11 @@ positive role social robots could play in our future societies}.
 \newcommand{\wpOneShort}{Framing r-HHI}
 
 
-\newcommand{\wpTwo}{Trustworthy-by-design socio-cognitive architecture for robot-supported human-human interactions}
-\newcommand{\wpTwoShort}{Socio-cognitive architecture}
+\newcommand{\wpTwo}{Real-world Social Situation Assessment}
+\newcommand{\wpTwoShort}{Social Situation Assessment}
 
-\newcommand{\wpThree}{Real-world Social Situation Assessment}
-\newcommand{\wpThreeShort}{Social Situation Assessment}
+\newcommand{\wpThree}{Trustworthy-by-design socio-cognitive architecture for robot-supported human-human interactions}
+\newcommand{\wpThreeShort}{Socio-cognitive architecture}
 
 \newcommand{\wpFour}{Data-driven social behaviour generation}
 \newcommand{\wpFourShort}{Social behaviours}
@@ -453,7 +453,7 @@ social interactions with the general public. For an initial period of one year,
 two \project robots will be permanently based at the museum.  Participants
 (children and adults) will be guided, with the help of museum staff and a
 dedicated interface, into teleoperating the robots to make them good 'social
-helpers'.  This will generate the quantitative and qualitative data to inform
+helpers'. This will generate the quantitative and qualitative data to inform
 questions like 'what role for the robot?', 'when to intervene?', 'what are the
 effective and acceptable social influence techniques?'. It will also be a unique
 example of large-scale participatory design with future end-users of social
@@ -507,7 +507,49 @@ set of \emph{interaction design principles}, \emph{determinants} and
 \emph{parameters} that will together form a set of requirements and objectives
 for the socio-cognitive architecture developed in WP2.
 
-\paragraph{WP2: \textbf{\wpTwo}} (Y2-5)
+\paragraph{WP2: \textbf{\wpTwo}} (Y1-4)
+
+In WP2, the project addresses the key scientific and technical pre-requisites to
+effectively deliver WP3's architecture:  the scientific understanding and
+formalisation of the \emph{social fabric} in which the robot is embedded, in its
+full complexity: spatial characteristics (proxemics; group dynamics; complex,
+dynamic attentional mechanisms); psycho-social determinants (social roles and
+hierarchies; social groups; mental modelling; anthropomorphic ascriptions);
+temporal characteristics (effects of novelty; dynamics of anthropomorphism and
+mental ascriptions; group dynamics).  While some of these capabilities have been
+previously investigated is isolation~\cite{citeneeded}, this WP will deliver the
+first complete and integrated model of artificial social cognition.
+
+\textbf{T2.1 -- Hybrid situation assessment and knowledge representation}
+Knowledge representation and
+grounding is a fundamental building block for cognitive
+architectures~\cite{lemaignan2017artificial}. This task builds on existing
+state-of-art in knowledge representation (eg~\cite{lemaignan2010oro}) and
+situation assessment (eg~\cite{sallami2019simulation}) and creates a
+coherent and hybrid (symbolic/sub-symbolic) system of representations for the cognitive architecture.
+
+
+\textbf{T2.2 -- Social dynamics}
+
+\TODO{}
+
+\textbf{T2.3 -- Interaction dynamics}
+
+\TODO{}
+
+\textbf{T2.4 -- Social situation assessment} The integration of the social cues
+from T2.2 and T2.3 results in a socio-cognitive model of the social environment
+of the robot that we term \emph{social situation assessment}.  It effectively
+extends the representation capabilities of T2.1 to the social sphere, and covers
+the development of a complete social assessment pipeline, from social signal
+perception (like automatic attention tracking, face recognition, sound
+localisation, etc.) to higher-level socio-cognitive constructs, including group
+dynamics and theory of mind. This will rely on hybrid AI techniques, including
+symbolic (ontologies and first-order logic), sub-symbolic (neural nets) and
+hybrid (conceptors) modelling.
+
+
+\paragraph{WP3: \textbf{\wpThree}} (Y2-5)
 
 This part of the programme is the technical core of the project: I will create a
 novel socio-cognitive architecture for the robots, bringing together advanced
@@ -525,7 +567,7 @@ mechanisms in place where necessary).
 \TODO{explain why intrinsic motivation OR human-in-the-loop ML alone are not
 sufficient}
 
-\textbf{T2.1 -- Socially-driven architecture} The socio-cognitive architecture
+\textbf{T3.1 -- Socially-driven architecture} The socio-cognitive architecture
 of \project robots is built around two principles: \emph{human-taught autonomy},
 and a \emph{social teleology}. This task covers the overall design of the
 architecture. It builds from the principles identified in T1.3, and relies on a
@@ -534,7 +576,7 @@ machine learning to progressively learn an autonomous social policy.  One
 additional outcome of this design stage is a set of required cognitive functions that
 informs WP3 and WP4.
 
-\textbf{T2.2 -- Learning from humans to achieve 'by-design' responsible \&
+\textbf{T3.2 -- Learning from humans to achieve 'by-design' responsible \&
 trustworthy AI} Building on my recent, promising results on human-in-the-loop
 social learning~\cite{senft2017supervised,senft2019teaching}, this task
 implements the learning mechanics (including the critical aspect of the
@@ -543,46 +585,6 @@ teach the robot a social policy to become a good social helper. This task also
 researches whether and how human-in-the-loop machine learning enables a more
 trustworthy AI system, by involving the end-users in the creation of the robot
 behaviours.
-
-\textbf{T2.3 -- Hybrid situation assessment and knowledge representation}
-Knowledge representation and
-grounding is a fundamental building block for cognitive
-architectures~\cite{lemaignan2017artificial}. This task builds on existing
-state-of-art in knowledge representation (eg~\cite{lemaignan2010oro}) and
-situation assessment (eg~\cite{sallami2019simulation}) and creates a
-coherent and hybrid (symbolic/sub-symbolic) system of representations for the cognitive architecture.
-
-\paragraph{WP3: \textbf{\wpThree}} (Y1-4)
-
-In WP3, the project addresses the key scientific and technical pre-requisites to
-effectively deliver WP2's architecture:  the scientific understanding and
-formalisation of the \emph{social fabric} in which the robot is embedded, in its
-full complexity: spatial characteristics (proxemics; group dynamics; complex,
-dynamic attentional mechanisms); psycho-social determinants (social roles and
-hierarchies; social groups; mental modelling; anthropomorphic ascriptions);
-temporal characteristics (effects of novelty; dynamics of anthropomorphism and
-mental ascriptions; group dynamics).  While some of these capabilities have been
-previously investigated is isolation~\cite{citeneeded}, this WP will deliver the
-first complete and integrated model of artificial social cognition.
-
-\textbf{T3.1 -- Social dynamics}
-
-\TODO{}
-
-\textbf{T3.2 -- Interaction dynamics}
-
-\TODO{}
-
-\textbf{T3.3 -- Social situation assessment} The integration of the social cues
-from T3.1 and T3.2 results in a socio-cognitive model of the social environment
-of the robot that we term \emph{social situation assessment}.  It effectively
-extends the representation capabilities of T2.3 to the social sphere, and covers
-the development of a complete social assessment pipeline, from social signal
-perception (like automatic attention tracking, face recognition, sound
-localisation, etc.) to higher-level socio-cognitive constructs, including group
-dynamics and theory of mind. This will rely on hybrid AI techniques, including
-symbolic (ontologies and first-order logic), sub-symbolic (neural nets) and
-hybrid (conceptors) modelling.
 
 
 \paragraph{WP4: \textbf{\wpFour}} (Y1-4)
