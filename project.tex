@@ -534,20 +534,34 @@ baxter2016cognitive}.
 Knowledge representation and grounding is a fundamental building block for
 cognitive architectures~\cite{lemaignan2017artificial,beetz2010cram}. This task
 builds on existing state-of-art in knowledge representation and situation
-assessment (eg~\cite{sallami2019simulation}) and creates a coherent system of
-representations for the cognitive architecture. This will rely on hybrid AI
-techniques, including established symbolic modelling (ontologies and first-order
-logic~\cite{lemaignan2010oro, tenorth2009knowrob}), as well as hybrid
-symbolic/sub-symbolic modelling (using Jaeger's
-conceptors~\cite{jaeger2014controlling}).
+assessment (eg~\cite{citeneeded}) and creates a coherent system of
+representations for the cognitive architecture that extends the \sc{underworlds}
+spatio-temporal representation tool developped by the
+PI~\cite{lemaignan2018underworlds,sallami2019simulation} with knowledge
+representation capabilities, using both established symbolic techniques (like
+ontologies and first-order logic~\cite{lemaignan2010oro, tenorth2009knowrob}),
+and hybrid symbolic/sub-symbolic modelling (using Jaeger's
+conceptors~\cite{jaeger2014controlling}) as a new route to overcome the symbolic
+grounding problem~\cite{harnad1990symbol}.
 
-\textbf{T2.2 -- Social dynamics}
+\textbf{T2.2 -- Social dynamics} This task focuses on the processing and
+modelling of social signals, extending existing techniques, both model-based
+(eg~\cite{lemaignan2016realtime,others}) and machine-learning based
+(eg~\cite{chetouani,others}) This task goes beyond the state-of-the-art by
+looking specifically at resolving highly dynamical signals (like gaze saccades
+and micro facial expressions). While playing an fundamental role in social
+interactions~\cite{citeneeded}, they are currently not investigated in social
+robotics -- even though the technology (high speed cameras and embedded GPUs) to
+achieve real-time classification of such cues is available.
 
-\TODO{}
+\textbf{T2.3 -- Interaction and group dynamics} Building on T2.2, T2.3
+investigates the automatic understanding and modelling of group-level social
+interactions, like inter-personal affordances~\cite{pandey2013affordance}. It
+includes spatial determinants (proxemics; group-level attention tracking);
+psycho-social determinants (social roles and hierarchies; social groups) and
+dynamics (effects of novelty; dynamics of anthropomorphism and mental
+ascriptions; group dynamics). 
 
-\textbf{T2.3 -- Interaction dynamics}
-
-\TODO{}
 
 \textbf{T2.4 -- Social situation assessment} The integration of the social cues
 from T2.2 and T2.3 results in a socio-cognitive model of the social environment
@@ -557,7 +571,12 @@ the development of a complete social assessment pipeline, from social signal
 perception (like automatic attention tracking, face recognition, sound
 localisation, etc.) to higher-level socio-cognitive constructs, including group
 dynamics and theory of mind (as I previously framed
-in~\cite{lemaignan2015mutual, dillenbourg2016symmetry}). 
+in~\cite{lemaignan2015mutual, dillenbourg2016symmetry}). A focused experimental
+programme accompanies T2.4, to demonstrate (in relative isolation) the resulting
+socio-cognitive capabilties. In particular, the protocols identified by Frith
+and Happé~\cite{frith1994autism} to investigate theory of mind with autistic
+children offers an excellent experimental framework for social
+robotics~\cite{lemaignan2015mutual} and will be employed.
 
 \paragraph{WP3: \textbf{\wpThree}} (Y2-5)
 
@@ -601,41 +620,37 @@ behaviours.
 
 \TODO{Split into tasks}
 
-Mirroring WP3, WP4 addresses the question of social behaviour \emph{generation}.
-Indeed, designing behaviours that enable sustained, long-term engagement in a
-social human-robot interaction is essentially an open research question. Three
-main approaches to social behaviours generation exist today:
-\emph{user-induced}, where the end-user interacts with the robot and ascribes
-(knowingly or not) complex behaviours to the machine, while in reality the
-robot's behaviours are simple and non-goal oriented (eg generating a noise or a
-small movement when being touched). This has been used to great effect in
-therapy robots, for instance (eg Paro). \emph{Off-the-shelf behaviours}, where
-the robot relies on a set library of behaviours (that might be individually
-relatively complex). The approach can elicit a strong initial social response
-from the user, but this social response tends to vanish rapidly once the
-'tricks' of the robot have been all discovered and become repetitive.  Besides,
-as the robot does not typically maintain a long-term socio-cognitive plan of the
-interaction, the behaviours are typically perceived as fun, yet pointless. This
-is often observed in toy-like robots (eg Vector, Dot \& Dash). Finally, many
-social robots avoid altogether the problem of generating behaviours by simply
-offering to the end-user control over \emph{low-level behaviours} (eg, control
-of the joints of the robot). This means that, even when the robot has relatively
-powerful social perception capabilities (like recognising people and voice), no
-real social behaviours is generated.
+Mirroring WP2's focus on understanding the social interactions, WP4 addresses the
+question of social behaviour \emph{generation}: how to create natural
+behaviours, engaging over a sustained period of time (eg not simply picking
+scripted behaviours from a library, that are rapidly perceived as repetitive).
 
-None of these three approach is satisfactory, and indeed, no approach to date
-has been able to engage human users in long-term, sustained interactions.
-\project aims at significantly advancing the state of the art in this regard, by
-combining two emerging techniques: (1) a new data-driven, continuous approach to
-behaviour generation inspired by Learning from
-Demonstration~\cite{citationneeded}; (2) interactive machine learning in
-high-dimensional input/output spaces~\cite{senft2020woz}, where I have shown
-with my students promising results for generating complex social
-behaviours~\cite{senft2019teaching, winkle2020coach} that fully involve the
-end-users~\cite{winkle2020methodology}. By combining the two, \textbf{I target a
-breakthrough in robots' social behaviours generation: the generation of
-non-repetitive, socially congruent and transparent social
-behaviours} (including gestures and gazes).
+\textbf{T4.1 -- Machine learning for continuous motion generation} \project aims
+at significantly advancing the state of the art in this regard, by combining two
+emerging techniques: (1) a new data-driven, continuous approach to behaviour
+generation inspired by Learning from Demonstration~\cite{citationneeded}; (2)
+interactive machine learning in high-dimensional input/output
+spaces~\cite{senft2020woz}, where I have shown with my students promising
+results for generating complex social behaviours~\cite{senft2019teaching,
+winkle2020coach} that fully involve the end-users~\cite{winkle2020methodology}.
+By combining the two, \textbf{I target a breakthrough in robots' social
+behaviours generation: the generation of non-repetitive, socially congruent and
+transparent social behaviours} (including gestures and gazes).
+
+
+\textbf{T4.2 -- Non-verbal behaviours} Critically, while the robot will be able to understand and record the textual
+transcription of the what the child says (multi-lingual speech recognition),
+the robot itself is purposefully designed *not* to speak, using instead *non-verbal*
+communication mechanisms (non-verbal utterances using sounds, gaze, joint
+attention, expressive motions, etc). In particular, the *soundscape* of the
+robot will be designed by Dave Meckin, an expert on sound design for vulnerable
+children. The purpose is to create an approachable, non-threatening,
+non-judgmental, *social* interaction with the child, and effectively establish
+the interaction into a trusted physical and emotional *safe-space* for the
+child.
+
+
+
 
 \TODO{discuss Liveliness (Pepper/Nao), Curiosity-based (\cite{kaplan}),
 human-in-the-loop (\cite{senft, winkle})}
@@ -1059,7 +1074,7 @@ media (Twitter handle: @skadge)
 \TODO{Tech transfer; CAV; SABRE; patent US20190016213A1}
 
 \newpage
-\subsection{Selected outputs}
+\subsection{Selected outputs (reverse chronological order)}
 
 %\resizebox{\linewidth}{!}{
 \hspace*{-0.5cm}\begin{tabular}{p{1.7cm}p{7cm}p{8cm}}
@@ -1240,29 +1255,55 @@ opportunities for science, technology or scholarship. Specify any particularly c
 unconventional aspects of the proposal, including multi- or inter-disciplinary aspects.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{[Blocks of text for reuse]}
 
-\project aims at building unique European capacity to assert leadership in this
-domain, and, beyond the specific deliverables of this 5-years project,
-establishing the PI as a world-leader in goal-driven, socially-responsible
-robotics.
+While the original poster picture of a
+'multi-function-household-robot-that-does-the-dishes' has yet to materialise,
+social robots are certainly in the process of establishing themselves as
+important agents in a variety of other situations, for their intrinsic
+\emph{social} features: source of comfort, tutors, entertainers. The robot as a
+\emph{social agent} is a reality, within laboratories at least.
+
+\subsection{The long-term vision: robot-supported human-human interactions}
 
 
-While the original aspiration to a
-'multi-function-household-robot-that-does-the-dishes' has yet to materialise --
-physical manipulation of objects in an unstructured environment is hard, as it
-happens --, social robots are certainly in the process of establishing
-themselves as important agents in a variety of other situations, for their
-intrinsic \emph{social} features: source of comfort, tutors, entertainers. The
-robot as a \emph{social agent} is a reality, within laboratories at least.
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{figs/rHHI-1}
+\caption{A child, just arriving in a new school, tries to integrate with other
+    children -- in such a situation, should the robot decide to help to break the ice? What
+    are the socio-cognitive peceptual and behavioural capabilities required to
+    make that decision?}
+\label{fig:rHHI}
+\end{figure}
+
+
+\project is a project that aims at helping to build strong human
+relationships with the help of technology.
+
+The core idea of the project is to build small companion robots whose
+aim is to facilitate human-human interactions. We want to develop these
+robots with a particular application in mind: supporting the social and
+cultural integration of vulnerable children in a foreign country, and in
+particular, migrant children who might lack the otherwise needed support
+(shared culture; already well integrated relatives) for a successful
+integration.
+
+\subsubsection{Key scientific research questions}
+
+\begin{enumerate}
+\item research the role of social influence to scaffold positive human-human
+    interactions (including its ethical ramifications) in the context of migrant
+    integration;
+\item explore how a small robot companion can be endowed with social
+    competencies to positively influence human interactions; design and
+    implement the corresponding artificial social behaviours;
+\item design and build a small rugged and autonomous companion robot that
+    realise this goal for child-child interactions; test the technology in
+    school with actual migrant children.
+\end{enumerate}
 
 
 \subsection{Three pillars}
-
-To achieve the vision of a natural and harmonious \emph{co-habitation} between
-social robots and humans, ...
 
 The \project project will, for the first time, take a broad, holistic approach
 to these questions, and as such, is build around three pilars:
@@ -1276,7 +1317,6 @@ to these questions, and as such, is build around three pilars:
 
 The difficulty comes from the fact that these pilars do not represent independent
 research questions: they are deeply woven together, in intricate ways.
-
 
 Taken independently, these three pilars are already intrinsically complex.
 
@@ -1308,136 +1348,24 @@ the robot how to socially behave, in-situ, with the robot embedded in the
 interaction. I have conducted two recent and high-profile experiments in this
 direction
 
-\subsection{Small robot for refugee children}
-This second application scenario is about using a small, social, friendly robot
-to help refugee children to turn the complex experience of their journey across
-the world into a powerful story that they will be able to show and tell while
-seeking asylum.
 
-The robot (while the exact platform is yet to be decided, it will likely be
-similar to the Bluefrog's Buddy or Asus' Zenbo) will be used by field
-practitioners (primarily by ArtRefuge UK, with possible extensions to other
-charities and NGOs) in refugee camps and safe-houses across Europe to support
-the children. Supported by the staff, the robot and the child engage into a
-non-threatening social interaction, in which the child is invited, little by
-little, to recount her/his journey and personal life. The duration and frequency
-of the interventions is flexible and would be tailored to each child's needs;
-over the course of one to three weeks, we would typically envision one 30-min
-long interaction every day.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{[Blocks of text for reuse]}
 
-Following the ArtRefuge approach, as well as the interactions created by Chloé
-Meineck on her previous Trove project\footnote{\url{https://bit.ly/2ZlZL5W}},
-the child is invited to tell her/his story in many different way, using a
-variety of supports: narration, drawings, paintings, plasticine, small toy
-figures, etc.  The robot records (pictures, videos, sounds) these
-representations, and also actively engage with the child, showing curiosity,
-non-judgmental emotional responses, and nudging the child to tell more, show
-more.
+\project aims at building unique European capacity to assert leadership in this
+domain, and, beyond the specific deliverables of this 5-years project,
+establishing the PI as a world-leader in goal-driven, socially-responsible
+robotics.
 
-Critically, while the robot will be able to understand and record the textual
-transcription of the what the child says (multi-lingual speech recognition),
-the robot itself is purposefully designed *not* to speak, using instead *non-verbal*
-communication mechanisms (non-verbal utterances using sounds, gaze, joint
-attention, expressive motions, etc). In particular, the *soundscape* of the
-robot will be designed by Dave Meckin, an expert on sound design for vulnerable
-children. The purpose is to create an approachable, non-threatening,
-non-judgmental, *social* interaction with the child, and effectively establish
-the interaction into a trusted physical and emotional *safe-space* for the
-child.
-
-The work will initially focus on one-to-one interactions, and might evolve
-towards interactions with small groups (2-3) of children if deemed desirable
-after the first field deployments.
-
-Another critical aspect of the project relates to how the robot will store and
-protect the potentially highly sensitive data that is recorded during the
-interactions. Data will only be stored on the robot itself (no external cloud
-storage), and records will be strongly encrypted (i.e. even if the robot is
-seized, the data will not be accessible). We will research secure, yet
-child-friendly, mechanisms to identify the child and ensure that only her/him
-can access her/his personal data. This will likely involve a combination of
-picture-based passwords and facial recognition.
-
-The created digital record will ultimately belong to the child. We will research
-and create practical means (paper copy, bracelet with a SD card,...) for the
-child to access this record when he needs it, and take it with her/him, even
-after she/he has left the camp or safe-house. The devised solution will have to
-ensure that no abuse or misuse of the record against the child is possible.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{The long-term vision: robot-supported human-human interactions}
 
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=0.9\linewidth]{figs/render5-colors.png}
-\end{figure}
-
-\project is a project that aims at helping to build strong human
-relationships with the help of technology.
-
-The core idea of the project is to build small companion robots whose
-aim is to facilitate human-human interactions. We want to develop these
-robots with a particular application in mind: supporting the social and
-cultural integration of vulnerable children in a foreign country, and in
-particular, migrant children who might lack the otherwise needed support
-(shared culture; already well integrated relatives) for a successful
-integration.
-
-\subsubsection{Key scientific research questions}
-
-\begin{enumerate}
-\item research the role of social influence to scaffold positive human-human
-    interactions (including its ethical ramifications) in the context of migrant
-    integration;
-\item explore how a small robot companion can be endowed with social
-    competencies to positively influence human interactions; design and
-    implement the corresponding artificial social behaviours;
-\item design and build a small rugged and autonomous companion robot that
-    realise this goal for child-child interactions; test the technology in
-    school with actual migrant children.
-\end{enumerate}
-
-\subsubsection{Vision of a novel form of interaction ``human-(robot)-human''}
-
-\paragraph{The case of the social integration of migrant children}
-
-A robot is left with the child when he or she starts their journey in
-their new host country, and becomes a companion for the child during the
-first months of the integration. Using several mechanisms that are
-discussed in this proposal, the robot helps the child to gain
-self-confidence, and ultimately engage in successful social interactions
-with other children.
-
-Critically, the robot is designed to support the social and cultural
-integration of the child \emph{amongst her/his peers}. While the child
-might build affective/emotional bonds with the robot over the course of
-the support period, the robot behaviour is designed to ensure that these
-bonds do not substitute themselves to the interactions with other
-children.
-
-The project combines a range of scientific and engineering endeavours to
-realise within a 5-years timeframe an ambitious and bold vision for
-social robotics in our society. Specifically, the project draws from the
-fields of social robotics; human-robot interaction; human-machine
-interaction design; and mechatronics.
-
-While the breadth of the proposed project is significant (from
-mechatronic design to long-term field testing with vulnerable
-populations), the project structure minimizes the cross-dependencies
-within the project, avoiding critical failure points that would put the
-whole project at risk, and a careful risk assessment is conducted that
-includes meaningful mitigation strategies.
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Social robots in the society}
 
 \subsection{Psycho-social underpinnings}
@@ -1699,6 +1627,7 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
 \end{figure}
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Social influence}
 
@@ -1937,6 +1866,32 @@ challenge.
 
 \textbf{Data-driven continuous behaviour generation}
 
+Designing behaviours that
+enable sustained, long-term engagement in a social human-robot interaction is
+essentially an open research question. Three main approaches to social
+behaviours generation exist today: \emph{user-induced}, where the end-user
+interacts with the robot and ascribes (knowingly or not) complex behaviours to
+the machine, while in reality the robot's behaviours are simple and non-goal
+oriented (eg generating a noise or a small movement when being touched). This
+has been used to great effect in therapy robots, for instance (eg Paro).
+\emph{Off-the-shelf behaviours}, where the robot relies on a set library of
+behaviours (that might be individually relatively complex). The approach can
+elicit a strong initial social response from the user, but this social response
+tends to vanish rapidly once the 'tricks' of the robot have been all discovered
+and become repetitive.  Besides, as the robot does not typically maintain a
+long-term socio-cognitive plan of the interaction, the behaviours are typically
+perceived as fun, yet pointless. This is often observed in toy-like robots (eg
+Vector, Dot \& Dash). Finally, many social robots avoid altogether the problem
+of generating behaviours by simply offering to the end-user control over
+\emph{low-level behaviours} (eg, control of the joints of the robot). This means
+that, even when the robot has relatively powerful social perception capabilities
+(like recognising people and voice), no real social behaviours is generated.
+
+None of these three approach is satisfactory, and indeed, no approach to date
+has been able to engage human users in long-term, sustained interactions.
+
+
+
 
 At a time where companion robots are coming to the market, one important
 question remains fully open: how to design robot behaviours that foster
@@ -1944,8 +1899,8 @@ lasting engagement? A vast body of academic literature identifies that
 robots evoke an initial phase of high user engagement (the
 \emph{novelty} phase) that vanishes as the user realises that the robot
 is actually quite predictable and repetitive. The \emph{agency}
-initially ascribed by the user to the robot quickly fades (Lemaignan et
-al. 2014), leading to critical user disengagement from the technology.
+initially ascribed by the user to the robot quickly
+fades~\cite{lemaignan2014dynamics}, leading to critical user disengagement from the technology.
 
 %\begin{wrapfigure}[23]{l}{6.5cm}
 \begin{figure}
