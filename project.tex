@@ -3,6 +3,8 @@
 \usepackage{enumitem}
 \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
 
+\usepackage{soul} % underlines
+\setuldepth{aaaa}
 
 %% enable markdown's stars to bold/italic sections of code -- requires lualatex!
 \usepackage{luacode,luatexbase}
@@ -24,7 +26,7 @@
 
 
 %\usepackage[style=authoryear]{biblatex}
-\usepackage[style=numeric]{biblatex}
+\usepackage[style=numeric,maxbibnames=19, maxcitenames=2,firstinits=true]{biblatex}
 \addbibresource{biblio.bib}
 \addbibresource{cogarch.bib}
 \addbibresource{my-publications.bib}
@@ -223,7 +225,7 @@ HHI? link to responsible AI?}
 The service \& companion robots that we are set to interact with in the coming
 years, are being designed and built today in labs and startups all over the
 world. Can we ensure 'by design' that they will have a net social utility?
-\project \underline{defines} and \underline{implements} \textbf{a vision of AI
+\project \ul{defines} and \ul{implements} \textbf{a vision of AI
 and social robotics that aims at placing the human at the centre of these
 emerging technologies; supports stronger, more cohesive social interactions;
 and aims at reinforcing the social fabric of our societies rather than isolating
@@ -1080,7 +1082,7 @@ media (Twitter handle: @skadge)
 \hspace*{-0.5cm}\begin{tabular}{p{1.7cm}p{7cm}p{8cm}}
 
     \vspace{-0.2cm}\includegraphics[height=2.2cm]{thumbs/2019-science.png} & Senft, E.,
-    \underline{Lemaignan, S.}, Baxter, P., Bartlett, M., Belpaeme, T.
+    \ul{Lemaignan, S.}, Baxter, P., Bartlett, M., Belpaeme, T.
     \newline\href{https://doi.org/10.1126/scirobotics.aat1186}{\textbf{Teaching robots
     social autonomy from in situ human guidance}}
     \newline \textit{Science Robotics} 2019
@@ -1093,7 +1095,7 @@ media (Twitter handle: @skadge)
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2019-frontiers-chris.jpg} &
 
-    Wallbridge, C., \underline{Lemaignan, S.}, Senft, E., Belpaeme, T.  
+    Wallbridge, C., \ul{Lemaignan, S.}, Senft, E., Belpaeme, T.  
     \newline\href{https://doi.org/10.3389/frobt.2019.00067}{\textbf{Generating
     Spatial Referring Expressions in a Social Robot: Dynamic vs Non-Ambiguous}}
     \newline \textit{Frontiers in AI and Robotics} 2019
@@ -1103,7 +1105,7 @@ media (Twitter handle: @skadge)
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2019-frontiers-maddy.jpg} &
 
-    Bartlett, M., Edmunds, C. E. R., Belpaeme, T., Thill, S., \underline{Lemaignan, S.} 
+    Bartlett, M., Edmunds, C. E. R., Belpaeme, T., Thill, S., \ul{Lemaignan, S.} 
     \href{https://doi.org/10.3389/frobt.2019.00049}{\textbf{What Can You See? Identifying Cues on Internal States from the
     Kinematics of Natural Social Interactions}} 
     \newline \textit{Frontiers in AI and Robotics} 2019
@@ -1115,7 +1117,7 @@ media (Twitter handle: @skadge)
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2018-plosone.jpg} &
 
-    \underline{Lemaignan, S.}, Edmunds E. R., C., Senft, E., Belpaeme, T.
+    \ul{Lemaignan, S.}, Edmunds E. R., C., Senft, E., Belpaeme, T.
     \newline\href{https://doi.org/10.1371/journal.pone.0205999}{\textbf{The
     PInSoRo dataset: Supporting the data-driven study of child-robot social
     dynamics}}
@@ -1127,7 +1129,7 @@ media (Twitter handle: @skadge)
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2018-underworlds.jpg} &
 
-    \underline{Lemaignan, S.}, Sallami, Y., Wallbridge, C., Clodic, A., Alami,
+    \ul{Lemaignan, S.}, Sallami, Y., Wallbridge, C., Clodic, A., Alami,
     R. 
    \newline\href{https://doi.org/10.1109/IROS.2018.8594094}{\textbf{{\sc
     underworlds}: Cascading Situation Assessment for Robots}}
@@ -1143,7 +1145,7 @@ media (Twitter handle: @skadge)
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2017-sparc.jpg} &
 
-    Senft, E., Baxter, P., Kennedy, J., \underline{Lemaignan, S.}, Belpaeme, T.
+    Senft, E., Baxter, P., Kennedy, J., \ul{Lemaignan, S.}, Belpaeme, T.
     \newline\href{https://doi.org/10.1016/j.patrec.2017.03.015}{\textbf{Supervised
     Autonomy for Online Learning in Human-Robot Interaction}}
     \newline \textit{Pattern Recognition Letters} 2017
@@ -1156,7 +1158,7 @@ media (Twitter handle: @skadge)
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2017-ai-cover.jpg} &
 
-    \underline{Lemaignan, S.}, Warnier, M., Sisbot, E.A., Clodic, A., Alami, R.
+    \ul{Lemaignan, S.}, Warnier, M., Sisbot, E.A., Clodic, A., Alami, R.
     \newline
     \href{https://doi.org/10.1016/j.artint.2016.07.002}{\textbf{Artificial
     Cognition for Social Human-Robot Interaction: An Implementation}}
@@ -1170,7 +1172,7 @@ media (Twitter handle: @skadge)
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2016-cowriter.jpg} &
 
-    \underline{Lemaignan, S.}, Jacq, A., Hood, D., Garcia, F., Paiva, A., Dillenbourg, P.
+    \ul{Lemaignan, S.}, Jacq, A., Hood, D., Garcia, F., Paiva, A., Dillenbourg, P.
     \newline
     \href{https://doi.org/10.1109/MRA.2016.2546700}{\textbf{Learning by
     Teaching a Robot: The Case of Handwriting}}
@@ -1184,7 +1186,7 @@ media (Twitter handle: @skadge)
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2012-grounding.jpg} &
 
-    \underline{Lemaignan, S.}, Ros, R., Sisbot, E. A., Alami, R., Beetz M.
+    \ul{Lemaignan, S.}, Ros, R., Sisbot, E. A., Alami, R., Beetz M.
     \href{https://doi.org/10.1007/s12369-011-0123-x}{\textbf{Grounding
     the Interaction: Anchoring Situated Discourse in Everyday Human-Robot
     Interaction}} 
@@ -1196,7 +1198,7 @@ media (Twitter handle: @skadge)
     \textbf{\newline[principal investigator; 99 citations]}\\
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2010-oro.jpg} &
-    \underline{Lemaignan, S.}, Ros, R., Mösenlechner, L., Alami, R., Beetz, M.
+    \ul{Lemaignan, S.}, Ros, R., Mösenlechner, L., Alami, R., Beetz, M.
     \newline\href{https://doi.org/10.1109/IROS.2010.5649547}{\textbf{ORO, a Knowledge Management Module for Cognitive Architectures in
     Robotics}}
     \newline \textit{IEEE IROS} 2010
