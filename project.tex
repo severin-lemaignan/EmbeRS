@@ -74,12 +74,13 @@
 
 \newcommand{\D}[3]{\emph{Deliverable D#1} (M#2): #3\\}
 
-\newcommand{\TODO}[1]{{\color{red}\textbf{TODO: #1}}}
+%\newcommand{\TODO}[1]{{\color{red}\textbf{TODO: #1}}}
+\newcommand{\TODO}[1]{}
 
 \newcommand{\severin}[1]{{\color{red}\textbf{Severin: #1}}}
 \newcommand{\toseverin}[1]{{\color{red}\textbf{To Severin: #1}}}
-%\newcommand{\eu}[1]{{\color{teal}\textbf{Guidelines EU ERC: #1}}}
-\newcommand{\eu}[1]{}
+\newcommand{\eu}[1]{{\color{teal}\textbf{Guidelines EU ERC: #1}}}
+%\newcommand{\eu}[1]{}
 \newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
 
 \setcounter{secnumdepth}{0} % prevent section numbering, but still add sections to ToC
@@ -161,7 +162,7 @@ positive role social robots could play in our future societies}.
 
 \newpage
 
-\tableofcontents
+%\tableofcontents
 
 \pagebreak
 
@@ -200,17 +201,7 @@ real-world, complex scenarios}
 
 \newrefsection
 
-\textbf{B1.a. Extended Synopsis of the scientific proposal}
-\eu{(max 5 pages)}
-
-\eu{The Extended Synopsis should give a concise presentation of the scientific
-proposal, with particular attention to the ground-breaking nature of the
-research project and the feasibility of the outlined scientific approach.
-Describe the proposed work in the context of the state of the art of the field.
-References to literature should also be included. References do not count
-towards the page limits. It is important that this extended synopsis contains
-all essential information including the feasibility of the scientific proposal
-since the panel will only evaluate Part B1 at step 1.}
+%\textbf{B1.a. Extended Synopsis of the scientific proposal}
 
 \TODO{impact/outcomes? -> explicitely state the high risk/high gain nature of
 the project}
@@ -223,24 +214,34 @@ HHI? link to responsible AI?}
 \TODO{ensure the ethics side of things is solid}
 
 \TODO{Notes papa:}
-\begin{itemize}
-    \item poser la question de la plus-value du robot social
-    \item presupposé: le robot peut faciliter les relations humaines -> donner
-        le contexte precis de pourquoi/ou/comment le robot peut aider
-    \item peut-on parler d'interaction au sens large?
-    \item question de l'intention: d'où vient l'intention du robot? -> l'idée
-        d'optimiser le nombre + qualité des interactions pas assez specifique
-    \item question de la mediation: fonction mediatrice du robot -> on peut
-        reformuler le projet en terme de: developper la base technologique
-        (robot) permettant à l'adulte/soignant/enseignant de se creer son outil
-        'ideal' de mediation, en le 'programmant' lui meme par demonstration
-    \item questions jurdiques: quelle est la responsabilité du robot?
-\end{itemize}
+%\begin{itemize}
+%    \item poser la question de la plus-value du robot social
+%    \item presupposé: le robot peut faciliter les relations humaines -> donner
+%        le contexte precis de pourquoi/ou/comment le robot peut aider
+%    \item peut-on parler d'interaction au sens large?
+%    \item question de l'intention: d'où vient l'intention du robot? -> l'idée
+%        d'optimiser le nombre + qualité des interactions pas assez specifique
+%    \item question de la mediation: fonction mediatrice du robot -> on peut
+%        reformuler le projet en terme de: developper la base technologique
+%        (robot) permettant à l'adulte/soignant/enseignant de se creer son outil
+%        'ideal' de mediation, en le 'programmant' lui meme par demonstration
+%    \item questions jurdiques: quelle est la responsabilité du robot?
+%\end{itemize}
 
-\newpage 
+%\newpage 
 
 \chapter{B1.a. Extended Synopsis of the scientific proposal}\label{part1}
+
 \eu{(max 5 pages)}
+
+\eu{The Extended Synopsis should give a concise presentation of the scientific
+proposal, with particular attention to the ground-breaking nature of the
+research project and the feasibility of the outlined scientific approach.
+Describe the proposed work in the context of the state of the art of the field.
+References to literature should also be included. References do not count
+towards the page limits. It is important that this extended synopsis contains
+all essential information including the feasibility of the scientific proposal
+since the panel will only evaluate Part B1 at step 1.}
 
 \section{Long-term vision and targeted breakthrough towards that vision}
 
@@ -593,42 +594,59 @@ question of social behaviour \emph{generation}: how to create natural
 behaviours, engaging over a sustained period of time (eg not simply picking
 scripted behaviours from a library, that are rapidly perceived as repetitive).
 
-\TODO{discuss Liveliness (Pepper/Nao), Curiosity-based (\cite{kaplan}),
-human-in-the-loop (\cite{senft, winkle})}
+Using cloud-based speech recognition, the robots will be able to understand and
+record the textual transcription of the what the end-users say (in WP5, mostly
+children). The robots themselves are however purposefully designed \emph{not} to
+speak, using instead non-verbal communication mechanisms (non-verbal utterances
+using sounds, gaze, joint attention, expressive motions, etc). This is a
+critical interaction design choice, that ensures we can more effectively manage
+what cognitive capabilities are ascribed to the robot by the users (expectation
+management).  \project seeks however to significantly push forward the
+state-of-art of behaviour generation for robots, both in term of technique to
+generate the behaviours, and in term of the nature of the non-verbal behaviours.
 
+\textbf{T4.1 -- Behavioural baseline} T4.1 establishes a baseline for behaviour
+generation, by surveying and implementing the current state of the art. In
+addition to traditional approaches like behaviour libraries, this will cover
+techniques like curiosity-driven behaviours~\cite{oudeyer2005playground},
+Learning from Demonstration~\cite{billard2008robot, argall2009survey},
+human-in-the-loop action policy learning~\cite{senft2016sparc,
+senft2019teaching}. This baseline will enable early in-situ experimental
+deployments (WP5), while also provide a comparison point for T4.2.
 
-
-\textbf{T4.1 -- Machine learning for continuous motion generation} \project aims
+\textbf{T4.2 -- Machine learning for continuous motion generation} \project aims
 at significantly advancing the state of the art in this regard, by combining two
-emerging techniques: (1) a new data-driven, continuous approach to behaviour
-generation inspired by Learning from Demonstration~\cite{citationneeded}; (2)
-interactive machine learning in high-dimensional input/output
-spaces~\cite{senft2020woz}, where I have shown with my students promising
-results for generating complex social behaviours~\cite{senft2019teaching,
-winkle2020coach} that fully involve the end-users~\cite{winkle2020methodology}.
-By combining the two, \textbf{I target a breakthrough in robots' social
-behaviours generation: the generation of non-repetitive, socially congruent and
-transparent social behaviours} (including gestures and gazes).
+existing techniques: (1) data-driven, continuous approach to behaviour
+generation inspired by Learning from Demonstration; (2) interactive machine
+learning in high-dimensional input/output spaces~\cite{senft2020woz}, where I
+have shown with my students promising results for generating complex social
+behaviours~\cite{senft2019teaching, winkle2020coach} that fully involve the
+end-users~\cite{winkle2020methodology}.  By combining the two, I target
+a breakthrough in robots' social behaviours generation: the generation of
+non-repetitive, socially congruent and transparent social behaviours (including
+gestures and gazes).
 
+\textbf{T4.3 -- Non-verbal behaviours and robot soundscape} In task T4.3, we
+introduce a novel non-verbal interaction modality for robots, based on
+soundscapes: soundscapes are about creating a sound environment that reflects a
+particular situation; they also have been shown to be an effective intervention
+technique in the context special need treatments
+(eg~\cite{greher2010soundscape}). The soundscapes that we will create, are
+`owned' by the robot, and it can manipulate it itself, eg to create an
+approachable, non-threatening, non-judgmental, social interaction context, or to
+the establish the interaction into a trusted physical and emotional safe-space
+for the children.
 
-\textbf{T4.2 -- Non-verbal behaviours} Critically, while the robot will be able to understand and record the textual
-transcription of the what the child says (multi-lingual speech recognition),
-the robot itself is purposefully designed *not* to speak, using instead *non-verbal*
-communication mechanisms (non-verbal utterances using sounds, gaze, joint
-attention, expressive motions, etc). In particular, the *soundscape* of the
-robot will be designed by Dave Meckin, an expert on sound design for vulnerable
-children. The purpose is to create an approachable, non-threatening,
-non-judgmental, *social* interaction with the child, and effectively establish
-the interaction into a trusted physical and emotional *safe-space* for the
-child.
-
+\textbf{Specific resource}: these soundscapes will be co-designed with Dr.
+Dave Meckin, an expert on sound design for vulnerable children, who also works
+at the host institution.
 
 \subsection{WP5: \textbf{\wpFive}}
 
 \noindent\framebox[\linewidth]{Duration: \textbf{Y2-Y5}; one post-doc (shared
 with WP3)}
 
-WP5 aims at convincingly demonstrating the importance and positive impact of
+WP5 aims at convincingly demonstrating the importance and positive impact that
 socially-driven, socially-responsible robotics may have. The experimental work
 of \project will be organised around two ambitious long-term studies (in
 addition to the museum study, T1.2), in complex, real-world environments: a
@@ -636,11 +654,11 @@ network of special needs schools, and the Bristol Children Hospital.
 
 These environments also put the project in the unique position of actually
 delivering high societal impact: besides the thousands of people that will
-contribute to the design of the system at the museum, we anticipate 100+
+contribute to the design of the system at the museum, we anticipate 30+
 hospitalised children with long-term conditions, and about 350\TODO{check with
 Nigel} SEN-educated children to directly benefit from the project, showing how
 robots can have a lasting, strong, positive impact on the society, also
-establishing the idea of \emph{robots supporting human interactions} instead of
+establishing the idea of robots \ul{supporting} human interactions instead of
 dehumanising our social relationships.
 
 
@@ -650,7 +668,7 @@ in SEN schools} This task aims at demonstrating robot-supported social
 interventions within the eco-system of SEN (Special Educational Needs)
 schools. The aim is to effectively support the day-to-day work of the
 school staff to support the development, learning and well-being of the
-children. A \project robot will be deployed for several months in a
+children. A \project robot will be deployed for one year (Y3) in a
 Bristol-based SEN school (to be possibly extended to additional schools) to
 investigate how an autonomous social robot can help shaping a spatial and social
 school ecology that fosters mental well-being, while effectively supporting
@@ -661,14 +679,20 @@ parents through several preliminary design workshops
 \textbf{Specific resources} this task will take place within a network of
 Bristol-based SEN schools, with which I already have on-going collaborations
 (child-robot interaction for children with autism at Bristol's Mendip School).
-The task will be jointly supervised with local colleague and expert Dr. Newbutt,
+The task will be jointly supervised with local colleague and expert Dr.Nigel Newbutt,
 who has a long track record of working with special needs schools.
 
 
 \textbf{T5.2 -- creation and deployment of a small robot companion to support
 isolated children during their hospital stay}, fully integrated and aware of the
-wider hospital ecosystem
-
+wider hospital ecosystem. Over the course of this second, one-year long (Y4)
+experiment, we will deploy one \project robot at the Bristol Children Hospital.
+Using a \emph{mutual shaping} approach~\cite{winkle2018social} to design the
+role of the robot with the different stakeholders (nurses, doctors, parents,
+children), we will experimentally investigate how a social robot can support
+hospitalised children with long-term conditions. The robot's role will revolve
+around facilitating social interactions between possibly socially isolated
+children, by fostering playful interaction with a yard.
 
 \textbf{Specific resources} this task will take place at the Bristol Children
 Hospital. Several preparatory meetings already took place with the head of the
@@ -687,7 +711,7 @@ service \& companion robots. This leadership is required to address and inform
 policies related to the key emerging societal challenge of AI and intelligent
 robots.
 
-PI Lemaignan is in a unique position to deliver on the \project work plan.  He
+Pr. Lemaignan is in a unique position to deliver on the \project work plan.  He
 has already established international recognition in human-robot interaction and
 has likewise demonstrated strong leadership by leading research teams in three
 different institutions (see Sections B1.b and B1.c). Importantly, as
@@ -695,7 +719,8 @@ illustrated in Table~\ref{pi-expertise}, the breadth of
 his interdiscplinary research covers the scientific expertise required by the
 project, providing him with a unique overall perspective and understanding of
 the domain. PI Lemaignan is also a technology expert, with major software and
-hardware contributions to the robotic community (see Section B1.c).
+hardware contributions to the robotic community (see Section B1.c). As such, he
+has a excellent grasp of the technical feasibility of the proposed work.
 
 
 \begin{table}[h]
@@ -740,21 +765,6 @@ hardware contributions to the robotic community (see Section B1.c).
     \caption{\small PI's domains of expertise relevant to the \project project}
     \label{pi-expertise}
 \end{table}
-
-
-
-
-While ambitious, the project's feasibility is ensured through a strong
-combination of cross-disciplinary expertise and support from the host's unique
-research infrastructure. Scaffolded by a participatory and iterative research
-methodology, and the PI experience in managing teams and complex projects
-through his recognised leadership, \project is set to deliver.
-
-To mirror the cross-disciplinary team, the research methodology developped for
-\project will rely heavily on \emph{mutual shaping}, through co-design and
-participatory design, and multi-disciplinary development sprints.
-
-
 
 
 
@@ -902,6 +912,7 @@ Directly managing 20+ students and early career researchers. \\
 \begin{tabular}{p{0.15\linewidth}p{0.8\linewidth}}
     \bf 2018 -- & Editorial board of \emph{Frontiers in AI and Robotics} \\
     \bf 2015 --  & Member of the IEEE/ACM HRI Programme Committee \\
+    \bf 2019 --  & Member of the Robotics, Science and System (RSS) Programme Committee  \\
     \bf 2017 -- 2019 & Member of the IEEE IROS Programme Committee  \\
     \bf 2017 -- 2018 & Member of the IJCAI Programme Committee  \\
     \bf 2017 -- 2018 & Member of the HAI Programme Committee  \\
@@ -976,15 +987,19 @@ robotics}, my postdoctoral stay at the highly cross-disciplinary CHILI Lab gave
 me the opportunity to develop my expertise in \textbf{experimental sciences,
 socio-psychology and education sciences}.
 
-I then engaged in more basic research on artificial cognition during my MSCA
-Individual Fellowship: during 2 years, I explored the underpinnings of
+I then engaged in basic research on artificial cognition during a \textbf{Marie
+Sklodovska Curie Individual Fellowship}: over 2 years, I explored the underpinnings of
 artificial social cognition. I \textbf{contributed significantly to the framing
 of the emerging field of data-driven HRI}, also releasing of the PInSoRo open
 dataset (\href{https://doi.org/10.5281/zenodo.1043507}{10.5281/zenodo.1043507}),
 a \textbf{one-in-a-kind dataset of child-child and child-robot social
 interactions}.
 
-My current role as a permanent senior researcher at the Bristol Robotics
+%Quickly after the fellowship, I was offered a permanent position
+%as lecturer in robotics at Plymouth University, followed as a permanent Senior
+%Research Fellow position at the Bristol Robotics Lab.
+My current role as a permanent \textbf{Associate Professor in Social Robotics
+and AI} at the Bristol Robotics
 Laboratory (largest co-located robotic lab in the UK) is a leadership role. I am
 \textbf{in charge of defining and implementing the lab's research strategy in
 human-robot interactions}. I co-lead both the (recently created) Embedded
@@ -1005,8 +1020,8 @@ learning paradigms.
 
 This expertise is recognised internationally: I have a substantial track record
 of academic outputs (since 2008, I have authored or co-authored \textbf{75+ peer-reviewed
-publications} in international journals and conferences, leading to \textbf{2100+
-citations}, h-index of 24, i10-index of 38 (source: Google Scholar).
+publications} in international journals and conferences, leading to \textbf{2200+
+citations}, h-index of 24, i10-index of 39 (source: Google Scholar).
 
 I have established strong \textbf{peer recognition} in the field of human-robot interaction
 and cognitive robotics. For instance:
@@ -1125,7 +1140,7 @@ media (Twitter handle: @skadge)
     paradigm for human-in-the-loop machine learning, showing that
     high-dimensional problems can be learnt effectively and rapidely thanks to
     an innovative input feature selection mechanism.
-    \textbf{\newline[student supervisor; 20 citations]}\\
+    \textbf{\newline[student supervisor; 22 citations]}\\
 
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2017-ai-cover.jpg} &
@@ -1139,7 +1154,7 @@ media (Twitter handle: @skadge)
     human-robot interaction, including symbolic knowledge representation,
     situation assessment, natural language grounding, task planning, human-aware
     motion planning and execution. \textbf{\newline[principal investigator and
-    coordinator; 136 citations]}\\
+    coordinator; 140 citations]}\\
 
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2016-cowriter.jpg} &
@@ -1167,7 +1182,7 @@ media (Twitter handle: @skadge)
     & \small In this paper, I show how symbolic knowledge representation can be
     used by robot to ground natural language interactions, also taking into
     account the unique perspective of the human interactor.
-    \textbf{\newline[principal investigator; 99 citations]}\\
+    \textbf{\newline[principal investigator; 100 citations]}\\
 
     \vspace{-.20cm}\includegraphics[height=2.2cm]{thumbs/2010-oro.jpg} &
     \ul{Lemaignan, S.}, Ros, R., Mösenlechner, L., Alami, R., Beetz, M.
@@ -1179,7 +1194,7 @@ media (Twitter handle: @skadge)
     integrated in service robots. Pioneering work which played a key role in
     understanding how intelligent robot can represent their
     knowledge to facilitate communication with humans.
-    \textbf{\newline[principal investigator; 154 citations]}\\
+    \textbf{\newline[principal investigator; 155 citations]}\\
 
 \end{tabular}
 %}
@@ -1210,7 +1225,62 @@ media (Twitter handle: @skadge)
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newpage
+
+%\subsection{Gantt chart}\label{gantt-chart}
+
+\begin{landscape}
+\include{gantt}
+\end{landscape}
+
+\subsection{Overview budget}
+
+\TODO{FOR INFORMATION ONLY -- FINAL BUDGET TO BE DIRECTLY INPUT ON ERC
+WEBSITE}
+\vspace{1cm}
+
+\begin{tabular}{@{}llllll@{}}
+\toprule
+\textbf{Staff}                                                    &             &             &             &             &             \\ \midrule
+                                                                  &             &             &             &             &             \\
+                                                                  & \textbf{Y1} & \textbf{Y2} & \textbf{Y3} & \textbf{Y4} & \textbf{Y5} \\ \midrule
+\textbf{Directly allocated}                                       &             &             &             &             &             \\
+Séverin Lemaignan                                                 & 0.6         & 0.6         & 0.6         & 0.6         & 0.6         \\ \midrule
+\textbf{Directly incurred}                                        &             &             &             &             &             \\
+SRF 1 (sociology/anthropology, WP1)                               & 1           & 1           & 1           &             &             \\
+RF 2 (social signal processing/machine learning, WP2)             & 1           & 1           & 1           & 1           & 1           \\
+SRF 2 (cognitive architecture for robotics, experiments, WP3 WP5) & 1           & 1           & 1           & 1           & 1           \\
+PhD 1 (social signal processing/machine learning, WP3 WP5)        &             & 1           & 1           & 1           &             \\
+RF2 (behaviour generation, WP4)                                   &             &             & 1           & 1           & 1           \\
+                                                                  &             &             &             &             &             \\
+\multicolumn{1}{r}{\textbf{total DI}}                             & 3           & 3           & 3           & 2           & 2           \\ \midrule
+                                                                  &             &             &             &             &             \\
+\textbf{Other costs}                                              &             &             &             &             &             \\
+\textbf{}                                                         & unit price  & quantity    &             & total       &             \\ \midrule
+                                                                  &             &             &             &             &             \\
+R1 robot (ex VAT)                                                 & 122000      & 2           &             & 244000      &             \\
+R1 shipping                                                       & 3500        & 2           &             & 7000        &             \\
+R1 installation and training                                      & 3800        & 1           &             & 3800        &             \\
+                                                                  &             &             &             &             &             \\
+Open access fees (2 articles/y)                                   & 1200        & 10          &             & 12000       &             \\
+Conferences (1 per person per year) + travel                      & 2300        & 30          &             & 69000       &             \\
+                                                                  &             &             &             &             &             \\
+Participants compensations                                        & 3000        & 1           &             & 3000        &             \\
+                                                                  &             &             &             &             &             \\
+Workstation suitable for machine learning                         & 4000        & 5           &             & 20000       &             \\
+Sensors (incl RGB-D cameras, one eye tracker)                     & 7000        & 1           &             & 7000        &             \\
+Data storage                                                      & 2000        & 1           &             & 2000        &             \\
+Cloud computing (incl crowd sourcing)                             & 5000        & 1           &             & 5000        &             \\
+                                                                  &             &             &             & 0           &             \\
+                                                                  &             &             &             &             &             \\
+Other consumables                                                 & 10000       & 1           &             & 10000       &             \\ \bottomrule
+\end{tabular}
+
+\newpage
 
 
 
@@ -1439,6 +1509,19 @@ direction
 domain, and, beyond the specific deliverables of this 5-years project,
 establishing the PI as a world-leader in goal-driven, socially-responsible
 robotics.
+
+
+
+While ambitious, the project's feasibility is also ensured through a strong
+combination of cross-disciplinary expertise and support from the host's unique
+research infrastructure. Scaffolded by a participatory and iterative research
+methodology, and the PI experience in managing teams and complex projects
+through his recognised leadership, \project is set to deliver.
+
+To mirror the cross-disciplinary team, the research methodology developped for
+\project will rely heavily on \emph{mutual shaping}, through co-design and
+participatory design, and multi-disciplinary development sprints.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2518,57 +2601,6 @@ Dissemination level:
   2001/844/EC.
 \end{itemize}
 
-\subsection{Gantt chart}\label{gantt-chart}
-
-\begin{landscape}
-\include{gantt}
-\end{landscape}
-
-\subsection{Overview budget}
-
-\TODO{FOR INFORMATION ONLY -- FINAL BUDGET TO BE DIRECTLY INPUT ON ERC
-WEBSITE}
-\vspace{1cm}
-
-\begin{tabular}{@{}llllll@{}}
-\toprule
-\textbf{Staff}                                                    &             &             &             &             &             \\ \midrule
-                                                                  &             &             &             &             &             \\
-                                                                  & \textbf{Y1} & \textbf{Y2} & \textbf{Y3} & \textbf{Y4} & \textbf{Y5} \\ \midrule
-\textbf{Directly allocated}                                       &             &             &             &             &             \\
-Séverin Lemaignan                                                 & 0.6         & 0.6         & 0.6         & 0.6         & 0.6         \\ \midrule
-\textbf{Directly incurred}                                        &             &             &             &             &             \\
-SRF 1 (sociology/anthropology, WP1)                               & 1           & 1           & 1           &             &             \\
-RF 2 (social signal processing/machine learning, WP2)             & 1           & 1           & 1           & 1           & 1           \\
-SRF 2 (cognitive architecture for robotics, experiments, WP3 WP5) & 1           & 1           & 1           & 1           & 1           \\
-PhD 1 (social signal processing/machine learning, WP3 WP5)        &             & 1           & 1           & 1           &             \\
-RF2 (behaviour generation, WP4)                                   &             &             & 1           & 1           & 1           \\
-                                                                  &             &             &             &             &             \\
-\multicolumn{1}{r}{\textbf{total DI}}                             & 3           & 3           & 3           & 2           & 2           \\ \midrule
-                                                                  &             &             &             &             &             \\
-\textbf{Other costs}                                              &             &             &             &             &             \\
-\textbf{}                                                         & unit price  & quantity    &             & total       &             \\ \midrule
-                                                                  &             &             &             &             &             \\
-R1 robot (ex VAT)                                                 & 122000      & 2           &             & 244000      &             \\
-R1 shipping                                                       & 3500        & 2           &             & 7000        &             \\
-R1 installation and training                                      & 3800        & 1           &             & 3800        &             \\
-                                                                  &             &             &             &             &             \\
-Open access fees (2 articles/y)                                   & 1200        & 10          &             & 12000       &             \\
-Conferences (1 per person per year) + travel                      & 2300        & 30          &             & 69000       &             \\
-                                                                  &             &             &             &             &             \\
-Participants compensations                                        & 3000        & 1           &             & 3000        &             \\
-                                                                  &             &             &             &             &             \\
-Workstation suitable for machine learning                         & 4000        & 5           &             & 20000       &             \\
-Sensors (incl RGB-D cameras, one eye tracker)                     & 7000        & 1           &             & 7000        &             \\
-Data storage                                                      & 2000        & 1           &             & 2000        &             \\
-Cloud computing (incl crowd sourcing)                             & 5000        & 1           &             & 5000        &             \\
-                                                                  &             &             &             & 0           &             \\
-                                                                  &             &             &             &             &             \\
-Other consumables                                                 & 10000       & 1           &             & 10000       &             \\ \bottomrule
-\end{tabular}
-
-\newpage
-
 \subsection{Workpackage interrelations}\label{workpackage-interrelations}
 
 \begin{figure}[!htbp]
@@ -2603,6 +2635,12 @@ Other consumables                                                 & 10000       
 \end{tabular}
 \end{table}
 
+\subsection{Robot}
+
+\begin{itemize}
+    \item R1 robot: acceptable to hospital thanks its plastic shell that can be
+        easily cleaned-up
+\end{itemize}
 
 \subsection{Risks}\label{risks}
 
