@@ -15,7 +15,7 @@
 %\renewcommand\mddefault{mc}
 %\renewcommand\bfdefault{bc}
 \setganttlinklabel{s-s}{START-TO-START}
-\setganttlinklabel{f-s}{FINISH-TO-START}
+\setganttlinklabel{f-s}{}
 \setganttlinklabel{f-f}{FINISH-TO-FINISH}
 
 %\begin{sidewaysfigure}[!ht]
@@ -26,6 +26,7 @@
         canvas/.append style={fill=none, draw=black!5, line width=.75pt},
         hgrid style/.style={draw=black!5, line width=.75pt},
         vgrid={*1{draw=black!5, line width=.75pt}},
+        %vgrid={*1{black}, *{11}{black!5}}, % doesnt work for some reason
         x unit=.35cm,
         y unit chart=.65cm,
         time slot format=isodate-yearmonth,
@@ -59,40 +60,44 @@
         %\gantttitlelist{0,5,...,60}{1} \\
 
         %% WP1
-        \ganttgroup[]{WP1 \wpOneShort}{2021-01}{2025-08} \\
-            \ganttbar[name=WP11]{\textbf{WP 1.1}: conceptual framing}{2021-01}{2022-09} \\
-            \ganttbar[name=WP12]{\textbf{WP 1.2}: principles of r-HHI}{2021-01}{2022-09} \\
+        \ganttgroup[]{WP1 \wpOneShort}{2021-01}{2023-12} \\
+            \ganttbar[name=WP11]{\textbf{1.1} conceptual framing}{2021-01}{2023-06} \\
+            \ganttbar[name=WP11exp]{\textbf{1.1} WeTheCurious experiment}{2022-01}{2022-12} \\
+            \ganttbar[name=WP12]{\textbf{1.2} principles of r-HHI}{2023-01}{2023-12} \\
 
         %\ganttlink[link type=f-s]{WBS1A}{WBS1B}
 
         %% WP2
         \definecolor{barcolor}{RGB}{153,2,254}
-        \ganttgroup[]{WP2 \wpTwoShort}{2020-09}{2023-08} \\
-            \ganttbar[name=WP21]{\textbf{WP 2.1}}{2020-09}{2022-09} \\
-            \ganttbar[name=WP22]{\textbf{WP 2.2}}{2020-09}{2022-09} \\
+        \ganttgroup[]{WP2 \wpTwoShort}{2021-01}{2024-12} \\
+            \ganttbar[name=WP21]{\textbf{2.1} situation assessment}{2021-01}{2022-06} \\
+            \ganttbar[name=WP22]{\textbf{2.2} social dynamics}{2022-01}{2023-12} \\
+            \ganttbar[name=WP23]{\textbf{2.3} group dynamics}{2024-01}{2024-12} \\
+            \ganttbar[name=WP24]{\textbf{2.4} social situation assessment}{2022-07}{2024-12} \\
 
+        \ganttlink[link type=f-s]{WP21}{WP24}
+        \ganttlink[link type=f-s]{WP22}{WP23}
 
         %% WP3
         \definecolor{barcolor}{RGB}{50,220,134}
-        \ganttgroup[]{WP3 \wpThreeShort}{2020-09}{2024-06} \\
-            \ganttbar[name=WP31]{\textbf{WP 3.1}}{2020-09}{2021-09} \\
-            \ganttbar[name=WP32]{\textbf{WP 3.2}}{2020-09}{2021-09} \\
-            \ganttbar[name=WP33]{\textbf{WP 3.3}}{2020-09}{2021-09} \\
+        \ganttgroup[]{WP3 \wpThreeShort}{2021-01}{2024-12} \\
+            \ganttbar[name=WP31]{\textbf{3.1} redundant cognitive architecture}{2021-01}{2024-12} \\
+            \ganttbar[name=WP32]{\textbf{3.2} social teleology}{2024-01}{2024-12} \\
+            \ganttbar[name=WP33]{\textbf{3.3} human-in-the-loop policy learning}{2021-01}{2023-12} \\
+        \ganttlink[link type=f-s]{WP12}{WP32}
 
         %% WP4
         \definecolor{barcolor}{RGB}{244,50,20}
-        \ganttgroup[]{WP4 \wpFourShort}{2020-09}{2025-08} \\
-            \ganttbar[name=WP41]{\textbf{WP 4.1}}{2020-09}{2020-09} \\
-            \ganttbar[name=WP42]{\textbf{WP 4.2}}{2020-09}{2022-09} \\
-            \ganttbar[name=WP43]{\textbf{WP 4.3}}{2020-09}{2025-08} \\
+        \ganttgroup[]{WP4 \wpFourShort}{2023-01}{2025-12} \\
+            \ganttbar[name=WP41]{\textbf{4.1} Continuous motion generation}{2023-01}{2023-12} \\
+            \ganttbar[name=WP42]{\textbf{4.2} Non-verbal behaviours}{2023-07}{2025-12} \\
 
 
         %% WP5
         \definecolor{barcolor}{RGB}{234,200,20}
-        \ganttgroup[]{WP5 \wpFiveShort}{2021-01}{2025-08} \\
-            \ganttbar[name=WP51]{\textbf{WP 5.1}}{2020-09}{2022-09} \\
-            \ganttbar[name=WP52]{\textbf{WP 5.2}}{2021-10}{2021-12} \\
-            \ganttbar[name=WP53]{\textbf{WP 5.3}}{2021-10}{2021-12} \\
+        \ganttgroup[]{WP5 \wpFiveShort}{2022-07}{2025-12} \\
+            \ganttbar[name=WP51]{\textbf{5.1} SEN schools experiment}{2022-07}{2023-12} \\
+            \ganttbar[name=WP52]{\textbf{5.2} children hospital experiment}{2024-01}{2025-12} \\
 
 
 
