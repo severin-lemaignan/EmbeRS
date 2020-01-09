@@ -88,17 +88,21 @@
 
         %% WP4
         \definecolor{barcolor}{RGB}{244,50,20}
-        \ganttgroup[]{WP4 \wpFourShort}{2023-01}{2025-12} \\
-            \ganttbar[name=WP41]{\textbf{4.1} Continuous motion generation}{2023-01}{2023-12} \\
-            \ganttbar[name=WP42]{\textbf{4.2} Non-verbal behaviours}{2023-07}{2025-12} \\
+        \ganttgroup[]{WP4 \wpFourShort}{2022-01}{2025-12} \\
+            \ganttbar[name=WP41]{\textbf{4.1} Behaviours baselining}{2022-01}{2022-12} \\
+            \ganttbar[name=WP42]{\textbf{4.2} Continuous motion generation}{2023-01}{2023-12} \\
+            \ganttbar[name=WP43]{\textbf{4.3} Non-verbal behaviours}{2023-07}{2025-12} \\
 
 
         %% WP5
         \definecolor{barcolor}{RGB}{234,200,20}
         \ganttgroup[]{WP5 \wpFiveShort}{2022-07}{2025-12} \\
-            \ganttbar[name=WP51]{\textbf{5.1} SEN schools experiment}{2022-07}{2023-12} \\
-            \ganttbar[name=WP52]{\textbf{5.2} children hospital experiment}{2024-01}{2025-12} \\
+            \ganttbar[name=WP51prep]{\textbf{5.1} SEN schools (prep)}{2022-07}{2022-12} \\
+            \ganttbar[name=WP51]{\textbf{5.1} SEN schools experiment}{2023-01}{2023-12} \\
+            \ganttbar[name=WP52prep]{\textbf{5.2} children hospital (prep)}{2024-01}{2024-06} \\
+            \ganttbar[name=WP52]{\textbf{5.2} children hospital experiment}{2024-07}{2025-06} \\
 
+        \ganttlink[link type=f-s]{WP41}{WP51}
 
 
         %\ganttlink[link type=f-s]{WBS1B}{WBS1C}
