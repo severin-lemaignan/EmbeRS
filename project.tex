@@ -74,8 +74,8 @@
 
 \newcommand{\D}[3]{\emph{Deliverable D#1} (M#2): #3\\}
 
-%\newcommand{\TODO}[1]{{\color{red}\textbf{TODO: #1}}}
-\newcommand{\TODO}[1]{}
+\newcommand{\TODO}[1]{{\color{red}\textbf{TODO: #1}}}
+%\newcommand{\TODO}[1]{}
 
 \newcommand{\severin}[1]{{\color{red}\textbf{Severin: #1}}}
 \newcommand{\toseverin}[1]{{\color{red}\textbf{To Severin: #1}}}
@@ -95,6 +95,8 @@
     ERC Consolidator Grant 2020
 
     \vspace{2cm}
+    \includegraphics[width=0.7\linewidth]{logo}
+
     \textbf{\LARGE Socially-Driven Robots to Support Human-Human Interactions}
 
     \vspace{2cm}
@@ -1231,57 +1233,6 @@ media (Twitter handle: @skadge)
 
 \newpage
 
-%\subsection{Gantt chart}\label{gantt-chart}
-
-\begin{landscape}
-\include{gantt}
-\end{landscape}
-
-\subsection{Overview budget}
-
-\TODO{FOR INFORMATION ONLY -- FINAL BUDGET TO BE DIRECTLY INPUT ON ERC
-WEBSITE}
-\vspace{1cm}
-
-\begin{tabular}{@{}llllll@{}}
-\toprule
-\textbf{Staff}                                                    &             &             &             &             &             \\ \midrule
-                                                                  &             &             &             &             &             \\
-                                                                  & \textbf{Y1} & \textbf{Y2} & \textbf{Y3} & \textbf{Y4} & \textbf{Y5} \\ \midrule
-\textbf{Directly allocated}                                       &             &             &             &             &             \\
-Séverin Lemaignan                                                 & 0.6         & 0.6         & 0.6         & 0.6         & 0.6         \\ \midrule
-\textbf{Directly incurred}                                        &             &             &             &             &             \\
-SRF 1 (sociology/anthropology, WP1)                               & 1           & 1           & 1           &             &             \\
-RF 2 (social signal processing/machine learning, WP2)             & 1           & 1           & 1           & 1           & 1           \\
-SRF 2 (cognitive architecture for robotics, experiments, WP3 WP5) & 1           & 1           & 1           & 1           & 1           \\
-PhD 1 (social signal processing/machine learning, WP3 WP5)        &             & 1           & 1           & 1           &             \\
-RF2 (behaviour generation, WP4)                                   &             &             & 1           & 1           & 1           \\
-                                                                  &             &             &             &             &             \\
-\multicolumn{1}{r}{\textbf{total DI}}                             & 3           & 3           & 3           & 2           & 2           \\ \midrule
-                                                                  &             &             &             &             &             \\
-\textbf{Other costs}                                              &             &             &             &             &             \\
-\textbf{}                                                         & unit price  & quantity    &             & total       &             \\ \midrule
-                                                                  &             &             &             &             &             \\
-R1 robot (ex VAT)                                                 & 122000      & 2           &             & 244000      &             \\
-R1 shipping                                                       & 3500        & 2           &             & 7000        &             \\
-R1 installation and training                                      & 3800        & 1           &             & 3800        &             \\
-                                                                  &             &             &             &             &             \\
-Open access fees (2 articles/y)                                   & 1200        & 10          &             & 12000       &             \\
-Conferences (1 per person per year) + travel                      & 2300        & 30          &             & 69000       &             \\
-                                                                  &             &             &             &             &             \\
-Participants compensations                                        & 3000        & 1           &             & 3000        &             \\
-                                                                  &             &             &             &             &             \\
-Workstation suitable for machine learning                         & 4000        & 5           &             & 20000       &             \\
-Sensors (incl RGB-D cameras, one eye tracker)                     & 7000        & 1           &             & 7000        &             \\
-Data storage                                                      & 2000        & 1           &             & 2000        &             \\
-Cloud computing (incl crowd sourcing)                             & 5000        & 1           &             & 5000        &             \\
-                                                                  &             &             &             & 0           &             \\
-                                                                  &             &             &             &             &             \\
-Other consumables                                                 & 10000       & 1           &             & 10000       &             \\ \bottomrule
-\end{tabular}
-
-\newpage
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1291,13 +1242,14 @@ Other consumables                                                 & 10000       
 \newrefsection
 \chapter{B2.a State-of-the-art and objectives}
 
-\eu{(B2.a and B2.b: max 15 pages)}
+\eu{(B2.a, B2.b, B2.c: max 15 pages (2 pages for B2.c)}
 \eu{Specify the proposal objectives in the context of the state
 of the art in the research field. It should be clear how and why the proposed work is important for
 the field, and what impact it will have if successful, such as how it may open up new horizons or
 opportunities for science, technology or scholarship. Specify any particularly challenging or
 unconventional aspects of the proposal, including multi- or inter-disciplinary aspects.}
 
+\TODO{as a reference: DECRESIM project: 4 pages on B2.a State of art and objectives; B2.b ~7 pages on WPs + 2 pages on risk assessment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The case for robot-supported human-human interactions}
 
@@ -1521,6 +1473,18 @@ through his recognised leadership, \project is set to deliver.
 To mirror the cross-disciplinary team, the research methodology developped for
 \project will rely heavily on \emph{mutual shaping}, through co-design and
 participatory design, and multi-disciplinary development sprints.
+
+Software-wise, PI Lemaignan is a leading developer of software for intelligent
+robots, with numerous contributions to the major software platforms used in
+robotic (including major contributions to ROS, OpenCV, authoring of widely-used
+pieces of software like the ROS-naoqi bridge used by hundred of researchers
+using the Nao and Pepper robots or the MORSE robotic simulator). He has been
+teaching various modules related to software development for robotics, and the
+breadth and depth of his knowledge of robotic software development is well
+established. He will be leading the software development, and, as part of the
+fellowship, he will also seek for additional expert knowledge on (1) interaction
+design and (2) low-level micro-programming to complete the set of required
+programming needs.
 
 
 
@@ -1857,6 +1821,14 @@ and particularly novel or unconventional aspects addressing the
 may require adjustments to the project planning. In case you ask that team
 members are engaged by another host institution their participation has to be
 fully justified by the scientific added value they bring to the project.}
+
+%\subsection{Gantt chart}\label{gantt-chart}
+
+\begin{landscape}
+\include{gantt}
+\end{landscape}
+
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2695,25 +2667,180 @@ define interaction patterns with the child
 \hypertarget{risk-assessment}{%
 \subsubsection{Risk assessment}\label{risk-assessment}}
 
-\hypertarget{c.-resources}{%
-\subsection{c. Resources}\label{c.-resources}}
 
 
-The \project project sets an ambitious target in term of technical development.
-The project indeed requires unique technical skills, both software and
-hardware-wise, to create, design and build the envisioned robotic systems.
+\newpage
+\printbibliography
 
-Software-wise, PI Lemaignan is a leading
-developer of software for intelligent robots, with numerous contributions to
-the major software platforms used in robotic (including major contributions to
-ROS, OpenCV, authoring of widely-used pieces of software like the ROS-naoqi
-bridge used by hundred of researchers using the Nao and Pepper robots or the
-MORSE robotic simulator). He has been teaching various modules related to
-software development for robotics, and the breadth and depth of his knowledge of
-robotic software development is well established. He will be leading the
-software development, and, as part of the fellowship, he will also seek for
-additional expert knowledge on (1) interaction design and (2) low-level
-micro-programming to complete the set of required programming needs.
+\newrefsection
+\newpage
+\chapter{B2.c Description of resources}
+
+\eu{Has to be provided online; 8000 chars max (eg 2 pages)}
+
+
+\section{Requested budget}
+
+\TODO{This table does not count toward the page limit and is to be provided online}
+\begin{table}[]
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Labour cost}                                             & \textbf{} & \textbf{€ 1,413,344} \\ \midrule
+Severin Lemaignan                                                & 36        & € 287,455            \\
+RF 1 (sociology/anthropology, WP1)                               & 36        & € 195,779            \\
+RF 2 (social signal processing/machine learning, WP2)            & 48        & € 263,722            \\
+RF 3 (cognitive architecture for robotics, experiments, WP3 WP5) & 60        & € 333,050            \\
+PhD 1 (social signal processing/machine learning, WP3 WP5)       & 42        & € 64,233             \\
+RF 4 (behaviour generation, WP4)                                 & 48        & € 269,105            \\
+                                                                 &           &                      \\
+\textbf{Travel}                                                  & \textbf{} & \textbf{€ 65,865}    \\ \midrule
+Conferences (1 per person per year): Registration                &           & € 22,910             \\
+Conferences (1 per person per year): Travel                      &           & € 42,955             \\
+                                                                 &           &                      \\
+\textbf{Equipment}                                               & \textbf{} & \textbf{€ 334,527}   \\ \midrule
+R1 Robot (inc VAT)                                               &           & € 292,800            \\
+R1 Shipping                                                      &           & € 7,000              \\
+Robot Installation and Training                                  &           & € 3,800              \\
+Workstation suitable for machine learning                        &           & € 22,910             \\
+Sensors (inc RGB-D cameras, one eye tracker)                     &           & € 8,018              \\
+                                                                 &           &                      \\
+\textbf{Materials}                                               & \textbf{} & \textbf{€ 11,455}    \\ \midrule
+Other Consumables                                                &           & € 11,455             \\
+                                                                 &           &                      \\
+\textbf{Other}                                                   & \textbf{} & \textbf{€ 23,455}    \\ \midrule
+Open access fees (2 Article per year)                            &           & € 12,000             \\
+Participants compensations                                       &           & € 3,436              \\
+Data Storage                                                     &           & € 2,291              \\
+Cloud Computing                                                  &           & € 5,727              \\
+                                                                 &           &                      \\
+Audit                                                            &           & € 5,000              \\
+                                                                 &           &                      \\
+                                                                 &           &                      \\ \midrule
+\textbf{Total}                                                   & \textbf{} & \textbf{€ 1,853,645} \\
+\textbf{Indirect}                                                & \textbf{} & \textbf{€ 463,411}   \\
+\textbf{EC Contribution}                                         & \textbf{} & \textbf{€ 2,317,056} \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{Research team and PI commitment}
+
+Table~\ref{time-allocation-team} provides an overview of the time allocation per
+members of the team, over the course of the project.
+
+\begin{table}[h!]
+    \centering
+\begin{tabular}{@{}lccccccr@{}}
+\toprule
+\textit{\textbf{}}              & \textbf{Y1} & \textbf{Y2} & \textbf{Y3} & \textbf{Y4} & \textbf{Y5} &  & \textbf{Total months} \\ \midrule
+\textit{Séverin Lemaignan (PI)} & 0.6         & 0.6         & 0.6         & 0.6    & 0.6         &  & 36                    \\ \midrule
+\textit{Post-doc 1 (WP1)}       & 1           & 1           & 1           &             &             &  & 36                    \\
+\textit{Post-doc 2 (WP2)}       & 1           & 1           & 1           & 1           &             &  & 48                    \\
+\textit{Post-doc 3 (WP3, WP5)}  & 1           & 1           & 1           & 1           & 1           &  & 60                    \\
+\textit{PhD 1 (WP3, WP5)}       &             & 1           & 1           & 1           & 0.5         &  & 42                    \\
+\textit{Post-doc 4 (WP4)}       &             & 1           & 1           & 1           & 1           &  & 48                    \\ \bottomrule
+\end{tabular}
+    \caption{Full-time equivalent for the research team members}
+    \label{time-allocation-team}
+\end{table}
+
+PI Séverin Lemaignan will dedicate 60\% (3 days/week) of his time to the
+project. This time will cover significant research time (about 2 days/week) as
+well as the supervision of the team and management of the project (1 day/week).
+
+The rest of his time will be dedicate to other academic commitments within the
+Bristol Robotics Lab (including the on-going supervision of his other PhD
+students, supervision of MSc students, the supervision of the Human-Robot
+Interaction research group at BRL, lab-wide strategic engagement), as well as a
+small proportion of Master-level teaching in Human-Robot Interaction (about 5
+days/term).
+
+Each of the project work packages will have one lead researcher (senior
+post-doc); the duration of each of the post-docs' contracts roughly matches the
+duration of the corresponding work packages.
+
+\begin{itemize}
+    \item \textbf{WP1}: I will appoint a post-doc with a background in sociology
+        of technology and science facilitation; the researcher will work for
+        three year to frame the \emph{robot-supported human-human interactions}
+        paradigm, and lead the field work at the WeTheCurious museum;
+
+    \item \textbf{WP2}: WP2 will be led by a post-doc with a background in
+        social signal processing and/or machine learning; the researcher will be
+        appointed for 4 years; extensive collaboration with WP1's post-doc is
+        expected to frame the social dynamics fostered by the robot;
+
+    \item \textbf{WP3}: WP3 (the cognitive architecture) lays at the core of the
+        project; the WP3 leader will be a senior post-doc in cognitive robotics,
+        appointed for the whole 5 years to ensure continuity on this critical
+        part; she/he will be responsible for the integration of the outputs of
+        the other work packages; the same post-doc will also oversee (with the
+        PI) the experimental work taking place in WP5. A PhD student will also
+        be recruited on WP3, with a specific focus on the cognitive architecture
+        design;
+
+    \item \textbf{WP4}: one post-doc (background in learning from demonstration
+        and machine learning) will be in charge of developing the novel
+        continuous robot behaviour generation method, and will be appointed for
+        4 years, starting on the second year.
+
+\end{itemize}
+\section{Research equipement}
+
+I will purchase 2 R1 robots for the \project project. The R1 robot is a
+recently developped service robot from the Italian Institute of Technology
+(IIT). Figure~\ref{r1-specs} summarises the main features of the robot.
+
+While the host institution (the Bristol Robotics Lab) could provide access to a
+range of social robots, none of the currently available robots are suitable for
+the project.  Table~\ref{robot-comparison} compares the main R1's feature with
+those of PAL TiaGo and SoftBank Pepper, the two main other platforms that would
+be potentially suitable for the project. However, neither TiaGo nor Pepper have
+non-verbal social features that are powerful enough to deliver the \project
+project. Critically, they both lack the abilities to show facial expressions or
+simulated gazing behaviours. Because the R1 robot features a programmable
+display in place of the head, we will have full freedom to create complex
+non-verbal facial expressions.
+
+\begin{table}[]
+    \begin{tabular}{@{}p{3cm}p{5cm}p{5cm}p{5cm}@{}}
+\toprule
+                                           & PAL TiaGo                                                & Softbank Pepper                                                           & \textbf{IIT R1}                                                                                                                              \\ \midrule
+\textbf{Social features}                   & Poor (non-expressive head)                               & Medium (expressive, yet fixed, face; no gaze; non-threatening appearance) & Good (expressive face~\cite{lehman2016head}; artificial skin for touch-based interactions; non-threatening appearance) \\
+\textbf{Perception}                        & Medium (RGB-D camera; laser scanner; no microphone)      & Medium (RGB-D; simple mic array; poor laser scanner)                      & \TODO{check once datasheet}                                                                                                   \\
+\textbf{Navigation}                        & Good (however, limited agility due to large footprint)   & Poor (weak localisation capabilities)                                     & \TODO{check once datasheet}                                                                                                   \\
+\textbf{Safety}                            & Medium (heavy robot; large footprint; non-compliant arm) & Medium (smaller footprint; safe arms; limited stability)                  & Good (smaller footprint; safe arms; dynamic stability)                                                                                       \\
+\textbf{Suitability for care environments} & Poor (relatively large, difficult to clear)              & Good (smaller footprint, easy to clean)                                   & Good (smaller footprint, easy to clean)                                                                                                      \\
+\textbf{Manipulation capabilities}         & Medium (non-anthropomorphic gripper; single arm)         & Limited (poor gripper with low payload; dual arm)                         & Good (anthropomorphic gripper; pressure sensors; dual arm; 1.5kg payload)                                                                    \\ \bottomrule
+\end{tabular}
+    \label{robot-comparison}
+\end{table}
+
+\section{Open access}
+
+In line with the European requirements, all journal publications will made
+available under an Open Access license. On the basis of an average of 2 journal
+publications per annum, and an average processing fee of €1,200 per article, we
+request €12,000 to support Open Access costs. Note that conference publications
+do not always offer immediate open-access policies.
+
+\section{Existing resources available to the researcher}
+
+The fellowship will take place at the Bristol Robotics Laboratory (BRL).  The
+BRL is the largest co-located and most comprehensive advanced robotics research
+establishment in the UK. It is a joint venture between the University of the
+West of England and the University of Bristol. BRL's multidisciplinary approach
+aims to create autonomous devices capable of working independently, with each
+other, or with humans. BRL draws on robotics, electrical \& mechanical
+engineering, computer science, psychology, cognitive science and sociology. BRL
+has an international reputation as a leading research centre in advanced
+robotics research and has over 250 researchers working on a broad portfolio of
+topics: HRI, collective robotics, aerial robotics, neuro-inspired control,
+haptics, control systems, energy harvesting and self-sustaining systems,
+rehabilitation robotics, soft robotics and biomedical systems. BRL has many
+collaboration partnerships, both national and international, and is experienced
+in managing large multi-site projects. BRL has support from two embedded units
+specialising in business and enterprise, together with an incubator and
+successful track record of spin-outs.
 
 Hardware-wise, the Bristol Robotics Lab, where this fellowship will take place,
 offer unique support and facilities for robotic hardware development: the
@@ -2735,28 +2862,6 @@ in providing a coherent and strong pathway to impact to the project, including
 further engagement with industrial partners and spin-off opportunities.
 
 
-\hypertarget{host-institution}{%
-\subsubsection{Host institution}\label{host-institution}}
-
-The \emph{Bristol Robotics Laboratory (BRL)} is the largest co-located
-and most comprehensive advanced robotics research establishment in the
-UK. It is a joint venture between the University of the West of England
-and the University of Bristol. BRL's multidisciplinary approach aims to
-create autonomous devices capable of working independently, with each
-other, or with humans. BRL draws on robotics, electrical \& mechanical
-engineering, computer science, psychology, cognitive science and
-sociology. BRL has an international reputation as a leading research
-centre in advanced robotics research and has over 250 researchers
-working on a broad portfolio of topics: HRI, collective robotics, aerial
-robotics, neuro-inspired control, haptics, control systems, energy
-harvesting and self-sustaining systems, rehabilitation robotics, soft
-robotics and biomedical systems. BRL has many collaboration
-partnerships, both national and international, and is experienced in
-managing large multi-site projects. BRL has support from two embedded
-units specialising in business and enterprise, together with an
-incubator and successful track record of spin-outs.
-
-\newpage
-
 \printbibliography
+
 \end{document}
