@@ -609,16 +609,38 @@ creating a level of cognitive redundancy (with the corresponding arbitration
 mechanisms in place where necessary).
 
 
-\textbf{T3.1 -- Socially-driven architecture for long-term interaction} The
+
+\textbf{T3.1 -- A social teleology for robots}
+The case for \emph{teleological} (ie goal-driven) robotic architectures has been
+made in the past~\cite{wrede2012towards}, but only effectively realised for
+relatively simple cognitive systems (like curiosity-driven robot
+animals~\cite{oudeyer2005playground} or motor babbling in infant-like
+robots~\cite{forestier2017unified}). Socially-driven robots, participating in
+complex interactions with humans, have been barely investigated. This task
+covers the overall design of the architecture.
+
+
+\textbf{T3.2 -- Learning from humans to achieve 'by-design' responsible \&
+trustworthy AI} Building on my recent, promising results on human-in-the-loop
+social learning~\cite{senft2017supervised,senft2019teaching,winkle2020coach}, this task
+implements the learning mechanics (including the critical aspect of the
+interface with the human teacher) to allow human participants to progressively
+teach the robot a social policy to become a good social helper.
+
+In addition, this task researches how human-in-the-loop machine learning enables a more
+trustworthy AI system, by involving the end-users in the creation of the robot
+behaviours, guaranteeing a level of behavioural transparency for the end-users.
+
+\textbf{T3.3 -- Integrating a socially-driven architecture for long-term interaction} The
 socio-cognitive architecture of \project robots builds from the principles (the
 `why's?') identified in T1.3, and relies on a combination of socially-driven
-intrinsic motivation (a \emph{social teleology}, T3.2), and human-in-the-loop machine
-learning (T3.3) to progressively learn an social policy enabling long-term
+intrinsic motivation (a \emph{social teleology}, T3.1), and human-in-the-loop machine
+learning (T3.2) to progressively learn an social policy enabling long-term
 autonomy. This task focuses on `bringing the pieces together' in a principled
 manner.
 
 We will specifically look at the requirement for \emph{long term} autonomy: Over
-the last two years, we have observed an significant increase of studies
+the last two years, we have observed a significant increase of studies
 involving social robots, deployed in real-world settings (schools, care centres)
 over relatively long periods of time (up to 2 or 3 months at a
 time)~\cite{kunze2018artificial,leite2013social}, with some promissing results
@@ -627,38 +649,18 @@ tasks~\cite{senft2019teaching}, or 'butler' in a social care
 facility~\cite{hawes2017strands}). More generic (long-term) social autonomy
 however requires additional, beyond-state-of-art research to (1) add a
 \emph{social motivation} mechanism able to drive the robot's intentions over
-time. This is specifically investigated in T3.2 and T3.3 below; (2) a level of
+time. This is specifically investigated in T3.1 and T3.2 above; (2) a level of
 cognitive redundancy to ensure reliable perception and behaviour generation
 (addressed by this task, with a dependency on the cognitive functions developped
 in WP2 and WP4).
 
-\textbf{T3.2 -- A social teleology for robots}
-The case for \emph{teleological} (ie goal-driven) robotic architectures has been made in
-the past~\cite{wrede2012towards}, but only effectively realised for relatively
-simple cognitive systems (like curiosity-driven robot
-animals~\cite{oudeyer2005playground} or motor babbling in infant-like
-robots~\cite{forestier2017unified}). Socially-driven robots, participating in
-complex interactions with humans, have been barely investigated. This task
-covers the overall design of the architecture.
-
-
-\textbf{T3.3 -- Learning from humans to achieve 'by-design' responsible \&
-trustworthy AI} Building on my recent, promising results on human-in-the-loop
-social learning~\cite{senft2017supervised,senft2019teaching,winkle2020coach}, this task
-implements the learning mechanics (including the critical aspect of the
-interface with the human teacher) to allow human participants to progressively
-teach the robot a social policy to become a good social helper.
-
 Additionally, a critical aspect of task T3.3 is to develop the arbitration
-mechanism that combines the robot's social teleology (T3.2) with the human-taught
-action policy. This arbitration mechanism will build on research on
+mechanism that combines the robot's social teleology (T3.1) with the human-taught
+action policy (T3.2). This arbitration mechanism will build on research on
 reinforcement learning for experience transfer~\cite{madden2004transfer} that
 enables the re-assessement of a policy (here, our intrisic motivation) based on
 previous experience (here, the human-taught policy).
 
-Finally, this task researches how human-in-the-loop machine learning enables a more
-trustworthy AI system, by involving the end-users in the creation of the robot
-behaviours, guaranteeing a level of behavioural transparency for the end-users.
 
 
 \subsection{WP4: \textbf{\wpFour}} 
@@ -2367,17 +2369,37 @@ challenge.
 
 
 
+\textbf{T3.1 -- A social teleology for robots}
+The case for \emph{teleological} (ie goal-driven) robotic architectures has been
+made in the past~\cite{wrede2012towards}, but only effectively realised for
+relatively simple cognitive systems (like curiosity-driven robot
+animals~\cite{oudeyer2005playground} or motor babbling in infant-like
+robots~\cite{forestier2017unified}). Socially-driven robots, participating in
+complex interactions with humans, have been barely investigated. This task
+covers the overall design of the architecture.
 
-\textbf{T3.1 -- Socially-driven architecture for long-term interaction} The
+
+\textbf{T3.2 -- Learning from humans to achieve 'by-design' responsible \&
+trustworthy AI} Building on my recent, promising results on human-in-the-loop
+social learning~\cite{senft2017supervised,senft2019teaching,winkle2020coach}, this task
+implements the learning mechanics (including the critical aspect of the
+interface with the human teacher) to allow human participants to progressively
+teach the robot a social policy to become a good social helper.
+
+In addition, this task researches how human-in-the-loop machine learning enables a more
+trustworthy AI system, by involving the end-users in the creation of the robot
+behaviours, guaranteeing a level of behavioural transparency for the end-users.
+
+\textbf{T3.3 -- Integrating a socially-driven architecture for long-term interaction} The
 socio-cognitive architecture of \project robots builds from the principles (the
 `why's?') identified in T1.3, and relies on a combination of socially-driven
-intrinsic motivation (a \emph{social teleology}, T3.2), and human-in-the-loop machine
-learning (T3.3) to progressively learn an social policy enabling long-term
+intrinsic motivation (a \emph{social teleology}, T3.1), and human-in-the-loop machine
+learning (T3.2) to progressively learn an social policy enabling long-term
 autonomy. This task focuses on `bringing the pieces together' in a principled
 manner.
 
 We will specifically look at the requirement for \emph{long term} autonomy: Over
-the last two years, we have observed an significant increase of studies
+the last two years, we have observed a significant increase of studies
 involving social robots, deployed in real-world settings (schools, care centres)
 over relatively long periods of time (up to 2 or 3 months at a
 time)~\cite{kunze2018artificial,leite2013social}, with some promissing results
@@ -2386,38 +2408,18 @@ tasks~\cite{senft2019teaching}, or 'butler' in a social care
 facility~\cite{hawes2017strands}). More generic (long-term) social autonomy
 however requires additional, beyond-state-of-art research to (1) add a
 \emph{social motivation} mechanism able to drive the robot's intentions over
-time. This is specifically investigated in T3.2 and T3.3 below; (2) a level of
+time. This is specifically investigated in T3.1 and T3.2 above; (2) a level of
 cognitive redundancy to ensure reliable perception and behaviour generation
 (addressed by this task, with a dependency on the cognitive functions developped
 in WP2 and WP4).
 
-\textbf{T3.2 -- A social teleology for robots}
-The case for \emph{teleological} (ie goal-driven) robotic architectures has been made in
-the past~\cite{wrede2012towards}, but only effectively realised for relatively
-simple cognitive systems (like curiosity-driven robot
-animals~\cite{oudeyer2005playground} or motor babbling in infant-like
-robots~\cite{forestier2017unified}). Socially-driven robots, participating in
-complex interactions with humans, have been barely investigated. This task
-covers the overall design of the architecture.
-
-
-\textbf{T3.3 -- Learning from humans to achieve 'by-design' responsible \&
-trustworthy AI} Building on my recent, promising results on human-in-the-loop
-social learning~\cite{senft2017supervised,senft2019teaching,winkle2020coach}, this task
-implements the learning mechanics (including the critical aspect of the
-interface with the human teacher) to allow human participants to progressively
-teach the robot a social policy to become a good social helper.
-
 Additionally, a critical aspect of task T3.3 is to develop the arbitration
-mechanism that combines the robot's social teleology (T3.2) with the human-taught
-action policy. This arbitration mechanism will build on research on
+mechanism that combines the robot's social teleology (T3.1) with the human-taught
+action policy (T3.2). This arbitration mechanism will build on research on
 reinforcement learning for experience transfer~\cite{madden2004transfer} that
 enables the re-assessement of a policy (here, our intrisic motivation) based on
 previous experience (here, the human-taught policy).
 
-Finally, this task researches how human-in-the-loop machine learning enables a more
-trustworthy AI system, by involving the end-users in the creation of the robot
-behaviours, guaranteeing a level of behavioural transparency for the end-users.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2815,52 +2817,6 @@ access to two of the long-term conditions wards for the duration of the studies.
 \TODO{explain that these 2 large experiments will be scaffolded by many smaller
 ones}
 
-\subsection{Experimental deployments: risks and mitigations}
-
-These two application scenarios are ambitious and inherently risky, as they
-target vulnerable populations. However, first, demonstrating the
-importance of advanced social modelling, and convincingly proving the
-effectiveness of our approach does require accordingly complex social
-situations, and complex social dynamics. The two scenarios, which complement
-each other, provide both.
-
-Second, working with vulnerable populations, in constrained and complex
-environments (children hospital and SEN schools) adds significant risks to the
-project. But it is also what make the project in the unique position of
-delivering a high societal impact: a direct positive impact on children's
-lives (we anticipate 100+ hospitalised children and 50+ refugee children
-interacting over long periods of time with a robot over the course of the
-project), and a broader impact on the society, showing how robots can have a
-lasting, strong, positive impact on the society, also establishing the idea of
-\emph{robots supporting human interactions} instead of dehumanising our social
-relationships.
-
-The two main mitigations are (1) early and continuous engagement with the
-stakeholders, and (2) the decoupling of the two applications, meaning that the
-risks associated to each of them do not impact the other one.
-
-Early engagement will be ensured by relying on a participatory design
-methodology, involving all the stakeholders from the onset of the project; the
-methodology will involve regular joint workshops; on-site (hospital and refugee
-camps) research stay including engagement with the staff/charities and the
-children themselves; use of art-based participatory techniques like puppetering.
-I will also perform field testing early on in the project, relying if necessary
-on provisional robot platforms available at the host institution (for instance,
-Softbank Nao and Pepper). This user-centered approach will be championed by one
-of the post-doc recruited on the project, who will have recognised expertise in
-user-centered design.
-
-
-The Principal Investigator, Dr.  Séverin Lemaignan, has been working for 12+
-years in human-robot interaction, and over the last 6 years, specifically in the
-field of child-robot interaction.  His profile is both highly technical, with
-hundreds of hardware and software contributions to the worldwide robotic
-community; and highly experimental, running dozens of studies and experiments
-with children, including long-term ones, in muliple schools and in healthcare
-environments. He is in a unique position to deliver both a scientific
-breakthrough on social situation assessment for robots, and a high-impact
-societal change.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2903,20 +2859,172 @@ Framework~\cite{stahl2018implementing}~\footnote{\url{https://www.orbit-rri.org/
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Risks}\label{risks}
+\section{Risk/gain assessment; risk mitigations}\label{risks}
 
-\begin{table}[!htbp]
-\caption{Identified risks and proposed mitigations}
-\centering
-\begin{tabular}{@{}lll@{}}
-\toprule
-\textbf{Description of risk} & \textbf{Work package(s) involved} & \textbf{Proposed risk mitigation measures} \\ \midrule
-risk 1 (low/medium/high)     &                                   &                                            \\
-                             &                                   &                                            \\
-                             &                                   &                                            \\
-                             &                                   &                                            \\ \bottomrule
-\end{tabular}
-\end{table}
+\textbf{Tasks 1.1, 1.2} develop a novel methodology, 'public-in-the-loop' machine
+learning, for large-scale co-design of social interactions with the public. If
+successful, this will be of great value, well beyond the project. The
+proposed experimental setup (museum visitors 'taking control' of the robot)
+might however lead to interactions that are either too short or to artificial to
+create meaningful, generalisable social interaction. In addition, the messy and
+complex nature of the museum environment is also currently beyond-state-of-art
+in term of extracting the useful social features required to train a classifier.
+
+However, the interaction principles that we want to uncover in T1.1 and T1.2
+(and that are feeding into WP2 and WP3) will principally come from a qualitative
+analysis of the interactions, carried in parallel to the machine learning
+approach. This well within the expertise of the PI, and, as such, is low-risk.
+T1.1 can thus be described as a \ul{\bf medium-risk, high-gain} component of
+\project.
+
+\vspace{1em}
+
+\textbf{Task 2.1} develops a novel situation assessment component, that
+integrates spato-temporal modeling with knowledge representation. The resulting
+component is beyond-state-of-art, and would be highly relevant to a large range
+of robotic applications. This component relies on integrating tools that are
+independently relatively mature and well understood, and the principles of the
+integration itself is already well researched. Besides, it falls well within the
+PI
+expertise~\cite{lemaignan2018underworlds,sallami2019simulation,lemaignan2010oro}.
+As such, T2.1 can be described as \ul{\bf low-risk, medium-gain}.
+
+\textbf{Tasks 2.2, 2.3, 2.4} Work on real-time modeling of social dynamics in
+real-world environments are only begining to be studied in robotics. While the
+underpinning are well understood in neighbouring academic fields, a very
+significant work remain to be done to integrate disparate or partial approaches
+into one framework. These tasks also require the acquisition of novel datasets
+that focus on natural human-human social interactions. The PI has extensive
+experience in building and acquiring such
+datasets~\cite{lemaignan2018pinsoro,sallami2020unexpected}, and does not
+foreseen major difficulties. The resulting components have however the potential
+to unlock a new class of social robots, aware in real-time of their social
+surroundings and dynamics.  These tasks are thus considered \ul{\bf low-risk,
+high-gain}.
+
+\vspace{1em}
+
+\textbf{Task 3.1} The conceptual framing of a \emph{socially-driven
+architecture} (social teleology) and its translation into decision-making
+algorithms are to a large extend open questions. This task might however lead to
+uncover a fundamental mechanism to enable long-term engagement of users
+with social robots. Building fundamentally on blue-sky research, this task is
+\ul{\bf high-risk, high-gain}. If not successful, I will instead rely on the
+decision-making strategy of T3.2, which is much lower risk.
+
+\textbf{Task 3.2} The techniques developed in T3.2 have been previously used and
+tested by the PI in two different real-world
+environments~\cite{senft2019teaching,winkle2020couch}. While they will require
+significant adjustments for this project, the task is overall \ul{\bf low-risk,
+low-gain}.
+
+\textbf{Task 3.3} The integration of the different cognitive functions of the
+robot into one principled cognitive architecture, that include cognitive
+redundancy, is one of the core expertise of the
+PI~\cite{lemaignan2017artificial}. This task however includes significant novel
+elements (cognitive mechanisms for long-term autonomy; decision arbitration)
+that bear unknowns. Besides, this task is a critical pre-requisite for WP5. As a
+result, T3.3 is considered as \ul{\bf high-risk}. As the task is focused on
+integration to meet the requirements of the WP5 experiments, significant parts
+of the resulting software architecture might be project-specific, and as a
+result, T3.3 is considered \ul{\bf low-gain}. The main mitigation comes from the
+iterative development process of the architecture, that will start from the existing
+state-of-art, to which the PI has previously
+contributed~\cite{lemaignan2017artificial}. By doing so, a decisional
+architecture for the robot will be available early on in the project. While that
+architecture might be a scaled-down version of the initial ambition, it will
+still enable the fieldwork proposed in WP5, possibly with a lesser level of
+autonomy.
+
+\vspace{1em}
+
+\textbf{Task 4.1} The behavioural baseline implements the current state-of-art,
+and as such is \ul{\bf low-risk, low-gain}. T4.1 will guarantee early on in the
+project a 'working' robot, yet with predictable/repetitive behaviours.
+
+\textbf{Task 4.2} The continuous generation of complex social behaviours is a
+\ul{\bf high-risk, high-gain} task: while it builds on a well-established
+state-of-art, it relies on very significant progress in both the modeling of the
+social dynamics (WP2) and the capacity of designing a machine learning approach
+to learn and generate these complex behaviours. While the former falls well
+within the PI expertise, machine learning for social motion generation does not
+lay within his core expertise. The sucess of this task will rely to a large
+extend on the quality of the post-doctoral researcher recruited to lead this
+effort. The main mitigation to the risk associated to T4.2 is the behavioural
+baseline created in T4.1: the behavioural capabilities generated in T4.2 will be
+complemented by ad-hoc behaviours were required.
+
+\textbf{Task 4.3} Non-verbal communication is a well established subfield of HRI
+research, well known to the PI. The creation of the novel interaction modality
+based on soundscape is novel, with potential for impact beyond the project. This
+new modality will be co-developped with an expert of sound design for
+interaction, and we do not foresee major risks. Overall, the task is \ul{\bf
+low-risk, medium-gain}.
+
+\vspace{1em}
+
+\textbf{WP5: Experimental deployments}
+
+The two application scenarios (at the children hospital and in the SEN school)
+are ambitious and inherently risky, as they target vulnerable populations.
+However, first, demonstrating the importance of advanced social modelling, and
+convincingly proving the effectiveness of our approach does require accordingly
+complex social situations, and complex social dynamics. The two scenarios, which
+complement each other, provide both.
+
+Second, working with vulnerable populations, in constrained and complex
+environments (children hospital and SEN schools) adds significant risks to the
+project. But it is also what make the project in the unique position of
+delivering a high societal impact: a direct positive impact on children's lives
+(we anticipate 100+ hospitalised children and 50+ children with psycho-social
+impairements interacting over long periods of time with a robot over the course
+of the project), and a broader impact on the society, showing how robots can
+have a lasting, strong, positive impact on the society, also establishing the
+idea of \emph{robots supporting human interactions} instead of dehumanising our
+social relationships.
+
+\textbf{Together, Task 5.1 and 5.2 are \ul{high-risk, high-gain}.}
+
+The two main mitigations are (1) early and continuous engagement with the
+stakeholders, and (2) the decoupling of the two applications, meaning that the
+risks associated to each of them do not impact the other one.
+
+Early engagement will be ensured by relying on a participatory design
+methodology, involving all the stakeholders from the onset of the project; the
+methodology will involve regular joint workshops; on-site (hospital and refugee
+camps) research stay including engagement with the staff/charities and the
+children themselves; use of art-based participatory techniques like puppetering.
+I will also perform field testing early on in the project, relying if necessary
+on provisional, yet well-known, robot platforms available at the host
+institution (for instance, Softbank Nao and Pepper). This user-centered approach
+will be championed by the post-doc recruited on the project on WP3 and WP5, who will
+have to have a strong expertise in user-centered design.
+
+The PI, Pr. Séverin Lemaignan, has been working for 12+
+years in human-robot interaction, and over the last 6 years, specifically in the
+field of child-robot interaction.  His profile is both highly technical, with
+hundreds of hardware and software contributions to the worldwide robotic
+community; and highly experimental, running dozens of studies and experiments
+with children, including long-term ones, in multiple schools and in healthcare
+environments. He is in a unique position to deliver both a scientific
+breakthrough on social situation assessment for robots, and a high-impact
+societal change.
+
+%\begin{table}[!htbp]
+%\caption{Identified risks and proposed mitigations}
+%\centering
+%\begin{tabular}{@{}llll@{}}
+%\toprule
+%    \textbf{Task} & \textbf{Description of risk}                 & \textbf{Level} & \textbf{Proposed risk mitigation measures} \\ \midrule
+%    T1.1          & Visitors' interactions with robot too short to create
+%    meaningful social interaction                            & High
+%    & The 'public-in-the-loop' machine learning methodology is high risk/high
+%    gain; machine                            \\
+%                  &                              &                &                            \\
+%                  &                              &                &                            \\
+%                  &                              &                &                            \\ \bottomrule
+%\end{tabular}
+%\end{table}
 
 
 
