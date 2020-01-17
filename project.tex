@@ -5,6 +5,7 @@
 
 \usepackage{soul} % underlines
 \setuldepth{aaaa}
+\usepackage{framed}
 
 %% enable markdown's stars to bold/italic sections of code -- requires lualatex!
 \usepackage{luacode,luatexbase}
@@ -137,30 +138,34 @@ social fabric.
 
 Does it have to be the case, though? Could instead a suitably-programmed robot
 \textbf{enhance} social interactions between humans? Could social robots become
-the tools to build stronger, \textbf{more human-like} bonds and
-interactions within our societies? This question is the backbone of
-the \project research project.
+the tools to build stronger bonds and interactions within our societies? This
+question is the backbone of the \project research project, and our specific
+objective is that, \textbf{within 5 years, we create a socially-intelligent
+robot, that (1) will have recognised social utility, and (2) will see long-term
+acceptance by its end-users}.
 
-\project investigates how \textbf{socially-driven} robots can have a lasting, positive
-impact on the society, by fostering social interactions amongst humans
-themselves. It defines the new concept of \textbf{robot-supported human-human
-interactions} as a general framework to study and implement socially-aware
-intelligent robots, able to understand social interaction, and, when
-appropriate, act to create and support positive interactions between people.
+We formulate two main hypotheses: (1) this objective can only be achieved if the
+robot is \textbf{socially-driven}: the robot's behaviours must be driven by the
+intention to support positive human-human interactions. How this general
+principle translates into specific guidelines and algorithms -- while taking into
+account the principles of a responsible AI -- is the central
+contribution of Work Package 1.
 
-Grounded in both the psycho-social literature of human cognition, and the latest
-technological advances in human-robot interaction, the project delivers
-major conceptual, technical and experimental contributions to the field of AI, 
-with a particular focus on ethics \& safeguarding mechanisms, in order to build 'by 
-design' a trustworthy AI system.
+(2) Long-term acceptance can only be achieved if the end-users are genuinely
+involved at every step of the design process. To this end, \project introduces a novel
+methodology involving 'public-in-the-loop' machine learning: the large scale
+participation of end-users, over extended periods of time, to teach the robot how to
+become a good and responsible social helper.
 
-\project delivers this programme by building on a range of multidisciplinary
-methods, including sociological investigation, novel interactive machine
-learning techniques, and a pervasive approach to co-design that puts the
-end-user needs at the centre of the design process. It paves the way for a
-better understanding of the societal challenges raised by the rapid development
-of AI and robotics, and, critically, opens a \textbf{unique window into what
-positive role social robots could play in our future societies}.
+\project tests these two hypotheses with an ambitious work programme. It
+includes basic research and conceptual framing; extensive, beyond-state-of-art, technical
+developments; and an ambitious experimental programme, with a combined three years
+of field deployment of social robots in public spaces.
+
+\project will provide a lasting legacy, paving the way forward for a
+better understanding of the design of socially-intelligent robots that are
+socially useful and acceptable on the long-term: \project opens a \textbf{unique
+window into the positive role social robots can play in our future societies}.
 
 \newpage
 
@@ -245,9 +250,9 @@ towards the page limits. It is important that this extended synopsis contains
 all essential information including the feasibility of the scientific proposal
 since the panel will only evaluate Part B1 at step 1.}
 
-\section{Long-term vision and targeted breakthrough towards that vision}
+\section{Long-term vision and ground-breaking nature of the project}
 
-The service \& companion robots that we are set to interact with in the coming
+The service and companion robots that we are set to interact with in the coming
 years, are being designed and built today in labs and startups all over the
 world. Can we however ensure 'by design' that they will have a net social utility?
 \project \ul{defines} and \ul{implements} \textbf{a vision of AI
@@ -258,47 +263,119 @@ individuals}. \project seeks to answer the \textbf{why?} embedding social robots
 in our society, and the \textbf{how?} to do so, from a technology and
 `responsible AI' perspective.
 
+This research is ground-breaking: \textbf{\project main objective is to design,
+implement and demonstrate within 5 years the AI engine of a socially-intelligent
+robot, that will result in a robot that (1) has an effective social utility, and
+(2) will see long-term acceptance by its end-users}.
+
+This objective is underpinned by two research hypotheses: (\textbf{H1}) for
+end-users to ascribe social utility and engage with the robot over long periods
+of time (months, years), the robot has to have its own long-term internal
+motivation to be socially helpful -- a \emph{social teleology}. Libraries of
+pre-programmed behaviours, as complex as they might be, are not sufficent.
+
+(\textbf{H2}) Additionally, long-term acceptance can only be achieved if the
+end-users are genuinely involved at every step of the design process, so that a
+feeling of \emph{ownership} is fostered. We further hypothesise that
+human-in-the-loop machine learning is the most effective way of generating
+ownership, by enabling the design of robot behaviours that genuinely originate
+from the end-users, and we therefore suggest that traditional human-in-the-loop
+machine learning could and should be extended into 'public-in-the-loop' machine
+learning, a new methodology to train a robot AI at scale, involving a large
+range of stakeholders and end-users, in different interaction situations.
+
+
+
+%How this general
+%principle translates into specific guidelines and algorithms -- while taking into
+%account the principles of a responsible AI -- is the central
+%contribution of Work Package 1.
+
+% This socially-driven goal forms what we call a \emph{social
+%teleology}. its own goals have this objective can only be achieved if the
+%robot is \textbf{socially-driven}: the robot's behaviours must be driven by the
+%intention to support positive human-human interactions. 
+
 \begin{wrapfigure}{r}{0.4\linewidth}
     \centering
     \includegraphics[width=0.9\linewidth]{concept}
     \label{fig|concept}
 \end{wrapfigure}
 
-This research is ground-breaking: \project introduces the core idea of
-\textbf{robot-supported human-human interactions}, which reverses the
+
+The investigation of these hypotheses in \project is underpinned by the novel
+idea of \textbf{robot-supported human-human interactions}, which reverses the
 traditionally accepted, technology-centric, view on human-robot interactions.
-Instead of having the robot at the centre of the stage, the humans are: we build from
-pre-existing social interactions between people, and investigate where, when and
-how robots could facilitate and enrich them. This change of paradigm will have
-far reaching impact on the place that we collectively assign to social robots in
-the society; it will help to structure the public debate by providing the
-framing to look at human-robot interactions in term of their net social utility.
-As such, \textbf{the first outcome of \project will be researching, defining and implementing the conceptual
-framework that we need to ensure trustworthy and socially responsible robots in
-our societies}.
+Instead of having the robot at the centre of the stage, the humans are: we build
+from pre-existing social interactions between people, and investigate where,
+when and how robots could facilitate and enrich them. To this end, we will
+deploy the \project robot for a year in a public space (the Bristol Science
+museum, WeTheCurious), asking visitors to 'take control' of the robot for a
+period of time, and use it to mediate interactions between other visitors of the
+museum.  At the end of this experiment, we expect thousand of people to have had
+experienced how robots could interact with human, and each of these experiences
+will contribute to uncovering the basic principles of social interaction for
+robots. This work is the focus of WP1.
 
-\project is also a highly technical project, who aims at significantly
-pushing the state-of-art in autonomous social robotics. Indeed, in \project, we will
-\textbf{implement the AI required for robots to effectively support
-human social interactions}.  In that sense, this research is also
-ground-breaking in regards to its technical objectives. In \project, robots will
-be able to understand complex social dynamics, and generate appropriate social
-responses, in a fully autonomous way.  Extending the current line of research of
-the PI, we will identify, implement, and integrate the a broad range of cognitive functions into a
-principled, socially-driven, and trustworthy socio-cognitive architecture for
-robots. This is the second major expected scientific outcome of \project.
-
-Finally, and beyond these specific outputs, \project is also about asserting and
-reinforcing the European leadership in AI and robotics, in line with EU strong
-societal values: a socially responsible AI, that guarantees, by design,
-long-term benefits to the society. This requires strong leadership to genuinely
-and meaningfully involve of the public at large; and scientific, technical and
-methodological excellence to realise this vision. \textbf{\project aims at
-building this capacity}. 
+While most of the interactions in the museum will be short-lived, two further
+large scale experiments will take place over the course of the project: a
+one-year experiment at the Bristol's children hospital, where the robot will
+join one of the wards for children with long-term conditions, and engage the
+children in playful social activities; another one-year experiment in one of
+Bristol's Special Education Need (SEN) school, helping children with
+psycho-social impairements to develop their social skills. In both these
+experiments, the robot behaviours will be co-designed with, and learnt from the
+end-users themselves: nurses, teachers, parents, and the children themselves.
 
 
+\begin{wrapfigure}{l}{0.15\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{R1-profile}
+    \label{fig|R1}
+\end{wrapfigure}
 
-\subsection{Operationalising the \project vision}
+Importantly, \project focuses specifically on the AI engine of the robot: I will
+use an existing robotic platform (IIT's R1, left) and develop and train the
+algorithms required to achieve autonomy and long-term social utility. After the
+initial training period, the robot will indeed be \emph{autonomous}: while the
+users will be provided tools to override the robot decisions at any time (via
+both an app and touch sensors on the robot itself), it will otherwise
+move and act on its own, without the need for constant supervision. To this end,
+the robot will have ground-breaking perception and modelling capabilities (the
+focus of WP2) to represent the current social situation, coupled with an
+innovative cognitive architecture designed to combine internal social
+drives with domain-specific action policies learnt from the end-users.
+
+The robot actions themselves are designed to be limited to motions and
+non-verbal communication mechanisms: non-verbal utterances using sounds, gaze,
+joint attention, expressive motions. My team will in addition create a novel
+non-verbal modality based on \emph{soundscapes}: sound landscapes that the robot
+can modulate to influence the mood of the social environment (calm, excited,
+worried, etc.).
+
+Finally, \project is also about asserting and reinforcing the European
+leadership in AI and intelligent robotics, in line with EU strong societal values: a
+socially responsible AI, that guarantees, by design, long-term benefits to the
+society. This requires leading major technological advances; leading the
+development of the conceptual framework around socially intelligent robots that
+we need to inform future policy making; and a strong leadership to meaningfully involve
+the public at large in the design of these technologies. Through its objectives
+and methodology, \textbf{\project will have a major contribution to building
+this capacity in Europe}. 
+
+\begin{framed}
+
+\bf Over the 5 years of the fellowship, the
+\project project will design and deliver a ground-breaking embodied AI for
+socially intelligent robots. This AI will be responsible 'by design', have
+demonstrable social utility and ensure long-term acceptance by end-users.
+Co-developed with a large public using a novel methodology ('public-in-the-loop'
+machine learning), its utility will be demonstrated over two one-year-long experiments in
+socially sensitive environments.
+
+\end{framed}
+
+\section{Feasibility of the \project work programme}
 
 Socially intelligent robots require unique, beyond state-of-the-art,
 capabilities to \emph{(1)} understand the social interactions (social
@@ -306,39 +383,36 @@ situation awareness), \emph{(2)} autonomously decide the best course of action f
 short-term and longer-term social influence, and \emph{(3)} perform the
 appropriate social actions and exert said influence in an appropriate,
 responsible manner.
-
 However, extreme complexity hides behind these seemingly well-delineated steps:
 not only the required technology is itself beyond state-of-the-art, but the
 interplay between technology, socio-cognitive psychology, privacy and ethics is
-only starting to be researched and understood. Together, it forms what is called
-a \emph{wicked problem}~\cite{tonkinwise2015design} -- a problem whose social complexity
-means that it has no clear stopping point. \project offers an
+only starting to be researched and understood. \project offers an
 strong vision and an ambitious, evidenced-based, methodology to significantly
 advance our understanding of this problem.
 
-Over the course of 5 years, I will specifically investigate the following
-research questions:
+Over the course of 5 years, I will specifically investigate hypotheses H1 and H2
+through the following research questions:
 
 \begin{itemize}
-    \item \textbf{R1} [conceptual framing]: how the abstract idea of
-        \emph{robot-supported human-human interaction} translates into
-        (implementable) interaction design principles? What should motivate the
-        robot to step in and attempt to help? What are the determinants
-        and parameters of a social intervention, performed by a socially-driven
-        robot, to support positive human-human social interactions? How to
-        balance social utility and social responsability?
+    \item \textbf{R1} [conceptual framing]: what are the basic principles of
+        responsible social interactions, that must form the foundations of a
+        socially useful robot, accepted and used on the long run? What should
+        motivate the robot to step in and attempt to help? What are the
+        determinants and parameters of a social intervention, performed by a
+        socially-driven robot, to support positive human-human social
+        interactions? How to balance social utility and social responsibility?
 
-    \item \textbf{R2} [conceptual \& technology level]: how do these principles
+    \item \textbf{R2} [implementation level]: how do these principles
         can be integrated into a principled, socially-driven teleological
-        architecture for autonomous robots? What additional principles (like
-        human-in-the-loop machine learning) need to be considered to ensure,
-        \emph{by design}, a responsible, trustworthy, human-centered robot
-        behaviour?
+        architecture for autonomous robots? How this should be combined with
+        bottom-up action policies, designed and learnt from the end-users? How
+        can we ensure 'by design' that the resulting AI will generate useful yet
+        responsible, trustworthy, human-centered robot behaviour?
 
     \item \textbf{R3} [technology level]: where are the technological gaps in
         artificial social modeling and cognition, that prevent the actual
-        realisation of a robot capable of effective social support? Can we fill
-        them?
+        realisation of a robot capable of effective social support, sustained
+        over long period of time? How can we fill them?
 
     \item \textbf{R4} [experimental level]: can we demonstrate in complex, real
         world conditions, the effectiveness and usefulness of the
@@ -348,19 +422,18 @@ research questions:
 
 \end{itemize}
 
-\section{Implementation of the work programme}
 
-The \project vision unfolds along five main axes, reflected in the structure of
-the workpackages: \textbf{WP1} is dedicated to the conceptual framing of the
-project (R1); \textbf{WP2} builds on the principles identified in WP1, and
-translates them into socio-cognitive representations and capabilities,
-identifying and filling the gaps in the state-of-the-art (R3); in parallel to
-WP2, \textbf{WP3} transposes the conceptual framework of WP1 into a principled
-cognitive architecture and integrates together the cognitive functions of WP2
-(R2); \textbf{WP4} looks at how social robots can perform effective social
-interventions to exert positive social influence (R3); and \textbf{WP5}
-organises the experimental fieldwork that demonstrate the effectiveness of the
-\project approach in ambitious and complementary real-world situations (R4).
+These research questions are addressed across five work-packages: \textbf{WP1}
+is dedicated to the conceptual framing of the project (R1); \textbf{WP2} builds
+on the principles identified in WP1, and translates them into socio-cognitive
+representations and capabilities, identifying and filling the gaps in the
+state-of-the-art (R3); in parallel to WP2, \textbf{WP3} transposes the
+conceptual framework of WP1 into a principled cognitive architecture and
+integrates together the cognitive functions of WP2 (R2); \textbf{WP4} looks at
+how social robots can perform effective social interventions to exert positive
+social influence (R3); and \textbf{WP5} organises the experimental fieldwork
+that demonstrates the \project approach in ambitious and
+complementary real-world situations (R4).
 
 \subsection{WP1: \textbf{\wpOne}}
 
@@ -383,12 +456,12 @@ interactions?
 
 In order to anchor T1.1 into the reality and complexity of human social
 interactions, and to also involve the civil society in this framing process, the
-task will embed \project into the 'City lab' experiment, led by WeTheCurious,
-Bristol's science museum. WeTheCurious is leading the push for a new form of
+task will embed \project into the 'City lab' experiment, conducted by Bristol's
+science museum WeTheCurious. WeTheCurious is leading the push for a new form of
 public engagement, call 'City Lab', that sees the visitors engaging in the
 actual production of science. We will integrate \project in the City Lab to
 co-design and co-produce robot-supported social interactions with the general
-public. For an initial period of one year (during Y2), one \project robot will be
+public. For an initial period of one year (Y2-Y3), one \project robot will be
 permanently based at the museum.  Participants (children and adults) will be
 guided, with the help of museum staff and a dedicated interface, into
 teleoperating the robots to make them good 'social helpers'. This will generate
@@ -709,16 +782,16 @@ The project's ambitious scientific and technical goals are expected to deliver
 major scientific, societal and technical impact, that extends beyond the end of
 the fellowship. At the end of the fellowship, the PI is expected to be a
 world-leader in the emerging field of socially-driven, responsible autonomous
-service \& companion robots. This leadership is required to address and inform
-policies related to the key emerging societal challenge of AI and intelligent
-robots.
+service \& companion robots, building up the European capacity in this critical
+field, that will have high societal and economical impact on several key sectors
+like assistive technologies, entrainment, advanced manufacturing.
 
 Pr. Lemaignan is in a unique position to deliver on the \project work plan.  He
 has already established international recognition in human-robot interaction and
 has likewise demonstrated strong leadership by leading research teams in three
-different institutions (see Sections B1.b and B1.c). Importantly, as
+different institutions (see Sections B1.b and B1.c below). Importantly, as
 illustrated in Table~\ref{pi-expertise}, the breadth of
-his interdiscplinary research covers the scientific expertise required by the
+his interdisciplinary research covers the scientific expertise required by the
 project, providing him with a unique overall perspective and understanding of
 the domain. PI Lemaignan is also a technology expert, with major software and
 hardware contributions to the robotic community (see Section B1.c). As such, he
@@ -733,7 +806,7 @@ has a excellent grasp of the technical feasibility of the proposed work.
         %\midrule
         \textbf{Psycho-social underpinnings of HRI} \\  
         anthropomorphism & \small dynamics of
-        anthropomorphism~\cite{lemaignan2014dynamics}, \newline cognitive correlates of anthropomorphism~\cite{lemaignan2014cognitive} \\
+        anthropomorphism~\cite{lemaignan2014dynamics}, cognitive correlates~\cite{lemaignan2014cognitive} \\
         trust, engagement & \small \cite{flook2019impact,lemaignan2015youre,fink2014which} \\
         theory of mind & \small perspective taking~\cite{ros2010which, warnier2012when}, social mutual modelling~\cite{lemaignan2015mutual,dillenbourg2016symmetry} \\
         social influence & \small persuasion~\cite{winkle2019effective} \\
@@ -747,19 +820,17 @@ has a excellent grasp of the technical feasibility of the proposed work.
         assessment~\cite{lemaignan2018underworlds,sallami2019simulation} \\
         \midrule
         \textbf{Social signal processing}\\
-        non-verbal behaviours & \small attention
-        tracking~\cite{lemaignan2016realtime}, child-child interactions
-        dataset~\cite{lemaignan2018pinsoro}, \newline internal socio-psychological state estimation~\cite{bartlett2019what} \\
+        non-verbal behaviours & \small attention~\cite{lemaignan2016realtime},
+        child-child dataset~\cite{lemaignan2018pinsoro}, internal state decoding~\cite{bartlett2019what} \\
         verbal interactions & \small speech recognition~\cite{kennedy2017child}, dialogue grounding~\cite{lemaignan2011grounding} \\
         \midrule
         \textbf{Behaviour generation} \\
         social behaviours & \small \cite{lallee2011towards}, verbal interactions~\cite{wallbridge2019generating, wallbridge2019towards}, physical interactions~\cite{gharbi2013natural} \\
-        \midrule
         interactive reinforcement learning & \small \cite{senft2017leveraging,senft2017supervised, senft2019teaching} \\
         \midrule
-        \textbf{Experimental human-robot interaction} & \small in
+        \textbf{Fieldwork in HRI} & \small in
         classrooms~\cite{hood2015when, lemaignan2016learning, jacq2016building,
-        baxter2015wider,kennedy2016cautious,senft2018robots},\newline at home~\cite{mondada2015ranger}\\
+        baxter2015wider,kennedy2016cautious,senft2018robots}, at home~\cite{mondada2015ranger}\\
         %\midrule
         %Robot hardware design for interaction & \small \cite{ozgur2017cellulo, hostettler2016realtime} \\
         \bottomrule
@@ -1120,8 +1191,8 @@ media (Twitter handle: @skadge)
 
     \ul{Lemaignan, S.}, Sallami, Y., Wallbridge, C., Clodic, A., Alami,
     R. 
-   \newline\href{https://doi.org/10.1109/IROS.2018.8594094}{\textbf{{\sc
-    underworlds}: Cascading Situation Assessment for Robots}}
+   \newline\href{https://doi.org/10.1109/IROS.2018.8594094}{\textbf{\sc
+    underworlds: Cascading Situation Assessment for Robots}}
     \newline\textit{IEEE IROS} 2018
 
     & \small A novel representation technique to efficiently
@@ -1242,6 +1313,10 @@ media (Twitter handle: @skadge)
 \newrefsection
 \chapter{B2.a State-of-the-art and objectives}
 
+\TODO{SECTION B2.a IS HEAVILY WORK IN PROGRESS! many blocks of text are missing
+or not at the right place}
+
+
 \eu{(B2.a, B2.b, B2.c: max 15 pages (2 pages for B2.c)}
 \eu{Specify the proposal objectives in the context of the state
 of the art in the research field. It should be clear how and why the proposed work is important for
@@ -1250,8 +1325,30 @@ opportunities for science, technology or scholarship. Specify any particularly c
 unconventional aspects of the proposal, including multi- or inter-disciplinary aspects.}
 
 \TODO{as a reference: DECRESIM project: 4 pages on B2.a State of art and objectives; B2.b ~7 pages on WPs + 2 pages on risk assessment}
+
+
+\project is also a highly technical project, who aims at significantly
+pushing the state-of-art in autonomous social robotics. Indeed, in \project, we will
+\textbf{implement the AI required for robots to effectively support
+human social interactions}.  In that sense, this research is also
+ground-breaking in regards to its technical objectives. In \project, robots will
+be able to understand complex social dynamics, and generate appropriate social
+responses, in a fully autonomous way.  Extending the current line of research of
+the PI, we will identify, implement, and integrate the a broad range of cognitive functions into a
+principled, socially-driven, and trustworthy socio-cognitive architecture for
+robots. This is the second major expected scientific outcome of \project.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The case for robot-supported human-human interactions}
+
+This change of paradigm (rHHI) will have
+far reaching impact on the place that we collectively assign to social robots in
+the society; it will help to structure the public debate by providing the
+framing to look at human-robot interactions in term of their net social utility.
+As such, \textbf{the first outcome of \project will be researching, defining and implementing the conceptual
+framework that we need to ensure trustworthy and socially responsible robots in
+our societies}.
+
 
 Indeed, in a time where robots are on the verge of becoming pervasive in our
 daily human environment, can we ensure 'by design' that robots are to become
@@ -1456,6 +1553,32 @@ direction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{[Blocks of text for reuse]}
+
+
+im robots can have a lasting, positive
+impact on the society, by fostering social interactions amongst humans
+themselves. It defines the new concept of \textbf{robot-supported human-human
+interactions} as a general framework to study and implement socially-aware
+intelligent robots, able to understand social interaction, and, when
+appropriate, act to create and support positive interactions between people.
+
+
+Grounded in both the psycho-social literature of human cognition, and the latest
+technological advances in human-robot interaction, the project delivers
+major conceptual, technical and experimental contributions to the field of AI, 
+with a particular focus on ethics \& safeguarding mechanisms, in order to build 'by 
+design' a trustworthy AI system.
+
+\project delivers this programme by building on a range of multidisciplinary
+methods, including sociological investigation, novel interactive machine
+learning techniques, and a pervasive approach to co-design that puts the
+end-user needs at the centre of the design process. It paves the way for a
+better understanding of the societal challenges raised by the rapid development
+of AI and robotics, and, critically, opens a \textbf{unique window into what
+positive role social robots could play in our future societies}.
+
+
+
 
 \project aims at building unique European capacity to assert leadership in this
 domain, and, beyond the specific deliverables of this 5-years project,
@@ -1742,29 +1865,6 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Social situation assessment}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{figs/archi}
-\caption{Overview of the technical architecture enabling social situation
-    assessment: social situation assessment builds on strong \emph{situation
-    assessment}, on top of which humans and human interactions are layered.}
-\label{fig:social-situation-assessment}
-\end{figure}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Social influence}
-
-\begin{figure}[!htbp]
-\centering
-    \includegraphics[width=0.7\textwidth]{figs/cozmo-expression-sheet.jpg}
-\caption{Cozmo facial expressions}
-\end{figure}
-
 
 \section{Impact}\label{impact}
 
@@ -1824,6 +1924,76 @@ fully justified by the scientific added value they bring to the project.}
 
 %\subsection{Gantt chart}\label{gantt-chart}
 
+\section{Workpackages overview and interrelations}\label{workpackage-interrelations}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figs/wp-interrelations}
+    \caption{Inter-dependencies between work packages and main tasks}
+    \label{}
+\end{figure}
+
+\subsection{Milestones}\label{milestones}
+
+\begin{itemize}
+
+\item   week-long tests with local children in local schools
+\item   field deployment with one child in one school
+\end{itemize}
+
+\begin{table}[!htbp]
+\caption{List of milestones}
+\centering
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\textbf{Milestone number} & \textbf{Milestone name} & \textbf{Related work package(s)} & \textbf{Estimated date} & \textbf{Means of verification} \\ \midrule
+                          &                         &                                  &                         &                                \\
+                          &                         &                                  &                         &                                \\
+                          &                         &                                  &                         &                                \\
+                          &                         &                                  &                         &                                \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+\subsection{Deliverables overview}\label{deliverables-overview}
+
+\begin{table}[!htbp]
+\caption{List of deliverables}
+\begin{tabular}{@{}lllllll@{}}
+\toprule
+\textbf{Deliverable} & \textbf{Deliverable name} & \textbf{Work package No} & \textbf{Lead participant short name} & \textbf{Type} & \textbf{Dissemination level} & \textbf{Delivery date} \\ \midrule
+D1.1                 &                           &                          &                                      &               &                              &                        \\
+D1.2                 &                           &                          &                                      &               &                              &                        \\
+D2.1                 &                           &                          &                                      &               &                              &                        \\
+...                  &                           &                          &                                      &               &                              &                        \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Type:
+
+\begin{itemize}
+
+\item   R: Document, report (excluding the periodic and final reports)
+\item   DEM: Demonstrator, pilot, prototype, plan designs
+\item   DEC: Websites, patents filing, press \& media actions, videos, etc.
+\item   OTHER: Software, technical diagram, etc.
+\end{itemize}
+
+Dissemination level:
+
+\begin{itemize}
+
+\item   PU = Public, fully open, e.g.~web
+\item   CO = Confidential, restricted under conditions set out in Model Grant
+  Agreement
+\item   CI = Classified, information as referred to in Commission Decision
+  2001/844/EC.
+\end{itemize}
+
+
+
+
+
 \begin{landscape}
 \include{gantt}
 \end{landscape}
@@ -1840,7 +2010,34 @@ fully justified by the scientific added value they bring to the project.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{WP2: \wpTwo{}}
 
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{figs/archi}
+\caption{Overview of the technical architecture enabling social situation
+    assessment: social situation assessment builds on strong \emph{situation
+    assessment}, on top of which humans and human interactions are layered.}
+\label{fig:social-situation-assessment}
+\end{figure}
+
+
+
 \subsection{T2.1}
+
+ Beyond traditional
+techniques like semantic scene segmentation, human skeleton tracking, speech
+recognition, facial expression and gaze tracking, the robot will also be endowed
+with novel capabilities to model the important social dynamics and interactions
+taking place around the robot.
+
+
+\subsection{T2.2}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{WP3: \wpThree{}}
 
 \paragraph{Disembodied Cognitive Architectures}
 
@@ -1962,7 +2159,7 @@ Architectures that...
         \end{itemize}
 \end{itemize}
 
-\subsection{T2.2}
+\subsection{T3.2}
 
 The current state-of-the-art is limited in this respect: sub-symbolic
 approaches focus on identifying low-level social signals (for instance,
@@ -1990,17 +2187,21 @@ scientific investigations will form the starting point of my approach to this
 challenge.
 
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{WP3: \wpThree{}}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{WP4: \wpFour{}}
+\subsection{T4.2: Machine learning for continuous motion generation}
 
-\textbf{Data-driven continuous behaviour generation}
+\begin{wrapfigure}{l}{7cm}
+    \centering
+    \includegraphics[width=\linewidth]{figs/husky.jpg}
+    \caption{\label{fig:robot}
+    Provisional appearance of the \project robot that we will use to collect
+    data. A tablet, displaying facial animations, is mounted on a robotic arm.
+    It can freely orient its `gaze' and use expressive movements. The mobile
+    base (a Segway Husky) can autonomously navigate in the various parts of the
+    BRL open-space}
+\end{wrapfigure}
 
 Designing behaviours that
 enable sustained, long-term engagement in a social human-robot interaction is
@@ -2038,18 +2239,6 @@ is actually quite predictable and repetitive. The \emph{agency}
 initially ascribed by the user to the robot quickly
 fades~\cite{lemaignan2014dynamics}, leading to critical user disengagement from the technology.
 
-%\begin{wrapfigure}[23]{l}{6.5cm}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\paperwidth]{figs/husky.jpg}
-    \caption{\label{fig:robot}
-    Provisional appearance of the \project robot that we ill use to collect
-    data. A tablet, displaying facial animations, is mounted on a robotic arm.
-    It can freely orient its `gaze' and use expressive movements. The mobile
-    base (a Segway Husky) can autonomously navigate in the various parts of the
-    BRL open-space}
-\end{figure}
-%\end{wrapfigure}
 
 The (often limited) library of behaviours available to the robot is
 often cited as a key factor in causing this issue. However, another,
@@ -2170,6 +2359,14 @@ robot controller if deemed necessary. We aim at publishing the results
 of this main study shortly after the end of the one-year period.
 
 
+\subsection{T4.3: Non-verbal behaviours and robot soundscape}
+
+\begin{figure}[!htbp]
+\centering
+    \includegraphics[width=0.7\textwidth]{figs/cozmo-expression-sheet.jpg}
+\caption{Cozmo facial expressions}
+\end{figure}
+
 
 
 \section{WP5: \wpFive{}}
@@ -2225,9 +2422,8 @@ relationships.
 
 \TODO{probably useful to give specific examples of interventions}
 
-\subsection{Application 1: WeTheCurious City lab}
 
-\subsection{Application 2: Social robots in SEN schools}
+\subsection{Application 1: Social robots in SEN schools}
 
 Can a socially assistive robot effectively support the development (learning?),
 social interactions and well-being of children with a long-term mental
@@ -2285,7 +2481,7 @@ Is it appropriate/pertinent to do pre- and post- surveys of acceptance of robot?
 
 
 
-\subsection{Application 3: A robot companion at the children's hospital}
+\subsection{Application 2: A robot companion at the children's hospital}
 
 
 \TODO{explain that these 2 large experiments will be scaffolded by many smaller
@@ -2376,245 +2572,12 @@ stakeholders and guid action of researchers accordingly.
 AREA 4P
 Framework~\cite{stahl2018implementing}~\footnote{\url{https://www.orbit-rri.org/about/area-4p-framework/}}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\section{Workplan and intermediate targets}\label{workplan}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\subsubsection{Project structure}
-
-\begin{table}[!htbp]
-    \begin{tabular}{@{}p{1cm}p{6cm}p{2cm}p{2cm}p{1.5cm}p{1.5cm}p{1.5cm}@{}}
-\toprule
-\textbf{WP} & \textbf{Work package title} & \textbf{Lead participant No} & \textbf{Lead participant short name} & \textbf{Person-Months} & \textbf{Start month} & \textbf{End month} \\ \midrule
-1                        & \wpOne                      &                              &                                      &                        &                      &                    \\
-2                        & \wpTwo                      &                              &                                      &                        &                      &                    \\
-3                        & \wpThree                    &                              &                                      &                        &                      &                    \\
-4                        & \wpFour                     &                              &                                      &                        &                      &                    \\
-5                        & \wpFive                     &                              &                                      &                        &                      &                    \\
-                         &                             &                              &                                      & \textbf{Total months}  &                      &                    \\ \bottomrule
-\end{tabular}
-\end{table}
-
-
-\subsection{Work package 1: \wpOne}
-
-%\begin{table}[!htbp]
-%\centering
-%\begin{tabular}{|l|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-%\hline
-%Work package number            & 1 & \multicolumn{3}{l|}{Lead beneficiary} & \multicolumn{3}{l|}{\bf BRL} \\ \hline
-%Work package title             & \multicolumn{7}{l|}{\wpOne}                                             \\ \hline
-%Participant number             &     &         &         &                  &       &       &      \\ \hline
-%Short name of participant      &     &         &         &                  &       &       &      \\ \hline
-%Person/months per participant: &     &         &         &                  &       &       &      \\ \hline
-%Start month                    & \multicolumn{3}{l|}{}  & End month        & \multicolumn{3}{l|}{} \\ \hline
-%\end{tabular}
-%\end{table}
-
-
-\textbf{Objectives:}
-
-\textbf{Description of work:}
-
-\ldots{}description\ldots{}
-
-\task{1.1}{}
-
-\vspace{0.5cm}\textbf{Deliverables:}
-
-\begin{itemize}
-
-\item   \emph{Deliverable D1.1} (Month 2): website and logo
-\end{itemize}
-
-\subsection{Work package 2: \wpTwo}
-
-\textbf{Objectives:}
-\textbf{Description of work:}
-
-\ldots{}description\ldots{}
-
-\task{2.1}{Identification of the dimensions of social influence for human interpersonal interactions}
-
-\task{2.2}{Ethics of social influence}
-Blah blah
-
-\task{2.3}{Study 1 -- Socially influencing companion robot}
-First study, using Anki's Vector robot.
-
-\vspace{0.5cm}\textbf{Deliverables:}
-
-\begin{itemize}
-    \item \D{2.1}{12}{great report}
-\end{itemize}
-
-\subsection{Work package 3: \wpThree}
-
-\textbf{Objectives:}
-
-\begin{itemize}
-    \item refine interaction modalities (in
-    particular, the non-verbal speech), details cross-modal interactions,
-    define interaction patterns with the child
-\end{itemize}
-
-\ldots{}description\ldots{}
-
-\task{3.1}{Analysis of needs}
-\task{3.2}{Cross-cultural interactions}
-
-\vspace{0.5cm}\textbf{Deliverables:}
-
-\begin{itemize}
-    \item \D{3.1}{12}{great report}
-\end{itemize}
-
-\subsection{Work package 4: \wpFour}
-
-
-\begin{itemize}
-    \item long term interaction
-    \item one full day of autonomy
-    \item rugged \footcite{ozgur2017cellulo, hostettler2016realtime}
-    \item child friendly: mechanical constraints~\footcite{ozgur2016permanent} + design
-\end{itemize}
-
-
-\textbf{Description of work:}
-
-Develop a novel platform, including:
-
-\begin{itemize}
-    \item chassis
-    \item power autonomy for one day
-    \item on-board compute suitable for deep learning (NVidia Xavier?)
-    \item vision (embedded RGB-D camera)
-    \item audio processing
-\end{itemize}
-
-\ldots{}
-
-\task{4.1}{Physical design of the robot companion}
-\task{4.2}{Interaction design}
-\task{4.3}{Mechatronics \& Sensing}
-\task{4.4}{On-board data processing}
-\task{4.5}{System integration}
-
-\begin{itemize}
-    \item \D{4.1}{12}{great report}
-\end{itemize}
-
-\subsection{Work package 5: \wpFive}
-
-
-\textbf{Objectives:}
-
-\textbf{Description of work:}
-
-\ldots{}description\ldots{}
-
-\task{5.1}{Multi-modal communication}
-\task{5.2}{Social awareness}
-\task{5.3}{Machine learning of social behaviours}
-\task{5.4}{Social controller}
-
-\vspace{0.5cm}\textbf{Deliverables:}
-
-\begin{itemize}
-    \item \D{5.1}{12}{great report}
-\end{itemize}
-
-\vspace{0.5cm}\textbf{Deliverables:}
-
-\begin{itemize}
-    \item \D{7.1}{12}{website and logo}
-\end{itemize}
-
-
-\subsection{Deliverables overview}\label{deliverables-overview}
-
-\begin{table}[!htbp]
-\caption{List of deliverables}
-\begin{tabular}{@{}lllllll@{}}
-\toprule
-\textbf{Deliverable} & \textbf{Deliverable name} & \textbf{Work package No} & \textbf{Lead participant short name} & \textbf{Type} & \textbf{Dissemination level} & \textbf{Delivery date} \\ \midrule
-D1.1                 &                           &                          &                                      &               &                              &                        \\
-D1.2                 &                           &                          &                                      &               &                              &                        \\
-D2.1                 &                           &                          &                                      &               &                              &                        \\
-...                  &                           &                          &                                      &               &                              &                        \\ \bottomrule
-\end{tabular}
-\end{table}
-
-Type:
-
-\begin{itemize}
-
-\item   R: Document, report (excluding the periodic and final reports)
-\item   DEM: Demonstrator, pilot, prototype, plan designs
-\item   DEC: Websites, patents filing, press \& media actions, videos, etc.
-\item   OTHER: Software, technical diagram, etc.
-\end{itemize}
-
-Dissemination level:
-
-\begin{itemize}
-
-\item   PU = Public, fully open, e.g.~web
-\item   CO = Confidential, restricted under conditions set out in Model Grant
-  Agreement
-\item   CI = Classified, information as referred to in Commission Decision
-  2001/844/EC.
-\end{itemize}
-
-\subsection{Workpackage interrelations}\label{workpackage-interrelations}
-
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=0.8\linewidth]{figs/wp-interrelations}
-    \caption{Inter-dependencies between work packages and main tasks}
-    \label{}
-\end{figure}
-
-
-
-\section{Management structure, milestones and procedures}\label{management-structure-milestones-and-procedures}
-
-\subsection{Milestones}\label{milestones}
-
-\begin{itemize}
-
-\item   week-long tests with local children in local schools
-\item   field deployment with one child in one school
-\end{itemize}
-
-\begin{table}[!htbp]
-\caption{List of milestones}
-\centering
-\begin{tabular}{@{}lllll@{}}
-\toprule
-\textbf{Milestone number} & \textbf{Milestone name} & \textbf{Related work package(s)} & \textbf{Estimated date} & \textbf{Means of verification} \\ \midrule
-                          &                         &                                  &                         &                                \\
-                          &                         &                                  &                         &                                \\
-                          &                         &                                  &                         &                                \\
-                          &                         &                                  &                         &                                \\ \bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{Robot}
-
-\begin{itemize}
-    \item R1 robot: acceptable to hospital thanks its plastic shell that can be
-        easily cleaned-up
-\end{itemize}
-
-\subsection{Risks}\label{risks}
+\section{Risks}\label{risks}
 
 \begin{table}[!htbp]
 \caption{Identified risks and proposed mitigations}
@@ -2631,42 +2594,9 @@ risk 1 (low/medium/high)     &                                   &              
 
 
 
-
-
-\begin{itemize}
-    \item week-long tests with local children in local schools
-    \item field deployment with one child in one school
-\end{itemize}
-
-
-Plan to hire one mechatronics engineer and one interaction designer
-
-Role of the mechatronics engineer: develop a novel platform, including -
-chassis - power autonomy for one day - on-board compute suitable for
-deep learning (NVidia TX2?) - vision (embedded RGB-D camera) - audio
-processing
-
-Role of the interaction designer: refine interaction modalities (in
-particular, the non-verbal speech), details cross-modal interactions,
-define interaction patterns with the child
-
-
-
-
-\section{Measures for achieving impact}
-
-\subsection{Dissemination and exploitation of results}
-
-\subsection{Communication activities}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\hypertarget{risk-assessment}{%
-\subsubsection{Risk assessment}\label{risk-assessment}}
-
 
 
 \newpage
