@@ -203,17 +203,14 @@ real-world, complex scenarios}
 %\textbf{B1.a. Extended Synopsis of the scientific proposal}
 
 \TODO{CREATE ETHICS ADVISORY BOARD}
-\TODO{
-If you appoint an ethics adviser/advisory board, it is important that they are:
+\TODO{If you appoint an ethics adviser/advisory board, it is important that they are:
 - external to the project and to the host institution
 - totally independent and
 - free from any conflict of interest.
-
     You must provide:
 - the name and contact information for persons suggested
 - the terms of reference for their involvement and the deliverables expected
-- their declarations of no conflict of interest.
-}
+- their declarations of no conflict of interest.}
 
 
 \TODO{impact/outcomes? -> explicitely state the high risk/high gain nature of
@@ -1943,12 +1940,48 @@ fully justified by the scientific added value they bring to the project.}
 
 \section{Workpackages overview and interrelations}\label{workpackage-interrelations}
 
-\begin{figure}[!htbp]
-    \centering
-    \includegraphics[width=0.8\linewidth]{figs/wp-interrelations}
-    \caption{Inter-dependencies between work packages and main tasks}
-    \label{}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\linewidth]{figs/archi}
+\caption{Overview of the workpackages and tasks, and tasks inter-relations.}
+\label{fig:archi}
 \end{figure}
+
+Figure~\ref{fig:archi} gives an overview of the project workpackages, and their
+interrelations. Fieldwork plays a central role in the project, and appears in
+the centre of the figure. The first important field deployment is a one-year
+experiment, taking place at the Bristol Science museum (T1.1). This
+'public-in-the-loop' experiment is analysed and lead to the definition of core
+interaction principles (T1.2). These are in turn translated into algorithmic
+models, guiding the social teleology of the cognitive architecture (T3.1).
+
+This first experiment is immediately followed by two other long-term
+experimental deployments: a one-year deployment in one of Bristol's Special
+Education Need (SEN) school (T5.2), followed by a one-year deployment at
+Bristol's Children hospital (T5.3). These two additional experiments are both
+inputs for WP2 and WP4, and demonstrator for the robot socio-cognitive
+architecture (WP3).
+
+Specifically, workpackage WP2 research, develop, and integrate all the components
+pertaining to the assessment of the spatio-temporal and social environment of
+the robot. Reference interaction situations and the data required to support
+this workpackage is directly drawn from the experimental fieldwork that will
+take place at the same time in WP1 and WP5. The perceptual capabilities
+delivered by WP2 are continuously integrated into the robot's cognitive
+architecture (T3.3), iteratively improving the socio-cognitive performances of
+the robot.
+
+Workpackage WP4 looks into behaviour generation using machine learning (T4.2)
+and non-verbal affective modalities (T4.3). T4.2 is data-intensive, and will use
+datasets acquired during the field deployments (T1.1, T5.2, T5.3), as well as
+lab-recorded dataset of social interactions. Similar to WP2, the capabilities
+built in WP4 are integrated in the robot architecture in T3.3.
+
+In addition to the integration of WP2 and WP4 capabilities, WP3 is also
+researching and developing the socio-cognitive drive of the architecture. They
+come both from T1.2 (as previously mentioned), and
+human-in-the-loop/public-in-the-loop machine learning (T3.2). This task is also
+tighly connected to the experimental fieldwork.
 
 \subsection{Milestones}\label{milestones}
 
@@ -2130,15 +2163,6 @@ winkle2019effective}, this WP will deliver the first complete and integrated
 model of artificial cognition that account for social interactions in their full
 extend, significantly extending the state-of-art~\cite{lemaignan2017artificial,
 baxter2016cognitive}.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{figs/archi}
-\caption{Overview of the technical architecture enabling social situation
-    assessment: social situation assessment builds on strong \emph{situation
-    assessment}, on top of which humans and human interactions are layered.}
-\label{fig:social-situation-assessment}
-\end{figure}
 
 
 
@@ -2832,8 +2856,8 @@ ones}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Measures to ensure Responsible Research and Innovation (RRI)}
+\newpage
+\section{Ethics consideration and measures to ensure Responsible Research and Innovation (RRI)}
 
 
 
@@ -2871,7 +2895,7 @@ Framework~\cite{stahl2018implementing}~\footnote{\url{https://www.orbit-rri.org/
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \section{Risk/gain assessment; risk mitigations}\label{risks}
 
 \textbf{Tasks 1.1, 1.2} develop a novel methodology, 'public-in-the-loop' machine
