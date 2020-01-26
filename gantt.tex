@@ -61,7 +61,7 @@
 
         %% WP1
         \ganttgroup[]{WP1 \wpOneShort}{2021-01}{2023-06} \\
-            \ganttbar[name=WP11]{\textbf{1.1} conceptual framing}{2021-01}{2023-06} \\
+            \ganttbar[name=WP11]{\textbf{1.1} conceptual framing \& ethics}{2021-01}{2023-06} \\
             \ganttbar[name=WP11exp]{\textbf{1.1} WeTheCurious experiment}{2022-01}{2022-12} \\
             \ganttbar[name=WP12]{\textbf{1.2} principles of r-HHI}{2023-01}{2023-06} \\
 
@@ -80,10 +80,10 @@
 
         %% WP3
         \definecolor{barcolor}{RGB}{50,220,134}
-        \ganttgroup[]{WP3 \wpThreeShort}{2021-01}{2024-12} \\
-            \ganttbar[name=WP31]{\textbf{3.1} redundant cognitive architecture}{2021-01}{2024-12} \\
+        \ganttgroup[]{WP3 \wpThreeShort}{2021-01}{2025-12} \\
+            \ganttbar[name=WP31]{\textbf{3.1} redundant cognitive architecture}{2021-01}{2025-06} \\
             \ganttbar[name=WP32]{\textbf{3.2} social teleology}{2024-01}{2024-12} \\
-            \ganttbar[name=WP33]{\textbf{3.3} human-in-the-loop policy learning}{2021-01}{2023-12} \\
+            \ganttbar[name=WP33]{\textbf{3.3} human-in-the-loop policy learning}{2021-07}{2025-06} \\
         \ganttlink[link type=f-s]{WP12}{WP32}
 
         %% WP4
@@ -96,14 +96,13 @@
 
         %% WP5
         \definecolor{barcolor}{RGB}{234,200,20}
-        \ganttgroup[]{WP5 \wpFiveShort}{2021-07}{2025-12} \\
-            \ganttbar[name=WP51]{\textbf{5.1} Ethical framework}{2021-07}{2024-12} \\
-            \ganttbar[name=WP52prep]{\textbf{5.2} SEN schools (prep)}{2022-07}{2022-12} \\
-            \ganttbar[name=WP52]{\textbf{5.2} SEN schools experiment}{2023-01}{2023-12} \\
-            \ganttbar[name=WP53prep]{\textbf{5.3} children hospital (prep)}{2024-01}{2024-06} \\
-            \ganttbar[name=WP53]{\textbf{5.3} children hospital experiment}{2024-07}{2025-06} \\
+        \ganttgroup[]{WP5 \wpFiveShort}{2022-07}{2025-06} \\
+            \ganttbar[name=WP51prep]{\textbf{5.2} SEN schools (prep)}{2022-07}{2022-12} \\
+            \ganttbar[name=WP51]{\textbf{5.2} SEN schools experiment}{2023-01}{2023-12} \\
+            \ganttbar[name=WP52prep]{\textbf{5.3} children hospital (prep)}{2024-01}{2024-06} \\
+            \ganttbar[name=WP52]{\textbf{5.3} children hospital experiment}{2024-07}{2025-06} \\
 
-        \ganttlink[link type=f-s]{WP41}{WP52}
+        \ganttlink[link type=f-s]{WP41}{WP51}
 
 
         %\ganttlink[link type=f-s]{WBS1B}{WBS1C}

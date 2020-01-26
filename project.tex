@@ -277,8 +277,8 @@ end-users to ascribe social utility and engage with the robot over long periods
 of time (months, years), the robot has to have its own long-term internal
 motivation to be socially helpful -- a \emph{social teleology}. Libraries of
 pre-programmed behaviours, as complex as they might be, are not sufficent.
-(\textbf{H2}) Additionally, long-term acceptance can only be achieved if the
-end-users are genuinely involved at every step of the design process, so that
+(\textbf{H2}) Additionally, long-term acceptance requires the
+genuine involvement of end-users at every step of the design process, so that
 they take \emph{ownership} of the technology. We further hypothesise that
 human-in-the-loop machine learning is the most effective way of generating
 ownership, by enabling the design of robot behaviours that genuinely originate
@@ -442,24 +442,45 @@ complementary real-world situations (R4).
 
 \subsection{WP1: \textbf{\wpOne}}
 
-\noindent\framebox[\linewidth]{Duration: \textbf{Y1-Y3}; one senior post-doc
-with background in sociology of technology}
+WP1 aims at establishing the conceptual framework around the idea of
+\emph{robot-supported human-human interactions}. It does so by co-creating
+modes of interaction and norms with the general public, using a unique
+combination of ethnographic observations and `public-in-the-loop' machine
+learning.
 
-The basic ambition of \project is to create a conceptual framework around social
-robots in the human society, by re-framing the tradionally accepted idea of
-\emph{human-robot interaction} into the human-centered idea of
-\emph{robot-supported human-human interactions} (r-HHI): the robot is considered
-from the perspective of how it can \emph{support} humans, and in particular,
-support stronger, positive interactions between humans.
+\begin{framed}
+    \textbf{Main outcomes:} A theoretical framework
+to `think' the role of social robots and inform policy making (including ethical implications); a set
+of operational \& co-created interaction principles; a large dataset of social
+human-robot interactions
 
-\textbf{T1.1 -- Conceptual framing and crowd-sourced interaction principles}
+    \textbf{Duration:} \textbf{Y1-Y3}; one senior post-doc
+with background in sociology of technology.
+\end{framed}
 
-The first task in WP1 is to research and
-define such a framework that will provide the (currently missing) conceptual
+
+\textbf{T1.1 -- Conceptual framing and ethics of robot-supported social
+interactions}
+
+
+The first task in WP1 is to research and define the framework that will provide the (currently missing) conceptual
 frame around questions like: what role for social robots? where to set the
 boundaries of artificial social interactions? what does 'ethical-by-design',
 'responsible-by-design' might mean in the context of social human-robot
 interactions? 
+
+
+This first task is a pre-requisite for each of the field experiments (T1.1,
+T5.1. T5.2), and will cover the whole duration of the project. This work is
+coordinated by the PI, in close collaboration with the \project ethics advisory
+board (see below).
+
+
+\textbf{T1.2 -- Crowd-sourced determinants and principles of robot-supported social
+interactions} The conceptual framework identified in T1.1 is translated
+into a set of \emph{interaction design principles}, \emph{determinants} and
+\emph{parameters} that will together form a set of requirements and objectives
+for the socio-cognitive capabilities and architecture developed in WP2 and WP3.
 
 
 In order to anchor T1.1 into the reality and complexity of human social
@@ -520,47 +541,39 @@ and preliminary meetings were held to discuss specific requirements for the
 
 
 
-\textbf{T1.2 -- Determinants and principles of robot-supported social
-interactions} The conceptual framework identified in T1.1 is translated
-into a set of \emph{interaction design principles}, \emph{determinants} and
-\emph{parameters} that will together form a set of requirements and objectives
-for the socio-cognitive capabilities and architecture developed in WP2 and WP3.
-
 \subsection{WP2: \textbf{\wpTwo}}
 
-\noindent\framebox[\linewidth]{Duration: \textbf{Y1-Y4}; one post-doc in social
-signal processing/machine learning/cognitive modelling}
 
 In WP2, the project addresses the key scientific and technical pre-requisites to
-effectively deliver WP3's architecture:  the scientific understanding and
-formalisation of the \emph{social fabric} in which the robot is embedded, in its
-full complexity: spatial characteristics (proxemics; group dynamics; complex,
-dynamic attentional mechanisms); psycho-social determinants (social roles and
-hierarchies; social groups; mental modelling; anthropomorphic ascriptions);
-temporal characteristics (effects of novelty; dynamics of anthropomorphism and
-mental ascriptions; group dynamics).  While several of these capabilities have
-been previously investigated is isolation~\cite{lemaignan2014dynamics,
-flook2019impact,lemaignan2015youre, fink2014which, ros2010which,
-warnier2012when, lemaignan2015mutual, dillenbourg2016symmetry,
-winkle2019effective}, this WP will deliver the first complete and integrated
-model of artificial cognition that account for social interactions in their full
-extend, significantly extending the state-of-art~\cite{lemaignan2017artificial,
-baxter2016cognitive}.
+effectively deliver WP3's architecture; namely the perception and modeling of
+the spatio-temporal and social environment of the robot. This includes spatial
+characteristics (proxemics; group dynamics; complex, dynamic attentional
+mechanisms); psycho-social determinants (social roles and hierarchies; social
+groups; mental modelling; anthropomorphic ascriptions); temporal characteristics
+(effects of novelty; dynamics of anthropomorphism and mental ascriptions; group
+dynamics). I have investigated many of these socio-cognitive capabilities in
+isolation (see Table~\ref{pi-expertise}), and this WP is about
+\emph{integrating} them into a coherent perceptual subsystem, significantly
+extending the state-of-art~\cite{lemaignan2017artificial, baxter2016cognitive}.
 
+\begin{framed}
+    \textbf{Main outcomes:} a full pipeline for
+spatio-temporal and social situation assessment, build as open-source ROS nodes,
+and able to map in real time the physical and social environment of the robot.
 
-\textbf{T2.1 -- Hybrid situation assessment and knowledge representation}
-Knowledge representation and grounding is a fundamental building block for
-cognitive architectures~\cite{lemaignan2017artificial,beetz2010cram}. This task
-builds on existing state-of-art in knowledge representation and situation
-assessment (eg~\cite{citeneeded}) and creates a coherent system of
-representations for the cognitive architecture that extends the \sc{underworlds}
-spatio-temporal representation tool developped by the
-PI~\cite{lemaignan2018underworlds,sallami2019simulation} with knowledge
-representation capabilities, using both established symbolic techniques (like
-ontologies and first-order logic~\cite{lemaignan2010oro, tenorth2009knowrob}),
-and hybrid symbolic/sub-symbolic modelling (using Jaeger's
-conceptors~\cite{jaeger2014controlling}) as a new route to overcome the symbolic
-grounding problem~\cite{harnad1990symbol}.
+    \textbf{Duration:} \textbf{Y1-Y4}; one post-doc in social
+signal processing/machine learning/cognitive modelling.
+\end{framed}
+
+\textbf{T2.1 -- Hybrid situation assessment and knowledge representation} This
+task builds the foundational spatio-temporal and symbolic perception and
+representation system for the robot. It will integrate the state-of-art in
+spatio-temporal situation assessment that I have previously
+developed~\cite{lemaignan2018underworlds, sallami2019simulation} with recent
+advances in data-driven semantic labelling (for instance, using 4D convolution
+nets like MinkowskiNet~\cite{choy20194d}), and a symbolic knowledge base (like
+my own ontology-based one~\cite{lemaignan2010oro}) in order to create a coherent
+system of representations for the cognitive architecture of the robot.
 
 \textbf{T2.2 -- Social dynamics} This task focuses on the processing and
 modelling of social signals, extending existing techniques, both model-based
@@ -598,23 +611,30 @@ robotics~\cite{lemaignan2015mutual} and will be employed.
 
 \subsection{WP3: \textbf{\wpThree}}
 
-\noindent\framebox[\linewidth]{Duration: \textbf{Y1-Y4}; one senior post-doc in
-cognitive robotics; one PhD student}
+This part of the programme is the technical core of the project: we will design
+a novel socio-cognitive architecture for the
+social robots, that we will implement and deploy on the IIT robot R1.
+Bringing together advanced perception of the human social dynamics,
+intrinsic motivation to support human interactions, and human-in-the-loop
+machine learning to create transparent, trustworthy action policies. This WP is
+high-risk/high-gain, as no such combined approach has been successfully
+implemented and deployed in real-world, complex social situations. I mitigate
+the risk by ensuring cognitive functions are decoupled from each other where
+sensible, and in particular, by ensuring that the robot actions are generated
+independently through both an intrinsic motivation mechanism, and a human-taught
+machine learning action policy, hence creating a level of cognitive redundancy
+(with the corresponding arbitration mechanisms in place where necessary).
 
-This part of the programme is the technical core of the project: we will create a
-novel socio-cognitive architecture for the robots, bringing together advanced
-perception of the human social dynamics, intrinsic motivation to support human
-interactions, and human-in-the-loop machine learning to create transparent,
-trustworthy action policies. This WP is high-risk/high-gain, as no such combined
-approach has been successfully implemented and deployed in real-world, complex
-social situations. I mitigate the risk by ensuring cognitive functions are
-decoupled from each other where sensible, and in particular, by ensuring that
-the robot actions are generated independently through both an intrinsic
-motivation mechanism, and a human-taught machine learning action policy, hence
-creating a level of cognitive redundancy (with the corresponding arbitration
-mechanisms in place where necessary).
+\begin{framed}
+    \textbf{Main outcomes:} An integrated cognitive architecture for social
+    robots, driven by both long-term social goals, and machine-learnt action
+    policies; a reference open-source implementation, enabling long-term
+    autonomy on the IIT R1 robot.
 
+    \textbf{Duration:} \textbf{Y1-Y5}; one senior post-doc in
+cognitive robotics.
 
+\end{framed}
 
 \textbf{T3.1 -- A social teleology for robots}
 The case for \emph{teleological} (ie goal-driven) robotic architectures has been
@@ -628,7 +648,7 @@ covers the overall design of the architecture.
 
 \textbf{T3.2 -- Learning from humans to achieve 'by-design' responsible \&
 trustworthy AI} Building on my recent, promising results on human-in-the-loop
-social learning~\cite{senft2017supervised,senft2019teaching,winkle2020coach}, this task
+social learning~\cite{senft2017supervised,senft2019teaching,winkle2020couch}, this task
 implements the learning mechanics (including the critical aspect of the
 interface with the human teacher) to allow human participants to progressively
 teach the robot a social policy to become a good social helper.
@@ -671,8 +691,6 @@ previous experience (here, the human-taught policy).
 
 \subsection{WP4: \textbf{\wpFour}} 
 
-\noindent\framebox[\linewidth]{Duration: \textbf{Y2-Y5}; one post-doc in HRI/machine learning/learning from
-demonstration}
 
 Mirroring WP2's focus on understanding the social interactions, WP4 addresses the
 question of social behaviour \emph{generation}: how to create natural
@@ -690,6 +708,21 @@ management).  \project seeks however to significantly push forward the
 state-of-art of behaviour generation for robots, both in term of technique to
 generate the behaviours, and in term of the nature of the non-verbal behaviours.
 
+\TODO{cite/refer Guy's paper on GAN-based behaviour generation}
+
+\begin{framed}
+
+    \textbf{Main outcomes:} A new method to generate complex, non-repetitive,
+    goal-oriented social behaviour with a focus on non-verbal communication;
+    research on soundscapes as a novel non-verbal modality for human-robot
+    interaction.
+
+    \textbf{Duration:} \textbf{Y2-Y5}; one post-doc in HRI/machine learning/learning from
+demonstration.
+
+\end{framed}
+
+
 \textbf{T4.1 -- Behavioural baseline} T4.1 establishes a baseline for behaviour
 generation, by surveying and implementing the current state of the art. In
 addition to traditional approaches like behaviour libraries, this will cover
@@ -705,8 +738,8 @@ existing techniques: (1) data-driven, continuous approach to behaviour
 generation inspired by Learning from Demonstration; (2) interactive machine
 learning in high-dimensional input/output spaces~\cite{senft2020woz}, where I
 have shown with my students promising results for generating complex social
-behaviours~\cite{senft2019teaching, winkle2020coach} that fully involve the
-end-users~\cite{winkle2020methodology}.  By combining the two, I target
+behaviours~\cite{senft2019teaching, winkle2020couch} that fully involve the
+end-users~\cite{winkle2018social}.  By combining the two, I target
 a breakthrough in robots' social behaviours generation: the generation of
 non-repetitive, socially congruent and transparent social behaviours (including
 gestures and gazes).
@@ -728,8 +761,6 @@ at the host institution.
 
 \subsection{WP5: \textbf{\wpFive}}
 
-\noindent\framebox[\linewidth]{Duration: \textbf{Y2-Y5}; one post-doc (shared
-with WP3)}
 
 WP5 aims at convincingly demonstrating the importance and positive impact that
 socially-driven, socially-responsible robotics may have. The experimental work
@@ -746,13 +777,17 @@ robots can have a lasting, strong, positive impact on the society, also
 establishing the idea of robots \ul{supporting} human interactions instead of
 dehumanising our social relationships.
 
-\textbf{T5.1 -- Ethical framework}
-This first task is a pre-requisite for each of the field experiments (T1.1,
-T5.2. T5.3), and will cover the whole duration of the project. This work is
-coordinated by the PI, in close collaboration with the \project ethics advisory
-board (see below).
+\begin{framed}
 
-\textbf{T5.2 -- creation and deployment of a robot companion to
+    \textbf{Main outcomes:} Two long-term deployments of a social robot in
+    real-world, high impact environments demonstrating long-term acceptance and
+    social utility; large (anonymous) datasets of complex, real-world
+    human-robot interactions.
+
+    \textbf{Duration:} \textbf{Y2-Y5}; one post-doc (shared with WP3).
+
+\end{framed}
+\textbf{T5.1 -- creation and deployment of a robot companion to
 support physical and mental well-being, as well as foster social interactions,
 in SEN schools} This task aims at demonstrating robot-supported social
 interventions within the eco-system of SEN (Special Educational Needs)
@@ -773,7 +808,7 @@ The task will be jointly supervised with local colleague and expert Dr.Nigel New
 who has a long track record of working with special needs schools.
 
 
-\textbf{T5.3 -- creation and deployment of a small robot companion to support
+\textbf{T5.2 -- creation and deployment of a small robot companion to support
 isolated children during their hospital stay}, fully integrated and aware of the
 wider hospital ecosystem. Over the course of this second, one-year long (Y4)
 experiment, we will deploy one \project robot at the Bristol Children Hospital.
@@ -1338,7 +1373,368 @@ the field, and what impact it will have if successful, such as how it may open u
 opportunities for science, technology or scholarship. Specify any particularly challenging or
 unconventional aspects of the proposal, including multi- or inter-disciplinary aspects.}
 
-\TODO{as a reference: DECRESIM project: 4 pages on B2.a State of art and objectives; B2.b ~7 pages on WPs + 2 pages on risk assessment}
+\TODO{as a reference: DECRESIM project: 4 pages on B2.a State of art and
+objectives; B2.b ~7 pages on WPs + 2 pages on risk assessment}
+
+
+
+
+\subsection{State of the art: real-world social robots and impact on the
+society}
+
+
+
+\subsubsection{Psycho-social underpinnings of social robotics}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{figs/wizme+dolls}
+    \caption{Early prototyping for the \project project: a pet-like robot that could
+    mediate child-child interactions}
+    \label{}
+\end{figure}
+
+
+Developing a conceptual framework for \emph{robot-supported human-human
+interactions} implies a deep understanding of the psycho-social mechanisms at
+work in human-human interactions, and in human-robot interactions.
+
+Anthropomorphism is a psychological mechanism by which a human
+ascribe human traits to non-human artefacts (here, robots): while the
+robot appearance and behaviour can elicit or reinforce these ascription,
+it fundamentally originate in the human her/himself~\cite{fink}.
+
+
+
+
+
+\subsubsection{The limits of real-world social robotics}
+
+\TODO{rephrase section}
+
+Social robots are a disruptive technology, poised to have a profound impact on
+business, society, and the global economy~\cite{williams2020social}. A recent report from the United
+Nations about the the impact of the technological revolution on labour markets
+stated that AI and robotics are expected to radically change the labor market
+world-wide destroying some job categories and creating others [32]. The impact
+of AI applications and manufacturing robots on economies and labor markets is
+already tangible. Yet, this is not the case for social robots despite the fact that
+this technology is expected to have a significant impact on different application
+areas such as care for the elderly, customer service, education, child development,
+and autonomous vehicles~\cite{baillie2019challenges}.
+
+As a matter of fact, in the past years promising companies are facing crises.
+Some of them are being bought by multinationals, such as Aldebaran, Boston
+Dynamics and Scharf, acquired by Softbank Group, while others shutdown (e.g.,
+Willow Garage, Anki, Jibo). Developing and selling robots is challenging and
+require market knowledge that companies born as a spin-off from Universities may
+not have. This can be the case of Rethink Robotics founded by Rodney Brooks and
+Jibo co-founded by Cynthia Breazeal, both of them from the Massachusetts
+Institute of Technology. After releasing the collaborative robot Baxter and its
+counterpart Sawyer, Rethink Robotics has been acquired by HAHN Group, a German
+automation specialist. Jibo stopped operating nearly one year after it first
+came to the market. The same end has been encountered by Anki, a robotics and
+artificial intelligence startup founded by three graduated students from
+Carnegie Mellon University.
+
+The failures of companies like Jibo, Kuri, Willow Garage and Anki are examples
+that bring some values to our reflection. Consumer robots may not be for
+general-purpose, as a matter of fact the majority of robotics companies who
+succeeds, design and build robots are meant for specific tasks: autonomous
+cleaning devices (e.g., iRobot Corporation, Samsung Electronics, Neato Robotics,
+LG Electronics) surgical robots (e.g., Intuitive Surgical, MAKO Surgical
+Corporation), drones (e.g., Parrot SA, 3D Robotics, D-Jing Innovations Science
+and Technology) and toys (e.g., Hasbro, WowWee Group Limited).  Examples of
+successful commercial social robots are robotic pets developed in largest public
+research organization and companies, such as Paro Therapeutic Robot (AIST), PLEO
+(Innvo Labs established by Jetta Corporation), AIBO (Sony Corporation), Keepon
+(BeatBots), and iCat (Philips).  Other examples can be found in the context of
+smart home assistants; Mykie robot is a side project of BOSCH connected to an
+IoT ecosystem. The robot is designed to support users while they cook providing
+assistance for recipes and stock market prices. Mykie robot is activated and
+controlled by Amazon’s Alexa, conversational virtual agents that nowadays
+dominates the market of smart homes devices~\cite{purington2017alexa,
+sciuto2018hey}.
+
+Having social capabilities embedded in robotic systems provide an additional
+emotional grip and more fluid interaction with humans, but is not enough for
+justifying the needs of social robots over long periods~\cite{leite2013social,
+baraka2019extended}. The human-robot interaction should be driven by clear
+scopes, and the robot should be able to adapt to diverse and unstructured
+environments. However, notwithstanding the improvements in computer vision and
+machine learning, very few fully-developed intelligent autonomous systems
+capable of learning from the real-world and successfully interact with humans
+are currently available to consumers~\cite{dereshev2019longterm}. Thus, all
+these companies are trying to adapt their business principles and products for
+surviving against competitors breakthrough technologies and new customer
+demands. The paradoxes encountered by the research and industry involve three
+main actors: final users, organizations (companies) and researchers.
+
+~\cite{tulli2019great}
+~\cite{hoffman2019anki}
+
+One example of a small, rugged robot designed for intensive use in school
+environments is Cellulo~\footcite{ozgur2017cellulo}.
+
+\begin{figure}[!htbp]
+    \begin{minipage}[b]{.3\linewidth}
+        \centering\includegraphics[height=4cm]{figs/cellulo.jpg}
+        \subcaption{EPFL's Cellulo robot}\label{fig:cellulo}
+    \end{minipage}%
+    \hspace{0.5cm}
+    \begin{minipage}[b]{.3\linewidth}
+        \centering
+        \includegraphics[height=4cm]{figs/tega.jpg}
+        \subcaption{MediaLab's Tega robot}\label{fig:tega}
+    \end{minipage}
+    \hspace{0.5cm}
+    \begin{minipage}[b]{.3\linewidth}
+        \centering
+        %\includegraphics[height=4cm]{figs/ono.png}
+        \subcaption{OPSORO's Ono robot}\label{fig:ono}
+    \end{minipage}
+    \caption{Existing research-level companion robots}\label{fig:research-robots}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \begin{minipage}[b]{.3\linewidth}
+        \centering\includegraphics[height=4cm]{figs/miro.jpg}
+        \subcaption{Consequential's Miro robot}\label{fig:miro}
+    \end{minipage}%
+    \hspace{0.1cm}
+    \begin{minipage}[b]{.3\linewidth}
+        \centering
+        \includegraphics[height=4cm]{figs/hatchnimals.jpg}
+        \subcaption{SpinMaster's Hatchimals}\label{fig:hatchimals}
+    \end{minipage}%
+    \hspace{0.1cm}
+    \begin{minipage}[b]{.3\linewidth}
+        \centering
+        \includegraphics[height=4cm]{figs/anki-vector.jpg}
+        \subcaption{Anki's Vector}\label{fig:vector}
+    \end{minipage}
+    \caption{Existing commercial companion robots}\label{fig:commercial-robots}
+\end{figure}
+
+
+\subsubsection{Sustaining long-term interactions}
+
+In his analyse of why many commercial projects around social robotics failed,
+Hoffman cites the lack of long-term acceptance as one major
+issue~\cite{hoffman2019anki}. He offers as key explanation ``the inability of
+the robots to escape the single turn structure of an interaction'', which also
+tighty connects to the issue of the repetitiveness of the robots' behaviours.
+
+~\cite{dereshev2019longterm}
+
+\subsubsection{Social robotics and developmental pathopsychology}
+
+
+Robotics and autism~\cite{pennisi2016autism}
+
+The false belief experiment that we have mentioned above, was proposed by
+Baron-Cohen in the frame of his research on autistic spectrum disorders (he
+shows that autistic children seem to actually lack a theory of mind and suggests
+this as the primary cause of their social impairments), and Frith and Happé
+further note in ~\cite{frith1994autism} that this specific deficit of autism has
+led to a large amount of research which proved, in turn, highly beneficial to
+the study of the development of theory of mind in general. They reference
+in~\cite{frith1994autism} eight such tasks (Table~\ref{mentalizing-tasks}),
+identified during the study of social cognition by autistic children. Each of
+them is proposed in two versions: one does not require mentalizing, while the
+other does require it.  One of these tasks, for example, required children to
+distinguish emotions, namely happy/sad faces on one hand (\emph{situation-based}
+emotion), and surprised faces on the other (\emph{belief-based}
+emotion)~\cite{baron1993children}.  Another task, based on the
+\emph{penny-hiding game}, contrasts the two conditions in terms of \emph{object
+occlusion} vs.~\emph{information occlusion}~\cite{baron1992out} (we detail it
+hereafter). These tasks prototypically illustrate social meta-cognition: one
+need to represent and reflect on someone else representations (and not only
+perceptions), and they are not addressed by today's research on social robots.
+
+Experimental protocols in research on autistic spectrum disorders are often
+striking by their apparent straightforwardness because of the careful choice of
+interaction modalities: since autistic children frequently exhibit impairments
+beyond social ones (such as motor or linguistic ones), the experiments must be
+designed such that they require only basic cognitive skills beyond the social
+abilities that are tested. The Sally and Anne task, for instance, requires the
+observing child to be able to visually follow the marble, to remember the true
+location of the marble, to understand simple questions (``Where will Sally look
+for her marble?'' in Baron-Cohen's protocol~\cite{baron1985does}) and eventually
+to give an answer, either verbally or with a gesture -- the two first points
+being actually explicitly checked through questions: ``Where is the marble
+really?'' (reality control question) and ``Where was the marble in the
+beginning?'' (memory control question).
+
+Likewise, current social robots have limited cognitive skills (no fast yet fine
+motor skills, limited speech production and understanding, limited scene
+segmentation and object recognition capabilities, etc.) and such tasks
+that effectively test a single cognitive skill (in this case, mentalizing) in
+near isolation are of high relevance for experimental social robotics.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{p{0.4\linewidth}p{0.5\linewidth}}
+        \toprule
+        No mentalizing required           & Mentalizing required          \\
+        \midrule
+        Ordering behavioural pictures     & Ordering mentalistic pictures~\cite{baron1986mechanical} \\
+        Understanding see                 & Understanding know~\cite{perner1989exploration}            \\
+        Protoimperative pointing          & Protodeclarative pointing~\cite{baron1989perceptual}     \\
+        Sabotage                          & Deception~\cite{sodian1992deception}                     \\
+        False photographs                 & False beliefs~\cite{leslie1992domain}                 \\
+        Recognizing happiness and sadness & Recognizing surprise~\cite{baron1993children}          \\
+        Object occlusion                  & Information occlusion~\cite{baron1992out}         \\
+        Literal expression                & Metaphorical expression~\cite{happe1993communicative}       \\
+        \bottomrule
+    \end{tabular}
+    \caption{\small Tasks requiring or not mentalizing to pass, listed by Frith and Happé in~\cite{frith1994autism}}
+    \label{mentalizing-tasks}
+\end{table}
+
+Frith and Happé's list (Table~\ref{mentalizing-tasks}) is in that regard
+especially interesting in that it mirrors pairs of task (ones which do not
+require mentalizing with similar ones which do require mentalizing), thus
+providing control tasks.  \emph{Object occlusion} vs.~\emph{Information
+occlusion} is one example of a (pair of) task(s) which evidence
+representation-level perspective taking through \emph{adaptive deception}:
+during a simple game, the experimenter adapts its strategy
+(deceptive/non-deceptive behaviour) to the representation skills of its child
+opponent. The experimental setting is derived from the penny-hiding game
+protocol originally proposed by Oswald and Ollendick~\cite{oswald1989role} and
+replicated and extended by Baron-Cohen in~\cite{baron1992out}, who describes it
+as a two-person game in which the subject is actively involved, either as a
+guesser or as a hider. The hider hides the penny in one hand or the other, and
+then invites a guess. The game is repeated several time before switching the
+roles. Baron-Cohen proposes a specific index to rate the level of the players
+based on the idea of \emph{information occlusion}: minimally, the hider must
+ensure \emph{object occlusion} (the penny must not become visible to the
+guesser), while good hiders, with representation-level perspective taking
+skills, develop strategies (like random hand switching or deictic hints at the
+wrong hand) to prevent the guesser to find the penny (\emph{information
+occlusion}). One could imagine a similar protocol adapted to robotics: the robot
+would play the role of the experimenter, adapting on-line its
+behaviour to what it understands of the perspective taking capabilities of the
+children, and would consequently require \emph{second-order},
+\emph{representation-level} perspective taking from the robot.
+
+
+\subsubsection{Conclusion: why long-term social interaction is beyond-state-of-art}
+
+
+
+Some guidelines:
+
+~\cite{tulli2019great}
+~\cite{hoffman2019anki}
+
+~\cite{tonkin2018design}
+
+
+~\cite{baraka2019extended}
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{The long-term vision: robot-supported human-human interactions}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\linewidth]{figs/rHHI-1}
+\caption{A child, just arriving in a new school, tries to integrate with other
+    children -- in such a situation, should the robot decide to help to break the ice? What
+    are the socio-cognitive peceptual and behavioural capabilities required to
+    make that decision?}
+\label{fig:rHHI}
+\end{figure}
+
+
+\project is a project that aims at helping to build strong human
+relationships with the help of technology.
+
+The core idea of the project is to build small companion robots whose
+aim is to facilitate human-human interactions. We want to develop these
+robots with a particular application in mind: supporting the social and
+cultural integration of vulnerable children in a foreign country, and in
+particular, migrant children who might lack the otherwise needed support
+(shared culture; already well integrated relatives) for a successful
+integration.
+
+\subsubsection{Key scientific research questions}
+
+\begin{enumerate}
+\item research the role of social influence to scaffold positive human-human
+    interactions (including its ethical ramifications) in the context of migrant
+    integration;
+\item explore how a small robot companion can be endowed with social
+    competencies to positively influence human interactions; design and
+    implement the corresponding artificial social behaviours;
+\item design and build a small rugged and autonomous companion robot that
+    realise this goal for child-child interactions; test the technology in
+    school with actual migrant children.
+\end{enumerate}
+
+
+\subsection{Three pillars}
+
+The \project project will, for the first time, take a broad, holistic approach
+to these questions, and as such, is build around three pilars:
+
+\begin{enumerate}
+    \item AI architecture for decision making
+    \item socio-psychological design of the interaction, from 1-to-1
+        interaction, to group interaction, to interaction with the eco-system
+    \item built-in privacy and ethics
+\end{enumerate}
+
+The difficulty comes from the fact that these pilars do not represent independent
+research questions: they are deeply woven together, in intricate ways.
+
+Taken independently, these three pilars are already intrinsically complex.
+
+The first pilar, AI Architecture for Decision Making, for instance:
+state-of-the-art decision making processes for social robots are build from
+multiple algorithmic layers: classical machine learning (like classifiers, or
+SLAM) for low-level sensori-motor processing; probabilistic data processing (for
+e.g. localisation or point cloud processing); deep neural networks for object
+recognition, scene understanding, speech and dialogue processing; classical
+symbolic reasoning (for instance, for task planning); high-level knowledge
+representation and reasoning (semantic webs); hybrid spatial/symbolic reasoning
+for motion planning; etc.
+
+Importantly, these layers are not typically combined in a simple, linear
+fashion: modern control architectures are distributed, loosely coupled, and
+design so that information flows in multiple directions, at different levels of
+abstraction, in order to create complex feedback loops, and achieve systems that are
+both goal-directed \emph{and} reactive (event-driven).
+
+
+The real complexity of such AI architectures is however striking when one tries
+to answer \emph{how} such an architecture can enable the realisation of the
+desired socio-cognitive functions, i.e. our second pilar. Social behaviours and
+social situations are highly dynamic, loosely structured, underspecified (no
+pre-made rulebook exists), uncertain.
+
+Our best answer is for the robot to learn to become social: a human expert teaches
+the robot how to socially behave, in-situ, with the robot embedded in the
+interaction. I have conducted two recent and high-profile experiments in this
+direction
+
+
+
+
+
 
 
 \project is also a highly technical project, who aims at significantly
@@ -1477,92 +1873,6 @@ important agents in a variety of other situations, for their intrinsic
 \emph{social} features: source of comfort, tutors, entertainers. The robot as a
 \emph{social agent} is a reality, within laboratories at least.
 
-\subsection{The long-term vision: robot-supported human-human interactions}
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{figs/rHHI-1}
-\caption{A child, just arriving in a new school, tries to integrate with other
-    children -- in such a situation, should the robot decide to help to break the ice? What
-    are the socio-cognitive peceptual and behavioural capabilities required to
-    make that decision?}
-\label{fig:rHHI}
-\end{figure}
-
-
-\project is a project that aims at helping to build strong human
-relationships with the help of technology.
-
-The core idea of the project is to build small companion robots whose
-aim is to facilitate human-human interactions. We want to develop these
-robots with a particular application in mind: supporting the social and
-cultural integration of vulnerable children in a foreign country, and in
-particular, migrant children who might lack the otherwise needed support
-(shared culture; already well integrated relatives) for a successful
-integration.
-
-\subsubsection{Key scientific research questions}
-
-\begin{enumerate}
-\item research the role of social influence to scaffold positive human-human
-    interactions (including its ethical ramifications) in the context of migrant
-    integration;
-\item explore how a small robot companion can be endowed with social
-    competencies to positively influence human interactions; design and
-    implement the corresponding artificial social behaviours;
-\item design and build a small rugged and autonomous companion robot that
-    realise this goal for child-child interactions; test the technology in
-    school with actual migrant children.
-\end{enumerate}
-
-
-\subsection{Three pillars}
-
-The \project project will, for the first time, take a broad, holistic approach
-to these questions, and as such, is build around three pilars:
-
-\begin{enumerate}
-    \item AI architecture for decision making
-    \item socio-psychological design of the interaction, from 1-to-1
-        interaction, to group interaction, to interaction with the eco-system
-    \item built-in privacy and ethics
-\end{enumerate}
-
-The difficulty comes from the fact that these pilars do not represent independent
-research questions: they are deeply woven together, in intricate ways.
-
-Taken independently, these three pilars are already intrinsically complex.
-
-The first pilar, AI Architecture for Decision Making, for instance:
-state-of-the-art decision making processes for social robots are build from
-multiple algorithmic layers: classical machine learning (like classifiers, or
-SLAM) for low-level sensori-motor processing; probabilistic data processing (for
-e.g. localisation or point cloud processing); deep neural networks for object
-recognition, scene understanding, speech and dialogue processing; classical
-symbolic reasoning (for instance, for task planning); high-level knowledge
-representation and reasoning (semantic webs); hybrid spatial/symbolic reasoning
-for motion planning; etc.
-
-Importantly, these layers are not typically combined in a simple, linear
-fashion: modern control architectures are distributed, loosely coupled, and
-design so that information flows in multiple directions, at different levels of
-abstraction, in order to create complex feedback loops, and achieve systems that are
-both goal-directed \emph{and} reactive (event-driven).
-
-
-The real complexity of such AI architectures is however striking when one tries
-to answer \emph{how} such an architecture can enable the realisation of the
-desired socio-cognitive functions, i.e. our second pilar. Social behaviours and
-social situations are highly dynamic, loosely structured, underspecified (no
-pre-made rulebook exists), uncertain.
-
-Our best answer is for the robot to learn to become social: a human expert teaches
-the robot how to socially behave, in-situ, with the robot embedded in the
-interaction. I have conducted two recent and high-profile experiments in this
-direction
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1625,198 +1935,6 @@ programming needs.
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\section{Social robots in the society}
-
-\subsection{Psycho-social underpinnings}
-
-Developing a conceptual framework for \emph{robot-supported human-human
-interactions} implies a deep understanding of the psycho-social mechanisms at
-work in human-human interactions, and in human-robot interactions.
-
-Anthropomorphism is a psychological mechanism by which a human
-ascribe human traits to non-human artefacts (here, robots): while the
-robot appearance and behaviour can elicit or reinforce these ascription,
-it fundamentally originate in the human her/himself~\cite{fink}.
-
-
-\paragraph{A support for shared understanding}
-
-\emph{Computer Supported Collaborative Learning} (CSCL) researches the cognitive
-mechanisms and practical techniques underpinning efficient learning in social
-situations. From its very beginning, CSCL research has been following
-Roschelle and Teasley's suggestion~\cite{roschelle1995construction} that
-collaborative learning has something to do with the process of constructing and
-maintaining a \emph{shared understanding} of the task at hand. Building a shared/mutual
-understanding refers to the upper class of collaborative learning situations,
-those in which students should build upon each other's understanding to refine
-their own understanding.  What is expected to produce learning is not the mere
-fact that two students build the same understanding but the cognitive effort
-they have to engage to build this shared
-understanding~\cite{schwartz1995emergence}.
-
-The construction of a shared understanding has been investigated for several
-years in psycholinguistics, under the  notion of \emph{grounding}\footnote{Note
-that the meaning of \emph{grounding} -- ensuring a shared understanding of a
-situation during an interaction -- that we employ in this article must be
-distinguished from its meaning in the context of \emph{symbol grounding} as
-defined by Harnad~\cite{harnad1990symbol}.}~(Clark,
-in~\cite{clark1986referring}).  However, the relevance of grounding mechanisms
-for explaining learning outcomes has been questioned in learning sciences. The
-monitoring and repair of misunderstanding explains for instance referential
-failures in short dialogue episodes but does hardly predict \emph{conceptual
-change} (ie the acquisition, acceptation and integration of a new belief into
-one's mental model) over longer
-sessions~\cite{dillenbourg2006sharing}. The cumulative effect of grounding
-episodes can probably be better understood from a socio-cultural perspective:
-
-\begin{quote}
-Collaborative learning is associated with the increased
-cognitive-interactional effort involved in the transition from \emph{learning to
-understand each other} to \emph{learning to understand the meanings of the semiotic
-tools that constitute the mediators of interpersonal
-interaction}~\cite{baker1999role}
-\end{quote}
-
-Along this line, several scholars suggest that CSCL research should go deeper in
-the understanding of how partners engage into shared meaning
-making~\cite{stahl2007meaning} or \emph{intersubjective} meaning
-making~\cite{suthers2006technology}.
-
-Paradoxically, while Clark's theory is somewhat too linguistic from a conceptual
-change viewpoint, it is criticized at the same time as being too cognitivist by
-some psycholinguists, ie as overestimating the amount of shared knowledge and
-mutual representations actually necessary to conduct a dialogue. The fundamental
-issue, as old as philosophy, is the degree of coupling between the different
-levels of dialogue, mostly between the lexical/syntactical level and the deeper
-semantic levels. In~\cite{pickering2006alignment}, Pickering and Garrod argue
-that the mutual understanding starts mostly with a \emph{superficial alignment}
-at the level of the linguistic representations, due to priming mechanisms, and
-that this local alignment may -- in some cases -- lead to a \emph{global
-alignment} of the semantic level (\emph{deep grounding}).  For these authors,
-the convergence in dialogue, and even the repair of some misunderstandings, is
-explained by this mimetic behavior more than by a monitoring of each other's
-knowledge: \emph{``...interlocutors do not need to monitor and develop full
-common ground as a regular, constant part of routine conversation, as it
-would be unnecessary and far too costly. Establishment of full common ground
-is, we argue, a specialized and non-automatic process that is used primarily
-in times of difficulty (when radical misalignment becomes
-apparent).''}~\cite{pickering2006alignment} This view is actually not
-incompatible with Clark's \emph{grounding
-criterion}~\cite{clark1989contributing}: the degree of shared understanding that
-peers need to reach depends upon the task they perform. For instance, a dialogue
-between two surgeons might rely on superficial alignment if they talk about
-their friends but has to guarantee accurate common grounds when talking about
-which intervention will be conducted in which way on which patient.
-
-Deep grounding or shared meaning making requires some cognitive load. For Clark,
-what is important is not the individual effort made by the receiver of a
-communicative act, but the overall \emph{least collaborative
-effort}~\cite{clark1986referring}.  The cost of producing a perfect utterance
-may be higher than the cost of repairing the problems that may arise through
-misunderstandings. For instance, subjects are less careful about adapting their
-utterances to their partner when they know they can provide feedback on his/her
-understanding~\cite{schober1993spatial}. Dillenbourg et al. introduced the
-notion of \emph{optimal collaborative effort}~\cite{dillenbourg1995evolution} to
-stress that misunderstanding should not be viewed as something to be avoided (if
-this was possible), but as an opportunity to engage into verbalization,
-explanation, negotiation, and so forth.
-
-
-
-\paragraph{Developmental pathopsychology}
-
-The false belief experiment that we have mentioned above, was proposed by
-Baron-Cohen in the frame of his research on autistic spectrum disorders (he
-shows that autistic children seem to actually lack a theory of mind and suggests
-this as the primary cause of their social impairments), and Frith and Happé
-further note in ~\cite{frith1994autism} that this specific deficit of autism has
-led to a large amount of research which proved, in turn, highly beneficial to
-the study of the development of theory of mind in general. They reference
-in~\cite{frith1994autism} eight such tasks (Table~\ref{mentalizing-tasks}),
-identified during the study of social cognition by autistic children. Each of
-them is proposed in two versions: one does not require mentalizing, while the
-other does require it.  One of these tasks, for example, required children to
-distinguish emotions, namely happy/sad faces on one hand (\emph{situation-based}
-emotion), and surprised faces on the other (\emph{belief-based}
-emotion)~\cite{baron1993children}.  Another task, based on the
-\emph{penny-hiding game}, contrasts the two conditions in terms of \emph{object
-occlusion} vs.~\emph{information occlusion}~\cite{baron1992out} (we detail it
-hereafter). These tasks prototypically illustrate social meta-cognition: one
-need to represent and reflect on someone else representations (and not only
-perceptions), and they are not addressed by today's research on social robots.
-
-Experimental protocols in research on autistic spectrum disorders are often
-striking by their apparent straightforwardness because of the careful choice of
-interaction modalities: since autistic children frequently exhibit impairments
-beyond social ones (such as motor or linguistic ones), the experiments must be
-designed such that they require only basic cognitive skills beyond the social
-abilities that are tested. The Sally and Anne task, for instance, requires the
-observing child to be able to visually follow the marble, to remember the true
-location of the marble, to understand simple questions (``Where will Sally look
-for her marble?'' in Baron-Cohen's protocol~\cite{baron1985does}) and eventually
-to give an answer, either verbally or with a gesture -- the two first points
-being actually explicitly checked through questions: ``Where is the marble
-really?'' (reality control question) and ``Where was the marble in the
-beginning?'' (memory control question).
-
-Likewise, current social robots have limited cognitive skills (no fast yet fine
-motor skills, limited speech production and understanding, limited scene
-segmentation and object recognition capabilities, etc.) and such tasks
-that effectively test a single cognitive skill (in this case, mentalizing) in
-near isolation are of high relevance for experimental social robotics.
-
-\begin{table}[h]
-    \centering
-    \begin{tabular}{p{0.4\linewidth}p{0.5\linewidth}}
-        \toprule
-        No mentalizing required           & Mentalizing required          \\
-        \midrule
-        Ordering behavioural pictures     & Ordering mentalistic pictures~\cite{baron1986mechanical} \\
-        Understanding see                 & Understanding know~\cite{perner1989exploration}            \\
-        Protoimperative pointing          & Protodeclarative pointing~\cite{baron1989perceptual}     \\
-        Sabotage                          & Deception~\cite{sodian1992deception}                     \\
-        False photographs                 & False beliefs~\cite{leslie1992domain}                 \\
-        Recognizing happiness and sadness & Recognizing surprise~\cite{baron1993children}          \\
-        Object occlusion                  & Information occlusion~\cite{baron1992out}         \\
-        Literal expression                & Metaphorical expression~\cite{happe1993communicative}       \\
-        \bottomrule
-    \end{tabular}
-    \caption{\small Tasks requiring or not mentalizing to pass, listed by Frith and Happé in~\cite{frith1994autism}}
-    \label{mentalizing-tasks}
-\end{table}
-
-Frith and Happé's list (Table~\ref{mentalizing-tasks}) is in that regard
-especially interesting in that it mirrors pairs of task (ones which do not
-require mentalizing with similar ones which do require mentalizing), thus
-providing control tasks.  \emph{Object occlusion} vs.~\emph{Information
-occlusion} is one example of a (pair of) task(s) which evidence
-representation-level perspective taking through \emph{adaptive deception}:
-during a simple game, the experimenter adapts its strategy
-(deceptive/non-deceptive behaviour) to the representation skills of its child
-opponent. The experimental setting is derived from the penny-hiding game
-protocol originally proposed by Oswald and Ollendick~\cite{oswald1989role} and
-replicated and extended by Baron-Cohen in~\cite{baron1992out}, who describes it
-as a two-person game in which the subject is actively involved, either as a
-guesser or as a hider. The hider hides the penny in one hand or the other, and
-then invites a guess. The game is repeated several time before switching the
-roles. Baron-Cohen proposes a specific index to rate the level of the players
-based on the idea of \emph{information occlusion}: minimally, the hider must
-ensure \emph{object occlusion} (the penny must not become visible to the
-guesser), while good hiders, with representation-level perspective taking
-skills, develop strategies (like random hand switching or deictic hints at the
-wrong hand) to prevent the guesser to find the penny (\emph{information
-occlusion}). One could imagine a similar protocol adapted to robotics: the robot
-would play the role of the experimenter, adapting on-line its
-behaviour to what it understands of the perspective taking capabilities of the
-children, and would consequently require \emph{second-order},
-\emph{representation-level} perspective taking from the robot.
-
 
 
 
@@ -1824,61 +1942,6 @@ children, and would consequently require \emph{second-order},
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Companion robots}
-
-One example of a small, rugged robot designed for intensive use in school
-environments is Cellulo~\footcite{ozgur2017cellulo}.
-
-\begin{figure}[!htbp]
-    \begin{minipage}[b]{.3\linewidth}
-        \centering\includegraphics[height=4cm]{figs/cellulo.jpg}
-        \subcaption{EPFL's Cellulo robot}\label{fig:cellulo}
-    \end{minipage}%
-    \hspace{0.5cm}
-    \begin{minipage}[b]{.3\linewidth}
-        \centering
-        \includegraphics[height=4cm]{figs/tega.jpg}
-        \subcaption{MediaLab's Tega robot}\label{fig:tega}
-    \end{minipage}
-    \hspace{0.5cm}
-    \begin{minipage}[b]{.3\linewidth}
-        \centering
-        %\includegraphics[height=4cm]{figs/ono.png}
-        \subcaption{OPSORO's Ono robot}\label{fig:ono}
-    \end{minipage}
-    \caption{Existing research-level companion robots}\label{fig:research-robots}
-\end{figure}
-
-\begin{figure}[!htbp]
-    \begin{minipage}[b]{.3\linewidth}
-        \centering\includegraphics[height=4cm]{figs/miro.jpg}
-        \subcaption{Consequential's Miro robot}\label{fig:miro}
-    \end{minipage}%
-    \hspace{0.1cm}
-    \begin{minipage}[b]{.3\linewidth}
-        \centering
-        \includegraphics[height=4cm]{figs/hatchnimals.jpg}
-        \subcaption{SpinMaster's Hatchimals}\label{fig:hatchimals}
-    \end{minipage}%
-    \hspace{0.1cm}
-    \begin{minipage}[b]{.3\linewidth}
-        \centering
-        \includegraphics[height=4cm]{figs/anki-vector.jpg}
-        \subcaption{Anki's Vector}\label{fig:vector}
-    \end{minipage}
-    \caption{Existing commercial companion robots}\label{fig:commercial-robots}
-\end{figure}
-
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{figs/wizme+dolls}
-    \caption{Early prototyping for the \project: a pet-like robot that could
-    mediate child-child interactions}
-    \label{}
-\end{figure}
-
-
 
 \section{Impact}\label{impact}
 
@@ -1957,8 +2020,8 @@ models, guiding the social teleology of the cognitive architecture (T3.1).
 
 This first experiment is immediately followed by two other long-term
 experimental deployments: a one-year deployment in one of Bristol's Special
-Education Need (SEN) school (T5.2), followed by a one-year deployment at
-Bristol's Children hospital (T5.3). These two additional experiments are both
+Education Need (SEN) school (T5.1), followed by a one-year deployment at
+Bristol's Children hospital (T5.2). These two additional experiments are both
 inputs for WP2 and WP4, and demonstrator for the robot socio-cognitive
 architecture (WP3).
 
@@ -1973,15 +2036,16 @@ the robot.
 
 Workpackage WP4 looks into behaviour generation using machine learning (T4.2)
 and non-verbal affective modalities (T4.3). T4.2 is data-intensive, and will use
-datasets acquired during the field deployments (T1.1, T5.2, T5.3), as well as
+datasets acquired during the field deployments (T1.1, T5.1, T5.2), as well as
 lab-recorded dataset of social interactions. Similar to WP2, the capabilities
 built in WP4 are integrated in the robot architecture in T3.3.
 
 In addition to the integration of WP2 and WP4 capabilities, WP3 is also
-researching and developing the socio-cognitive drive of the architecture. They
+researching and developing the socio-cognitive drives of the architecture. They
 come both from T1.2 (as previously mentioned), and
-human-in-the-loop/public-in-the-loop machine learning (T3.2). This task is also
-tighly connected to the experimental fieldwork.
+human-in-the-loop/public-in-the-loop machine learning (T3.2). T3.2, in
+particular, is tighly connected to the experimental fieldwork, where the
+learning-from-end-users take place.
 
 \subsection{Milestones}\label{milestones}
 
@@ -2165,21 +2229,6 @@ extend, significantly extending the state-of-art~\cite{lemaignan2017artificial,
 baxter2016cognitive}.
 
 
-
-\subsection{T2.1}
-
- Beyond traditional
-techniques like semantic scene segmentation, human skeleton tracking, speech
-recognition, facial expression and gaze tracking, the robot will also be endowed
-with novel capabilities to model the important social dynamics and interactions
-taking place around the robot.
-
-
-
-
-
-
-
 \textbf{T2.1 -- Hybrid situation assessment and knowledge representation}
 Knowledge representation and grounding is a fundamental building block for
 cognitive architectures~\cite{lemaignan2017artificial,beetz2010cram}. This task
@@ -2227,6 +2276,7 @@ socio-cognitive capabilties. In particular, the protocols identified by Frith
 and Happé~\cite{frith1994autism} to investigate theory of mind with autistic
 children offers an excellent experimental framework for social
 robotics~\cite{lemaignan2015mutual} and will be employed.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2418,7 +2468,7 @@ covers the overall design of the architecture.
 
 \textbf{T3.2 -- Learning from humans to achieve 'by-design' responsible \&
 trustworthy AI} Building on my recent, promising results on human-in-the-loop
-social learning~\cite{senft2017supervised,senft2019teaching,winkle2020coach}, this task
+social learning~\cite{senft2017supervised,senft2019teaching,winkle2020couch}, this task
 implements the learning mechanics (including the critical aspect of the
 interface with the human teacher) to allow human participants to progressively
 teach the robot a social policy to become a good social helper.
@@ -2505,8 +2555,8 @@ existing techniques: (1) data-driven, continuous approach to behaviour
 generation inspired by Learning from Demonstration; (2) interactive machine
 learning in high-dimensional input/output spaces~\cite{senft2020woz}, where I
 have shown with my students promising results for generating complex social
-behaviours~\cite{senft2019teaching, winkle2020coach} that fully involve the
-end-users~\cite{winkle2020methodology}.  By combining the two, I target
+behaviours~\cite{senft2019teaching, winkle2020couch} that fully involve the
+end-users~\cite{winkle2018social}.  By combining the two, I target
 a breakthrough in robots' social behaviours generation: the generation of
 non-repetitive, socially congruent and transparent social behaviours (including
 gestures and gazes).
@@ -2833,7 +2883,7 @@ who has a long track record of working with special needs schools.
 
 
 \subsection{Application 2: A robot companion at the children's hospital}
-\textbf{T5.3 -- creation and deployment of a small robot companion to support
+\textbf{T5.2 -- creation and deployment of a small robot companion to support
 isolated children during their hospital stay}, fully integrated and aware of the
 wider hospital ecosystem. Over the course of this second, one-year long (Y4)
 experiment, we will deploy one \project robot at the Bristol Children Hospital.
@@ -3020,7 +3070,7 @@ have a lasting, strong, positive impact on the society, also establishing the
 idea of \emph{robots supporting human interactions} instead of dehumanising our
 social relationships.
 
-\textbf{Together, Task 5.2 and 5.3 are \ul{high-risk, high-gain}.}
+\textbf{Together, Task 5.1 and 5.2 are \ul{high-risk, high-gain}.}
 
 The two main mitigations are (1) early and continuous engagement with the
 stakeholders, and (2) the decoupling of the two applications, meaning that the
