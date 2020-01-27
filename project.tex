@@ -87,6 +87,8 @@
 
 \setcounter{secnumdepth}{0} % prevent section numbering, but still add sections to ToC
 
+\setlength\FrameSep{\fboxsep}
+
 \title{\project - Part B}
 
 \begin{document}
@@ -398,7 +400,7 @@ two, one-year-long demonstrations in high impact, socially sensitive environment
 
 \section{Overview of the \project work programme}
 
-\project is organised into five workpackages, briefly presented hereafter.
+%\project is organised into five workpackages, briefly presented hereafter.
 
 \subsection{WP1: \textbf{\wpOne}}
 
@@ -561,17 +563,15 @@ demonstrate in isolation the resulting socio-cognitive capabilities.
 \subsection{WP3: \textbf{\wpThree}}
 
 In WP3, I will design a novel socio-cognitive architecture for the
-social robots, that will be implemented and deployed on the IIT robot R1.
-WP3 will integrate together Bringing together advanced perception of the human social dynamics,
-intrinsic motivation to support human interactions, and human-in-the-loop
-machine learning to create transparent, trustworthy action policies. This WP is
-high-risk/high-gain, as no such combined approach has been successfully
-implemented and deployed in real-world, complex social situations. I mitigate
-the risk by ensuring cognitive functions are decoupled from each other where
-sensible, and in particular, by ensuring that the robot actions are generated
-independently through both an intrinsic motivation mechanism, and a human-taught
-machine learning action policy, hence creating a level of cognitive redundancy
-(with the corresponding arbitration mechanisms in place where necessary).
+social robots, and implemented it on the IIT R1 robot.
+WP3 will integrate together the modeling capabilities developed in WP2, with a
+dual action policy: a policy driven by an artificial intrinsic motivation to act
+socially (a social teleology), and a policy learned through human-in-the-loop
+machine learning. This WP is high-risk/high-gain, as it proposes a very novel
+approach to goal-driven socio-cognitive architectures, with the potential of
+unlocking long-term social engagement~\cite{hoffman2019anki}. It is however a critical
+component for the robot' deployments -- mitigations are however possible, by
+decoupling the action policies if necessary.
 
 \begin{framed}
     \textbf{Main outcomes:} An integrated cognitive architecture for social
@@ -584,78 +584,44 @@ machine learning action policy, hence creating a level of cognitive redundancy
 \end{framed}
 
 \textbf{T3.1 -- A social teleology for robots}
-The case for \emph{teleological} (ie goal-driven) robotic architectures has been
-made in the past~\cite{wrede2012towards}, but only effectively realised for
-relatively simple cognitive systems (like curiosity-driven robot
-animals~\cite{oudeyer2005playground} or motor babbling in infant-like
-robots~\cite{forestier2017unified}). Socially-driven robots, participating in
-complex interactions with humans, have been barely investigated. This task
-covers the overall design of the architecture.
-
+The idea of a \emph{teleological} (ie goal-driven) robot architecture for social
+interaction is very novel (existing literature on teleological robots focuses on
+simple systems~\cite{oudeyer2005playground,forestier2017unified}). This task,
+which depends on the results of T1.2, designs and implements such an
+architecture on the R1 robot.
 
 \textbf{T3.2 -- Learning from humans to achieve 'by-design' responsible \&
-trustworthy AI} Building on my recent, promising results on human-in-the-loop
+trustworthy AI} Building on my recent results on human-in-the-loop
 social learning~\cite{senft2017supervised,senft2019teaching,winkle2020couch}, this task
-implements the learning mechanics (including the critical aspect of the
-interface with the human teacher) to allow human participants to progressively
+implements the learning mechanics to allow human end-users to progressively
 teach the robot a social policy to become a good social helper.
-
 In addition, this task researches how human-in-the-loop machine learning enables a more
 trustworthy AI system, by involving the end-users in the creation of the robot
 behaviours, guaranteeing a level of behavioural transparency for the end-users.
 
-\textbf{T3.3 -- Integrating a socially-driven architecture for long-term interaction} The
-socio-cognitive architecture of \project robots builds from the principles (the
-`why's?') identified in T1.3, and relies on a combination of socially-driven
-intrinsic motivation (a \emph{social teleology}, T3.1), and human-in-the-loop machine
-learning (T3.2) to progressively learn an social policy enabling long-term
-autonomy. This task focuses on `bringing the pieces together' in a principled
-manner.
+\textbf{T3.3 -- Integrating a socially-driven architecture for long-term
+interaction} Building on my previous work on cognitive
+architecture~\cite{lemaignan2017artificial}, this task brings together, in a
+principled manner, the perceptual (WP2) and behavioural
+(WP4) capabilities of the robot, as well as the social policies created in T3.1 and
+T3.2. T3.3 will specifically look at long term autonomy, including long-term
+social goals, cognitive redundancy, and behavioural complexity.
 
-We will specifically look at the requirement for \emph{long term} autonomy: Over
-the last two years, we have observed a significant increase of studies
-involving social robots, deployed in real-world settings (schools, care centres)
-over relatively long periods of time (up to 2 or 3 months at a
-time)~\cite{kunze2018artificial,leite2013social}, with some promissing results
-in well defined situations, with pre-defined tasks (for example, learning
-tasks~\cite{senft2019teaching}, or 'butler' in a social care
-facility~\cite{hawes2017strands}). More generic (long-term) social autonomy
-however requires additional, beyond-state-of-art research to (1) add a
-\emph{social motivation} mechanism able to drive the robot's intentions over
-time. This is specifically investigated in T3.1 and T3.2 above; (2) a level of
-cognitive redundancy to ensure reliable perception and behaviour generation
-(addressed by this task, with a dependency on the cognitive functions developped
-in WP2 and WP4).
-
-Additionally, a critical aspect of task T3.3 is to develop the arbitration
-mechanism that combines the robot's social teleology (T3.1) with the human-taught
-action policy (T3.2). This arbitration mechanism will build on research on
-reinforcement learning for experience transfer~\cite{madden2004transfer} that
-enables the re-assessement of a policy (here, our intrisic motivation) based on
-previous experience (here, the human-taught policy).
-
-
+T3.3 will also develop the arbitration mechanism that combines the robot's
+social teleology (T3.1) with the human-taught action policy (T3.2). This
+arbitration mechanism will build on research on reinforcement learning for
+experience transfer~\cite{madden2004transfer} that enables the re-assessment of
+a policy (here, our intrinsic motivation) based on previous experience (here,
+the human-taught policy).
 
 \subsection{WP4: \textbf{\wpFour}} 
 
-
 Mirroring WP2's focus on understanding the social interactions, WP4 addresses the
-question of social behaviour \emph{generation}: how to create natural
-behaviours, engaging over a sustained period of time (eg not simply picking
-scripted behaviours from a library, that are rapidly perceived as repetitive).
-
-Using cloud-based speech recognition, the robots will be able to understand and
-record the textual transcription of the what the end-users say (in WP5, mostly
-children). The robots themselves are however purposefully designed \emph{not} to
-speak, using instead non-verbal communication mechanisms (non-verbal utterances
-using sounds, gaze, joint attention, expressive motions, etc). This is a
-critical interaction design choice, that ensures we can more effectively manage
-what cognitive capabilities are ascribed to the robot by the users (expectation
-management).  \project seeks however to significantly push forward the
-state-of-art of behaviour generation for robots, both in term of technique to
-generate the behaviours, and in term of the nature of the non-verbal behaviours.
-
-\TODO{cite/refer Guy's paper on GAN-based behaviour generation}
+question of social behaviour \emph{generation}: how to create natural,
+non-repetitive behaviours, engaging over a sustained period of time. The robot
+behaviours will be exclusively non-verbal (non-verbal utterances, gaze, joint
+attention, facial expressions and expressive motions), and will include
+soundscapes as a novel non-verbal interaction modality.
 
 \begin{framed}
 
@@ -669,27 +635,24 @@ demonstration.
 
 \end{framed}
 
-
 \textbf{T4.1 -- Behavioural baseline} T4.1 establishes a baseline for behaviour
-generation, by surveying and implementing the current state of the art. In
-addition to traditional approaches like behaviour libraries, this will cover
-techniques like curiosity-driven behaviours~\cite{oudeyer2005playground},
-Learning from Demonstration~\cite{billard2008robot, argall2009survey},
-human-in-the-loop action policy learning~\cite{senft2016sparc,
-senft2019teaching}. This baseline will enable early in-situ experimental
-deployments (WP5), while also provide a comparison point for T4.2.
+generation, by surveying and implementing the current state of the art
+(behaviours library, activity switching~\cite{coninx2016towards}). This
+baseline will enable early in-situ experimental deployments, while also
+providing a comparison point for T4.2.
 
-\textbf{T4.2 -- Machine learning for continuous motion generation} \project aims
-at significantly advancing the state of the art in this regard, by combining two
-existing techniques: (1) data-driven, continuous approach to behaviour
-generation inspired by Learning from Demonstration; (2) interactive machine
-learning in high-dimensional input/output spaces~\cite{senft2020woz}, where I
-have shown with my students promising results for generating complex social
+\textbf{T4.2 -- Generative neural network for social behaviour generation}
+\project aims at significantly advancing the state of the art in this regard, by
+combining two recent techniques: (1) generative neural networks for affective
+robot motion generation~\cite{marmpena2019generating,suguitan2020moveae}; (2) interactive machine
+learning in high-dimensional input/output spaces, where I have shown with my
+students promising results for generating complex social
 behaviours~\cite{senft2019teaching, winkle2020couch} that fully involve the
-end-users~\cite{winkle2018social}.  By combining the two, I target
-a breakthrough in robots' social behaviours generation: the generation of
-non-repetitive, socially congruent and transparent social behaviours (including
-gestures and gazes).
+end-users~\cite{winkle2018social}. Modulating (1) with the learnt features of
+(2), I target a breakthrough in robots' social behaviours generation: the
+generation of non-repetitive, socially congruent and transparent social
+behaviours (including gestures but also gazing behaviours and facial
+expressions).
 
 \textbf{T4.3 -- Non-verbal behaviours and robot soundscape} In task T4.3, we
 introduce a novel non-verbal interaction modality for robots, based on
@@ -708,21 +671,18 @@ at the host institution.
 
 \subsection{WP5: \textbf{\wpFive}}
 
-
-WP5 aims at convincingly demonstrating the importance and positive impact that
+Finally, WP5 aims at convincingly demonstrating the importance and positive impact that
 socially-driven, socially-responsible robotics may have. The experimental work
 of \project will be organised around two ambitious long-term studies (in
 addition to the museum study, T1.2), in complex, real-world environments: a
-network of special needs schools, and the Bristol Children Hospital.
+network of special educative needs (SEN) schools, and the Bristol Children Hospital.
 
 These environments also put the project in the unique position of actually
-delivering high societal impact: besides the thousands of people that will
-contribute to the design of the system at the museum, we anticipate 30+
-hospitalised children with long-term conditions, and about 350\TODO{check with
-Nigel} SEN-educated children to directly benefit from the project, showing how
-robots can have a lasting, strong, positive impact on the society, also
-establishing the idea of robots \ul{supporting} human interactions instead of
-dehumanising our social relationships.
+delivering high societal impact: I anticipate 30+ hospitalised children, and 250
+SEN-educated children to directly benefit from the project, exploring how robots
+can have a net social utility, while being accepted as positive tools by field
+practitioners. Both these deployments will take place within the strict ethical
+framework established in T1.1.
 
 \begin{framed}
 
@@ -731,58 +691,54 @@ dehumanising our social relationships.
     social utility; large (anonymous) datasets of complex, real-world
     human-robot interactions.
 
-    \textbf{Timeframe:} \textbf{Y2-Y5}; one post-doc (shared with WP3).
+    \textbf{Timeframe:} \textbf{Y3-Y5}; one post-doc (shared with WP3).
 
 \end{framed}
-\textbf{T5.1 -- creation and deployment of a robot companion to
-support physical and mental well-being, as well as foster social interactions,
-in SEN schools} This task aims at demonstrating robot-supported social
-interventions within the eco-system of SEN (Special Educational Needs)
-schools. The aim is to effectively support the day-to-day work of the
-school staff to support the development, learning and well-being of the
-children. A \project robot will be deployed for one year (Y3) in a
-Bristol-based SEN school (to be possibly extended to additional schools) to
-investigate how an autonomous social robot can help shaping a spatial and social
-school ecology that fosters mental well-being, while effectively supporting
-student-student and student-teacher social interactions. The
-robot behaviours will be co-designed with the teachers, the students, and the
-parents through several preliminary design workshops
 
-\textbf{Specific resources} this task will take place within a network of
-Bristol-based SEN schools, with which I already have on-going collaborations
-(child-robot interaction for children with autism at Bristol's Mendip School).
-The task will be jointly supervised with local colleague and expert Dr.Nigel Newbutt,
-who has a long track record of working with special needs schools.
+\textbf{T5.1 -- A robot companion to support physical, mental and social
+well-being in SEN schools} This task aims at demonstrating robot-supported
+social interventions within Bristol's network of SEN schools.  During a one-year
+period (Y3), the robot will be based in schools, with interventions co-designed
+with the teachers, the parents and the students, both through preliminary
+workshops and in-situ machine learning.
+
+The envisioned interventions include: initiating group games; enquiring students
+about their well-being; co-teaching material with teachers; fostering
+interaction situations between the children.
+
+\textbf{Specific resources:} The task will be supported by local SEN researcher
+Dr. Nigel Newbutt, who has a long track record and on-going research
+partnerships with Bristol's special needs schools.
 
 
-\textbf{T5.2 -- creation and deployment of a small robot companion to support
-isolated children during their hospital stay}, fully integrated and aware of the
-wider hospital ecosystem. Over the course of this second, one-year long (Y4)
-experiment, we will deploy one \project robot at the Bristol Children Hospital.
-Using a \emph{mutual shaping} approach~\cite{winkle2018social} to design the
-role of the robot with the different stakeholders (nurses, doctors, parents,
-children), we will experimentally investigate how a social robot can support
-hospitalised children with long-term conditions. The robot's role will revolve
-around facilitating social interactions between possibly socially isolated
-children, by fostering playful interaction with a yard.
+\textbf{T5.2 -- A robot companion to support isolated children during their
+hospital stay} Over the course of this second, one-year long (Y4)
+experiment, we will deploy one \project robot in the long-term condition
+paediatric ward at the Bristol Children Hospital.  Using a \emph{mutual shaping}
+approach~\cite{winkle2018social} to design the role of the robot with the
+different stakeholders (nurses, doctors, parents, children), we will
+experimentally investigate how a social robot can support hospitalised children
+with long-term conditions. The robot's role will revolve around facilitating
+social interactions between possibly socially isolated children, by fostering
+playful interaction amongst children, within the ward.
 
-\textbf{Specific resources} this task will take place at the Bristol Children
-Hospital. Several preparatory meetings already took place with the head of the
-hospital education service J. Bowyer, who will support the project, giving me
-access to two of the long-term conditions wards for the duration of the studies.
+\textbf{Specific resources:} Several preparatory meetings already took place
+with the head of the hospital education service J. Bowyer, who will support the
+project, granting access to the long-term conditions ward, and sponsoring the
+project through the hospital-specific ethics process.
 
 
-\subsection{Capacity of the Principal Investigator to deliver on the work programme}
+\section{Capacity of the Principal Investigator to deliver on the work programme}
 
 The project's ambitious scientific and technical goals are expected to deliver
 major scientific, societal and technical impact, that extends beyond the end of
 the fellowship. At the end of the fellowship, the PI is expected to be a
 world-leader in the emerging field of socially-driven, responsible autonomous
-service \& companion robots, building up the European capacity in this critical
+robots, building up the European capacity in this critical
 field, that will have high societal and economical impact on several key sectors
 like assistive technologies, entrainment, advanced manufacturing.
 
-Pr. Lemaignan is in a unique position to deliver on the \project work plan.  He
+Pr. Lemaignan is in a unique position to deliver on the \project work plan. He
 has already established international recognition in human-robot interaction and
 has likewise demonstrated strong leadership by leading research teams in three
 different institutions (see Sections B1.b and B1.c below). Importantly, as
@@ -796,23 +752,23 @@ has a excellent grasp of the technical feasibility of the proposed work.
 
 \begin{table}[h]
     \centering
+    \caption{\small PI's domains of expertise relevant to the \project project}
     \begin{tabular}{rp{0.6\linewidth}}
         \toprule
         %\bf Expertise domain                  & \bf Corresponding publications by PI          \\
         %\midrule
         \textbf{Psycho-social underpinnings of HRI} \\  
-        anthropomorphism & \small dynamics of
-        anthropomorphism~\cite{lemaignan2014dynamics}, cognitive correlates~\cite{lemaignan2014cognitive} \\
-        trust, engagement & \small \cite{flook2019impact,lemaignan2015youre,fink2014which} \\
+        human factors & \small anthropomorphism~\cite{lemaignan2014dynamics}, cognitive
+        correlates~\cite{lemaignan2014cognitive}, social influence~\cite{winkle2019effective} \\
+        trust, engagement, social presence & \small \cite{flook2019impact,lemaignan2015youre,fink2014which,irfan2018social} \\
         theory of mind & \small perspective taking~\cite{ros2010which, warnier2012when}, social mutual modelling~\cite{lemaignan2015mutual,dillenbourg2016symmetry} \\
-        social influence & \small persuasion~\cite{winkle2019effective} \\
         \midrule
         \textbf{Socio-cognitive architectures} \\
         architecture design & \small \cite{lemaignan2017artificial, baxter2016cognitive,lemaignan2014challenges,lallee2012towards, mallet2010genom3} \\
         knowledge representation & \small
         ontologies~\cite{lemaignan2010oro, lemaignan2013explicit} \\    
         spatio-temporal modelling & \small object
-        detection~\cite{wallbridge2017qualitative}, \newline physics-aware situation
+        detection~\cite{wallbridge2017qualitative}, physics-aware situation
         assessment~\cite{lemaignan2018underworlds,sallami2019simulation} \\
         \midrule
         \textbf{Social signal processing}\\
@@ -831,7 +787,6 @@ has a excellent grasp of the technical feasibility of the proposed work.
         %Robot hardware design for interaction & \small \cite{ozgur2017cellulo, hostettler2016realtime} \\
         \bottomrule
     \end{tabular}
-    \caption{\small PI's domains of expertise relevant to the \project project}
     \label{pi-expertise}
 \end{table}
 
@@ -1357,6 +1312,13 @@ it fundamentally originate in the human her/himself~\cite{fink}.
 
 \subsubsection{The limits of real-world social robotics}
 
+In a field more closely related to child-robot interaction, the large review of
+research in robotics for education published by Belpaeme et al. in
+2018~\cite{belpaeme2018social} points to the major shortcomings that prevent
+further development of social robots in educative settings: the need for a correct
+interpretation of the social environment; the difficulty of action selection;
+the difficulty of pacing generated behaviours.
+
 \TODO{rephrase section}
 
 Social robots are a disruptive technology, poised to have a profound impact on
@@ -1488,8 +1450,10 @@ tighty connects to the issue of the repetitiveness of the robots' behaviours.
 
 ~\cite{dereshev2019longterm}
 
-\subsubsection{Social robotics and developmental pathopsychology}
+\subsubsection{Social robotics and vulnerable children}
 
+Using activity switching to support long term engagement with diabetic children~\cite{coninx2016towards}
+Long-term engagement in a paediatric ward~\cite{baxter2011long}
 
 Robotics and autism~\cite{pennisi2016autism}
 
@@ -2520,7 +2484,7 @@ behaviours, guaranteeing a level of behavioural transparency for the end-users.
 
 \textbf{T3.3 -- Integrating a socially-driven architecture for long-term interaction} The
 socio-cognitive architecture of \project robots builds from the principles (the
-`why's?') identified in T1.3, and relies on a combination of socially-driven
+`why's?') identified in T1.2, and relies on a combination of socially-driven
 intrinsic motivation (a \emph{social teleology}, T3.1), and human-in-the-loop machine
 learning (T3.2) to progressively learn an social policy enabling long-term
 autonomy. This task focuses on `bringing the pieces together' in a principled
@@ -2565,7 +2529,7 @@ question of social behaviour \emph{generation}: how to create natural
 behaviours, engaging over a sustained period of time (eg not simply picking
 scripted behaviours from a library, that are rapidly perceived as repetitive).
 
-Using cloud-based speech recognition, the robots will be able to understand and
+Using on-board speech recognition (Mozilla DeepSpeech), the robots will be able to understand and
 record the textual transcription of the what the end-users say (in WP5, mostly
 children). The robots themselves are however purposefully designed \emph{not} to
 speak, using instead non-verbal communication mechanisms (non-verbal utterances
@@ -2578,6 +2542,9 @@ generate the behaviours, and in term of the nature of the non-verbal behaviours.
 
 
 \subsection{T4.1 -- Behavioural baseline}
+
+
+Using activity switching to support long term engagement with diabetic children~\cite{coninx2016towards}
 
 T4.1 establishes a baseline for behaviour
 generation, by surveying and implementing the current state of the art. In
