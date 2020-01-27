@@ -51,6 +51,7 @@
         link/.style={-latex, line width=1.5pt, linkred},
         link label font=\scriptsize\bfseries,
         link label node/.append style={below left=-2pt and 0pt,
+        milestone/.append style={circle},
         milestone inline label node/.append style={left=5mm}}
     ]{2021-01}{2025-12}
     
@@ -112,9 +113,15 @@
         %\ganttlink[link type=f-s]{WBS1B}{WBS1C}
         %\ganttlink[link type=f-f,link label node/.append style=left]{WBS1C}{WBS1D}
 
-        %\ganttmilestone[inline]{M1 WeTheCurious}{2021-12}
-        %\ganttmilestone[inline]{M2 SEN school}{2022-12}
-        %\ganttmilestone[inline]{M2 Hospital}{2024-06}
+        \ganttmilestone{\bf\sc Integration sprints}{2021-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2021-11}
+        \ganttmilestone{}{2022-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2022-11}
+        \ganttmilestone{}{2023-06}
+        \ganttmilestone{}{2023-12}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2024-05}
+        \ganttmilestone{}{2024-12}
+
 
         % separate years
         \ganttvrule[vrule/.append style={gray, dotted, thin}]{}{2021-12}
