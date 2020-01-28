@@ -211,28 +211,20 @@ real-world, complex scenarios}
 
 %\textbf{B1.a. Extended Synopsis of the scientific proposal}
 
-\TODO{CREATE ETHICS ADVISORY BOARD}
-\TODO{If you appoint an ethics adviser/advisory board, it is important that they are:
-- external to the project and to the host institution
-- totally independent and
-- free from any conflict of interest.
-    You must provide:
-- the name and contact information for persons suggested
-- the terms of reference for their involvement and the deliverables expected
-- their declarations of no conflict of interest.}
+%\TODO{CREATE ETHICS ADVISORY BOARD}
+%\TODO{If you appoint an ethics adviser/advisory board, it is important that they are:
+%- external to the project and to the host institution
+%- totally independent and
+%- free from any conflict of interest.
+%    You must provide:
+%- the name and contact information for persons suggested
+%- the terms of reference for their involvement and the deliverables expected
+%- their declarations of no conflict of interest.}
 
 
-\TODO{impact/outcomes? -> explicitely state the high risk/high gain nature of
-the project}
+%\TODO{make sure everything in B1 is strongly grounded in litt}
 
-\TODO{discuss r-HHI more: what does it really mean to use a robot to support
-HHI? link to responsible AI?}
-
-\TODO{make sure everything in B1 is strongly grounded in litt}
-
-\TODO{ensure the ethics side of things is solid}
-
-\TODO{Notes papa:}
+%\TODO{Notes papa:}
 %\begin{itemize}
 %    \item poser la question de la plus-value du robot social
 %    \item presupposé: le robot peut faciliter les relations humaines -> donner
@@ -1292,39 +1284,14 @@ objectives; B2.b ~7 pages on WPs + 2 pages on risk assessment}
 \section{State of the art: real-world social robots and impact on the
 society}
 
+\TODO{rewrite section, mostly borrowed from~\cite{tulli2019great}}
 
-\subsection{Psycho-social underpinnings of social robotics}
-
-Developing a conceptual framework for \emph{robot-supported human-human
-interactions} implies a deep understanding of the psycho-social mechanisms at
-work in human-human interactions, and in human-robot interactions.
-
-Anthropomorphism is a psychological mechanism by which a human
-ascribe human traits to non-human artefacts (here, robots): while the
-robot appearance and behaviour can elicit or reinforce these ascription,
-it fundamentally originate in the human her/himself~\cite{fink}.
-
-
-
-
-
-\subsection{state-of-the-art in social robotics, and the `real-world, long-term
-engagement wall'}
-
-In a field more closely related to child-robot interaction, the large review of
-research in robotics for education published by Belpaeme et al. in
-2018~\cite{belpaeme2018social} points to the major shortcomings that prevent
-further development of social robots in educative settings: the need for a correct
-interpretation of the social environment; the difficulty of action selection;
-the difficulty of pacing generated behaviours.
-
-\TODO{rephrase section}
-
-Social robots are a disruptive technology, poised to have a profound impact on
-business, society, and the global economy~\cite{williams2020social}. A recent report from the United
-Nations about the the impact of the technological revolution on labour markets
+Social robotics is a disruptive field, with a profound impact on
+society and economy~\cite{williams2020social}. A recent report from the United
+Nations about the impact of the technological revolution on labour markets
 stated that AI and robotics are expected to radically change the labor market
-world-wide destroying some job categories and creating others [32]. The impact
+world-wide destroying some job categories and creating
+others~\cite{bruckner2017frontier}. The impact
 of AI applications and manufacturing robots on economies and labor markets is
 already tangible. Yet, this is not the case for social robots despite the fact that
 this technology is expected to have a significant impact on different application
@@ -1345,24 +1312,25 @@ came to the market. The same end has been encountered by Anki, a robotics and
 artificial intelligence startup founded by three graduated students from
 Carnegie Mellon University.
 
-The failures of companies like Jibo, Kuri, Willow Garage and Anki are examples
-that bring some values to our reflection. Consumer robots may not be for
-general-purpose, as a matter of fact the majority of robotics companies who
-succeeds, design and build robots are meant for specific tasks: autonomous
+The failures of companies like Jibo, Kuri, Willow Garage and Anki illustrate the
+complexity of bringing social robot into real-world applications with sustained
+engagement. The scifi-inspired general-purpose robot companion has not realised
+yet, and successful robots are indeed very much task-specific: autonomous
 cleaning devices (e.g., iRobot Corporation, Samsung Electronics, Neato Robotics,
-LG Electronics) surgical robots (e.g., Intuitive Surgical, MAKO Surgical
+LG Electronics), surgical robots (e.g., Intuitive Surgical, MAKO Surgical
 Corporation), drones (e.g., Parrot SA, 3D Robotics, D-Jing Innovations Science
-and Technology) and toys (e.g., Hasbro, WowWee Group Limited).  Examples of
-successful commercial social robots are robotic pets developed in largest public
-research organization and companies, such as Paro Therapeutic Robot (AIST), PLEO
-(Innvo Labs established by Jetta Corporation), AIBO (Sony Corporation), Keepon
-(BeatBots), and iCat (Philips).  Other examples can be found in the context of
-smart home assistants; Mykie robot is a side project of BOSCH connected to an
-IoT ecosystem. The robot is designed to support users while they cook providing
-assistance for recipes and stock market prices. Mykie robot is activated and
-controlled by Amazon’s Alexa, conversational virtual agents that nowadays
-dominates the market of smart homes devices~\cite{purington2017alexa,
-sciuto2018hey}.
+and Technology) and toys (e.g., Hasbro, WowWee Group Limited).
+
+Examples of successful commercial social robots are robotic pets developed in
+largest public research organization and companies, such as Paro Therapeutic
+Robot (AIST), PLEO (Innvo Labs established by Jetta Corporation), AIBO (Sony
+Corporation), Keepon (BeatBots), and iCat (Philips).  Other examples can be
+found in the context of smart home assistants; Mykie robot is a side project of
+BOSCH connected to an IoT ecosystem. The robot is designed to support users
+while they cook providing assistance for recipes and stock market prices. Mykie
+robot is activated and controlled by Amazon's Alexa, conversational virtual
+agents that nowadays dominates the market of smart homes
+devices~\cite{purington2017alexa, sciuto2018hey}.
 
 Having social capabilities embedded in robotic systems provide an additional
 emotional grip and more fluid interaction with humans, but is not enough for
@@ -1378,7 +1346,6 @@ surviving against competitors breakthrough technologies and new customer
 demands. The paradoxes encountered by the research and industry involve three
 main actors: final users, organizations (companies) and researchers.
 
-~\cite{tulli2019great}
 ~\cite{hoffman2019anki}
 
 One example of a small, rugged robot designed for intensive use in school
@@ -1425,6 +1392,16 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
 %\end{figure}
 
 
+
+Looking specifically at human-sized mobile manipulators with advanced social
+features, the choices of robotic platforms are limited.
+Table~\ref{robot-comparison} compares the two leading mobile social robots
+available on the market today, along with the new R1 platform developed by the
+Italian Institute of Technology. While not yet on the market, the IIT has
+offered early access to the platform for this project. Note that the Fetch
+Mobile Manipulator has been omitted, but is functionally very similar to the PAL
+TiaGo.
+
 \begin{table}[]
     \caption{Comparison of IIT R1 robot with PAL TiaGo and Softbank Pepper. R1 has been chosen for \project
     for being the only mobile dual manipulator with advanced social interaction
@@ -1449,7 +1426,7 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
     \label{robot-comparison}
 \end{table}
 
-\subsection{Sustaining long-term interactions}
+\paragraph{Sustaining long-term interactions}
 
 In his analyse of why many commercial projects around social robotics failed,
 Hoffman cites the lack of long-term acceptance as one major
@@ -1487,7 +1464,22 @@ need to represent and reflect on someone else representations (and not only
 perceptions), and they are not addressed by today's research on social robots.
 
 
-\subsection{Conclusion: why long-term social interaction is beyond-state-of-the-art}
+\subsection{Long-term social engagement is beyond-state-of-the-art}
+
+As a researcher who has been working for the last 12 years in the field of
+human-robot interaction (and child-robot interaction in particular), I have been
+a direct witness -- by being one of the architects -- of the crossing of a
+critical milestone: the emergence of \textbf{long-term social interactions}
+between robots and humans~\cite{kunze2018artificial,leite2013social}, with a
+number of studies involving social robots deployed in
+real-world settings (schools~\cite{westlund2017measuring, lemaignan2016learning}, care
+centres~\cite{hawes2017strands}) over relatively long periods of time (up to 2
+or 3 months at a time). Even though these robots are rarely fully autonomous,
+they do already show high levels of autonomy~\cite{senft2019teaching}, with full
+autonomy in sight~\cite{hawes2017strands} for simple tasks.
+
+However, the question of the long-term \emph{social engagement} is
+open.\TODO{finish that}
 
 
 
@@ -1501,6 +1493,12 @@ Some guidelines:
 
 ~\cite{baraka2019extended}
 
+In a field more closely related to child-robot interaction, the large review of
+research in robotics for education published by Belpaeme et al. in
+2018~\cite{belpaeme2018social} points to the major shortcomings that prevent
+further development of social robots in educative settings: the need for a correct
+interpretation of the social environment; the difficulty of action selection;
+the difficulty of pacing generated behaviours.
 
 
 
@@ -1514,7 +1512,7 @@ Some guidelines:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{The long-term vision: robot-supported human-human interactions}
+\section{\project objectives: Responsible robots for long-term social engagement}
 
 %\begin{figure}
 %    \centering
@@ -1538,88 +1536,115 @@ Some guidelines:
 %\end{figure}
 %
 
-\project is a project that aims at helping to build strong human
-relationships with the help of technology.
+Over the 5 years of the \project project, I will design and deliver a ground-breaking
+embodied AI for socially intelligent robots, with long-term social utility
+and demonstrated acceptance in the field.
 
-The core idea of the project is to build small companion robots whose
-aim is to facilitate human-human interactions. We want to develop these
-robots with a particular application in mind: supporting the social and
-cultural integration of vulnerable children in a foreign country, and in
-particular, migrant children who might lack the otherwise needed support
-(shared culture; already well integrated relatives) for a successful
-integration.
+This breakthrough is made possible by a combination of novel methodologies and
+the principled integration of complex socio-cognitive capabilities:
+
+\begin{itemize}
+        \item crowd-sourced social interaction patterns;
+        \item `public-in-the-loop' machine learning;
+        \item integration of the robot's disparate perceptions into a novel
+            spatio-temporal and social model of the robot's environment;
+        \item novel, non-repetitive, social behaviour generation based on
+            generative neural networks;
+        \item and finally, an integrative cognitive architecture, driven by
+            long-term social goals.
+\end{itemize}
+
+In addition, I will deliver the conceptual and ethical framework required to
+further support the public debate and policy making process around social
+robots, and concretely demonstrate lifescale applications of these robots in
+two, one-year-long demonstrations in high impact, socially sensitive environments.
+
+This objective is underpinned by two research hypotheses: (\textbf{H1}) for
+end-users to ascribe social utility and engage with the robot over long periods
+of time (months, years), the robot has to have its own long-term internal
+motivation to be socially helpful -- a \emph{social teleology}. (\textbf{H2})
+Additionally, long-term acceptance requires the genuine involvement of end-users
+at every step of the design process, so that they take \emph{ownership} of the
+technology. We further hypothesise that human-in-the-loop machine learning is an
+effective way of generating ownership, by enabling the design of robot
+behaviours that genuinely originate from the end-users, and we therefore suggest
+that traditional human-in-the-loop machine learning could and should be extended
+into `public-in-the-loop' machine learning, a new methodology to train a robot
+AI at scale, involving a large range of stakeholders and end-users, in different
+interaction situations.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{The case for robot-supported human-human interactions}
-
-This change of paradigm (rHHI) will have far reaching impact on the place that
-we collectively assign to social robots in the society; it will help to
-structure the public debate by providing the framework to look at human-robot
-interactions in term of their net social utility.  As such, \textbf{the first
-outcome of \project will be researching, defining and implementing the
-conceptual framework that we need to ensure trustworthy and socially responsible
-robots in our societies}.
-
-Indeed, in a time where robots are on the verge of becoming pervasive in our
-daily human environment, can we ensure 'by design' that robots are to become
-powerful tools to support more and better, positive interactions \emph{between
-the people themselves}, and build a stronger, more cohesive society? Beyond
-Human-Computer Interaction (HCI) and Human-Robot Interaction (HRI), \project is
-a forward-looking, ground-breaking project that aims at establishing
-\textbf{Robot-supported Human-Human Interactions (r-HHI)} as the next step
-toward a Responsible AI: \textbf{the scientific investigation of how social
-robots can create, shape and support strong, sustained, positive
-\emph{human-human} relationships}.
-
-As a researcher who has been working for the last 12 years in the field of
-human-robot interaction (and child-robot interaction in particular), I have been
-a direct witness -- by being one of the architects -- of the crossing of a
-critical milestone: the emergence of \textbf{long-term social interactions}
-between robots and humans. Over the last two years in particular, we observe an
-explosion of the number of studies involving social robots, deployed in
-real-world settings (schools, care centres) over relatively long periods of time
-(up to 2 or 3 months at a time)~\cite{kunze2018artificial,leite2013social}. Even
-though these robots are rarely fully autonomous, they do already show high
-levels of autonomy~\cite{senft2019teaching}, with full autonomy in
-sight~\cite{hawes2017strands}.
-
-Due to the complex interplay between the socio-psychological determinants of the
-interactions, the technical implementation, and the multiple ethical mechanisms
-that have to be built-in the system, it is difficult to build one coherent and
-consistent perspective on the whole question. Indeed, the conceptual,
-intellectual framework emcompassing both the internal cognitive mechanisms
-required by socially intelligent robots, as well as their role and impact in the
-society, only exists in fragmented, disconnected pieces~\cite{citeneeded}.
-
-
-The lack of such a proper conceptual framing is a critical issue: for robots to
-have a positive impact on the society, with strict ethical and privacy-related
-safeguarding, it is urgent that the wider academic and intellectual communities,
-beyond technologists, embrace this question and build up the debate on the
-acceptability of robots in our society. And \textbf{this also calls for a major
-re-thinking of the traditional paradigm of Human-Robot Interaction}.
-Tradionally, individual cognitive functions (like natural language processing,
-emotion recognition, proxemics-aware navigation) are implemented in robots, with
-the ill-supported assumption that 'the more available functions, the more
-socially-capable the robot'. This assumption is questionable, and, at any rate,
-does not address the 'why': why does the robot decides to do what it does? What
-drives the behaviour of the robot? The case for \emph{teleological} (ie
-goal-driven) robotic architectures has been made in the
-past~\cite{wrede2012towards}, but only effectively realised for relatively
-simple cognitive systems (like curiosity-driven robot
-animals~\cite{oudeyer2005playground} or motor babbling in infant-like
-robots~\cite{forestier2017unified}). However, socially-driven robots,
-participating in complex interactions with humans, have been barely
-investigated. We need to create a new social purpose, a new social teleology to
-drive the development of social robots.  Indeed, \textbf{being socially-driven
-to do 'good' is essential in ensuring trustworthy, socially responsible robots}.
-Nutrured by decades of research in understanding human social cognition and its
-social motivations, one of the key purpose of \project is to \textbf{research
-and build a principled and socially-driven cognitive architecture} for
-tomorrow's social robots. This socially-driven, teleological architecture,
-intrinsically designed to \textbf{support stronger, positive human-human
-interactions} is what underpins the concept of \emph{robot-supported human-human
-interactions}.
+%\subsection{The case for robot-supported human-human interactions}
+%
+%This change of paradigm (rHHI) will have far reaching impact on the place that
+%we collectively assign to social robots in the society; it will help to
+%structure the public debate by providing the framework to look at human-robot
+%interactions in term of their net social utility.  As such, \textbf{the first
+%outcome of \project will be researching, defining and implementing the
+%conceptual framework that we need to ensure trustworthy and socially responsible
+%robots in our societies}.
+%
+%Indeed, in a time where robots are on the verge of becoming pervasive in our
+%daily human environment, can we ensure 'by design' that robots are to become
+%powerful tools to support more and better, positive interactions \emph{between
+%the people themselves}, and build a stronger, more cohesive society? Beyond
+%Human-Computer Interaction (HCI) and Human-Robot Interaction (HRI), \project is
+%a forward-looking, ground-breaking project that aims at establishing
+%\textbf{Robot-supported Human-Human Interactions (r-HHI)} as the next step
+%toward a Responsible AI: \textbf{the scientific investigation of how social
+%robots can create, shape and support strong, sustained, positive
+%\emph{human-human} relationships}.
+%
+%As a researcher who has been working for the last 12 years in the field of
+%human-robot interaction (and child-robot interaction in particular), I have been
+%a direct witness -- by being one of the architects -- of the crossing of a
+%critical milestone: the emergence of \textbf{long-term social interactions}
+%between robots and humans. Over the last two years in particular, we observe an
+%explosion of the number of studies involving social robots, deployed in
+%real-world settings (schools, care centres) over relatively long periods of time
+%(up to 2 or 3 months at a time)~\cite{kunze2018artificial,leite2013social}. Even
+%though these robots are rarely fully autonomous, they do already show high
+%levels of autonomy~\cite{senft2019teaching}, with full autonomy in
+%sight~\cite{hawes2017strands}.
+%
+%Due to the complex interplay between the socio-psychological determinants of the
+%interactions, the technical implementation, and the multiple ethical mechanisms
+%that have to be built-in the system, it is difficult to build one coherent and
+%consistent perspective on the whole question. Indeed, the conceptual,
+%intellectual framework emcompassing both the internal cognitive mechanisms
+%required by socially intelligent robots, as well as their role and impact in the
+%society, only exists in fragmented, disconnected pieces~\cite{citeneeded}.
+%
+%
+%The lack of such a proper conceptual framing is a critical issue: for robots to
+%have a positive impact on the society, with strict ethical and privacy-related
+%safeguarding, it is urgent that the wider academic and intellectual communities,
+%beyond technologists, embrace this question and build up the debate on the
+%acceptability of robots in our society. And \textbf{this also calls for a major
+%re-thinking of the traditional paradigm of Human-Robot Interaction}.
+%Tradionally, individual cognitive functions (like natural language processing,
+%emotion recognition, proxemics-aware navigation) are implemented in robots, with
+%the ill-supported assumption that 'the more available functions, the more
+%socially-capable the robot'. This assumption is questionable, and, at any rate,
+%does not address the 'why': why does the robot decides to do what it does? What
+%drives the behaviour of the robot? The case for \emph{teleological} (ie
+%goal-driven) robotic architectures has been made in the
+%past~\cite{wrede2012towards}, but only effectively realised for relatively
+%simple cognitive systems (like curiosity-driven robot
+%animals~\cite{oudeyer2005playground} or motor babbling in infant-like
+%robots~\cite{forestier2017unified}). However, socially-driven robots,
+%participating in complex interactions with humans, have been barely
+%investigated. We need to create a new social purpose, a new social teleology to
+%drive the development of social robots.  Indeed, \textbf{being socially-driven
+%to do 'good' is essential in ensuring trustworthy, socially responsible robots}.
+%Nutrured by decades of research in understanding human social cognition and its
+%social motivations, one of the key purpose of \project is to \textbf{research
+%and build a principled and socially-driven cognitive architecture} for
+%tomorrow's social robots. This socially-driven, teleological architecture,
+%intrinsically designed to \textbf{support stronger, positive human-human
+%interactions} is what underpins the concept of \emph{robot-supported human-human
+%interactions}.
 
 \subsection{Key scientific challenges and research questions}
 
@@ -1776,15 +1801,15 @@ fully justified by the scientific added value they bring to the project.}
 \section{Workpackages overview and interrelations}\label{workpackage-interrelations}
 
 
-These research questions are addressed across five work-packages: \textbf{WP1}
-is dedicated to the conceptual framing of the project (R1) and the
-identification of interaction principles; \textbf{WP2} extracts from these
-principles the set of requirements in term of socio-cognitive capabilities for
-the robot (R3), and implement them; in parallel to WP2, \textbf{WP4} transposes
-the conceptual framework of WP1 into a principled cognitive architecture and
-integrates together the cognitive functions of WP2 and WP3 (R2); \textbf{WP3}
-looks at how social robots can generate effective social interventions to exert
-positive social influence (R3); and \textbf{WP5} organises the experimental
+The four research questions previously listed are addressed across five
+work-packages: \textbf{WP1} is dedicated to the conceptual framing of the
+project (R1) and the identification of interaction principles; \textbf{WP2}
+extracts from these principles the set of requirements in term of
+socio-cognitive capabilities for the robot (R3), and implement them; in parallel
+to WP2,  \textbf{WP3} looks at how social robots can generate congruent social
+behaviours (R3); \textbf{WP4} transposes the conceptual framework of WP1 into a
+principled cognitive architecture and integrates together the cognitive
+functions of WP2 and WP3 (R2);and \textbf{WP5} organises the experimental
 fieldwork that demonstrates the \project approach in ambitious and complementary
 real-world situations (R4).
 
@@ -1908,9 +1933,6 @@ particular importance, and will be extended to two weeks.
 
 \section{WP1: \textbf{\wpOne}}
 
-\noindent\framebox[\linewidth]{Timeframe: \textbf{Y1-Y3}; one senior post-doc
-with background in sociology of technology}
-
 The basic ambition of \project is to create a conceptual framework around social
 robots in the human society, by re-framing the traditionally accepted idea of
 \emph{human-robot interaction} into the human-centered idea of
@@ -1918,12 +1940,12 @@ robots in the human society, by re-framing the traditionally accepted idea of
 from the perspective of how it can \emph{support} humans, and in particular,
 support stronger, positive interactions between humans.
 
-\textbf{T1.1 -- Conceptual framing of r-HHI} The first task in WP1 is to research and
-define such a framework that will provide the (currently missing) conceptual
-frame around questions like: what role for social robots? where to set the
-boundaries of artificial social interactions? what does 'ethical-by-design',
-'responsible-by-design' might mean in the context of social human-robot
-interactions? 
+\textbf{T1.1 -- Conceptual framing of r-HHI} The first task in WP1 is to
+research and define such a framework that will provide the (currently missing)
+conceptual frame around questions like: what role for social robots? where to
+set the boundaries of artificial social interactions? what does
+'ethical-by-design', 'responsible-by-design' might mean in the context of social
+human-robot interactions? 
 
 In order to anchor T1.2 into the reality and complexity of human social
 interactions, and to also involve the civil society in this framing process, the
@@ -1994,9 +2016,6 @@ for the socio-cognitive capabilities and architecture developed in WP2 and WP4.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{WP2: \textbf{\wpTwo}}
-
-\noindent\framebox[\linewidth]{Timeframe: \textbf{Y1-Y4}; one post-doc in social
-signal processing/machine learning/cognitive modelling}
 
 In WP2, the project addresses the key scientific and technical pre-requisites to
 effectively deliver WP4's architecture:  the scientific understanding and
@@ -2140,8 +2159,6 @@ children, and would consequently require \emph{second-order},
 
 \section{WP3: \textbf{\wpThree}} 
 
-\noindent\framebox[\linewidth]{Timeframe: \textbf{Y2-Y5}; one post-doc in HRI/machine learning/learning from
-demonstration}
 
 Mirroring WP2's focus on understanding the social interactions, WP3 addresses the
 question of social behaviour \emph{generation}: how to create natural
@@ -2263,7 +2280,7 @@ and/or the lack of a `real need' to justify their price point. The
 \item
   Working with creative professionals who excel at storytelling and
   emotional engagement to overcome the problems in sustaining
-  engagement, as proposed by Hoffman\footnote{\url{https://spectrum.ieee.org/automaton/robotics/home-robots/anki-jibo-and-kuri-what-we-can-learn-from-social-robotics-failures}};
+        engagement, as proposed by Hoffman~\cite{hoffman2019anki}
 \item
   Blending these two sources of inspiration using a radically novel
   combination of immersive teleoperation and machine learning.
@@ -2393,11 +2410,7 @@ at the host institution.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{WP4: \textbf{\wpFour}}
 
-\noindent\framebox[\linewidth]{Timeframe: \textbf{Y1-Y4}; one senior post-doc in
-cognitive robotics; one PhD student}
-
-
-This part of the programme is the technical core of the project: we will create a
+WP4 is the technical core of the project: we will create a
 novel socio-cognitive architecture for the robots, bringing together advanced
 perception of the human social dynamics, intrinsic motivation to support human
 interactions, and human-in-the-loop machine learning to create transparent,
@@ -2625,13 +2638,6 @@ previous experience (here, the human-taught policy).
 
 \section{WP5: \textbf{\wpFive}}
 
-\noindent\framebox[\linewidth]{Timeframe: \textbf{Y2-Y5}; one post-doc (shared
-with WP4)}
-
-
-
-
-
 Critically, the scientific investigation of these questions (\emph{conceptual
 framing of robot-supported human-human interaction}, \emph{socially-driven
 cognitive architecture},  \emph{online social situation assessment and social
@@ -2677,24 +2683,24 @@ relationships.
 
 \TODO{probably useful to give specific examples of interventions}
 
+\TODO{Evaluation methods quantitative/qualitative; Metrics like Inclusion of Other in Self task
+and a Social-Relational Interview~\cite{westlund2017measuring}}
 
 \subsection{Application 1: Social robots in SEN schools}
 
-Can a socially assistive robot effectively support the development (learning?),
-social interactions and well-being of children with a long-term mental
-condition? Our project aim is an investigation of this question: how can a
-social robot integrate into the eco-system of a SEN (Special Educational Needs)
-school (specifically, the Mendip School, which welcomes pupils with ASD
-(Autistic Spectrum Disorder), and effectively support the day-to-day work of the
-school staff to support the development, learning and well-being of the
-children. This project is naturally interdisciplinary as it requires expertise
-from mental health/special needs education, classroom design and social
-robotics. 
 
-The main questions we seek to investigate are: What are the (social \& spatial)
-underpinnings of the successful integration of a social robot in the school
-ecosystem? Can ambitious co-design with the end-users (teachers) deliver a 'net
-gain' for the learning, social interaction and well-being of the students? 
+The first study investigate whether a socially assistive robot can effectively support the development (learning?),
+social interactions and well-being of children with a long-term mental
+condition. This study will take place within the network of
+Bristol-based SEN schools, with which I already have on-going collaborations
+(through a project on child-robot interaction for children with autism at Bristol's Mendip School).
+
+
+Specifically, the two main questions we seek to investigate are: What are the
+(social \& spatial) underpinnings of the successful integration of a social
+robot in the school ecosystem? Can ambitious co-design with the end-users
+(teachers) deliver a 'net gain' for the learning, social interaction and
+well-being of the students? 
 
 
 The core of the project consists in deploying the R1 social robot in a
@@ -2705,38 +2711,37 @@ while effectively supporting teachers and students in their learning.
 The project will adopt a strong participatory design approach, inspired by
 Patient and Public Involvement methodologies (PPI~\cite{boivin2010patient}), with 2 one-day
 focus groups organised with the school teachers; and one evening focus group with the
-school parents, prior to the school study (Jun./Jul. 2020). During the first
-workshop, the teachers will be introduced to the robot capabilities with
-examples of robot-supported teaching activities, and the robot's visual
-programming interface will be introduced. We will also conduct group discussions
-on how the robot can best be integrated in the daily school routine and
-classroom context. During the second workshop, the teachers will be invited to
-create novel activities, with the support of the research team. An evening focus
-group will be organised as well with the parents, to integrate their
-perspectives in the design of the robotic system.  Will we formally analyse the
-data from this – will it become a research paper? 
+school parents, prior to the study.
+
+%During the first
+%workshop, the teachers will be introduced to the robot capabilities with
+%examples of robot-supported teaching activities, and the robot's visual
+%programming interface will be introduced. We will also conduct group discussions
+%on how the robot can best be integrated in the daily school routine and
+%classroom context. During the second workshop, the teachers will be invited to
+%create novel activities, with the support of the research team. An evening focus
+%group will be organised as well with the parents, to integrate their
+%perspectives in the design of the robotic system.  Will we formally analyse the
+%data from this – will it become a research paper? 
 
 Following the workshops, the teacher-oriented codesign of the robot's activities
 and supervision tools (eg to start/stop/pause/resume activities) will be
-finalised and implemented by the research team (Aug./Sep.2020). 
+finalised and implemented by the research team.
 
-The school study itself will take place over 2 months (tentatively Oct./Nov.
-2020), with the robot visiting the school once a week for the whole day. During
-these visits, the robot will take part in the regular teaching and other daily
-routines of the school, and will directly interact with the children. While the
-robot's behaviours will have been co-designed with the teachers, the robot will
-be teleoperated by a member of the research team, to ensure we do not create an
-additional burden for the staff. 
+The school study itself will take place during Y3, with the robot permanently
+based at the school. During these visits, the robot will take part in the
+regular teaching and other daily routines of the school, and will directly
+interact with the children. While the robot's behaviours will have been
+co-designed with the teachers, the robot will be teleoperated by a member of the
+research team, to ensure we do not create an additional burden for the staff. 
 
-During the 'robot days', observations will be conducted by the research team,
+During selected 'observation days', observations will be conducted by the research team,
 and regular semi-structured interviews will be conducted with the teachers,
-parents, and where possible, the children themselves, to understand how the
+parents, and where possible, the children themselves (using engagement metrics
+like the Inclusion of Other in Self task
+and Social-Relational Interviews~\cite{westlund2017measuring}), to understand how the
 robot impacts the school dynamics  (both positively and potentially negatively).
-Is it appropriate/pertinent to do pre- and post- surveys of acceptance of robot? 
 
-\textbf{Specific resources} this task will take place within a network of
-Bristol-based SEN schools, with which I already have on-going collaborations
-(child-robot interaction for children with autism at Bristol's Mendip School).
 The task will be jointly supervised with local colleague and expert Dr.Nigel Newbutt,
 who has a long track record of working with special needs schools.
 
