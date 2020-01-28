@@ -1,27 +1,3 @@
-%%%%%%%%%%%%%%%%%
-%%
-%% Task dependencies
-%%
-%% Task...        depends on Task...
-%% T1.3           T1.1
-%% T1.3           T1.2
-%% T1.2           T2.2 (user interface)
-%% T3.3           T2.3
-%%
-
-\definecolor{barcolor}{RGB}{153,204,254}
-\definecolor{linkred}{RGB}{165,0,33}
-%\renewcommand\sfdefault{phv}
-%\renewcommand\mddefault{mc}
-%\renewcommand\bfdefault{bc}
-\setganttlinklabel{s-s}{START-TO-START}
-\setganttlinklabel{f-s}{}
-\setganttlinklabel{f-f}{FINISH-TO-FINISH}
-
-%\begin{sidewaysfigure}[!ht]
-\begin{figure}[!ht]
-
-%\sffamily
 \begin{ganttchart}[
         canvas/.append style={fill=none, draw=black!5, line width=.75pt},
         hgrid style/.style={draw=black!5, line width=.75pt},
@@ -46,7 +22,7 @@
         group right shift=0,
         group height=.5,
         group peaks tip position=0,
-        group label node/.append style={left=.6cm},
+        %group label node/.append style={left=.6cm},
         group progress label font=\bfseries\small,
         link/.style={-latex, line width=1.5pt, linkred},
         link label font=\scriptsize\bfseries,
@@ -61,6 +37,7 @@
         \gantttitlecalendar{year, month} \\
         %\gantttitlelist{0,5,...,60}{1} \\
         %% WP1
+        \definecolor{barcolor}{RGB}{153,204,254}
         \ganttgroup[]{WP1 \wpOneShort}{2021-01}{2023-12} \\
             \ganttbar[name=WP11]{\textbf{1.1} Conceptual framing \& ethics}{2021-01}{2023-12} \\
             \ganttbar[name=WP12prep,inline,bar/.append style={fill=gray!20}]{preparation}{2021-07}{2021-12}
@@ -84,8 +61,8 @@
         \definecolor{barcolor}{RGB}{50,220,134}
         \ganttgroup[]{WP3 \wpThreeShort}{2021-01}{2025-12} \\
             \ganttbar[name=WP31]{\textbf{3.1} Social teleology}{2023-01}{2024-12} \\
-            \ganttbar[name=WP32]{\textbf{3.2} Human-in-the-loop policy learning}{2021-07}{2025-06} \\
-            \ganttbar[name=WP33]{\textbf{3.3} Integrated cognitive architecture}{2021-01}{2025-06} \\
+            \ganttbar[name=WP32]{\textbf{3.2} Human-in-the-loop ML}{2021-07}{2025-06} \\
+            \ganttbar[name=WP33]{\textbf{3.3} Integrated cognitive arch.}{2021-01}{2025-06} \\
 
         %\ganttlink[link type=f-s]{WP12}{WP32}
 
@@ -135,6 +112,3 @@
         \ganttvrule{start @Children hospital}{2024-06}
 
 \end{ganttchart}
-
-%\end{sidewaysfigure}
-\end{figure}
