@@ -197,9 +197,9 @@
      inkscape:window-height="1328"
      id="namedview343"
      showgrid="false"
-     inkscape:zoom="0.89889846"
-     inkscape:cx="463.4184"
-     inkscape:cy="823.65275"
+     inkscape:zoom="0.44944923"
+     inkscape:cx="1518.3655"
+     inkscape:cy="588.34307"
      inkscape:window-x="0"
      inkscape:window-y="38"
      inkscape:window-maximized="1"
@@ -218,10 +218,10 @@
        transform="matrix(-0.45618827,0.88988329,0.88988329,0.45618827,1602.7599,-150.32432)">
       <path
          id="path1784"
-         d="M 498.91027,-157.56143 C 493.88413,62.26206 1201.2704,78.758721 1348.431,18.539424"
+         d="m 498.91027,-157.56143 c -1.25653,54.95587 42.01271,97.203818 109.92275,128.722132 67.91005,31.5183137 160.4609,52.306995 257.76759,64.34434 97.30669,12.037345 162.93869,8.360383 259.72659,13.240079"
          inkscape:connector-curvature="0"
          style="fill:none;fill-rule:evenodd;stroke:#d3d7cf;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
-         sodipodi:nodetypes="cc" />
+         sodipodi:nodetypes="cssc" />
     </g>
     <g
        transform="matrix(-0.45618827,0.88988329,0.88988329,0.45618827,1602.7599,-150.32432)"
@@ -230,12 +230,12 @@
          sodipodi:nodetypes="csccc"
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
          inkscape:connector-curvature="0"
-         d="m 498.91027,-157.56143 c -1.25653,54.95587 42.01271,97.203818 109.92275,128.722132 67.91005,31.5183137 63.48481,23.2205332 83.71843,30.7510032 M 1125.402,48.557318 c 86.9334,-3.487035 186.2389,-14.96307 223.029,-30.017894"
+         d="m 498.91027,-157.56143 c -1.25653,54.95587 42.01271,97.203818 109.92275,128.722132 67.91005,31.5183137 63.48481,23.2205332 83.71843,30.7510032 M 1125.402,48.557318 c 70.1575,7.29004 180.6189,-0.342232 238.2359,-8.470778"
          id="path1778" />
       <path
          style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt"
          inkscape:connector-curvature="0"
-         d="m 1347.5578,30.036537 30.9955,-23.0634152 -38.5687,-2.255907 z"
+         d="m 1363.1577,53.061285 30.9955,-23.063415 -38.5687,-2.255907 z"
          id="path1780" />
       <text
          id="text2483-3"
@@ -947,31 +947,19 @@
       </g>
       <text
          id="text1348-3-9"
-         y="484.64615"
+         y="528.64612"
          x="-335.22665"
          style="font-style:normal;font-weight:normal;font-size:31.85482597px;line-height:1.25;font-family:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79637069"
          xml:space="preserve"><tspan
-           id="tspan1150-7-7"
-           style="font-weight:bold;stroke-width:0.79637069"
-           y="484.64615"
-           x="-335.22665"
-           sodipodi:role="line">Field interactions co-design</tspan><tspan
-           id="tspan1993"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="524.46466"
-           x="-335.22665"
-           sodipodi:role="line"><tspan
-             id="tspan2303"
-             style="font-weight:bold"></tspan></tspan><tspan
-           style="font-weight:normal;stroke-width:0.79637069"
-           y="564.2832"
+           y="528.64612"
            x="-335.22665"
            sodipodi:role="line"
-           id="tspan1151"><tspan
+           id="tspan1241"><tspan
    style="font-weight:bold"
-   id="tspan1153">WP1.1 </tspan>Ethics framework</tspan><tspan
+   id="tspan1243">WP1.1 </tspan>Ethics framework</tspan><tspan
            style="font-weight:normal;stroke-width:0.79637069"
-           y="604.10175"
+           y="568.46466"
            x="-335.22665"
            sodipodi:role="line"
            id="tspan1142"><tspan
@@ -979,37 +967,48 @@
    id="tspan1144">WP1.2</tspan> @museum, </tspan><tspan
            id="tspan1999"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="643.92029"
+           y="608.2832"
            x="-335.22665"
            sodipodi:role="line">                        <tspan
    id="tspan2309"
    style="font-style:italic">with general public</tspan></tspan><tspan
            id="tspan1995"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="683.73883"
+           y="648.10175"
            x="-335.22665"
            sodipodi:role="line"><tspan
    id="tspan2305"
    style="font-weight:bold">WP5.1</tspan> @children hospital,</tspan><tspan
            id="tspan2001"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="723.55737"
+           y="687.92023"
            x="-335.22665"
            sodipodi:role="line">                        <tspan
    id="tspan2311"
    style="font-style:italic">with nurses, parents, children</tspan></tspan><tspan
            id="tspan1997"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="763.37585"
+           y="727.73877"
            x="-335.22665"
            sodipodi:role="line"><tspan
    id="tspan2307"
    style="font-weight:bold">WP5.2</tspan> @SEN schools,</tspan><tspan
            style="font-style:italic;font-weight:normal;stroke-width:0.79637069"
-           y="803.1944"
+           y="767.55731"
            x="-335.22665"
            sodipodi:role="line"
            id="tspan1351">                        with teachers, parents, children</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:31.85482597px;line-height:1.25;font-family:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79637069"
+         x="-335.22665"
+         y="484.64615"
+         id="text1166"><tspan
+           id="tspan1164"
+           sodipodi:role="line"
+           x="-335.22665"
+           y="484.64615"
+           style="font-style:normal;font-weight:bold;stroke-width:0.79637069">Field interactions co-design</tspan></text>
     </g>
     <g
        id="g1973-7"
@@ -1051,29 +1050,29 @@
        transform="matrix(-0.86167181,0.50746595,0.50746595,0.86167181,2190.7396,412.14664)">
       <path
          id="path938-6"
-         d="M 864.06795,37.146196 C 1020.4578,88.668037 1187.1946,68.41759 1334.3552,8.1982932"
+         d="M 868.67069,68.213516 C 1025.0605,119.73536 1191.7973,99.48491 1338.9579,39.265614"
          inkscape:connector-curvature="0"
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
          sodipodi:nodetypes="cc" />
       <path
          id="path940-6"
-         d="M 1332.6957,23.667801 1363.6912,0.60438623 1325.1225,-1.6515208 Z"
+         d="m 1341.2073,55.171824 30.9955,-23.063414 -38.5687,-2.255908 z"
          inkscape:connector-curvature="0"
          style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt" />
       <text
-         transform="matrix(-0.96451746,0.26401906,0.26401906,0.96451746,0,0)"
-         inkscape:transform-center-y="5.8564951"
-         inkscape:transform-center-x="6.5179346"
+         transform="matrix(-0.95390305,0.30011491,0.30011491,0.95390305,0,0)"
+         inkscape:transform-center-y="5.603997"
+         inkscape:transform-center-x="6.7453859"
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:32.25888824px;line-height:1.25;font-family:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80647236"
-         x="-1262.2681"
-         y="351.67661"
+         x="-1232.0991"
+         y="433.48712"
          id="text1810"><tspan
            sodipodi:role="line"
-           x="-1262.2681"
-           y="351.67661"
+           x="-1232.0991"
+           y="433.48712"
            style="font-weight:bold;stroke-width:0.80647236"
-           id="tspan1808">WP4</tspan></text>
+           id="tspan1808">WP3</tspan></text>
     </g>
     <g
        id="g1604">
@@ -1245,7 +1244,7 @@
              style="font-weight:bold;stroke-width:1.21705389"
              y="813.95001"
              x="326.86859"
-             sodipodi:role="line">3.2</tspan></text>
+             sodipodi:role="line">4.2</tspan></text>
         <g
            transform="translate(128.34401,-85.101487)"
            id="g2567">
@@ -1326,7 +1325,7 @@
              style="font-weight:bold;stroke-width:1.21705389"
              y="813.95001"
              x="320.83215"
-             sodipodi:role="line">3.1</tspan></text>
+             sodipodi:role="line">4.1</tspan></text>
       </g>
       <g
          transform="translate(64.615292,825.83575)"
@@ -1366,7 +1365,7 @@
              sodipodi:role="line">WP3: Cognitive Architecture</tspan></text>
       </g>
       <g
-         transform="matrix(0.66264308,0,0,0.66264308,-9.360574,555.31694)"
+         transform="matrix(0.66264308,0,0,0.66264308,-9.360574,571.31694)"
          id="g1278">
         <g
            id="g1268"
@@ -1456,23 +1455,14 @@
              x="320.83215"
              y="813.95001"
              style="font-weight:bold;stroke-width:1.21705389"
-             id="tspan1274">3.3</tspan></text>
-      </g>
-      <g
-         transform="matrix(-0.56110892,0.82774198,0.82774198,0.56110892,414.70341,-120.00101)"
-         id="g1973-3">
-        <path
-           style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt"
-           inkscape:connector-curvature="0"
-           d="m 891.59796,785.908 37.52734,9.18372 -22.84442,-31.15723 z"
-           id="path1971-7" />
+             id="tspan1274">4.3</tspan></text>
       </g>
       <g
          id="g1327"
-         transform="matrix(-0.56110892,0.82774198,0.82774198,0.56110892,723.83586,-125.18164)">
+         transform="matrix(-0.56110892,0.82774198,0.82774198,0.56110892,723.83586,-107.87563)">
         <path
            id="path1322"
-           d="m 784.42409,698.09185 114.51536,76.82942"
+           d="m 767.86925,686.86967 131.0702,88.0516"
            inkscape:connector-curvature="0"
            style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
            sodipodi:nodetypes="cc" />
@@ -1481,6 +1471,21 @@
            d="m 891.59796,785.908 37.52734,9.18372 -22.84442,-31.15723 z"
            inkscape:connector-curvature="0"
            style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt" />
+      </g>
+      <g
+         transform="matrix(-0.56110892,0.82774198,0.82774198,0.56110892,403.83586,-107.87563)"
+         id="g1252">
+        <path
+           sodipodi:nodetypes="cc"
+           style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
+           inkscape:connector-curvature="0"
+           d="m 885.40861,766.54714 13.53084,8.37413"
+           id="path1248" />
+        <path
+           style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt"
+           inkscape:connector-curvature="0"
+           d="m 891.59796,785.908 37.52734,9.18372 -22.84442,-31.15723 z"
+           id="path1250" />
       </g>
     </g>
     <g
@@ -1521,18 +1526,13 @@
            id="tspan1383"
            style="font-weight:bold;text-align:end;text-anchor:end;stroke-width:0.79637069"
            y="571.57709"
-           x="2232.3733"
-           sodipodi:role="line">WP4: Data-driven social</tspan><tspan
-           style="font-weight:bold;text-align:end;text-anchor:end;stroke-width:0.79637069"
+           x="2240.6482"
+           sodipodi:role="line">WP3: Generative </tspan><tspan
+           style="font-style:normal;font-weight:bold;text-align:end;text-anchor:end;stroke-width:0.79637069"
            y="611.39563"
            x="2232.3733"
            sodipodi:role="line"
-           id="tspan1774">behaviour generation</tspan><tspan
-           style="font-style:italic;font-weight:normal;text-align:end;text-anchor:end;stroke-width:0.79637069"
-           y="651.21417"
-           x="2232.3733"
-           sodipodi:role="line"
-           id="tspan1405" /></text>
+           id="tspan1405">social behaviours</tspan></text>
       <g
          id="g1235-4-6"
          transform="matrix(0.66264308,0,0,0.66264308,1625.7647,124.39093)">
@@ -1576,7 +1576,7 @@
              style="font-weight:bold;stroke-width:1.21705389"
              y="813.95001"
              x="320.83215"
-             sodipodi:role="line">4.2</tspan></text>
+             sodipodi:role="line">3.2</tspan></text>
         <g
            style="stroke-width:0.79860055"
            id="g1310-5-1-7-6"
@@ -1647,7 +1647,7 @@
              x="320.83215"
              y="813.95001"
              style="font-weight:bold;stroke-width:1.21705389"
-             id="tspan1703">4.3</tspan></text>
+             id="tspan1703">3.3</tspan></text>
         <g
            transform="matrix(0.66256319,0,0,0.66256319,29.602421,759.34715)"
            id="g1713"
