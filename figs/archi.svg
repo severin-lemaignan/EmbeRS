@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -197,13 +197,13 @@
      inkscape:window-height="1328"
      id="namedview343"
      showgrid="false"
-     inkscape:zoom="0.6356172"
-     inkscape:cx="834.27082"
-     inkscape:cy="621.44188"
+     inkscape:zoom="0.89889846"
+     inkscape:cx="463.4184"
+     inkscape:cy="823.65275"
      inkscape:window-x="0"
      inkscape:window-y="38"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1856"
+     inkscape:current-layer="g339"
      inkscape:snap-global="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -271,9 +271,9 @@
            style="fill-rule:evenodd;stroke:#d9d9d9;stroke-width:5.64830256;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
-         transform="matrix(0.17020836,0,0,0.15866237,665.24306,44.149462)"
+         transform="matrix(0.22218248,0,0,0.20730145,630.3878,99.597392)"
          id="g935-4"
-         style="stroke:#ffffff;stroke-width:7.69413471;stroke-miterlimit:4;stroke-dasharray:none">
+         style="stroke:#ffffff;stroke-width:5.89157104;stroke-miterlimit:4;stroke-dasharray:none">
         <clipPath
            id="clipPath929-5">
           <path
@@ -283,9 +283,10 @@
              id="path927-0" />
         </clipPath>
         <g
-           id="g1376">
+           id="g1376"
+           style="stroke-width:5.89157104">
           <path
-             style="fill:#000000;stroke:#ffffff;stroke-width:7.69413471;stroke-miterlimit:4;stroke-dasharray:none"
+             style="fill:#000000;stroke:#ffffff;stroke-width:5.89157104;stroke-miterlimit:4;stroke-dasharray:none"
              d="m 147.21141,526.35042 c -12.62757,-2.20015 -24.33534,-8.421 -33.95738,-18.04304 -7.52412,-7.52412 -12.05738,-14.7034 -15.863413,-25.12278 l -2.67921,-7.3346 v -148.5 c 0,-135.57502 0.14516,-149.02222 1.66779,-154.5 4.377673,-15.74898 10.895353,-27.33879 21.282623,-37.84501 6.88447,-6.96332 18.44576,-14.72415 26.32758,-17.67311 15.00312,-5.61339 11.95707,-5.39315 79.41516,-5.74196 l 62.69316,-0.32418 0.30684,-36.207868 0.30685,-36.20787 2.69461,-5.10744 c 3.99619,-7.57451 7.00962,-10.68544 14.004,-14.45709 5.7548,-3.103226 7.03869,-3.397971 14.80139,-3.397971 7.7627,0 9.04659,0.294745 14.80139,3.397971 6.99438,3.77165 10.00781,6.88258 14.004,14.45709 l 2.69461,5.10744 0.30685,36.20787 0.30684,36.207868 62.69316,0.32418 c 67.45809,0.34881 64.41204,0.12857 79.41516,5.74196 7.78071,2.91113 19.36842,10.65202 26.25625,17.53986 6.88784,6.88783 14.62873,18.47554 17.53986,26.25625 5.86062,15.66388 5.43414,3.67385 5.75238,161.72201 0.26073,129.48628 0.12139,145.84641 -1.30234,152.91106 -4.60713,22.8609 -19.76606,40.04476 -42.73553,48.44414 l -7.23263,2.6448 -169.5,0.14223 c -93.225,0.0782 -171.525,-0.21059 -174,-0.64181 z m 91.42885,-218.82033 c 9.02355,-4.22263 14.86119,-9.96464 19.33643,-19.01967 3.52914,-7.14073 3.73472,-8.08534 3.73472,-17.16042 0,-9.08927 -0.20173,-10.01191 -3.76588,-17.22348 -12.39413,-25.0778 -44.1359,-30.46316 -63.77833,-10.82073 -15.25992,15.25992 -15.85804,38.81421 -1.39413,54.90156 4.53042,5.03892 13.49872,10.44696 20.05608,12.09417 7.18295,1.80435 18.66821,0.57114 25.81111,-2.77143 z m 192,0 c 9.02355,-4.22263 14.86119,-9.96464 19.33643,-19.01967 3.52914,-7.14073 3.73472,-8.08534 3.73472,-17.16042 0,-9.08927 -0.20173,-10.01191 -3.76588,-17.22348 -12.39413,-25.0778 -44.1359,-30.46316 -63.77833,-10.82073 -15.25992,15.25992 -15.85804,38.81421 -1.39413,54.90156 4.53042,5.03892 13.49872,10.44696 20.05608,12.09417 7.18295,1.80435 18.66821,0.57114 25.81111,-2.77143 z M 22.649447,430.4124 c -4.76339,-1.14012 -13.34429,-6.16227 -16.07615,-9.40891 -1.35997,-1.61623 -3.68525,-5.23695 -5.16728,-8.04605 L -1.288593,407.85 v -72.5 -72.5 l 2.69461,-5.10744 c 3.99174,-7.56608 7.00501,-10.68088 14.004,-14.47585 l 6.30139,-3.41671 20.25,-0.33888 20.25,-0.33889 V 335.26112 431.35 l -18.25,-0.10236 c -10.0375,-0.0563 -19.62788,-0.43216 -21.31196,-0.83524 z M 574.21141,335.33618 v -96.16395 l 20.25,0.33889 20.25,0.33888 6.30139,3.41671 c 6.99899,3.79497 10.01226,6.90977 14.004,14.47585 l 2.69461,5.10744 v 72 72 l -2.59016,5.5 c -3.75151,7.96602 -7.17744,11.51377 -14.69518,15.21773 l -6.66185,3.28227 -19.7764,0.32506 -19.77641,0.32506 z"
              id="path931-3"
              inkscape:connector-curvature="0"
@@ -296,9 +297,9 @@
              cy="304.90094"
              cx="380.4408"
              id="path1369"
-             style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:28.23266029;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+             style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.61837959;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
           <ellipse
-             style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:28.23266029;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.61837959;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
              id="ellipse1371"
              cx="194.32106"
              cy="304.90094"
@@ -315,7 +316,7 @@
              sodipodi:cx="299.94193"
              sodipodi:type="arc"
              id="path933-6"
-             style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:7.6944108;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+             style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:5.89178276;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
         </g>
       </g>
       <g
@@ -371,13 +372,13 @@
       </g>
       <path
          id="path230"
-         d="m 615.00509,202.69843 0.52024,-34.07078 8.38763,8.64776 26.24849,-25.45895 -8.38763,-8.64776 34.07079,0.52024 -0.52024,34.07079 -8.38764,-8.64776 -26.2485,25.45895 8.38764,8.64776 z"
+         d="m 596.26263,270.85282 0.52024,-34.07078 8.38763,8.64776 26.24849,-25.45895 -8.38763,-8.64776 34.07079,0.52024 -0.52024,34.07079 -8.38764,-8.64776 -26.2485,25.45895 8.38764,8.64776 z"
          inkscape:connector-curvature="0"
          style="fill:#666666;fill-rule:evenodd" />
       <path
          style="fill:#666666;fill-rule:evenodd"
          inkscape:connector-curvature="0"
-         d="m 580.49563,118.11733 29.5096,17.03738 -3.11806,-11.63675 35.32096,-9.46422 3.11805,11.63675 17.03739,-29.50961 -29.50961,-17.037383 3.11806,11.636756 -35.32096,9.464217 -3.11806,-11.636743 z"
+         d="m 579.75837,99.441911 19.31065,28.074679 2.19101,-11.84634 35.95711,6.65036 -2.19101,11.84634 28.07469,-19.31065 -19.31065,-28.074691 -2.19101,11.846344 -35.95712,-6.650362 2.19101,-11.846332 z"
          id="path1327" />
       <g
          transform="matrix(1.0830026,0,0,1.0830026,300.99406,-699.06736)"
@@ -404,7 +405,7 @@
            style="fill:#000000;stroke:#ffffff;stroke-width:0.86675823;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
-         transform="matrix(0.1514511,-0.56798709,-0.56798709,-0.1514511,975.07206,577.15079)"
+         transform="matrix(-0.14411945,-0.56989153,-0.56989153,0.14411945,1166.2755,465.47853)"
          id="g1293">
         <path
            sodipodi:nodetypes="cc"
@@ -418,6 +419,17 @@
            d="m 785.89797,498.14067 -26.7426,41.595 47.22275,-14.67375 z"
            id="path111" />
       </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.95830536px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.08300257;stroke-linecap:square;stroke-miterlimit:10"
+         x="-341.05942"
+         y="110.71944"
+         id="text1369"><tspan
+           sodipodi:role="line"
+           x="-341.05942"
+           y="140.80817"
+           style="font-weight:bold;stroke-width:1.08300257"
+           id="tspan1371" /></text>
     </g>
     <g
        id="g2258">
@@ -935,72 +947,69 @@
       </g>
       <text
          id="text1348-3-9"
-         y="508.64615"
+         y="484.64615"
          x="-335.22665"
          style="font-style:normal;font-weight:normal;font-size:31.85482597px;line-height:1.25;font-family:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79637069"
          xml:space="preserve"><tspan
            id="tspan1150-7-7"
            style="font-weight:bold;stroke-width:0.79637069"
-           y="508.64615"
+           y="484.64615"
            x="-335.22665"
            sodipodi:role="line">Field interactions co-design</tspan><tspan
            id="tspan1993"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="548.46466"
+           y="524.46466"
            x="-335.22665"
            sodipodi:role="line"><tspan
-   id="tspan2303"
-   style="font-weight:bold">WP1.1</tspan> @museum, </tspan><tspan
+             id="tspan2303"
+             style="font-weight:bold"></tspan></tspan><tspan
+           style="font-weight:normal;stroke-width:0.79637069"
+           y="564.2832"
+           x="-335.22665"
+           sodipodi:role="line"
+           id="tspan1151"><tspan
+   style="font-weight:bold"
+   id="tspan1153">WP1.1 </tspan>Ethics framework</tspan><tspan
+           style="font-weight:normal;stroke-width:0.79637069"
+           y="604.10175"
+           x="-335.22665"
+           sodipodi:role="line"
+           id="tspan1142"><tspan
+   style="font-weight:bold"
+   id="tspan1144">WP1.2</tspan> @museum, </tspan><tspan
            id="tspan1999"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="588.2832"
+           y="643.92029"
            x="-335.22665"
            sodipodi:role="line">                        <tspan
    id="tspan2309"
    style="font-style:italic">with general public</tspan></tspan><tspan
            id="tspan1995"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="628.10175"
+           y="683.73883"
            x="-335.22665"
            sodipodi:role="line"><tspan
    id="tspan2305"
-   style="font-weight:bold">WP5.2</tspan> @children hospital,</tspan><tspan
+   style="font-weight:bold">WP5.1</tspan> @children hospital,</tspan><tspan
            id="tspan2001"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="667.92029"
+           y="723.55737"
            x="-335.22665"
            sodipodi:role="line">                        <tspan
    id="tspan2311"
    style="font-style:italic">with nurses, parents, children</tspan></tspan><tspan
            id="tspan1997"
            style="font-weight:normal;stroke-width:0.79637069"
-           y="707.73883"
+           y="763.37585"
            x="-335.22665"
            sodipodi:role="line"><tspan
    id="tspan2307"
-   style="font-weight:bold">WP5.3</tspan> @SEN schools,</tspan><tspan
+   style="font-weight:bold">WP5.2</tspan> @SEN schools,</tspan><tspan
            style="font-style:italic;font-weight:normal;stroke-width:0.79637069"
-           y="747.55737"
+           y="803.1944"
            x="-335.22665"
            sodipodi:role="line"
            id="tspan1351">                        with teachers, parents, children</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:31.35569954px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994"
-         x="-801.60419"
-         y="-460.11368"
-         id="text1369"
-         transform="rotate(-90)"><tspan
-           sodipodi:role="line"
-           id="tspan1367"
-           x="-801.60419"
-           y="-460.11368"
-           style="font-weight:bold;stroke-width:0.99999994">WP5.1</tspan><tspan
-           sodipodi:role="line"
-           x="-801.60419"
-           y="-420.91907"
-           style="font-weight:bold;stroke-width:0.99999994"
-           id="tspan1371">ETHICS FRAMEWORK</tspan></text>
     </g>
     <g
        id="g1973-7"
@@ -1426,15 +1435,15 @@
         </g>
         <text
            id="text1272"
-           y="892.92413"
-           x="616.88812"
-           style="font-style:normal;font-weight:normal;font-size:34.29566574px;line-height:1.25;font-family:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.85739177"
+           y="895.80963"
+           x="595.63318"
+           style="font-style:normal;font-weight:normal;font-size:45.40368271px;line-height:1.25;font-family:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.85739183"
            xml:space="preserve"><tspan
-             style="font-weight:bold;stroke-width:0.85739177"
-             y="892.92413"
-             x="616.88812"
+             style="font-weight:bold;stroke-width:0.85739183"
+             y="895.80963"
+             x="595.63318"
              sodipodi:role="line"
-             id="tspan1270">Integration into a cognitive architecture</tspan></text>
+             id="tspan1270">Integrated cognitive architecture</tspan></text>
         <text
            inkscape:transform-center-y="3.9331769"
            inkscape:transform-center-x="7.8663573"
@@ -1687,7 +1696,7 @@
     <g
        inkscape:transform-center-y="-24.231772"
        inkscape:transform-center-x="32.007295"
-       transform="matrix(0.75424615,0.65659177,0.65659177,-0.75424615,-950.26384,520.86838)"
+       transform="matrix(0.75424615,0.65659177,0.65659177,-0.75424615,-948.03889,503.06882)"
        id="g1850">
       <path
          sodipodi:nodetypes="cc"
