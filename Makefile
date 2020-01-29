@@ -17,9 +17,12 @@ $(SVG:.svg=.pdf): %.pdf: %.svg
 %.docx: %.tex
 	pandoc $(<) -McodeBlockCaptions=true -MfigureTitle=Figure -MtableTitle=Table -MlistingTitle=Listing -F pandoc-crossref -F pandoc-citeproc -o $(@)  $(foreach b,$(BIBS),--bibliography=$(b)) --reference-doc=eu-template-reference.docx --pdf-engine=lualatex --dpi=300 --standalone 
 
-bib: $(TARGETS:.tex=.aux)
+%.blg: %.aux
+	biber $(<:.aux=)
+	touch $(<:.aux=.tex)
 
-	biber $(TARGET:.tex=)
+bib: $(TARGETS:.tex=.blg)
+
 
 latex: $(SVG:.svg=.pdf) $(TARGETS:.tex=.pdf)
 
