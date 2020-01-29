@@ -1,30 +1,32 @@
-OUTPUT ?= pdf
-TARGET=project.tex
+TARGETS=project.tex wizus-ethics.tex
 BIBS=biblio.bib my-publications.bib mutual-modelling.bib
 
 SVG=$(wildcard figs/*.svg)
 
 all: latex
 
-%.png: %.svg
+$(SVG:.svg=.png): %.png: %.svg
 	inkscape -d 200 --export-png $(@) $(<)
 
-%.pdf: %.svg
+$(SVG:.svg=.pdf): %.pdf: %.svg
 	inkscape --export-pdf $(@) $(<)
 
-bib: $(TARGET:.tex=.aux)
+%.pdf: %.tex
+	lualatex $(<)
+
+%.docx: %.tex
+	pandoc $(<) -McodeBlockCaptions=true -MfigureTitle=Figure -MtableTitle=Table -MlistingTitle=Listing -F pandoc-crossref -F pandoc-citeproc -o $(@)  $(foreach b,$(BIBS),--bibliography=$(b)) --reference-doc=eu-template-reference.docx --pdf-engine=lualatex --dpi=300 --standalone 
+
+bib: $(TARGETS:.tex=.aux)
 
 	biber $(TARGET:.tex=)
 
-latex: $(SVG:.svg=.pdf)
-	lualatex $(TARGET)
+latex: $(SVG:.svg=.pdf) $(TARGETS:.tex=.pdf)
 
-
-pandoc: $(SVG:.svg=.png) gantt.pdf
-	pandoc $(TARGET) -McodeBlockCaptions=true -MfigureTitle=Figure -MtableTitle=Table -MlistingTitle=Listing -F pandoc-crossref -F pandoc-citeproc -o $(TARGET:.md=.$(OUTPUT))  $(foreach b,$(BIBS),--bibliography=$(b)) --reference-doc=eu-template-reference.docx --pdf-engine=lualatex --dpi=300 --standalone 
+docx: $(SVG:.svg=.png) $(TARGETS:.tex=.docx)
 
 touch:
-	touch $(TARGET)
+	touch $(TARGETS)
 
 force: touch latex
 
@@ -32,4 +34,4 @@ clean:
 	rm -f *.spl *.bcf *.idx *.aux *.log *.snm *.out *.toc *.nav *intermediate *~ *.glo *.ist *.bbl *.blg $(SVG:.svg=.pdf) $(DOT:.dot=.svg) $(DOT:.dot=.pdf)
 
 distclean: clean
-	rm -f $(TARGET:.tex=.pdf) $(TARGET:.tex=.docx)
+	rm -f $(TARGETS:.tex=.pdf) $(TARGETS:.tex=.docx)
