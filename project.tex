@@ -1298,54 +1298,61 @@ society}
 
 \TODO{THIS SECTION IS STILL WORK-IN-PROGRESS}
 
-
-\TODO{rewrite section, mostly borrowed from~\cite{tulli2019great}}
-
 Social robotics is a disruptive field, with a profound impact on
 society and economy~\cite{williams2020social}. A recent report from the United
 Nations about the impact of the technological revolution on labour markets
 stated that AI and robotics are expected to radically change the labor market
 world-wide destroying some job categories and creating
-others~\cite{bruckner2017frontier}. The impact
-of AI applications and manufacturing robots on economies and labor markets is
-already tangible. Yet, this is not the case for social robots despite the fact that
-this technology is expected to have a significant impact on different application
-areas such as care for the elderly, customer service, education, child development,
-and autonomous vehicles~\cite{baillie2019challenges}.
+others~\cite{bruckner2017frontier}. Social robotics, however, is still an
+young, emerging, research-active field. The expectations are high, in multiple
+application domains: elderly
+care, customer service (in airports and shopping malls, for instance), education, child development,
+and autonomous vehicles to name a few~\cite{baillie2019challenges}. However,
+whereas both computer-based AI applications, and traditional industrial robots
+already have a significant economic impact, social robots have not reached that
+point yet. Significantly, the recent failures of several companies investing in
+social robotics, like Jibo, Kuri, Willow Garage and Anki, and the major setbacks
+of companies like SoftBank, who designed and deployed hundreds of Pepper robot in their
+shops, before giving up a few months later due to the poor reception by the
+customers, show that these technologies are not yet mature~\cite{tulli2019great}.
 
-As a matter of fact, in the past years promising companies are facing crises.
-Some of them are being bought by multinationals, such as Aldebaran, Boston
-Dynamics and Scharf, acquired by Softbank Group, while others shutdown (e.g.,
-Willow Garage, Anki, Jibo). Developing and selling robots is challenging and
-require market knowledge that companies born as a spin-off from Universities may
-not have. This can be the case of Rethink Robotics founded by Rodney Brooks and
-Jibo co-founded by Cynthia Breazeal, both of them from the Massachusetts
-Institute of Technology. After releasing the collaborative robot Baxter and its
-counterpart Sawyer, Rethink Robotics has been acquired by HAHN Group, a German
-automation specialist. Jibo stopped operating nearly one year after it first
-came to the market. The same end has been encountered by Anki, a robotics and
-artificial intelligence startup founded by three graduated students from
-Carnegie Mellon University.
+Indeed, understanding \emph{why} these robots have failed, is one of the
+currently `hot questions' being debated within the Human-Robot Interaction
+community~\cite{hoffman2019anki}. Proposed explanations include the lack of
+perceived usefulness (robot seen purely as a toy); the limited liveliness of the robot that become rapidly
+predictable and repetitive~\cite{lemaignan2014cognitive}; the poor management of
+expectations, where user over-ascribe cognitive capabilities that do not match
+the reality. The community agrees however that the crux of the issue is
+achieving long-term social engagement~\cite{leite2013social,hoffman2019anki}
 
-The failures of companies like Jibo, Kuri, Willow Garage and Anki illustrate the
-complexity of bringing social robot into real-world applications with sustained
-engagement. The scifi-inspired general-purpose robot companion has not realised
-yet, and successful robots are indeed very much task-specific: autonomous
-cleaning devices (e.g., iRobot Corporation, Samsung Electronics, Neato Robotics,
-LG Electronics), surgical robots (e.g., Intuitive Surgical, MAKO Surgical
-Corporation), drones (e.g., Parrot SA, 3D Robotics, D-Jing Innovations Science
-and Technology) and toys (e.g., Hasbro, WowWee Group Limited).
+Studies of long-term human-robot interaction studies are becoming more
+common~\cite{kunze2018artificial,leite2013social}, with a number of studies
+involving social robots deployed in real-world settings (for instance
+schools~\cite{leite2014empathic,westlund2017measuring,
+lemaignan2016learning,coninx2016towards} and care
+centres~\cite{hawes2017strands,winkle2020couch}) over relatively long periods of
+time (up to 2 or 3 months at a time). Even though these robots are rarely fully
+autonomous, they do already show high levels of
+autonomy~\cite{senft2019teaching,winkle2020couch,hawes2017strands} for either a
+broad range of shallow tasks (eg, a butler-like robot, like
+in~\cite{hawes2017strands}), or a narrow, well-specified complex task (for
+instance, supporting exercising in a gym~\cite{winkle2020couch}).
 
-Examples of successful commercial social robots are robotic pets developed in
-largest public research organization and companies, such as Paro Therapeutic
-Robot (AIST), PLEO (Innvo Labs established by Jetta Corporation), AIBO (Sony
-Corporation), Keepon (BeatBots), and iCat (Philips).  Other examples can be
-found in the context of smart home assistants; Mykie robot is a side project of
-BOSCH connected to an IoT ecosystem. The robot is designed to support users
-while they cook providing assistance for recipes and stock market prices. Mykie
-robot is activated and controlled by Amazon's Alexa, conversational virtual
-agents that nowadays dominates the market of smart homes
-devices~\cite{purington2017alexa, sciuto2018hey}.
+Research is however seemingly hitting a wall to further progress towards
+socially meaningful long-term interactions. In their large review of
+research in robotics for education, Belpaeme et al.~\cite{belpaeme2018social}
+point to the shortcomings that prevent further development of social
+robots in educative settings: the need for a correct interpretation of the
+social environment; the difficulty of action selection; the difficulty of pacing
+generated behaviours.
+
+~\cite{tonkin2018design}
+
+
+~\cite{baraka2019extended}
+
+
+
 
 Having social capabilities embedded in robotic systems provide an additional
 emotional grip and more fluid interaction with humans, but is not enough for
@@ -1361,10 +1368,9 @@ surviving against competitors breakthrough technologies and new customer
 demands. The paradoxes encountered by the research and industry involve three
 main actors: final users, organizations (companies) and researchers.
 
-~\cite{hoffman2019anki}
 
-One example of a small, rugged robot designed for intensive use in school
-environments is Cellulo~\footcite{ozgur2017cellulo}.
+%One example of a small, rugged robot designed for intensive use in school
+%environments is Cellulo~\footcite{ozgur2017cellulo}.
 %
 %\begin{figure}[!htbp]
 %    \begin{minipage}[b]{.3\linewidth}
@@ -1408,38 +1414,6 @@ environments is Cellulo~\footcite{ozgur2017cellulo}.
 
 
 
-Looking specifically at human-sized mobile manipulators with advanced social
-features, the choices of robotic platforms are limited.
-Table~\ref{robot-comparison} compares the two leading mobile social robots
-available on the market today, along with the new R1 platform developed by the
-Italian Institute of Technology. While not yet on the market, the IIT has
-offered early access to the platform for this project. Note that the Fetch
-Mobile Manipulator has been omitted, but is functionally very similar to the PAL
-TiaGo.
-
-\begin{table}[]
-    \caption{Comparison of IIT R1 robot with PAL TiaGo and Softbank Pepper. R1 has been chosen for \project
-    for being the only mobile dual manipulator with advanced social interaction
-    capabilities.}
-    \resizebox{\linewidth}{!}{
-    \begin{tabular}{@{}p{3cm}p{5cm}p{5cm}p{5cm}@{}}
-\toprule
-                                           & PAL TiaGo                                                & Softbank Pepper                                                           & \textbf{IIT R1}                                                                                                                              \\ \midrule
-\textbf{Social features}                   & Poor (non-expressive head)                               & Medium (expressive, yet fixed, face; limited gaze; non-threatening appearance) & Good (expressive face~\cite{lehman2016head}; artificial skin for touch-based interactions; non-threatening appearance) \\
-\textbf{Perception}                        & Medium (RGB-D camera; laser
-        scanner; no microphone)      & Medium (RGB-D; simple mic array; poor
-        laser scanner)                      & Good (RGB-D; simple mic array;
-        laser scanner)                                                                                                   \\
-\textbf{Navigation}                        & Good (however, limited agility due
-        to large footprint)   & Poor (weak localisation capabilities)
-        & Good (high agility due to Segway-like self-balancing)                                                                                                   \\
-\textbf{Safety}                            & Medium (heavy robot; large footprint; non-compliant arm) & Medium (smaller footprint; safe arms; limited stability)                  & Good (smaller footprint; safe arms; dynamic stability)                                                                                       \\
-\textbf{Manipulation capabilities}         & Medium (non-anthropomorphic gripper; single arm)         & Limited (poor gripper with low payload; dual arm)                         & Good (anthropomorphic gripper; pressure sensors; dual arm; 1.5kg payload)                                                                    \\
-\textbf{Suitability for care environments} & Poor (relatively large, difficult to clear)              & Good (smaller footprint, easy to clean)                                   & Good (smaller footprint, easy to clean)                                                                                                      \\ \bottomrule
-\end{tabular}
-}
-    \label{robot-comparison}
-\end{table}
 
 \paragraph{Sustaining long-term interactions}
 
@@ -1479,19 +1453,6 @@ need to represent and reflect on someone else representations (and not only
 perceptions), and they are not addressed by today's research on social robots.
 
 
-\subsection{Long-term social engagement is beyond-state-of-the-art}
-
-As a researcher who has been working for the last 12 years in the field of
-human-robot interaction (and child-robot interaction in particular), I have been
-a direct witness -- by being one of the architects -- of the crossing of a
-critical milestone: the emergence of \textbf{long-term social interactions}
-between robots and humans~\cite{kunze2018artificial,leite2013social}, with a
-number of studies involving social robots deployed in
-real-world settings (schools~\cite{westlund2017measuring, lemaignan2016learning}, care
-centres~\cite{hawes2017strands}) over relatively long periods of time (up to 2
-or 3 months at a time). Even though these robots are rarely fully autonomous,
-they do already show high levels of autonomy~\cite{senft2019teaching}, with full
-autonomy in sight~\cite{hawes2017strands} for simple tasks.
 
 However, the question of the long-term \emph{social engagement} is
 open.\TODO{finish that}
@@ -1508,16 +1469,41 @@ Some guidelines:
 
 ~\cite{baraka2019extended}
 
-In a field more closely related to child-robot interaction, the large review of
-research in robotics for education published by Belpaeme et al. in
-2018~\cite{belpaeme2018social} points to the major shortcomings that prevent
-further development of social robots in educative settings: the need for a correct
-interpretation of the social environment; the difficulty of action selection;
-the difficulty of pacing generated behaviours.
 
 
 
+Looking specifically at human-sized mobile manipulators with advanced social
+features, the choices of robotic platforms are limited.
+Table~\ref{robot-comparison} compares the two leading mobile social robots
+available on the market today, along with the new R1 platform developed by the
+Italian Institute of Technology. While not yet on the market, the IIT has
+offered early access to the platform for this project. Note that the Fetch
+Mobile Manipulator has been omitted, but is functionally very similar to the PAL
+TiaGo.
 
+\begin{table}[]
+    \caption{Comparison of IIT R1 robot with PAL TiaGo and Softbank Pepper. R1 has been chosen for \project
+    for being the only mobile dual manipulator with advanced social interaction
+    capabilities.}
+    \resizebox{\linewidth}{!}{
+    \begin{tabular}{@{}p{3cm}p{5cm}p{5cm}p{5cm}@{}}
+\toprule
+                                           & PAL TiaGo                                                & Softbank Pepper                                                           & \textbf{IIT R1}                                                                                                                              \\ \midrule
+\textbf{Social features}                   & Poor (non-expressive head)                               & Medium (expressive, yet fixed, face; limited gaze; non-threatening appearance) & Good (expressive face~\cite{lehman2016head}; artificial skin for touch-based interactions; non-threatening appearance) \\
+\textbf{Perception}                        & Medium (RGB-D camera; laser
+        scanner; no microphone)      & Medium (RGB-D; simple mic array; poor
+        laser scanner)                      & Good (RGB-D; simple mic array;
+        laser scanner)                                                                                                   \\
+\textbf{Navigation}                        & Good (however, limited agility due
+        to large footprint)   & Poor (weak localisation capabilities)
+        & Good (high agility due to Segway-like self-balancing)                                                                                                   \\
+\textbf{Safety}                            & Medium (heavy robot; large footprint; non-compliant arm) & Medium (smaller footprint; safe arms; limited stability)                  & Good (smaller footprint; safe arms; dynamic stability)                                                                                       \\
+\textbf{Manipulation capabilities}         & Medium (non-anthropomorphic gripper; single arm)         & Limited (poor gripper with low payload; dual arm)                         & Good (anthropomorphic gripper; pressure sensors; dual arm; 1.5kg payload)                                                                    \\
+\textbf{Suitability for care environments} & Poor (relatively large, difficult to clear)              & Good (smaller footprint, easy to clean)                                   & Good (smaller footprint, easy to clean)                                                                                                      \\ \bottomrule
+\end{tabular}
+}
+    \label{robot-comparison}
+\end{table}
 
 
 
@@ -1788,7 +1774,9 @@ detail this work programme.
 %principled, socially-driven, and trustworthy socio-cognitive architecture for
 %robots. This is the second major expected scientific outcome of \project.
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Interdisciplinary nature of the research programme}
 
 \project paves the way for a better understanding of the societal challenges
@@ -1817,32 +1805,17 @@ expressive communication; the WeTheCurious museum will provide training in
 large-scale public engagement; the RustySquid company will provide expertise in
 expressive arts and puppetering.
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Impact: artificial embodied social cognition \& trustworthy social robots}
+\section{Impact of the \project project}
 \TODO{THIS SECTION IS STILL WORK-IN-PROGRESS}
 
 
-\project will deliver new and fundamental knowledge to the fields of robotics,
-computer science and psychology, in addition to improving trans-disciplinary
-understanding between these disciplines. More specifically, the project will
-contribute to a better understanding of the following research areas:
-human-robot interaction; human-machine interaction; human error making and
-handling in assembly tasks; theory of mind and its transfer to cognitive robots;
-natural language processing; explainability and language generation; machine
-vision and human activity detection; and action planning under uncertainty. New
-interaction paradigms will be developed for handling error situations where
-machines interact with non-expert humans. The integration of perception and
-sensing into cognitive robot architectures will be critically reviewed and
-extended. Novel, empirically informed methods to transfer findings from
-human-human interaction studies to human-machine interactions will be developed.
-Furthermore, the national and international psychology, robotics and computer
-science research communities will benefit from the project results. We will
+We will
 publish \project results in interdisciplinary and high-profile
-discipline-specific journals (eg Science Robotics; Frontiers in AI and Robotics;
-Transaction in Human-Robot Interaction and conferences (AAAI, HRI, RSS), and
+discipline-specific journals (eg. Science Robotics; Frontiers in AI and Robotics;
+Transaction in Human-Robot Interaction) and conferences (eg. AAAI, HRI, RSS), and
 organise \project-themed workshops.\TODO{details}
 
 
@@ -1864,11 +1837,72 @@ significant scope for public outreach/engagement and media coverage,
 which we will work with the BRL's media manager to maximise.
 
 
-
 \project aims at building unique European capacity to assert leadership in this
 domain, and, beyond the specific deliverables of this 5-years project,
 establishing the PI as a world-leader in goal-driven, socially-responsible
 robotics.
+
+\vspace{-3.5mm}
+\subsection*{Dissemination Strategy}
+\vspace{-2.5mm}
+
+Neighbouring societal applications
+
+As the ability to discover and react to errors is fundamental to any HRI system,
+\project results will have a major impact on any societal area in which robots
+will be used to support and collaborate with humans in  the future. Error
+handling is especially important in assisted living. Robots will be used in the
+future to support older adults to be able to stay longer in their homes with an
+increased quality of life and to reduce the economic burden that the ageing
+society will have on the economies of developed countries. BRL has a test bed
+for assisted living that is approved for challenges in the European Robotics
+League
+(ERL)\footnote{\url{http://www.brl.ac.uk/research/researchthemes/assistedliving/assistedlivingstudio.aspx}}.
+In order to prove that the \project results are valuable for the assisted living
+use case, we will work together with Dr Praminda Caleb-Solly from BRL, who is
+heading a team that takes part in the ERL competition. E.g., the ERL challenge
+subtask ``TBM2: Welcoming
+Visitors''\footnote{\url{https://sites.google.com/site/erlsrbrl2017/competition}}
+could become more robust by applying the \project error recognition and response
+generation strategies. BRL will embed one of the ERRO post docs in the ERL team
+to test the \project technology in the competition's challenges. This will not
+only increase the project's visibility but also the robustness and
+generalisability of the error recognition and response approaches.
+
+Scientific dissemination
+
+Project partners will publish scientific results in high-class scientific
+journals and conferences. Table \ref{tab:conf-journ} lists the targeted journals
+and conferences for each related research area. For a more targeted scientific
+dissemination, the partners will organise one \project-themed workshop each project
+year. In the first year, the partners will present the project results as part
+of the already established PubRob workshop
+series\footnote{\url{http://www.pubrob.org}}, a long-standing workshop series on
+Public Space Human-Robot Interaction, organised by Manuel Giuliani (BRL), Ron
+Petrick (HWU), and Mary Ellen Foster from the University of Glasgow. In the
+second and third year, workshops will be organised at a human factors oriented
+conference (e.g.~HRI) and a robotics-oriented conference (e.g.~IROS or ICRA),
+respectively.
+
+\begin{table}[t]
+    \scriptsize
+	\caption{Targeted conferences and journals sorted by research area}
+	\begin{tabular}{@{}p{25mm}p{55mm}p{81.5mm}@{}}
+		\toprule
+		\textbf{Research area}  & \textbf{Conferences}  & \textbf{Journals} \\ \midrule
+		HRI & HRI, HAI, IEEE Ro-Man & IEEE Trans.~on HRI, IEEE Trans.~on Human-Machine Systems \\
+		Robotics                & ICRA, IROS, RSS       & Science Robotics, IEEE Trans.~on Robotics, Frontiers in Robotics and AI \\
+		Computer Vision          & CVPR, ECCV, ICCV, NIPS, BMVC      & IEEE Trans.~on Pattern Analysis and Machine Intelligence, Int.~Journ.~of Computer Vision, Pattern Recognition, Computer Vision and Image Understanding                                                                                 \\
+		Automated Planning           & ICAPS, AAAI, IJCAI, KR                      & Journ.~of Artificial Intelligence Research, Artificial Intelligence Journ.~, Computational Intelligence                                                                                \\
+		Cognitive Psychology    & Applied Human Factors and Ergonomics, Human Factors and Ergonomics Society & Journ.~of Experimental Psychology, Human Factors, Computers in Human Behaviour, Int.~Journ.~of Human Computer Studies \\
+		%Nat.~Lang.~Processing & ACL, Interspeech & \\ 
+		\bottomrule
+	\end{tabular}
+	\label{tab:conf-journ}
+\end{table}
+
+
+
 
 
 
