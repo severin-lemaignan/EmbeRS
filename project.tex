@@ -538,7 +538,7 @@ system of representations for the cognitive architecture of the robot.
 
 \textbf{T2.2 -- Social dynamics} This task focuses on the processing and
 modelling of social signals, extending existing techniques, both model-based
-(eg~\cite{gunes2017automatic,lemaignan2016realtime,others}) and
+(eg~\cite{gunes2017automatic,lemaignan2016realtime}) and
 data-driven based (eg~\cite{bartlett2019what}) This task goes beyond the state-of-the-art by
 looking specifically at resolving highly dynamical signals (like gaze saccades
 and micro facial expressions). Required datasets will be drawn from my previous
@@ -547,12 +547,13 @@ T5.1, T5.2).
 
 \textbf{T2.3 -- Interaction and group dynamics} Building on T2.2, T2.3
 investigates the automatic understanding and modelling of group-level social
-interactions, including $f$-formations~\cite{marshall2011using}, sociograms (as
-done in~\cite{garcia2016hybrid} for instance), and inter-personal
+interactions~\cite{tapus2019perceiving}, including
+$f$-formations~\cite{marshall2011using}, sociograms (as done
+in~\cite{garcia2016hybrid} for instance), and inter-personal
 affordances~\cite{pandey2013affordance}. This task builds on literature on on
-social dynamics analysis (eg~\cite{jermann2009physical, martinez2019collocated})
-to apply it to real-time social assessment by a robot, itself embedded into the
-interaction.
+social dynamics analysis (eg~\cite{durantin2017social,jermann2009physical,
+martinez2019collocated}) to apply it to real-time social assessment by a robot,
+itself embedded into the interaction.
 
 \textbf{T2.4 -- Integrated model of the social environment} The integration of
 the social cues from T2.2 and T2.3 results in a socio-cognitive model of the
@@ -1296,8 +1297,6 @@ objectives; B2.b ~7 pages on WPs + 2 pages on risk assessment}
 \section{State of the art: real-world social robots and impact on the
 society}
 
-\TODO{THIS SECTION IS STILL WORK-IN-PROGRESS}
-
 Social robotics is a disruptive field, with a profound impact on
 society and economy~\cite{williams2020social}. A recent report from the United
 Nations about the impact of the technological revolution on labour markets
@@ -1318,55 +1317,43 @@ customers, show that these technologies are not yet mature~\cite{tulli2019great}
 
 Indeed, understanding \emph{why} these robots have failed, is one of the
 currently `hot questions' being debated within the Human-Robot Interaction
-community~\cite{hoffman2019anki}. Proposed explanations include the lack of
+community~\cite{hoffman2019anki}, with only a handful of qualitative studies on
+this question~\cite{dereshev2019longterm,degraaf2017phased}. Proposed explanations include the lack of
 perceived usefulness (robot seen purely as a toy); the limited liveliness of the robot that become rapidly
 predictable and repetitive~\cite{lemaignan2014cognitive}; the poor management of
 expectations, where user over-ascribe cognitive capabilities that do not match
 the reality. The community agrees however that the crux of the issue is
-achieving long-term social engagement~\cite{leite2013social,hoffman2019anki}
-
-Studies of long-term human-robot interaction studies are becoming more
-common~\cite{kunze2018artificial,leite2013social}, with a number of studies
-involving social robots deployed in real-world settings (for instance
-schools~\cite{leite2014empathic,westlund2017measuring,
-lemaignan2016learning,coninx2016towards} and care
-centres~\cite{hawes2017strands,winkle2020couch}) over relatively long periods of
-time (up to 2 or 3 months at a time). Even though these robots are rarely fully
-autonomous, they do already show high levels of
-autonomy~\cite{senft2019teaching,winkle2020couch,hawes2017strands} for either a
-broad range of shallow tasks (eg, a butler-like robot, like
-in~\cite{hawes2017strands}), or a narrow, well-specified complex task (for
-instance, supporting exercising in a gym~\cite{winkle2020couch}).
+achieving long-term social engagement~\cite{yang2018grand,hoffman2019anki}
 
 Research is however seemingly hitting a wall to further progress towards
-socially meaningful long-term interactions. In their large review of
+socially meaningful long-term interactions. For instance, in their large review of
 research in robotics for education, Belpaeme et al.~\cite{belpaeme2018social}
-point to the shortcomings that prevent further development of social
-robots in educative settings: the need for a correct interpretation of the
+point to the shortcomings that prevent further development of effective,
+long-term social robotics in educative settings: the need for a correct interpretation of the
 social environment; the difficulty of action selection; the difficulty of pacing
-generated behaviours.
+generated behaviours: three issues that underpin long-term engagement.
+
+Attempts at long-term human-robot interactions are nevertheless becoming more
+common~\cite{kunze2018artificial,leite2013social}, with a number of studies
+involving social robots deployed in real-world settings (for instance in
+schools~\cite{leite2014empathic,westlund2017measuring,
+lemaignan2016learning,coninx2016towards}, homes~\cite{degraaf2017phased} and
+care centres~\cite{hawes2017strands,winkle2020couch}) over relatively long
+periods of time (up to 2 or 3 months at a time). Even though these robots are
+typically not fully autonomous, they do exhibit a level of autonomy, either by
+handling autonomously a relatively broad range of shallow tasks (eg, a
+butler-like robot answering simple questions, like in~\cite{hawes2017strands} or
+in the H2020 MuMMer~\cite{heikkila2018can} and FP7
+Spencer~\cite{triebel2016spencer} projects), or a narrow, well-specified complex
+task (for instance, supporting exercising in a gym~\cite{winkle2020couch}).
+
+
 
 ~\cite{tonkin2018design}
 
 
 ~\cite{baraka2019extended}
 
-
-
-
-Having social capabilities embedded in robotic systems provide an additional
-emotional grip and more fluid interaction with humans, but is not enough for
-justifying the needs of social robots over long periods~\cite{leite2013social,
-baraka2019extended}. The human-robot interaction should be driven by clear
-scopes, and the robot should be able to adapt to diverse and unstructured
-environments. However, notwithstanding the improvements in computer vision and
-machine learning, very few fully-developed intelligent autonomous systems
-capable of learning from the real-world and successfully interact with humans
-are currently available to consumers~\cite{dereshev2019longterm}. Thus, all
-these companies are trying to adapt their business principles and products for
-surviving against competitors breakthrough technologies and new customer
-demands. The paradoxes encountered by the research and industry involve three
-main actors: final users, organizations (companies) and researchers.
 
 
 %One example of a small, rugged robot designed for intensive use in school
@@ -1413,18 +1400,6 @@ main actors: final users, organizations (companies) and researchers.
 %\end{figure}
 
 
-
-
-\paragraph{Sustaining long-term interactions}
-
-In his analyse of why many commercial projects around social robotics failed,
-Hoffman cites the lack of long-term acceptance as one major
-issue~\cite{hoffman2019anki}. He offers as key explanation ``the inability of
-the robots to escape the single turn structure of an interaction'', which also
-tightly connects to the issue of the repetitiveness of the robots' behaviours.
-
-~\cite{dereshev2019longterm}
-
 \subsection{Social robotics and vulnerable children}
 
 Using activity switching to support long term engagement with diabetic children~\cite{coninx2016towards}
@@ -1470,7 +1445,7 @@ Some guidelines:
 ~\cite{baraka2019extended}
 
 
-
+\subsection{}
 
 Looking specifically at human-sized mobile manipulators with advanced social
 features, the choices of robotic platforms are limited.
@@ -2186,11 +2161,17 @@ achieve real-time classification of such cues is available.
 
 \textbf{T2.3 -- Interaction and group dynamics} Building on T2.2, T2.3
 investigates the automatic understanding and modelling of group-level social
-interactions, like inter-personal affordances~\cite{pandey2013affordance}. It
-includes spatial determinants (proxemics; group-level attention tracking);
-psycho-social determinants (social roles and hierarchies; social groups) and
-dynamics (effects of novelty; dynamics of anthropomorphism and mental
-ascriptions; group dynamics). 
+interactions~\cite{tapus2019perceiving}, including
+$f$-formations~\cite{marshall2011using}, sociograms (as done
+in~\cite{garcia2016hybrid} for instance), and inter-personal
+affordances~\cite{pandey2013affordance}. This task builds on literature on on
+social dynamics analysis (eg~\cite{durantin2017social,jermann2009physical,
+martinez2019collocated}) to apply it to real-time social assessment by a robot,
+itself embedded into the interaction.
+
+
+Durantin~\cite{durantin2017social}: social moments, social micro-abilities
+
 
 
 \textbf{T2.4 -- Social situation assessment} The integration of the social cues
@@ -3040,7 +3021,7 @@ the expertise of Dr. Newbutt in conducting research with SEN schools (T5.1), and
 the support of J. Bowyer at the Bristol's Children's Hospital to obtain NHS ethics
 approval. Details of the ethics approval process, children safeguarding,
 research Code of Conduct, and Data Management Plan are annexed to the project
-proposal, in a separate `Ethics and Privacy' document.
+proposal, in a separate `Ethics and Data Management' document.
 
 
 The project will also follow the European Commission recommendations for
