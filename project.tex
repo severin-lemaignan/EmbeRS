@@ -194,9 +194,9 @@ socially useful and acceptable in the long-term.
 \newcommand{\wpFourShort}{Socio-cognitive architecture}
 
 
-\newcommand{\wpFive}{Evidence-based research: demonstrable usefulness of social robots in
-real-world, complex scenarios}
-\newcommand{\wpFiveShort}{Experimental deployments}
+\newcommand{\wpFive}{Experimental programme: long-term deployments in sensitive
+social spaces}
+\newcommand{\wpFiveShort}{Experimental programme}
 
 
 %\newcommand{\wpOne}{Project management \& dissemination}
@@ -386,8 +386,9 @@ learnt from the end-users (WP4).
 
 The robot actions themselves are designed to be limited to non-verbal
 communication mechanisms: non-verbal utterances using sounds, gaze, joint
-attention, expressive motions. In WP3, my team will in addition create a novel
-non-verbal modality based on \emph{soundscapes}: sound landscapes that the robot
+attention, expressive motions. In WP3, my team will work with a choreographer
+and a sound expert to create a new grammar of expressive motions, combined with
+a novel modality based on \emph{soundscapes}: sound landscapes that the robot
 can modulate to influence the mood of the social environment (calm, excited,
 worried, etc.).
 
@@ -593,7 +594,8 @@ providing a comparison point for T3.2.
 \textbf{T3.2 -- Generative neural network for social behaviour production}
 \project aims at significantly advancing the state of the art in this regard, by
 combining two recent techniques: (1) generative neural networks for affective
-robot motion generation~\cite{marmpena2019generating,suguitan2020moveae}; (2) interactive machine
+robot motion generation~\cite{marmpena2019generating,suguitan2020moveae} (with
+training data created with an expert choreographer); (2) interactive machine
 learning in high-dimensional input/output spaces, where I have shown with my
 students promising results for generating complex social
 behaviours~\cite{senft2019teaching, winkle2020couch} that fully involve the
@@ -638,7 +640,8 @@ intentionality~\cite{wiese2017robots}, while maintaining human oversight.
     policies; a reference open-source implementation, enabling long-term
     autonomy on the IIT R1 robot.
 
-    \textbf{Timeframe:} \textbf{Y1-Y5}; one post-doc (PD4) in cognitive robotics.
+    \textbf{Timeframe:} \textbf{Y1-Y5}; one post-doc (PD4) in cognitive
+    robotics; one PhD student (PHD1).
 
 \end{framed}
 
@@ -761,14 +764,6 @@ feasibility of the proposed work.
         trust, engagement, social presence & \small \cite{flook2019impact,lemaignan2015youre,fink2014which,irfan2018social} \\
         theory of mind & \small perspective taking~\cite{ros2010which, warnier2012when}, social mutual modelling~\cite{lemaignan2015mutual,dillenbourg2016symmetry} \\
         \midrule
-        \textbf{Socio-cognitive architectures} \\
-        architecture design & \small \cite{lemaignan2017artificial, baxter2016cognitive,lemaignan2014challenges,lallee2012towards, mallet2010genom3} \\
-        knowledge representation & \small
-        ontologies~\cite{lemaignan2010oro, lemaignan2013explicit} \\    
-        spatio-temporal modelling & \small object
-        detection~\cite{wallbridge2017qualitative}, physics-aware situation
-        assessment~\cite{lemaignan2018underworlds,sallami2019simulation} \\
-        \midrule
         \textbf{Social signal processing}\\
         non-verbal behaviours & \small attention~\cite{lemaignan2016realtime},
         child-child dataset~\cite{lemaignan2018pinsoro}, internal state decoding~\cite{bartlett2019what} \\
@@ -777,6 +772,14 @@ feasibility of the proposed work.
         \textbf{Behaviour generation} \\
         social behaviours & \small \cite{lallee2011towards}, verbal interactions~\cite{wallbridge2019generating, wallbridge2019towards}, physical interactions~\cite{gharbi2013natural} \\
         interactive reinforcement learning & \small \cite{senft2017leveraging,senft2017supervised, senft2019teaching} \\
+        \midrule
+        \textbf{Socio-cognitive architectures} \\
+        architecture design & \small \cite{lemaignan2017artificial, baxter2016cognitive,lemaignan2014challenges,lallee2012towards, mallet2010genom3} \\
+        knowledge representation & \small
+        ontologies~\cite{lemaignan2010oro, lemaignan2013explicit} \\    
+        spatio-temporal modelling & \small object
+        detection~\cite{wallbridge2017qualitative}, physics-aware situation
+        assessment~\cite{lemaignan2018underworlds,sallami2019simulation} \\
         \midrule
         \textbf{Fieldwork in HRI} & \small in
         classrooms~\cite{hood2015when, lemaignan2016learning, jacq2016building,
@@ -794,7 +797,7 @@ technical legacy, that extends well beyond the end of the fellowship. As a
 high-risk/high-gain project, \project will also be a powerful enabler: by the
 end of the fellowship, I will have moved from being a regional leader in HRI, to
 having established myself as a world-leader in the emerging field of
-socially-driven, responsible autonomous robots, building up the European
+socially-driven, responsible autonomous robots, significantly reinforcing the European
 capacity in this critical field for our digital future.
 
 
@@ -1519,7 +1522,7 @@ the difficulty of pacing generated behaviours.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\project objectives: Responsible robots for long-term social engagement}
+\section{\project aim and objectives: Responsible robots for long-term social engagement}
 \TODO{THIS SECTION IS STILL WORK-IN-PROGRESS}
 
 %\begin{figure}
@@ -1543,6 +1546,63 @@ the difficulty of pacing generated behaviours.
 %\label{fig:rHHI}
 %\end{figure}
 %
+
+The aim of the \project project is to \textbf{engage and sustain long-term
+social human-robot interactions in a responsible way}.
+
+Three broad research questions follow from this high-level aim:
+
+\paragraph{\bf RQ1:} what are the public expectations with respect to the role of social
+        robots? can we agree upon principles ensuring safe, beneficial, socially
+        acceptable robots? 
+
+\paragraph{\bf RQ2:} what AI is required to sustain long-term engagement between end-users
+        and a robot? In particular, how to provide a robot with an understanding
+        of its own social environment?
+
+\paragraph{\bf RQ3:} what new ethical questions are raised by long-term social interaction
+        with an artificial agent? In particular, how to balance autonomy of the
+        robot with behaviour transparency and human oversight?
+
+The \project objectives are built around these three questions.
+
+\paragraph{\bf O1: conceptual framing}: I will investigate the basic principles
+of responsible social interactions, that must form the foundations of a socially
+useful robot, accepted and used in the long run. I will answer questions like:
+What should motivate the robot to step in and attempt to help? What social norms
+are applicable to the robot behaviours? Using user-centred design and
+participatory design methodologies, I will identify the determinants and
+parameters of a responsible social intervention, performed by a socially-driven
+robot, and formalise them in guidelines.
+
+\paragraph{\bf O2: social modeling}: I will significantly extend and integrate
+the current state-of-art in spatio-temporal modeling (so-called \emph{situation
+assessment}) with recent research in social state modeling, to create the novel
+cognitive capability of artificial \emph{social situation assessment}, enabling
+the robot to represent in real-time the social dynamics of its environment.
+
+
+\paragraph{\bf O3: cogruent social behaviours production}: using the
+state-of-the-art in generative neural networks with data acquired from an expert
+choreographer, I will create a novel way of producing non-repetitive,
+socially-congruent, expressive motions. 
+
+\paragraph{\bf O4} [embodied AI breakthrough]: I will how will these principles
+    be integrated into a principled, socially-driven teleological
+    architecture for autonomous robots? How this should be combined with
+    bottom-up action policies, designed and learnt from the end-users? How
+    can we ensure `by design' that the resulting AI will generate useful yet
+    responsible, trustworthy, human-centered robot behaviour?
+
+\paragraph{\bf O5} [experimental level]: can we demonstrate in complex, real
+    world conditions, the effectiveness and usefulness of the
+    robot-supported human-human interaction paradigm? Can we do so by
+    involving the end-users at every stage of the design, implementation and
+    testing cycle?
+
+
+\vspace{4em}
+
 
 Over the 5 years of the \project project, I will design and deliver a ground-breaking
 embodied AI for socially intelligent robots, with long-term social utility
