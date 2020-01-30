@@ -1280,7 +1280,7 @@ the field, and what impact it will have if successful, such as how it may open u
 opportunities for science, technology or scholarship. Specify any particularly challenging or
 unconventional aspects of the proposal, including multi- or inter-disciplinary aspects.}
 
-\TODO{TARGET PAGE COUNT: 4 pages: state of art + vision; 2 pages: methodology overview; 4 pages:
+\TODO{TARGET PAGE COUNT: 3 pages: state of art + vision; 2 pages: methodology overview; 5 pages:
 WPs; 3 pages: ethics + risks; 2 pages: resources}
 
 \TODO{as a reference: DECRESIM project: 4 pages on B2.a State of art and
@@ -1558,7 +1558,8 @@ Three broad research questions follow from this high-level aim:
 
 \paragraph{\bf RQ2:} what AI is required to sustain long-term engagement between end-users
         and a robot? In particular, how to provide a robot with an understanding
-        of its own social environment?
+        of its own social environment? How to create behaviours that are not
+        repetitive or overly predictable?
 
 \paragraph{\bf RQ3:} what new ethical questions are raised by long-term social interaction
         with an artificial agent? In particular, how to balance autonomy of the
@@ -1573,34 +1574,71 @@ What should motivate the robot to step in and attempt to help? What social norms
 are applicable to the robot behaviours? Using user-centred design and
 participatory design methodologies, I will identify the determinants and
 parameters of a responsible social intervention, performed by a socially-driven
-robot, and formalise them in guidelines.
+robot, and formalise them in guidelines. This objective aims at addressing RQ1.
 
-\paragraph{\bf O2: social modeling}: I will significantly extend and integrate
+\paragraph{\bf O2: real-time social modeling}: I will significantly extend and integrate
 the current state-of-art in spatio-temporal modeling (so-called \emph{situation
 assessment}) with recent research in social state modeling, to create the novel
 cognitive capability of artificial \emph{social situation assessment}, enabling
-the robot to represent in real-time the social dynamics of its environment.
+the robot to represent in real-time the social dynamics of its environment. This
+objective addresses one part of RQ2.
 
 
-\paragraph{\bf O3: cogruent social behaviours production}: using the
-state-of-the-art in generative neural networks with data acquired from an expert
-choreographer, I will create a novel way of producing non-repetitive,
-socially-congruent, expressive motions. 
+\paragraph{\bf O3: congruent social behaviours production}: using the
+state-of-the-art in generative neural networks, combined with data acquired from
+an expert choreographer, I will create a novel way of producing non-repetitive,
+socially-congruent, expressive motions. This will be integrated with novel
+\emph{sound landscapes} to create a beyond-state-of-art, non-verbal yet highly
+expressive,  action and communication system for the robot. This objective
+addresses another part of RQ2.
 
-\paragraph{\bf O4} [embodied AI breakthrough]: I will how will these principles
-    be integrated into a principled, socially-driven teleological
-    architecture for autonomous robots? How this should be combined with
-    bottom-up action policies, designed and learnt from the end-users? How
-    can we ensure `by design' that the resulting AI will generate useful yet
-    responsible, trustworthy, human-centered robot behaviour?
+\paragraph{\bf O4: embodied AI breakthrough}: I will integrate long-term social
+goals, arising from the interaction principles of \textbf{O1}, with the social
+modeling capability of \textbf{O2} and the behaviours production of \textbf{O3}
+into a principled, goal-driven cognitive architecture. The breakthrough will
+come from combining these long-term social goals with bottom-up action policies,
+designed and learnt from the end-users using human-in-the-loop machine learning.
+This will result in robot behaviours that are perceived as purposeful and
+intentional (long-term goals), while being shaped by a
+user-created and user-controlled action policy.
 
-\paragraph{\bf O5} [experimental level]: can we demonstrate in complex, real
-    world conditions, the effectiveness and usefulness of the
-    robot-supported human-human interaction paradigm? Can we do so by
-    involving the end-users at every stage of the design, implementation and
-    testing cycle?
+I will specifically test \ul{two hypotheses}: first, I hypothesise that long-term
+social goals, if suitably co-designed with the public and stakeholders, and
+properly integrated into the robot as a \emph{social teleology}, will create the
+perception that the robot is intentional and purposeful. This will in turn
+elicit sustained engagement from its human users.
+
+Second, I hypothesise that human-in-the-loop machine learning can be used to
+ensure an additional layer of human oversight and a level of behavioural
+transparency.  Human-in-the-loop machine learning -- as implemented in the SPARC
+approach that I have developed and already used in complex social
+environments~\cite{senft2016sparc, senft2019teaching, winkle2020couch} -- relies
+on a end-user `teacher', initially fully controlling the robot (teleoperation)
+while it learns the action policy, and then progressively relinquishing control
+up to a point where the robot is effectively autonomous. As argued
+in~\cite{senft2019teaching}, this approach leads to increased control and
+ownership of the system, and as a result, increased trust.
+
+This addresses RQ2 and RQ3; however it also raise an additional question: how to
+arbitrate between a top-down action policy arising from the long-term goals, and
+the bottom-up action policy learnt from the end-users? This question leads to
+Object {\bf O4'}: The design of a policy arbitration mechanism that preserve
+the robot's long-term intentional behaviour, while effectively guaranteeing human
+control, ownership and oversight.
+
+\paragraph{\bf O5: ambitious field research}: finally, the last objective of the
+\project project is to demonstrate the effectiveness of our approach in complex,
+real world conditions. This means deploying the \project robots into existing
+social eco-systems that are sufficiently complex, yet open to explore novel
+social interactions. My objective is also to show that this real world
+deployment can be successfully driven by `end-to-end' involvement of all the
+end-users and stakeholders: from defining the robot role, from the different
+perspective of each of the end-users, to actually designing and `teaching' the
+robot what to do.
 
 
+
+These five objectives,
 \vspace{4em}
 
 
