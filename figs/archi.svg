@@ -31,6 +31,18 @@
   </metadata>
   <defs
      id="defs345">
+    <linearGradient
+       id="linearGradient1128"
+       inkscape:collect="always">
+      <stop
+         id="stop1124"
+         offset="0"
+         style="stop-color:#f68787;stop-opacity:1" />
+      <stop
+         id="stop1126"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
     <inkscape:path-effect
        effect="spiro"
        id="path-effect1725"
@@ -175,7 +187,7 @@
        y2="638.83868" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient1454"
+       xlink:href="#linearGradient1128"
        id="linearGradient1409-5"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(0.92335883,0,0,0.92335883,55.795388,27.98287)"
@@ -198,12 +210,12 @@
      id="namedview343"
      showgrid="false"
      inkscape:zoom="0.44944923"
-     inkscape:cx="1518.3655"
-     inkscape:cy="588.34307"
+     inkscape:cx="1775.4224"
+     inkscape:cy="859.58942"
      inkscape:window-x="0"
      inkscape:window-y="38"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g339"
+     inkscape:current-layer="g1379"
      inkscape:snap-global="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -1537,20 +1549,20 @@
          id="g1235-4-6"
          transform="matrix(0.66264308,0,0,0.66264308,1625.7647,124.39093)">
         <g
-           style="fill:#f46c6c;fill-opacity:1"
+           style="fill:#f9b4b4;fill-opacity:1"
            transform="translate(-6.2006925,220.12458)"
            id="g1223-5-2">
           <path
              id="path1195-0-9"
              d="m 390.66666,631.5898 v 0 c 0,-9.2049 7.46207,-16.66699 16.66702,-16.66699 h 479.22845 c 4.42035,0 8.65967,1.75598 11.78534,4.88165 3.12567,3.12567 4.88166,7.36499 4.88166,11.78534 v 66.66602 c 0,9.20495 -7.4621,16.66699 -16.667,16.66699 H 407.33368 c -9.20495,0 -16.66702,-7.46204 -16.66702,-16.66699 z"
              inkscape:connector-curvature="0"
-             style="fill:#f46c6c;fill-opacity:1;fill-rule:evenodd"
+             style="fill:#f9b4b4;fill-opacity:1;fill-rule:evenodd"
              sodipodi:nodetypes="ccssssssssc" />
           <path
              id="path1197-3-1"
              d="m 279.83203,668.58685 v 0 c 0,-48.32275 39.17331,-87.49609 87.49606,-87.49609 v 0 c 23.20538,0 45.46036,9.21832 61.86905,25.62701 16.40869,16.4087 25.62701,38.6637 25.62701,61.86908 v 0 c 0,48.32276 -39.17334,87.49603 -87.49606,87.49603 v 0 c -48.32275,0 -87.49606,-39.17328 -87.49606,-87.49603 z"
              inkscape:connector-curvature="0"
-             style="fill:#f46c6c;fill-opacity:1;fill-rule:evenodd"
+             style="fill:#f9b4b4;fill-opacity:1;fill-rule:evenodd"
              sodipodi:nodetypes="ccccsccccc" />
         </g>
         <text
@@ -1605,16 +1617,16 @@
         <g
            id="g1697"
            transform="translate(-6.2006925,220.12458)"
-           style="fill:#f46c6c;fill-opacity:1">
+           style="fill:#f9b5b5;fill-opacity:1">
           <path
              sodipodi:nodetypes="ccssssssssc"
-             style="fill:#f46c6c;fill-opacity:1;fill-rule:evenodd"
+             style="fill:#f9b5b5;fill-opacity:1;fill-rule:evenodd"
              inkscape:connector-curvature="0"
              d="m 390.66666,631.5898 v 0 c 0,-9.2049 7.46207,-16.66699 16.66702,-16.66699 h 479.22845 c 4.42035,0 8.65967,1.75598 11.78534,4.88165 3.12567,3.12567 4.88166,7.36499 4.88166,11.78534 v 66.66602 c 0,9.20495 -7.4621,16.66699 -16.667,16.66699 H 407.33368 c -9.20495,0 -16.66702,-7.46204 -16.66702,-16.66699 z"
              id="path1693" />
           <path
              sodipodi:nodetypes="ccccsccccc"
-             style="fill:#f46c6c;fill-opacity:1;fill-rule:evenodd"
+             style="fill:#f9b5b5;fill-opacity:1;fill-rule:evenodd"
              inkscape:connector-curvature="0"
              d="m 279.83203,668.58685 v 0 c 0,-48.32275 39.17331,-87.49609 87.49606,-87.49609 v 0 c 23.20538,0 45.46036,9.21832 61.86905,25.62701 16.40869,16.4087 25.62701,38.6637 25.62701,61.86908 v 0 c 0,48.32276 -39.17334,87.49603 -87.49606,87.49603 v 0 c -48.32275,0 -87.49606,-39.17328 -87.49606,-87.49603 z"
              id="path1695" />
