@@ -1307,12 +1307,12 @@ robots already have a significant economic impact, social robots have not
 reached that point yet. Significantly, the recent failures of several companies
 investing in social robotics, like Jibo, Kuri, Willow Garage and Anki, and the
 major setbacks of companies like SoftBank, who designed and deployed hundreds of
-Pepper robot in their shops, before giving up a few months later due to the poor
+Pepper robot in their shops, before renouncing a few months later due to the poor
 reception by the customers, show that these technologies are not yet
 mature~\cite{tulli2019great}.
 
 Indeed, understanding \emph{why} these robots have failed, is one of the
-currently `hot questions' being debated within the Human-Robot Interaction
+active debate within the Human-Robot Interaction
 community~\cite{hoffman2019anki}, with only a handful of qualitative studies on
 this question~\cite{dereshev2019longterm,degraaf2017phased}. Proposed
 explanations include the lack of perceived usefulness (robot seen purely as a
@@ -1343,7 +1343,7 @@ handling autonomously a relatively broad range of shallow tasks (eg, a
 butler-like robot answering simple questions, like in~\cite{hawes2017strands} or
 in the H2020 MuMMer~\cite{heikkila2018can} and FP7
 Spencer~\cite{triebel2016spencer} projects), or a narrow, well-specified complex
-task (for instance, supporting exercising in a gym~\cite{winkle2020couch}).
+task (for instance, supporting exercising in a gym, as I did in~\cite{winkle2020couch}).
 However, general purpose, long-term interaction is still an open question.
 
 
@@ -1467,7 +1467,8 @@ address over the course of the project:
         with an artificial agent? In particular, how to balance autonomy of the
         robot with behaviour transparency and human oversight?
 
-The \project objectives are built around these three questions.
+\vspace{0.5em}
+\noindent The \project objectives are built around these three questions.
 
 \paragraph{\bf O1: conceptual framing} I will investigate the basic principles
 of responsible social interactions, that must form the foundations of a socially
@@ -1476,14 +1477,15 @@ What should motivate the robot to step in and attempt to help? What social norms
 are applicable to the robot behaviours? Using user-centred design and
 participatory design methodologies, I will identify the determinants and
 parameters of a responsible social intervention, performed by a socially-driven
-robot, and formalise them in guidelines. This objective aims at addressing RQ1.
+robot, and formalise them in guidelines. This objective aims at addressing RQ1,
+and is realised in WP1.
 
 \paragraph{\bf O2: real-time social modeling} I will significantly extend and integrate
 the current state-of-art in spatio-temporal modeling (so-called \emph{situation
 assessment}) with recent research in social state modeling, to create the novel
 cognitive capability of artificial \emph{social situation assessment}, enabling
 the robot to represent in real-time the social dynamics of its environment. This
-objective addresses one part of RQ2.
+objective addresses one part of RQ2, and is investigated in WP2.
 
 
 \paragraph{\bf O3: congruent social behaviours production} Using the
@@ -1492,14 +1494,14 @@ an expert choreographer, I will create a novel way of producing non-repetitive,
 socially-congruent, expressive motions. This will be integrated with novel
 \emph{sound landscapes} to create a beyond-state-of-art, non-verbal yet highly
 expressive,  action and communication system for the robot. This objective
-addresses another part of RQ2.
+addresses another part of RQ2, and is the focus of WP3.
 
 \paragraph{\bf O4: embodied AI breakthrough} I will integrate long-term social
 goals, arising from the interaction principles of \textbf{O1}, with the social
 modeling capability of \textbf{O2} and the behaviours production of \textbf{O3}
 into a principled, goal-driven cognitive architecture. The breakthrough will
 come from combining these long-term social goals with bottom-up action policies,
-designed and learnt from the end-users using human-in-the-loop machine learning.
+designed and learnt from the end-users using human-in-the-loop reinforcement learning.
 This will result in robot behaviours that are perceived as purposeful and
 intentional (long-term goals), while being shaped by a
 user-created and user-controlled action policy.
@@ -1512,9 +1514,9 @@ elicit sustained engagement from its human users.
 
 Second, I hypothesise that human-in-the-loop machine learning can be used to
 ensure an additional layer of human oversight and a level of behavioural
-transparency.  Human-in-the-loop machine learning -- as implemented in the SPARC
+transparency.  Human-in-the-loop reinforcement learning -- as implemented in the SPARC
 approach that I have developed and already used in complex social
-environments~\cite{senft2016sparc, senft2019teaching, winkle2020couch} -- relies
+environments~\cite{senft2017supervised, senft2019teaching, winkle2020couch} -- relies
 on a end-user `teacher', initially fully controlling the robot (teleoperation)
 while it learns the action policy, and then progressively relinquishing control
 up to a point where the robot is effectively autonomous. As argued
@@ -1526,17 +1528,17 @@ arbitrate between a top-down action policy arising from the long-term goals, and
 the bottom-up action policy learnt from the end-users? This question leads to
 objective {\bf O4'}: The design of a policy arbitration mechanism that preserve
 the robot's long-term intentional behaviour, while effectively guaranteeing human
-control, ownership and oversight.
+control, ownership and oversight. {\bf O4} and {\bf O4'} are addressed in WP4.
 
 \paragraph{\bf O5: ambitious field research} Finally, the last objective of the
-\project project is to demonstrate the effectiveness of our approach in complex,
+\project project is to demonstrate the effectiveness of my approach in complex,
 real world conditions. This means deploying the \project robots into existing
 social eco-systems that are sufficiently complex, yet open to explore novel
 social interactions. My objective is also to show that this real world
 deployment can be successfully driven by `end-to-end' involvement of all the
 end-users and stakeholders: from defining the robot role, from the different
 perspective of each of the end-users, to actually designing and `teaching' the
-robot what to do.
+robot what to do. This is the focus of WP5.
 
 
 \begin{framed}
@@ -1547,10 +1549,6 @@ understanding the dynamics of responsible long-term social human-robot
 interactions.
 
 \end{framed}
-
-The five objectives translate into five workpackages, that organise the actual
-work to deliver on the research programme. Section B2.b, below, presents in
-detail this work programme.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{The case for robot-supported human-human interactions}
@@ -1712,51 +1710,46 @@ support: the \project Ethics Advisory Board will contribute expertise to guide
 the work on ethics; Dr. Newbutt will provide expertise in learning technologies
 and cognitive impairment; Dr. Meckin will provide expertise in sound-based
 expressive communication; the WeTheCurious science centre will provide training in
-large-scale public engagement; the RustySquid company will provide expertise in
+large-scale public engagement; the Bristol Children's hospital will bring the
+required expertise in working with young patients; the RustySquid company will provide expertise in
 expressive arts and puppetering.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Impact of the \project project}
-\TODO{THIS SECTION IS STILL WORK-IN-PROGRESS}
-
-
-We will
-publish \project results in interdisciplinary and high-profile
-discipline-specific journals (eg. Science Robotics; Frontiers in AI and Robotics;
-Transaction in Human-Robot Interaction) and conferences (eg. AAAI, HRI, RSS), and
-organise \project-themed workshops.\TODO{details}
-
-
-
-Academically, the \project project represents a timely combination of
-very recent advances in supervised machine learning for social robot
-behaviour with a creative and interdisciplinary approach to the design
-and automation of social robot behaviour. We therefore expect to publish
-results in high-class scientific journals and conferences.
-
-The dataset of social behaviours and social signals we will create and
-distribute represents a one-in-a-kind resource for the human robot
-interaction community, and the human data collection will be
-transferable to research in other domains such as human-computer
-interaction.
-
-As \project will be deployed in a living lab environment, there is
-significant scope for public outreach/engagement and media coverage,
-which we will work with the BRL's media manager to maximise.
-
-
-\project aims at building unique European capacity to assert leadership in this
-domain, and, beyond the specific deliverables of this 5-years project,
-establishing the PI as a world-leader in goal-driven, socially-responsible
-robotics.
+%\section{Impact of the \project project}
+%\TODO{THIS SECTION IS STILL WORK-IN-PROGRESS}
+%
+%Academically, the \project project represents a timely combination of
+%very recent advances in supervised machine learning for social robot
+%behaviour with a creative and interdisciplinary approach to the design
+%and automation of social robot behaviour. 
+%We will publish \project results in interdisciplinary and high-profile
+%discipline-specific journals (eg. Science Robotics; Frontiers in AI and
+%Robotics; Transaction in Human-Robot Interaction) and conferences (eg. AAAI,
+%HRI, RSS).
+%
+%The dataset of social behaviours and social signals we will create and
+%distribute represents a one-in-a-kind resource for the human robot
+%interaction community, and the human data collection will be
+%transferable to research in other domains such as human-computer
+%interaction.
+%
+%As \project will be deployed in a living lab environment, there is
+%significant scope for public outreach/engagement and media coverage,
+%which we will work with the BRL's media manager to maximise.
+%
+%
+%\project aims at building unique European capacity to assert leadership in this
+%domain, and, beyond the specific deliverables of this 5-years project,
+%establishing the PI as a world-leader in goal-driven, socially-responsible
+%robotics.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 
 {\let\clearpage\relax\chapter{B2.b Methodology}\label{research-methodology}} % prevent page break before chapter
 
@@ -3006,55 +2999,12 @@ ready to dedicate time and effort for its success.
 \newpage
 \printbibliography
 
+
 \newrefsection
 \newpage
 \chapter{B2.c Description of resources}
 
 \eu{Has to be provided online; 8000 chars max (eg 2 pages)}
-
-
-\section{Requested budget}
-
-\TODO{This table does not count toward the page limit and is to be provided online}
-\begin{table}[]
-\begin{tabular}{@{}lll@{}}
-\toprule
-\textbf{Labour cost}                                             & \textbf{} & \textbf{€ 1,413,344} \\ \midrule
-Severin Lemaignan                                                & 36        & € 287,455            \\
-RF 1 (sociology/anthropology, WP1)                               & 36        & € 195,779            \\
-RF 2 (social signal processing/machine learning, WP2)            & 48        & € 263,722            \\
-RF 3 (cognitive architecture for robotics, experiments, WP4 WP5) & 60        & € 333,050            \\
-PhD 1 (social signal processing/machine learning, WP4 WP5)       & 42        & € 64,233             \\
-RF 4 (behaviour generation, WP3)                                 & 48        & € 269,105            \\
-                                                                 &           &                      \\
-\textbf{Travel}                                                  & \textbf{} & \textbf{€ 65,865}    \\ \midrule
-Conferences (1 per person per year): Registration                &           & € 22,910             \\
-Conferences (1 per person per year): Travel                      &           & € 42,955             \\
-                                                                 &           &                      \\
-\textbf{Equipment}                                               & \textbf{} & \textbf{€ 334,527}   \\ \midrule
-R1 Robot (inc VAT)                                               &           & € 292,800            \\
-R1 Shipping                                                      &           & € 7,000              \\
-Robot Installation and Training                                  &           & € 3,800              \\
-Workstation suitable for machine learning                        &           & € 22,910             \\
-Sensors (inc RGB-D cameras, one eye tracker)                     &           & € 8,018              \\
-                                                                 &           &                      \\
-\textbf{Materials}                                               & \textbf{} & \textbf{€ 11,455}    \\ \midrule
-Other Consumables                                                &           & € 11,455             \\
-                                                                 &           &                      \\
-\textbf{Other}                                                   & \textbf{} & \textbf{€ 23,455}    \\ \midrule
-Open access fees (2 Article per year)                            &           & € 12,000             \\
-Participants compensations                                       &           & € 3,436              \\
-Data Storage                                                     &           & € 2,291              \\
-Cloud Computing                                                  &           & € 5,727              \\
-                                                                 &           &                      \\
-Audit                                                            &           & € 5,000              \\
-                                                                 &           &                      \\
-                                                                 &           &                      \\ \midrule
-\textbf{Total}                                                   & \textbf{} & \textbf{€ 1,853,645} \\
-\textbf{Indirect}                                                & \textbf{} & \textbf{€ 463,411}   \\
-\textbf{EC Contribution}                                         & \textbf{} & \textbf{€ 2,317,056} \\ \bottomrule
-\end{tabular}
-\end{table}
 
 \section{Research team and PI commitment}
 
