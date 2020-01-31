@@ -1,3 +1,8 @@
+
+\def\pgfcalendarmonthletter#1{%
+\ifcase#1 J\or J\or F\or M\or A\or M\or J\or J\or A\or S\or O\or N\or D\fi%
+}
+
 \begin{ganttchart}[
         canvas/.append style={fill=none, draw=black!5, line width=.75pt},
         hgrid style/.style={draw=black!5, line width=.75pt},
@@ -34,7 +39,8 @@
         %\gantttitle[
         %    title label node/.append style={below left=7pt and -3pt}
         %]{Month:\quad1}{1}
-        \gantttitlecalendar{year, month} \\
+        %\gantttitlecalendar{year, month=letter} \\
+        \gantttitlecalendar{year} \\
         %\gantttitlelist{0,5,...,60}{1} \\
         %% WP1
         \definecolor{barcolor}{RGB}{153,204,254}
@@ -81,13 +87,19 @@
             \ganttbar[name=WP51expl,inline,bar/.append style={fill=gray!20}]{analysis}{2024-01}{2024-06} \\
             \ganttbar[name=WP52prep,inline,bar/.append style={fill=gray!20}]{preparation}{2024-01}{2024-06}
             \ganttbar[name=WP52]{\textbf{5.2} Children's hospital experiment}{2024-07}{2025-06}
-            \ganttbar[name=WP52expl,inline,bar/.append style={fill=gray!20}]{analysis}{2025-07}{2025-12} \\
+            \ganttbar[name=WP52expl,inline,bar/.append style={fill=gray!20}]{analysis}{2025-07}{2025-12} \ganttnewline[thick]
 
         %\ganttlink[link type=f-s]{WP41}{WP51}
 
 
         %\ganttlink[link type=f-s]{WBS1B}{WBS1C}
         %\ganttlink[link type=f-f,link label node/.append style=left]{WBS1C}{WBS1D}
+
+        \ganttmilestone{\bf\sc Ethics workshops}{2021-04}
+        \ganttmilestone{}{2022-09}
+        \ganttmilestone{}{2023-09}
+        \ganttmilestone{}{2025-03} \ganttnewline[gray,dotted]
+
 
         \ganttmilestone{\bf\sc Integration sprints}{2021-06}
         \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2021-11}
@@ -98,16 +110,16 @@
         \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2024-05}
         \ganttmilestone{}{2024-12}
 
-
         % separate years
-        \ganttvrule[vrule/.append style={gray, dotted, thin}]{}{2021-12}
-        \ganttvrule[vrule/.append style={gray, dotted, thin}]{}{2022-12}
-        \ganttvrule[vrule/.append style={gray, dotted, thin}]{}{2023-12}
-        \ganttvrule[vrule/.append style={gray, dotted, thin}]{}{2024-12}
+        \ganttvrule{}{2021-12}
+        \ganttvrule{}{2022-12}
+        \ganttvrule{}{2023-12}
+        \ganttvrule{}{2024-12}
+        \ganttvrule{}{2025-12}
 
 
-        \ganttvrule{study @WeTheCurious}{2021-12}
-        \ganttvrule{study @SEN school}{2022-12}
-        \ganttvrule{study @Children hospital}{2024-06}
+        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @WeTheCurious}{2021-12}
+        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @SEN school}{2022-12}
+        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @Children hospital}{2024-06}
 
 \end{ganttchart}
