@@ -158,12 +158,12 @@ parents, and where possible, the children themselves.
 \begin{wrapfigure}[11]{l}{0.15\linewidth}
     \centering
     \vspace{-10pt}
-    \includegraphics[width=\linewidth]{R1-profile}
-    \label{fig|R1}
+    \includegraphics[width=\linewidth]{halodi-eve}
+    \label{fig|EVE}
 \end{wrapfigure}
 
 Importantly, \project focuses specifically on the \ul{AI engine} of the robot: I
-will use an existing robotic platform (IIT's R1, pictured on the left) and
+will use an existing robotic platform (Halodi's EVE, pictured on the left) and
 develop and train the algorithms required to achieve autonomy and responsible,
 long-term social utility. Indeed, after an initial training period, the robot
 will be \emph{autonomous}: while the users will be provided tools to override
@@ -181,15 +181,16 @@ motions, combined with a novel modality based on \emph{soundscapes}: sound
 landscapes that the robot can modulate to influence the mood of the social
 environment (calm, excited, worried, etc.).
 
-As a ground-breaking project, \project will assert and reinforce the European leadership in AI and
-intelligent robotics, in line with the EU's strong societal values: by developing
-socially responsible AI that guarantees, by design, long-term benefits to the
-society. The very first task T1.1, spread over the first 4 years of the project,
-specifically addresses and frames the ethical underpinnings of social robots,
-and delivers the guidelines that we need to inform our future policies on social
-robotics. Combined with beyond-state-of-the-art technological developments,
-\textbf{the \project research programme will provide a major contribution in
-securing a safe and responsible digital future in Europe}. 
+As a ground-breaking project, \project will assert and reinforce the European
+leadership in AI and intelligent robotics, in line with the EU's strong societal
+values: by developing socially responsible AI that guarantees, by design,
+long-term benefits to the society. The very first task T1.1, spread over the
+first 4 years of the project, specifically addresses and frames the ethical
+underpinnings of social robots, and delivers the guidelines that we need to
+inform our future policies on social robotics. Combined with
+beyond-state-of-the-art technological developments, \textbf{the \project
+research programme will provide a major contribution in securing a safe and
+responsible digital future in Europe}. 
 
 \section{Overview of the \project work programme}
 
@@ -412,7 +413,7 @@ at the host institution.
 \subsection{WP4: \textbf{\wpFour}}
 
 In WP4, I will design a novel socio-cognitive architecture for the social
-robots, and implement it on the IIT R1 robot.  WP4 will integrate together the
+robots, and implement it on the Halodi EVE robot.  WP4 will integrate together the
 modeling capabilities and behaviour production developed in WP2 and WP3, with a
 dual action policy: a policy driven by a social teleology (eg an artificial
 intrinsic motivation to act socially), and a policy learned through
@@ -879,43 +880,6 @@ the experience learnt from previous studies in similar environments, with the
 novel contributions being both the very long-term interventions (one year each),
 and the user-centered methodology that I describe in the following sections.
 
-
-\subsection{State of art in mobile robotic platforms for social interactions}
-
-Looking specifically at human-sized mobile manipulators with advanced social
-features, the choice of robotic platforms is in effect limited.
-Table~\ref{robot-comparison} compares the two leading mobile social robots
-available on the market today (PAL TiaGo and SoftBank Pepper), along with the
-new R1 platform developed by the Italian Institute of Technology (note that the
-Fetch Mobile Manipulator has been omitted, as it is functionally similar to
-TiaGo).
-
-While not yet on the market, the IIT has offered early access to the platform
-for this project.
-
-\begin{table}[h!]
-    \caption{Comparison of IIT R1 robot with PAL TiaGo and Softbank Pepper. R1 has been chosen for \project
-    for being the only mobile dual manipulator with good navigation and advanced social interaction
-    capabilities.}
-    \resizebox{\linewidth}{!}{
-    \begin{tabular}{@{}p{3cm}p{5cm}p{5cm}p{5cm}@{}}
-\toprule
-                                           & PAL TiaGo                                                & Softbank Pepper                                                           & \textbf{IIT R1}                                                                                                                              \\ \midrule
-\textbf{Social features}                   & Poor (non-expressive head)                               & Expressive, yet fixed, face; limited gaze; approachable & Expressive face~\cite{lehman2016head}; artificial skin for touch-based interactions; approachable \\
-\textbf{Perception}                        & Medium (RGB-D camera; laser
-        scanner; no microphone)      & Medium (RGB-D; simple mic array; poor
-        laser scanner)                      & Good (RGB-D; simple mic array;
-        laser scanner)                                                                                                   \\
-\textbf{Navigation}                        & Good (however, limited agility due
-        to large footprint)   & Poor (weak localisation capabilities)
-        & Good (high agility due to Segway-like self-balancing)                                                                                                   \\
-\textbf{Safety}                            & Medium (heavy robot; large footprint; non-compliant arm) & Medium (smaller footprint; safe arms; limited stability)                  & Good (smaller footprint; safe arms; dynamic stability)                                                                                       \\
-\textbf{Manipulation capabilities}         & Medium (non-anthropomorphic gripper; single arm)         & Limited (poor gripper with low payload; dual arm)                         & Good (anthropomorphic gripper; pressure sensors; dual arm; 1.5kg payload)                                                                    \\
-\textbf{Suitability for care environments} & Poor (relatively large, difficult to clear)              & Good (smaller footprint, easy to clean)                                   & Good (smaller footprint, easy to clean)                                                                                                      \\ \bottomrule
-\end{tabular}
-}
-    \label{robot-comparison}
-\end{table}
 
 
 
