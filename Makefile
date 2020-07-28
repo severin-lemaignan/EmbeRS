@@ -6,10 +6,10 @@ SVG=$(wildcard figs/*.svg)
 all: latex
 
 $(SVG:.svg=.png): %.png: %.svg
-	inkscape -d 200 --export-png $(@) $(<)
+	inkscape -d 200 -o $(@) $(<)
 
 $(SVG:.svg=.pdf): %.pdf: %.svg
-	inkscape --export-pdf $(@) $(<)
+	inkscape -o $(@) $(<)
 
 %.pdf: %.tex
 	lualatex $(<)
