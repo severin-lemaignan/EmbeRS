@@ -7,9 +7,32 @@
 \setuldepth{aaaa}
 \usepackage{framed}
 
-
 %\usepackage[style=authoryear]{biblatex}
-\usepackage[style=authoryear-comp, maxbibnames=19, maxcitenames=2,firstinits=true]{biblatex}
+\usepackage[style=verbose-note, maxbibnames=19,maxcitenames=2,firstinits=true,sorting=none]{biblatex}
+
+\usepackage{footmisc}
+
+% avoid repeating footnote refernece
+% from: https://tex.stackexchange.com/questions/200286/biblatex-repeated-citations-in-footnotes-that-point-back-to-earlier-footnotes
+\makeatletter
+\DeclareCiteCommand{\myfootcite}
+  {}
+  {\usebibmacro{citeindex}%
+   \usebibmacro{myfootcite}}
+  {}
+  {}
+
+\newbibmacro*{myfootcite}{%
+  \ifciteseen
+    {\usebibmacro{myfootcite:note}}
+    {\mkbibfootnote{\usebibmacro{footcite:full}%
+     \usebibmacro{footcite:save}}}}
+
+\newbibmacro*{myfootcite:note}{\footref{cbx@\csuse{cbx@f@\thefield{entrykey}}}}
+\makeatother
+
+
+
 %\usepackage[maxbibnames=19, maxcitenames=2,firstinits=true]{biblatex}
 %\usepackage[style=authoryear,babel=hyphen,backend=biber]{biblatex}
 \addbibresource{biblio.bib}
