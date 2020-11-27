@@ -46,9 +46,7 @@
         \definecolor{barcolor}{RGB}{153,204,254}
         \ganttgroup[]{WP1 \wpOneShort}{2021-01}{2023-12} \\
             \ganttbar[name=WP11]{\textbf{1.1} Conceptual framing \& ethics}{2021-01}{2023-12} \\
-            \ganttbar[name=WP12prep,inline,bar/.append style={fill=gray!20}]{preparation}{2021-07}{2021-12}
-            \ganttbar[name=WP12exp,inline]{WeTheCurious experiment}{2022-01}{2022-12}
-            \ganttbar[name=WP12]{\textbf{1.2} Principles of r-HHI}{2023-01}{2023-06} \\
+            \ganttbar[name=WP11]{\textbf{1.2} Principles of r-HHI}{2023-01}{2023-06} \\
 
         %\ganttlink[link type=f-s]{WBS1A}{WBS1B}
 
@@ -82,12 +80,15 @@
         %% WP5
         \definecolor{barcolor}{RGB}{234,200,20}
         \ganttgroup[]{WP5 \wpFiveShort}{2022-07}{2025-12} \\
-            \ganttbar[name=WP51prep,inline,bar/.append style={fill=gray!20}]{preparation}{2022-07}{2022-12}
-            \ganttbar[name=WP51]{\textbf{5.1} SEN schools experiment}{2023-01}{2023-12} 
-            \ganttbar[name=WP51expl,inline,bar/.append style={fill=gray!20}]{analysis}{2024-01}{2024-06} \\
-            \ganttbar[name=WP52prep,inline,bar/.append style={fill=gray!20}]{preparation}{2024-01}{2024-06}
-            \ganttbar[name=WP52]{\textbf{5.2} Children's hospital experiment}{2024-07}{2025-06}
-            \ganttbar[name=WP52expl,inline,bar/.append style={fill=gray!20}]{analysis}{2025-07}{2025-12} \ganttnewline[thick]
+            \ganttbar[name=WP51prep,inline,bar/.append style={fill=gray!20}]{preparation}{2021-07}{2021-12}
+            \ganttbar[name=WP51]{\textbf{5.1} WeTheCurious experiment}{2022-01}{2022-12} 
+            \ganttbar[name=WP51expl,inline,bar/.append style={fill=gray!20}]{analysis}{2023-01}{2023-06} \\
+            \ganttbar[name=WP52prep,inline,bar/.append style={fill=gray!20}]{preparation}{2023-07}{2023-12}
+            \ganttbar[name=WP52]{\textbf{5.2} SEN schools experiment}{2024-01}{2024-12} 
+            \ganttbar[name=WP52expl,inline,bar/.append style={fill=gray!20}]{analysis}{2025-01}{2025-06} \\
+            %\ganttbar[name=WP52prep,inline,bar/.append style={fill=gray!20}]{preparation}{2024-01}{2024-06}
+            %\ganttbar[name=WP52]{\textbf{5.2} Children's hospital experiment}{2024-07}{2025-06}
+            %\ganttbar[name=WP52expl,inline,bar/.append style={fill=gray!20}]{analysis}{2025-07}{2025-12} \ganttnewline[thick]
 
         %\ganttlink[link type=f-s]{WP41}{WP51}
 
@@ -118,8 +119,7 @@
         \ganttvrule{}{2025-12}
 
 
-        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @WeTheCurious}{2021-12}
-        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @SEN school}{2022-12}
-        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @Children hospital}{2024-06}
+%        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @WeTheCurious}{2021-12}
+%        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @SEN school}{2023-12}
 
 \end{ganttchart}
