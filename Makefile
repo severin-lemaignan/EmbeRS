@@ -1,6 +1,7 @@
 TARGETS=project.tex wizus-ethics.tex
 BIBS=biblio.bib my-publications.bib mutual-modelling.bib
 
+SOURCE = $(wildcard *.tex)
 SVG=$(wildcard figs/*.svg)
 
 all: latex
@@ -11,7 +12,7 @@ $(SVG:.svg=.png): %.png: %.svg
 $(SVG:.svg=.pdf): %.pdf: %.svg
 	inkscape -o $(@) $(<)
 
-%.pdf: %.tex
+%.pdf: %.tex $(SOURCE)
 	lualatex $(<)
 
 %.docx: %.tex
