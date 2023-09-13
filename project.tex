@@ -7,6 +7,8 @@
 \setuldepth{aaaa}
 \usepackage{framed}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 %% enable markdown's stars to bold/italic sections of code -- requires lualatex!
 \usepackage{luacode,luatexbase}
 \begin{luacode}
@@ -96,6 +98,12 @@
 
 \title{\project - Part B}
 
+\author{Lemaignan}
+\fancyhead[L]{Lemaignan, \project{}, Part B1}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Names of the Work packages
 
@@ -128,10 +136,12 @@ social spaces}
 \maketitle
 
 \begin{center}
-    ERC Consolidator Grant 2020
+    ERC Consolidator Grant 2024
+
+    Research proposal [Part B1]
 
     \vspace{2cm}
-    \includegraphics[width=0.7\linewidth]{logo}
+    %\includegraphics[width=0.7\linewidth]{logo}
 
     \textbf{\LARGE Socially-Driven Robots to Support Human-Human Interactions}
 
