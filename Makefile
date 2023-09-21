@@ -1,4 +1,4 @@
-TARGETS=project.tex wizus-ethics.tex
+TARGETS=project.tex # wizus-ethics.tex
 BIBS=biblio.bib my-publications.bib mutual-modelling.bib
 
 SVG=$(wildcard figs/*.svg)
