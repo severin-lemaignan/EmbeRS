@@ -18,13 +18,85 @@ since the panel will only evaluate Part B1 at step 1.}
 
 \section{Long-term vision and ground-breaking nature of the project}
 
-\subsection{Core contribution and impact}
+\subsection{Framing and impact}
 
-AI and robots are emerging as key factors to successfully address modern societal
-challenges, like the ageing society or increasing social isolation. In this
-context, researchers in social robotics have the prime responsibility to ensure
-that robots can understand and reason about their spatial and social environment
-in such a way as to ensure a responsible and positive societal impact.
+\emph{Social awareness} is a socio-cognitive skil that is essential for
+artificial social system, like social robots, to e.g.  act in a
+context-sensitive manner, reason and apply social norms (for instance, do not
+navigate in the middle of a group, or do not suddenly interrupt a conversation),
+or create proactive social agents (in order to acknowledge and respond to a
+human who would like to engage with the robot, the robot must first adequately
+model and recognise the corresponding social situation).
+
+\emph{Social situations} have indeed been an important object of study in social
+psychology for a long time~\cite{argyle1981social}. Grabett, for instance, gives
+the following definition~\cite{grabett1970analysis}: \emph{a social situation is
+a temporally and spatially bounded series of events abstracted by the observer
+from the on-going flow of social life}. When specifically looking at artificial
+agents like robots, their level of social cognition depends on their ability to
+identify and interpret the world surrounding them~\cite{szczepanowski2017}, and
+in particular, correctly interpret transactions of social signals -- specific
+events in which an agent performs a social action aimed at another
+agent~\cite{pantic2011}. This process is known as \textit{situational
+awareness}, of which Endsley~\cite{endsley1995} defines three
+levels:\emph{perception}, \emph{interpretation}, and \emph{evaluation}.
+
+While the \emph{perception} of social signals by physical AI systems has been
+studied in depth (see for instance Pantic et al.~\cite{pantic2011} in
+Human-Robot Interaction), and the \emph{evaluation} of the social situation is
+usually handled as an aspect of the system's decision making process, the
+\emph{interpretation} of social situations is a difficult problem.  It requires
+to build and maintain a task-appropriate model of the situations, and represent
+it in such a way that a machine can reason about it.
+The \project project aims at achieving a major breakthrough at this level: how
+to automatically represent, reason and interpret social situations -- or more
+generally, the social environment of an agent.
+
+
+While the project can have a major impact on a broad range of disciplines from
+digital humanities to AI and social simulation, \project looks at social
+representation from the perspective of \emph{social robotics}.  There are
+several reasons for this choice: first, because robots are systems we can freely
+program controlled and repeatable behaviours, they lend themselves especially
+well to experimental investigation.  Second, and compared to other disembodied
+AI systems, they are physically situated, able to interact with humans and the
+environment in a broad range of situations. To do so, we expect social robots to
+exhibit \emph{social awareness}, i.e. to appraise and maintain a model of the
+social situation in which they are embedded. Depending on the role of the robot,
+this might include understanding who is present, who is interacting with whom,
+which are the resulting groups, what are the in-group roles,  etc.
+
+Finally, social robots are emerging as key factors to successfully address
+modern societal challenges, like the ageing society or increasing social
+isolation. In this context, not only we lack appropriate tools to model the
+social environment of robots, severly limiting their effectiveness, but also
+researchers in social robotics have the prime responsibility to ensure that
+robots can understand and reason about their spatial and social environment in
+such a way as to ensure a responsible and positive societal impact. As such,
+beyond `using' robots as an experimental methodology, \project also has the
+potential of significantly transforming the field of social robotics.
+
+
+diversity and richness of social situations
+
+\subsection{Core contribution}
+
+
+Inspired by how
+large language models are able to encode complex social semantics, \project
+investigates how these models can be leveraged to introduce \emph{social
+embeddings}: compact, highly expressive mathematical representations of
+arbitrary social situations.  Building on the early concept that I already
+validated and published, \project will fully characterise social embeddings;
+expand their scope to complex, real-world social situations; and demonstrate
+their transformative potential through deployment of socially
+intelligent robots in several experimental settings.
+
+
+\project \emph{Embeddings} are such
+representations.
+
+
 
 The basic idea of \emph{social robots} refers to robots that are situated in a
 human social environment. In this context, we expect social robots to exhibit
