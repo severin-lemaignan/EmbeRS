@@ -16,102 +16,106 @@ towards the page limits. It is important that this extended synopsis contains
 all essential information including the feasibility of the scientific proposal
 since the panel will only evaluate Part B1 at step 1.}
 
-\section{Long-term vision and ground-breaking nature of the project}
+%\section{Long-term vision and ground-breaking nature of the project}
 
-\subsection{Framing and impact}
+\subsection{Long-term vision and ground-breaking nature of the project}
 
-\emph{Social awareness} is a socio-cognitive skil that is essential for
-artificial social system, like social robots, to e.g.  act in a
-context-sensitive manner, reason and apply social norms (for instance, do not
-navigate in the middle of a group, or do not suddenly interrupt a conversation),
-or create proactive social agents (in order to acknowledge and respond to a
-human who would like to engage with the robot, the robot must first adequately
-model and recognise the corresponding social situation).
+The \project project addresses the following simple question: How to
+represent social situations? How to represent them in their full complexity, so
+that artificial systems can compare them, reason about them, interpret them,
+make decision about them? (in this project, I will primarily look at social
+robots, but it would apply equally well to e.g. AI or data-driven social
+sciences).
 
 \emph{Social situations} have indeed been an important object of study in social
-psychology for a long time~\cite{argyle1981social}. Grabett, for instance, gives
-the following definition~\cite{grabett1970analysis}: \emph{a social situation is
+psychology for a long time~\cite{argyle1981social}. Garbett, for instance, gives
+the following definition~\cite{garbett1970analysis}: \emph{a social situation is
 a temporally and spatially bounded series of events abstracted by the observer
 from the on-going flow of social life}. When specifically looking at artificial
-agents like robots, their level of social cognition depends on their ability to
-identify and interpret the world surrounding them~\cite{szczepanowski2017}, and
-in particular, correctly interpret transactions of social signals -- specific
+agents like robots, making sense of these situations is critical: their level of
+social cognition depends on their ability to identify, interpret and interact
+with the world surrounding them~\cite{szczepanowski2017computational}, and in
+particular, correctly interpret transactions of social signals -- specific
 events in which an agent performs a social action aimed at another
-agent~\cite{pantic2011}. This process is known as \textit{situational
-awareness}, of which Endsley~\cite{endsley1995} defines three
+agent~\cite{pantic2011social}. This process is known as \textit{situational
+awareness}, of which Endsley~\cite{endsley1995theory} defines three
 levels:\emph{perception}, \emph{interpretation}, and \emph{evaluation}.
 
 While the \emph{perception} of social signals by physical AI systems has been
-studied in depth (see for instance Pantic et al.~\cite{pantic2011} in
-Human-Robot Interaction), and the \emph{evaluation} of the social situation is
-usually handled as an aspect of the system's decision making process, the
-\emph{interpretation} of social situations is a difficult problem.  It requires
-to build and maintain a task-appropriate model of the situations, and represent
-it in such a way that a machine can reason about it.
-The \project project aims at achieving a major breakthrough at this level: how
-to automatically represent, reason and interpret social situations -- or more
-generally, the social environment of an agent.
+studied in depth (see for instance Pantic et al.~\cite{pantic2011social}), the
+\emph{interpretation} and the \emph{evaluation} of social situations are
+difficult problems.  Interpretation, for instance, requires to build and
+maintain a task-appropriate model of the situations, and represent it in such a
+way that a machine can reason about it. \project aims at achieving a major
+breakthrough in this regard, \textbf{introducing the idea of \emph{social
+embeddings} as a novel solution to automatically represent, reason and interpret
+the social environment of an agent}.
 
+%\emph{Social awareness} is a socio-cognitive skill that is essential for
+%artificial social system, like social robots, to e.g.  act in a
+%context-sensitive manner, reason and apply social norms,
+%or create proactive social agents (in order to acknowledge and respond to a
+%human who would like to engage with the robot, the robot must first adequately
+%model and recognise the corresponding social situation).
 
-While the project can have a major impact on a broad range of disciplines from
-digital humanities to AI and social simulation, \project looks at social
-representation from the perspective of \emph{social robotics}.  There are
-several reasons for this choice: first, because robots are systems we can freely
-program controlled and repeatable behaviours, they lend themselves especially
-well to experimental investigation.  Second, and compared to other disembodied
-AI systems, they are physically situated, able to interact with humans and the
-environment in a broad range of situations. To do so, we expect social robots to
-exhibit \emph{social awareness}, i.e. to appraise and maintain a model of the
-social situation in which they are embedded. Depending on the role of the robot,
-this might include understanding who is present, who is interacting with whom,
-which are the resulting groups, what are the in-group roles,  etc.
+If successful, the results of \project will have a major impact on a broad range
+of disciplines related to the study of our social world, from digital humanities
+to AI and social simulation. Indeed, social embeddings represent a paradigm
+shift for the domain, and will enable at-scale representation, comparison and
+analysis of social situations. 
 
-Finally, social robots are emerging as key factors to successfully address
-modern societal challenges, like the ageing society or increasing social
+I choose to primarily focus the \project project on social robotics,a particularly challenging domain. Several reasons drive this choice: first, robots can be
+freely programed: they lend themselves especially well to experimental
+investigation, both in controlled and `in-the-wild' environments.  Second,
+compared to other disembodied AI systems, they are physically situated, able to
+interact with humans and the environment in a broad range of real-world
+situations. Third, I have a extensive experience and know-how in social
+robotics, both at basic and engineering level, enabling an ambitious yet
+realistic experimental program.
+
+In addition, social robots are emerging as key enablers to address several
+emerging societal challenges, like the ageing society or increasing social
 isolation. In this context, not only we lack appropriate tools to model the
-social environment of robots, severly limiting their effectiveness, but also
+social environment of robots, severely limiting their effectiveness, but also
 researchers in social robotics have the prime responsibility to ensure that
-robots can understand and reason about their spatial and social environment in
-such a way as to ensure a responsible and positive societal impact. As such,
+robots can properly understand and reason about their spatial and social
+environment, also ensuring responsible and positive societal impact. As such,
 beyond `using' robots as an experimental methodology, \project also has the
-potential of significantly transforming the field of social robotics.
+ambition to significantly transform the field of social robotics itself.
 
+\subsection{Core concept of \project}
 
-diversity and richness of social situations
+Inspired by how large language models are able to encode complex social
+semantics, \project is about leveraging these models to introduce
+\emph{social embeddings}.
 
-\subsection{Core contribution}
+In the context of machine learning, we refer to an \emph{embedding} as a
+real-valued vector representation of a typically much high dimension input (for
+instance, an image) into a lower-dimensional space. Critically, embeddings are
+trained to encode the relationships and semantic nuances that might exist in the
+original input space. For instance, two pictures of the same face transformed
+with an embedding tuned for facial recognition would yield two vectors that are
+similar to each other (i.e., close to each other for a given metric like the
+usual Euclidian distance). As such, the process of embedding not only condenses
+high-dimensional information into a more manageable form but also captures
+latent associations that might otherwise remain
+obscured~\cite{bengio2009learning}. Work on embeddings has recently yielded
+spectacular results in language processing, with the advent of so-called Large
+Language Models (like Llama or GPT). These models relies themselves on
+text-level embeddings, representing a short text as a numerical
+vector~\cite{reimers2019sentencebert,muennighoff2022sgpt}. The resulting
+embeddings have been shown to effectively encode, for instance, semantic
+relatedness~\cite{thakur2021beir}.
 
-
-Inspired by how
-large language models are able to encode complex social semantics, \project
-investigates how these models can be leveraged to introduce \emph{social
-embeddings}: compact, highly expressive mathematical representations of
-arbitrary social situations.  Building on the early concept that I already
-validated and published, \project will fully characterise social embeddings;
-expand their scope to complex, real-world social situations; and demonstrate
-their transformative potential through deployment of socially
-intelligent robots in several experimental settings.
-
-
-\project \emph{Embeddings} are such
-representations.
-
-
-
-The basic idea of \emph{social robots} refers to robots that are situated in a
-human social environment. In this context, we expect social robots to exhibit
-\emph{social awareness}, i.e. to appraise and maintain a model of the social
-situation in which they are embedded. Depending on the role of the robot, this
-might include understanding who is present, who is interacting with whom, which
-are the resulting groups,  what are the in-group roles,  etc.
-
-Social awareness, as a socio-cognitive skill, is essential for the robot to e.g.
-act in a context-sensitive manner; reason and apply social norms (for instance,
-do not navigate in the middle of a group, or do not suddenly interrupt a
-conversation); or create proactive social agents (in order to acknowledge and
-respond to a human who would like to engage with the robot, the robot must first
-adequately model and recognise the corresponding social situation).
-
+Combining social situations and text embeddings, \project aims at creating and
+characterising \emph{social embeddings}. I define a \emph{social embedding} as a
+compact, real-valued numerical representation (a vector) of a social situation,
+as experienced by an agent immersed in that social environment. Following the
+general idea of embeddings, social embeddings are designed to encode the
+\emph{semantics} of the social situation currently experienced by the agent,
+facilitating the interpretation of the situation. For instance, it could make it
+straightforward to compare two social situation by simply measuring how similar
+the two corresponding embeddings are (Figure~\ref{fig:social-embeddings}).
 
 \begin{figure}[H]
     \centering
@@ -119,110 +123,144 @@ adequately model and recognise the corresponding social situation).
     \caption{General principle of social embeddings: arbitrary social situations
     are projected into real-valued vector space, \emph{embedding} their
     semantics. In this example (and assuming the perspective of the yellow
-    character), scenes A and B  are more similar to each others (one person walking towards the
-    character, with an independent group of people chatting in the background),
-    than B and C (in C, the character is already engaged in an interaction).
-    Social embeddings make it possible to compare such social situations using
-    a simple distance between vectors.}
+    character), scenes A and B  are more similar to each others (one person
+    walking towards the character, with an independent group of people chatting
+    in the background), than B and C (in C, the character is already engaged in
+    an interaction).  Social embeddings make it possible to e.g. compare such
+    social situations using a simple distance between vectors.}
+
     \label{fig:social-embeddings}
 \end{figure}
 
-This can only be achieved if robots are endowed with the ability to represent
-not only their physical environment, but also their social environment and
-context. The \project project aims at designing, implementing and characterising
-a radically novel method to achieve this goal, based on the concept of
-\emph{embedding}: a low-dimensional, semantics-preserving, mathematical
-representation of a high-dimensional input (Figure~\ref{fig:social-embeddings}).
-Starting from a proof-of-concept of \emph{social embeddings} that I recently
-published~\cite{lemaignan2024social}, \project develops and fully characterise
-the concept of \emph{social embeddings}, that applies, for the first time, the
-idea of building a compact numerical representation to the complexity of social
-interactions and social dynamics.
+
+The key insight leading to the idea of social embeddings is that of exploiting
+the social knowledge already encoded in the latent space of large language
+models like Llama2 or GPT-4. I will do so by automatically generating a textual
+description of the social environment of the agent (using for instance the
+existing perception routines of social robots), and by transforming this
+description into a text embedding via a large language model.  By doing so, we
+effectively construct a \emph{social embedding}, i.e., a projection of the
+social space into a machine-friendly numerical space.  This idea builds on a
+proof-of-concept that I already validated and
+published~\cite{lemaignan2024social}. \project will take that early concept, and
+turn into a mature mathematical tool for social sciences and artificial social
+agents. I will fully characterise social embeddings; expand their scope to
+complex, real-world social situations; and demonstrate their transformative
+potential through deployment of socially intelligent robots in multiple
+experimental settings.
+
+%
+%The basic idea of \emph{social robots} refers to robots that are situated in a
+%human social environment. In this context, we expect social robots to exhibit
+%\emph{social awareness}, i.e. to appraise and maintain a model of the social
+%situation in which they are embedded. Depending on the role of the robot, this
+%might include understanding who is present, who is interacting with whom, which
+%are the resulting groups,  what are the in-group roles,  etc.
+%
+%Social awareness, as a socio-cognitive skill, is essential for the robot to e.g.
+%act in a context-sensitive manner; reason and apply social norms (for instance,
+%do not navigate in the middle of a group, or do not suddenly interrupt a
+%conversation); or create proactive social agents (in order to acknowledge and
+%respond to a human who would like to engage with the robot, the robot must first
+%adequately model and recognise the corresponding social situation).
+
+%This can only be achieved if robots are endowed with the ability to represent
+%not only their physical environment, but also their social environment and
+%context. The \project project aims at designing, implementing and characterising
+%a radically novel method to achieve this goal, based on the concept of
+%\emph{embedding}: a low-dimensional, semantics-preserving, mathematical
+%representation of a high-dimensional input (Figure~\ref{fig:social-embeddings}).
+%Starting from a proof-of-concept of \emph{social embeddings} that I recently
+%published~\cite{lemaignan2024social}, \project develops and fully characterise
+%the concept of \emph{social embeddings}, that applies, for the first time, the
+%idea of building a compact numerical representation to the complexity of social
+%interactions and social dynamics.
 
 
-At a scientific level, 
-\TODO{articulate scientific impact}
+%
+%At a scientific level, 
+%\TODO{articulate scientific impact}
+%
+%Finally, \project is also about asserting and reinforcing the European
+%leadership in AI and intelligent robotics, in line with EU strong societal
+%values: a physical AI system able to represent and reason about its social
+%environment is also a system that can be designed to have an acceptable and
+%positive social impact, in line with the European objectives for socially
+%responsible AI. \project can directly contribute to these goals: the science and
+%technology that underpins the project \textbf{provide an important contribution
+%in securing a safe and responsible digital future in Europe}, as well as
+%\textbf{\project building the capacity in Europe to develop socially intelligent
+%embodied AI systems}. 
 
-Finally, \project is also about asserting and reinforcing the European
-leadership in AI and intelligent robotics, in line with EU strong societal
-values: a physical AI system able to represent and reason about its social
-environment is also a system that can be designed to have an acceptable and
-positive social impact, in line with the European objectives for socially
-responsible AI. \project can directly contribute to these goals: the science and
-technology that underpins the project \textbf{provide an important contribution
-in securing a safe and responsible digital future in Europe}, as well as
-\textbf{\project building the capacity in Europe to develop socially intelligent
-embodied AI systems}. 
 
-
-\subsection{Structure of the research programme}
+\subsection{Research objectives}
 
 \project is built around three axes: a basic research programme; an experimental
 programme that looks specifically at the application of social embeddings to
 social robotics; and, running in parallel to those first two axes, a scientific
 investigation of the ethical dimension of social embeddings.
 
-At the basic research level, \project targets the following
-two overarching research goals: (1) build compact, yet semantics-preserving,
-embeddings to represent arbitrary social and spatial environments for service
-robots; fully characterize these embeddings, including their latent semantics;
-(2) precisely frame the \emph{social awareness} enabled by social embeddings,
-and demonstrate the key novel socio-cognitive capabilities that they enable.
-
+At the basic research level, \project targets two overarching research goals:
+(1) how to build compact, yet semantics-preserving, embeddings to represent
+arbitrary social environments; how to fully characterize these embeddings,
+including their latent semantics; (2) precisely frame the \emph{social
+awareness} enabled by social embeddings, and demonstrate the key novel
+socio-cognitive capabilities that they enable on social robots.
 I translate these two goals into six operational research objectives:
 
-\begin{center}
-    \includegraphics[trim=0 0 0 0, clip,width=0.3\linewidth]{objectives}
-\end{center}
+%\begin{center}
+%    \includegraphics[trim=0 0 0 0, clip,width=0.3\linewidth]{objectives}
+%\end{center}
 
 \begin{enumerate}[label=\textbf{O\arabic*}]
-    \item \label{T1} acquire and analyse a large dataset of real-world human
-        interactions to identify a set of prototypical
-        social situations; these will serve both for embedding fine-tuning, and
-        as reference to analyse the topology and latent semantics of the social
-        embedding space;
+    \item \label{T1} To \textbf{construct and characterize the fundamental
+        properties of social embeddings}. This also include the acquisition and
+        analyse a large dataset of real-world human interactions to identify a
+        set of prototypical social situations; these will serve both for
+        embedding fine-tuning, and as reference to analyse the topology and
+        latent semantics of the social embedding space;
 
-    \item \label{T2} study social dynamics by characterizing the trajectories of
-        on-going social situations in the embedding space. I will look in
-        particular into trajectories \emph{discontinuties}, that might represent
-        unexpected changes of social dynamics, possibly a predictor of
-        interaction failures, and social situation predictions, by extrapolating
-        trajectories in the embedding space;
+    \item \label{T2} To study \textbf{social dynamics} by characterizing the
+        trajectories of on-going social situations in the embedding space. I
+        will look in particular into trajectories' \emph{discontinuties}, that
+        might represent unexpected changes of social dynamics, and social
+        situation predictions, by extrapolating trajectories in the embedding
+        space;
 
-    \item \label{T5} because social embeddings also lend themselves to encoding
-        task and social \emph{context} by simply attaching textual descriptions
-        of the context, they open new possibilities for
-        \emph{context-aware} representation and behaviour selection;
+    \item \label{T5} To explore \textbf{context representation}. Because social
+        embeddings also lend themselves to encoding task and social context by
+        simply attaching textual descriptions of the context, they open new
+        possibilities for \emph{context-aware} representations and behaviours
+        selection;
 
+    \item \label{T3} To study \textbf{downstream tasks, relevant to social
+        robots}. As vector representations, social encodings lend themselves
+        well to many downstream machine learning tasks that I will explore. For
+        instance automatic engagement detection or socially-appropriate
+        behaviour generation using Generative Adversarial Networks;
 
-    \item \label{T3} as vector representations, social encodings lend
-        themselves well to many downstream machine learning tasks
-        that I will explore. For instance automatic engagement
-        detection or socially-appropriate behaviour generation using Generative
-        Adversarial Networks;
+    \item \label{T4} To develop \textbf{lifelong social adaptation}, by
+        augmenting existing interactive machine learning techniques (`user
+        in-the-loop' social learning, that I pioneered in social
+        robotics~\cite{senft2017supervised, winkle2020couch,winkle2021leador})
+        with representations of the social environment;
 
-    \item \label{T4} contextualised lifelong adaptation of the robot's
-        behaviours, by augmenting existing interactive machine learning
-        techniques (`user in-the-loop' social learning, that I pioneered in
-        social robotics\cite{senft2017supervised,
-        winkle2020couch,winkle2021leador}) with representations of the social
-        environment;
-
-    \item \label{T6} finally, and because the development of
-        socially-intelligent robots has complex ethical ramifications --
-        including the potential of alienating human users --, \project also
+    \item \label{T6} Finally, and because the development of
+        socially-intelligent robots has \textbf{complex ethical ramifications}
+        -- including the potential of alienating human users --, \project also
         includes a strong research component on Responsible Robotics. In
-        particular, the project will aim to contribute directly to the roadmap
-        for Responsible Robotics, specifically investigating the interplay between
-        machine learning applied to social robotics, transparency and human agency.
+        particular, the project will aim to contribute directly to the roadmaps
+        for Responsible AI and Responsible Robotics, specifically investigating
+        the interplay between machine learning applied to social robotics,
+        transparency and human agency.
 
 \end{enumerate}
 
 These six objectives are reflected in the work package structure of the project,
-presented in the next section.
+presented below.
 
 
-\section{Feasibility of the project}
+%\section{Feasibility of the project}
 
 
 \subsection{Expertise and Research team}
@@ -230,11 +268,13 @@ presented in the next section.
 
 My expertise is primarily centered on cognitive robotics and human-robot social
 interaction. My expertise in this field covers a broad spectrum, from basic
-research (for
-example~\cite{lemaignan2014dynamics,lemaignan2015mutual,irfan2018social,winkle2019effective,bartlett2019what}),
+research in robotics (for
+instance~\cite{lemaignan2014dynamics,lemaignan2015mutual}) and data-driven
+socio-psychology
+(including~\cite{lemaignan2014cognitive,irfan2018social,winkle2019effective,bartlett2019what}),
 to technical contributions (for instance~\cite{lemaignan2010oro,
-lemaignan2017artificial, lemaignan2018underworlds})
-to extensive experimental work (for instance~\cite{hood2015cowriter,winkle2020couch,
+lemaignan2017artificial, lemaignan2018underworlds}), to extensive experimental
+work (for instance~\cite{hood2015cowriter,winkle2020couch,
 lemaignan2022social}).
 
 Over the last 4 years, I have re-focalised my work on \emph{data-driven HRI},
@@ -243,35 +283,36 @@ interactions~\cite{lemaignan2018pinsoro,sallami2020unexpected,webb2023sogrin},
 developing new data analysis
 techniques~\cite{bartlett2019what,webb2022measuring}, and demonstrating with my
 students new applications of interactive machine learning to social
-interactions~\cite{senft2016sparc,winkle2020couch,winkle2021leador}.
-In parallel, I progressively matured the idea of computing compact
-\emph{embeddings} of social situations, until I published in 2023 a first
-breakthrough in that direction~\cite{lemaignan2024social}. This ERC project is
-directly born from this multi-year endeavour towards data-driven HRI, and aims
-at significantly accelerate research in this direction.
+interactions~\cite{senft2016sparc,winkle2020couch,winkle2021leador}.  In
+parallel, I progressively matured the idea of computing compact
+\emph{embeddings} of social situations, until I recently published a first
+breakthrough in that direction~\cite{lemaignan2024social} (to appear at IEEE/ACM
+HRI'24). This ERC project is directly born from this multi-year endeavour
+towards data-driven social sciences applied to embodied AI systems, and aims at
+significantly accelerate research in this direction.
 
-In particular, \project is the opportunity to gather an interdiscplinary team of
-academics that would effectively complement my expertise, and ensure the
-feasibility of the project.
-
-Specifically, I intend to recruit:
+In particular, \project is the opportunity to gather an interdisciplinary team
+of academics that would effectively complement my expertise, and ensure the
+feasibility of the project. Specifically, I intend to recruit:
 
 \begin{itemize}
 
-    \item  two researchers with expertise in sociology and/or data-driven
-        sociology (one senior post-doc PD1, one PhD student PHD1); these researchers will
-        directly contribute to the human data acquisition and the interpretation
-        of social embeddings in term of social situations;
+    \item  two researchers with expertise in data-driven
+        socio-psychology (one senior post-doc PD1, one PhD student PHD1); these
+        researchers will directly contribute to the human data acquisition,
+        the interpretation of social embeddings in term of social situations,
+        and the experimental work;
 
-    \item two researchers with expertise in large language models (one senior
-        post-doc PD2, one PhD student PHD2); these researchers will contribute to the
-        core implementation of social embeddings, including language model
-        fine-tuning, as well as the analysis of the embedding space topology;
+    \item two researchers with expertise in deep machine learning and large
+        language models (one senior post-doc PD2, one PhD student PHD2); these
+        researchers will contribute to the core implementation of social
+        embeddings, including language model fine-tuning, as well as the
+        analysis of the embedding space topology;
 
-    \item one research in cognitive robotics (PhD student, PHD3); this research
-        will focus on the integration of social embeddings into a larger
-        cognitive architecture for social robots, able to autonomously drive
-        interactions;
+    \item one research in cognitive robotics (PhD student, PHD3); this
+        researcher will focus, with my supervision, on the integration of social
+        embeddings into a larger cognitive architecture for social robots, able
+        to autonomously drive interactions;
 
     \item one researcher with expertise in ethics of technology (post-doc
         level PD3); this researcher will lead the work on understanding social
@@ -282,29 +323,33 @@ In addition, the host institution (INRIA Grenoble) will provide extensive
 experience on machine learning applied to robotics. I will specifically build on
 my already established collaboration with Dr. Xavier Almeida-Pineda, head of the
 RobotLearn research group. Dr. Almeida-Pineda is the coordinator of the EU H2020
-SPRING project on social robotics for geriatric care, and I am currently
-Principal Investigator at PAL Robotics on this project).
+SPRING project on social robotics for geriatric care.
 
-Additional expertise, as well as access to experimental settings, will be
-provided through a collaboration with Paris' public hospitals (APHP) and
-specifically, with Dr. Maribel Pino, head of research at Paris' Broca hospital.
+Additional expertise, as well as access to one of my main experimental
+environment, will be provided through a collaboration with Paris' public
+hospitals (APHP) and specifically, with Dr. Maribel Pino, head of research at
+Paris' Broca geriatics hospital.
 
-\subsection{Feasibility of the experimental program}
+\subsection{Experimental program}
 
-The experimental program is usually the more complex to run. For \project, it
-relies on (1) having the requested AI software ready; (2) implementing the AI
-software on an actual robotic platform; (3) deploy the robot in real-world
-public spaces, with the associated practical know-how.
+\project's experimental program is ambitious. It relies on (1) the availability
+of the necessary AI algorithm to generate social embeddings and derive robots'
+behaviours; (2) the implementation and testing of the software on actual
+robotic hardware; (3) the deployment of the robot in real-world public spaces,
+with the associated required know-how. Combined with my skills and
+experience, \project is designed to effectively and successfully
+deliver on its experimental program:
 
-Regarding item (1): using publicly available resources, including machine learning architectures
-like Transformers, an state-of-art open-source pre-trained Large Language
-Models, so-called \emph{foundational models} like
+Regarding item (1): using publicly available resources, including machine
+learning architectures like Transformers, and state-of-art open-source
+pre-trained Large Language Models, so-called \emph{foundational models} like
 Llama2~\cite{touvron2023llama}, I have shown in~\cite{lemaignan2024social} that
-social embeddings can indeed already be generated in near-real time on consumer-grade
-GPUs. The integration of social embeddings in a larger cognitive architecture
-suitable for social robots will require extending existing architectures, of
-which I have extensive experience~\cite{lemaignan2017artificial,
-lemaignan2015pyrobots,baxter2016cognitive,lemaignan2014challenges,lemaignan2011what}.
+social embeddings can indeed already be generated in near-real time on
+consumer-grade GPUs. The integration of social embeddings in a larger cognitive
+architecture suitable for social robots will require extending existing
+architectures, of which I have extensive
+experience~\cite{lemaignan2017artificial, lemaignan2015pyrobots,
+baxter2016cognitive,lemaignan2014challenges,lemaignan2011what}.
 
 \begin{wrapfigure}[11]{l}{0.15\linewidth}
     \centering
@@ -313,38 +358,41 @@ lemaignan2015pyrobots,baxter2016cognitive,lemaignan2014challenges,lemaignan2011w
     \label{fig|tiagopro}
 \end{wrapfigure}
 
-Regarding item (2), the deployment on actual hardware: as \project focuses specifically on the
-\ul{AI engine} of the robot, I will use an existing, off-the-shelf, social
-robot, most likely a PAL Robotics TIAGoPro (pictured on the left). TIAGoPro offers
-out-of-the-box advanced human perception based on the ROS4HRI framework, that I
-originally designed~\autocite{mohamed2021ros4hri} as an international standard for
-Human-Robot Interaction~\autocite{lemaignan2022ros}. It also offers on-board GPU
-options that are appropriate to implement a fully AI-based autonomous system.
-I have extensive experience with this platform, having actually directly taken part to
-its design and software stack implementation while employed at PAL Robotics.
+Regarding item (2), the deployment on actual hardware: as \project focuses
+specifically on the \ul{AI engine} of the robot, I will use an existing,
+off-the-shelf, social robot, most likely a PAL Robotics TIAGoPro (pictured on
+the left). TIAGoPro offers out-of-the-box advanced human perception based on the
+ROS4HRI framework (that I myself originally
+designed~\autocite{mohamed2021ros4hri} as an international standard for
+Human-Robot Interaction~\autocite{lemaignan2022ros}). It also offers on-board
+GPU options that are appropriate to implement a fully AI-based autonomous
+system.  I have extensive experience with this platform, having actually
+directly taken part to its design and software stack implementation while
+employed at PAL Robotics.
 
-Finally, regarding experience with deploying robots and fieldwork know-how, I
-have a long-track record. From studies in
-schools~\autocite{hood2015when, lemaignan2016learning, jacq2016building,
-baxter2015wider,kennedy2016cautious,senft2018robots,lemaignan2022social},
-at people's home~\autocite{mondada2015ranger}, in public
+Finally, I have an extensive track-record of fieldwork and real-world robot
+deployments. From studies in schools~\autocite{hood2015when,
+lemaignan2016learning, jacq2016building,
+baxter2015wider,kennedy2016cautious,senft2018robots,lemaignan2022social}, at
+people's home~\autocite{mondada2015ranger}, in public
 spaces~\autocite{alhafnawi2022deliberative}, or in healthcare environments
-(including hospitals and care home)~\autocite{winkle2020couch,cooper2023challenges}, I have conducted 20+
+(including hospitals and care
+home)~\autocite{winkle2020couch,cooper2023challenges}, I have led 20+
 deployments of social robots in real-world environments, ranging from a few
 days, to several weeks~\autocite{jacq2016building,lemaignan2022social} or
 months~\autocite{winkle2020couch}.
 
-The experimental programme of \project includes large data collection. This will
-be facilitated by my collaboration with Paris' APHP, where they already have
-extensive experience in running data collection protocols with robotic
-platforms (involvment in multiple national and European research projects, like
-SPRING, \TODO{complete}).
+%The experimental programme of \project includes large data collection. This will
+%be facilitated by my collaboration with Paris' APHP, where they already have
+%extensive experience in running data collection protocols with robotic
+%platforms (involvment in multiple national and European research projects, like
+%SPRING, \TODO{complete}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Work programme outlook}
+\section{Work programme}
 
 %I briefly outline hereafter the planned workpackages, include their timeing and
 %relationships.
@@ -357,9 +405,13 @@ LLaVa/MiniGPT4}
 \TODO{get stuff from ElderlyDo projects (eg, data collection)}
 
 The six research objectives previously discussed translate into the following
-six work packages.
+work packages, that I briefly outline here. They are discussed in much
+greater detail in Part B2 of the proposal.
 
 \subsection{WP1: \textbf{\wpOne}}
+\emph{ \textbf{Timeframe:} \textbf{Y1-Y3}; one post-doc (PD1) with expertise in
+    deep learning/text embedding; one post-doc (PD2) in data-driven sociology
+signal processing/machine learning/cognitive modelling.}
 
 Objective {\bf O\ref{T1}}.
 
@@ -407,14 +459,14 @@ in autistic children, that I reframed for social robotics
 in~\cite{lemaignan2015mutual}.
 
 
-\begin{framed}
-    \textbf{Main outcomes:} A robust, fully characterised model to generate
-    social embeddings;
-
-    \textbf{Timeframe:} \textbf{Y1-Y3}; one post-doc (PD1) with expertise in
-    deep learning/text embedding; one post-doc (PD2) in data-driven sociology
-signal processing/machine learning/cognitive modelling.
-\end{framed}
+%\begin{framed}
+%    \textbf{Main outcomes:} A robust, fully characterised model to generate
+%    social embeddings;
+%
+%    \textbf{Timeframe:} \textbf{Y1-Y3}; one post-doc (PD1) with expertise in
+%    deep learning/text embedding; one post-doc (PD2) in data-driven sociology
+%signal processing/machine learning/cognitive modelling.
+%\end{framed}
 
 
 This work package includes the following tasks:
@@ -435,6 +487,10 @@ This work package includes the following tasks:
 
 \subsection{WP2: \textbf{\wpTwo}}
 
+\emph{    \textbf{Timeframe:} \textbf{Y1-Y3}; one PhD student (PHD3) in cognitive
+    robotics.}
+
+
 WP2 will run during most of the project. This workpackage will focus on the
 practical integration of social embeddings in a larger cognitive architecture
 for autonomous social robots. It will effectively enable the experimetal
@@ -447,28 +503,41 @@ the ROS4HRI framework, available on the TiagoPro robot~\cite{ros2023ros4hri})
 and behavioural capabilities of the robot, and will exploit the social
 representations generated in WP1 to design a socially-aware behaviour manager.
 
+\TODO{rephrase}
+To do so, we expect social robots to exhibit \emph{social
+awareness}, i.e. to appraise and maintain a model of the social situation in
+which they are embedded. Depending on the role of the robot, this might include
+understanding who is present, who is interacting with whom, which are the
+resulting groups, what are the in-group roles,  etc.
 
-\begin{oframed}
-    \textbf{Main outcomes:} An integrated cognitive architecture for social
-    robots, driven by both long-term social goals, and machine-learnt action
-    policies; a reference open-source implementation, enabling long-term
-    autonomy on the PAL TiagoPro robot.
 
-    \textbf{Timeframe:} \textbf{Y1-Y3}; one PhD student (PHD3) in cognitive
-    robotics.
 
-\end{oframed}
+%\begin{oframed}
+%    \textbf{Main outcomes:} An integrated cognitive architecture for social
+%    robots, driven by both long-term social goals, and machine-learnt action
+%    policies; a reference open-source implementation, enabling long-term
+%    autonomy on the PAL TiagoPro robot.
+%
+%    \textbf{Timeframe:} \textbf{Y1-Y3}; one PhD student (PHD3) in cognitive
+%    robotics.
+%
+%\end{oframed}
 
 This work package includes the following tasks:
 
-\begin{enumerate}[label=\textbf{T1.\arabic*}]
+\begin{enumerate}[label=\textbf{T2.\arabic*}]
     \item{Architecture design and integration}
     \item{Real-time synthesis of social situation descriptions}
     \item{Partial teleoperation for data acquisition}
+    \item{Social awareness for robots}
     \item{Modular behaviour executor}
 \end{enumerate}
 
 \subsection{WP3: \textbf{\wpThree}} 
+
+\emph{    \textbf{Timeframe:} \textbf{Y2-Y4}; one PhD student in data-driven sociology
+    (PHD1); one post-doc (PD2, shared with WP1)}
+
 
 Work package WP3 focuses on research objectives {\bf O\ref{T2}} and {\bf
 O\ref{T5}}: expanding social embeddings beyond their fundamental properties, and
@@ -492,19 +561,19 @@ robot's role, on-going task, etc) to generate context-aware embeddings. However,
 extensive research, from defining and specifying a taxonomy of contexts, to
 characterizing their impact on the social embedding space.
 
-\begin{framed}
-
-    \textbf{Main outcomes:} a broader understanding of the potential and
-    usefulness of social embeddings, beyond their basic concept.
-
-    \textbf{Timeframe:} \textbf{Y2-Y4}; one PhD student in data-driven sociology
-    (PHD1); one post-doc (PD2, shared with WP1)
-
-\end{framed}
+%\begin{framed}
+%
+%    \textbf{Main outcomes:} a broader understanding of the potential and
+%    usefulness of social embeddings, beyond their basic concept.
+%
+%    \textbf{Timeframe:} \textbf{Y2-Y4}; one PhD student in data-driven sociology
+%    (PHD1); one post-doc (PD2, shared with WP1)
+%
+%\end{framed}
 
 This work package includes the following tasks:
 
-\begin{enumerate}[label=\textbf{T1.\arabic*}]
+\begin{enumerate}[label=\textbf{T3.\arabic*}]
     \item{Social dynamics representation in the embedding space}
     \item{Context representation}
     \item{Experimental validation: \TODO{what?}}
@@ -513,6 +582,9 @@ This work package includes the following tasks:
 
 
 \subsection{WP4: \textbf{\wpFour}}
+\emph{    \textbf{Timeframe:} \textbf{Y3-Y5}; one PhD student (PHD2) in applied machine
+    learning.}
+
 
 \textbf{T3.2 -- Generative neural network for social behaviour production}
 \project aims at significantly advancing the state of the art in this regard, by
@@ -527,18 +599,18 @@ end-users~\cite{winkle2018social}. Modulating (1) with the learnt features of
 generation of non-repetitive, socially congruent and transparent social
 behaviours (including gestures but also gazing behaviours and facial
 expressions).
-
-\begin{oframed}
-
-    \textbf{Main outcomes:} Demonstration that social embeddings enable a new
-    class of interactive machine learning application in the social space, by
-    offering much richer input representations and features to previously
-    explored IML techniques (reinforcement learning, etc).
-
-    \textbf{Timeframe:} \textbf{Y3-Y5}; one PhD student (PHD2) in applied machine
-    learning.
-
-\end{oframed}
+%
+%\begin{oframed}
+%
+%    \textbf{Main outcomes:} Demonstration that social embeddings enable a new
+%    class of interactive machine learning application in the social space, by
+%    offering much richer input representations and features to previously
+%    explored IML techniques (reinforcement learning, etc).
+%
+%    \textbf{Timeframe:} \textbf{Y3-Y5}; one PhD student (PHD2) in applied machine
+%    learning.
+%
+%\end{oframed}
 
 This work package includes the following tasks:
 
@@ -549,6 +621,9 @@ This work package includes the following tasks:
 \end{enumerate}
 
 \subsection{WP5: \textbf{\wpFive}}
+\emph{    \textbf{Timeframe:} \textbf{Y3-Y5}; one PhD student (PHD2) in applied machine
+    learning.}
+
 
 Building on my recent results on human-in-the-loop social
 learning~\cite{senft2017supervised, senft2019teaching,
@@ -559,18 +634,18 @@ learning enables a more trustworthy AI system, by involving the end-users in the
 creation of the robot behaviours, resulting in explainable behaviours for the
 end-users.
 
-
-\begin{oframed}
-
-    \textbf{Main outcomes:} Demonstration that social embeddings enable a new
-    class of interactive machine learning application in the social space, by
-    offering much richer input representations and features to previously
-    explored IML techniques (reinforcement learning, etc).
-
-    \textbf{Timeframe:} \textbf{Y3-Y5}; one PhD student (PHD2) in applied machine
-    learning.
-
-\end{oframed}
+%
+%\begin{oframed}
+%
+%    \textbf{Main outcomes:} Demonstration that social embeddings enable a new
+%    class of interactive machine learning application in the social space, by
+%    offering much richer input representations and features to previously
+%    explored IML techniques (reinforcement learning, etc).
+%
+%    \textbf{Timeframe:} \textbf{Y3-Y5}; one PhD student (PHD2) in applied machine
+%    learning.
+%
+%\end{oframed}
 
 This work package includes the following tasks:
 
@@ -581,6 +656,8 @@ This work package includes the following tasks:
 \end{enumerate}
 
 \subsection{WP6: \textbf{\wpSix}}
+\emph{    \textbf{Timeframe:} \textbf{Y3-Y5}; one senior post-doc (PD3)
+with background in ethics of technology and responsible innovation.}
 
 \TODO{flesh out, rephrase}
 Social embeddings, by enabling artificial systems
@@ -593,16 +670,16 @@ WP6 aims at establishing the conceptual and ethical framework around the idea of
 patterns of interaction and norms with the general public, using a unique
 combination of ethnographic observations and `crowd-sourced' interaction
 patterns.
-
-\begin{framed}
-    \textbf{Main outcomes:} A theoretical framework to `think' the role of
-    social robots and guidelines to inform policy making (including ethical
-    implications); a set of operational \& co-created interaction principles; a
-    large dataset of social human-robot interactions
-
-    \textbf{Timeframe:} \textbf{Y3-Y5}; one senior post-doc (PD3)
-with background in ethics of technology and responsible innovation.
-\end{framed}
+%
+%\begin{framed}
+%    \textbf{Main outcomes:} A theoretical framework to `think' the role of
+%    social robots and guidelines to inform policy making (including ethical
+%    implications); a set of operational \& co-created interaction principles; a
+%    large dataset of social human-robot interactions
+%
+%    \textbf{Timeframe:} \textbf{Y3-Y5}; one senior post-doc (PD3)
+%with background in ethics of technology and responsible innovation.
+%\end{framed}
 
 This work package includes the following tasks:
 
@@ -615,32 +692,8 @@ interactions
 \subsection{WP7: \textbf{\wpSeven}}
 
 The last workpackage groups all the task related to the grant management, as
-well as the dissemination and exploitation tasks.
-
-The interdiscplinary nature of the project means that dissemination actions, in
-particular, needs to target a broader range of practionners and stakeholders
-than in typical projects.
-
-\project has the ambition to disrupt how we study social interactions. While the
-experimental side of the project is focused on applications in social robotics,
-the impact of the project is not limited to this field, and I intend to
-disseminate this work to a range of academic communities, from pure AI, to the
-emerging field of data-driven sociology.
-
-
-\begin{framed}
-    \textbf{Main outcomes:} 
-    \textbf{Timeframe:} \textbf{Y1-Y5}
-\end{framed}
-
-This work package includes the following tasks:
-
-\begin{enumerate}[label=\textbf{T6.\arabic*}]
-    \item Management
-    \item Dissemination actions
-    \item Exploitation actions
-\end{enumerate}
-
+well as the dissemination and exploitation tasks. Details of the dissemination
+and exploitation activities are provided in Part B2 of the proposal.
 
 \newpage
 
