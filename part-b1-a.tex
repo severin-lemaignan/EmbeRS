@@ -303,8 +303,13 @@ presented in the next section.
 %\section{Feasibility of the project}
 
 
-%I briefly outline hereafter the planned workpackages, include their timeing and
-%relationships.
+The \project project work programme is organised in three main work packages,
+that follow each other: the first one, \emph{\wpOne}, focuses on basic research;
+the second one, \emph{\wpTwo}, focuses on the artificial socio-cognitive skills
+enabled by social embeddings; and the third one, \emph{\wpThree}, specifically
+look at the application and impact on social robots.
+I briefly describe each of them hereafter, with the key research methods that I
+will rely on.
 
 \subsection{WP1: \textbf{\wpOne}}
 
@@ -317,15 +322,29 @@ build complete textual descriptions, and finally to embed these descriptions.  I
 will extract basic social descriptors using the ROS4HRI social perception
 approach, as it formalize a multi-modal model of humans~\cite{lemaignan2022ros},
 and run in real-time on current robots. I will augment these basic descriptors
-with (1) a semantic model of the environment, based
-on~\cite{lemaignan2018underworlds}; (2) descriptions of the facial expressions
-of the people; (3) a novel contextual model of
-attention~\cite{ferrini2024percepts} that allows fine-grained assessment of what
-the person around the robot are focusing on.
+with (1) descriptors of human-objects interactions
+(HOI), using transformer-based techniques like~\cite{iftekhar2022what}
+%, combined with a semantic model of the
+%environment, based on~\cite{lemaignan2018underworlds}
+; (2) descriptions of the facial expressions based on facial action units
+classification~\cite{martinez2019automatic}; (3) group-level
+interactions, including $f$-formations, using for instance Hough
+voting~\cite{setti2015fformation}, and group activity recognition, using deep
+convolutional graph techniques like ARG~\cite{wu2019learning}.
 
-I will generate of textual descriptions first using template-based approach, and
-then using formal methods based on social knowledge graphs~\cite{sap2019atomic}
-and propositional logic~\cite{tsoi2022sean}.
+%(3) a novel contextual model of
+%attention~\cite{ferrini2024percepts} that allows fine-grained assessment of what
+%the person around the robot are focusing on.
+
+The generation of textual descriptions includes both the combination of
+descriptors into complete social \emph{snapshots}, and the combination over time
+of such snapshots to describe a complete situation. I will initially build
+snapshots using text templates, and then extend them using recent techniques
+based on social knowledge graphs~\cite{sap2019atomic} and propositional
+logic~\cite{tsoi2022sean}. The combination of snapshots into social situations
+will be developed with the help of the PHASE simulator and
+dataset~\cite{netanyahu2021phase}, that includes a large number of annotated and
+longer-horizon social interactions.
 
 Last, the text embedding process itself. Due to the fast pace of progress in the
 LLMs landscape, it is likely that current
@@ -384,14 +403,23 @@ awareness' cognitive skill for social robots.
 
 For Objective~\ref{T5}...
 
-... will look into context representation. Because social
-embeddings are fundamentally textual descriptions, augmenting these descriptions
-with context is conceptually simple: it essentially requires automatically
-generating descriptions of the situation context (e.g. location, robot's role,
-on-going task, etc.) to generate context-aware embeddings. However,
-\emph{characterizing} how context impacts the result social embeddings requires
-extensive research, from defining and specifying a taxonomy of contexts, to
-characterizing their impact on the social embedding space.
+Context-awareness is another critical aspect of social situation appraisal.
+\emph{Context} has been defined in various way, including as \emph{who},
+\emph{what}, \emph{when}, \emph{where}, and \emph{why} of
+interactions~\cite{vinciarelli2009social}; as high-level task/environment
+characteristics, such as `studying' or `dining'~\cite{nigam2015social}; as
+relationships between agents in the scene, such as `interacting in a group',
+`standing in a line'~\cite{althaus2004navigation}; or as
+task-based~\cite{castellano2012detecting}.
+
+Conceptually, social embeddings lend themselves well to context encoding, as it
+simply requires to generate a text description of the situation context (e.g.
+location, robot's role, on-going task, etc.), and to insert it into the
+social situation description, before performing the text embedding itself.
+
+Using current scene understanding techniques\TODO{cite -> CVUT?} \emph{characterizing} how context impacts the result social embeddings
+requires extensive research, from defining and specifying a taxonomy of
+contexts, to characterizing their impact on the social embedding space.
 
 \TODO{need to be SMART: reference specific techniques + metrics}
 
