@@ -697,6 +697,142 @@ may require adjustments to the project planning. In case you ask that team
 members are engaged by another host institution their participation has to be
 fully justified by the scientific added value they bring to the project.}
 
+\section{Expertise and Research team}
+\label{research-team}
+
+My expertise is primarily centered on cognitive robotics and human-robot social
+interaction. My expertise in this field covers a broad spectrum, from basic
+research in robotics (for
+instance~\cite{lemaignan2014dynamics,lemaignan2015mutual}) and data-driven
+socio-psychology
+(including~\cite{lemaignan2014cognitive,irfan2018social,winkle2019effective,bartlett2019what}),
+to technical contributions (for instance~\cite{lemaignan2010oro,
+lemaignan2017artificial, lemaignan2018underworlds}), to extensive experimental
+work (see below; for instance~\cite{hood2015cowriter,winkle2020couch,
+lemaignan2022social}).
+
+Over the last 4 years, I have re-focalised my work on \emph{data-driven HRI},
+contributing several new large datasets of social
+interactions~\cite{lemaignan2018pinsoro,sallami2020unexpected,webb2023sogrin},
+developing new data analysis
+techniques~\cite{bartlett2019what,webb2022measuring}, and demonstrating with my
+students new applications of interactive machine learning to social
+interactions~\cite{senft2016sparc,winkle2020couch,winkle2021leador}.  In
+parallel, I progressively matured the idea of computing compact
+\emph{embeddings} of social situations, until I recently published a first
+breakthrough in that direction~\cite{lemaignan2024social} (to appear at IEEE/ACM
+HRI'24). This ERC project is directly born from this multi-year endeavour
+towards data-driven social sciences applied to embodied AI systems, and aims at
+significantly accelerate research in this direction.
+
+In particular, \project is the opportunity to gather an interdisciplinary team
+of academics that would effectively complement my expertise, and ensure the
+feasibility of the project.
+
+Specifically, I intend to recruit:
+
+\begin{itemize}
+
+    \item  two researchers with expertise in data-driven
+        socio-psychology (one senior post-doc PD1, one PhD student PHD1); these
+        researchers will directly contribute to the human data acquisition,
+        the interpretation of social embeddings in term of social situations,
+        and the experimental work;
+
+    \item two researchers with expertise in deep machine learning and large
+        language models (one senior post-doc PD2, one PhD student PHD2); these
+        researchers will contribute to the core implementation of social
+        embeddings, including language model fine-tuning, as well as the
+        analysis of the embedding space topology;
+
+    \item one research in cognitive robotics (PhD student, PHD3); this
+        researcher will focus on the effective integration of social
+        embeddings into a larger cognitive architecture for social robots, able
+        to autonomously drive interactions;
+
+    \item one researcher in ethics of technology (post-doc
+        level PD3); this researcher will lead the work on understanding social
+        embeddings in terms of ethical and responsible research.
+\end{itemize}
+
+In addition, the host institution (INRIA Grenoble) will provide extensive
+additional expertise on machine learning applied to robotics. I will specifically build on
+my already established collaboration with Dr. Xavier Almeida-Pineda, head of the
+RobotLearn research group. Dr. Almeida-Pineda is the coordinator of the EU H2020
+SPRING project on social robotics for geriatric care, on which I collaborated
+for the past two years.
+
+Additional expertise, as well as access to one of my main experimental
+environment, will be provided through a collaboration with Paris' public
+hospitals (APHP) and specifically, with Dr. Maribel Pino, head of research at
+Paris' Broca geriatrics hospital (Dr. Pino has extensive experience running
+studies with social robots on the hospital' premisses).
+
+\subsubsection{Ambition of the experimental program}
+
+\project experimental program is ambitious. Indeed, each of the project's
+research objectives is to be supported experimental work with
+a social robot. While some initial studies will be lab-based, most of the later
+experimental work will take place in-situ, with real-world users like the
+patients of the Broca hospital.
+
+Successful fieldwork with social robots relies on (1) the availability of
+the necessary AI algorithm to generate social embeddings and derive robots'
+behaviours; (2) the implementation and testing of the software on actual robotic
+hardware; (3) the deployment of the robot in real-world public spaces, with the
+associated required know-how. Combined with my skills and experience, \project
+is designed to effectively and successfully deliver on its experimental program:
+
+Regarding item (1): using publicly available resources, including machine
+learning architectures like Transformers, and state-of-art open-source
+pre-trained Large Language Models, so-called \emph{foundational models} like
+Llama2~\cite{touvron2023llama}, I have shown in~\cite{lemaignan2024social} that
+simple social embeddings can indeed already be generated in near-real time on
+consumer-grade GPUs. The integration of social embeddings in a larger cognitive
+architecture suitable for social robots will require extending existing
+robotic architectures, of which I have extensive
+experience~\cite{lemaignan2017artificial, lemaignan2015pyrobots,
+baxter2016cognitive,lemaignan2014challenges,lemaignan2011what}.
+
+\begin{wrapfigure}[11]{l}{0.15\linewidth}
+    \centering
+    \vspace{-10pt}
+    \includegraphics[width=\linewidth]{tiagopro}
+    \label{fig|tiagopro}
+\end{wrapfigure}
+
+Regarding item (2), the deployment on actual hardware: as \project focuses
+specifically on the AI engine of the robot, I will use an existing,
+off-the-shelf, social robot (most likely, a PAL Robotics TIAGoPro, pictured on
+the left). TIAGoPro offers out-of-the-box advanced human perception based on the
+ROS4HRI framework (that I myself originally
+designed~\autocite{mohamed2021ros4hri} as an international standard for
+Human-Robot Interaction~\autocite{lemaignan2022ros}). It also offers on-board
+GPU options that are appropriate to implement a fully AI-based autonomous
+system.  I have extensive experience with this platform, having actually
+directly taken part to its design and software stack implementation while
+employed at PAL Robotics.
+
+Finally, I have an extensive track-record of fieldwork and real-world robot
+deployments. From studies in schools~\autocite{hood2015when,
+lemaignan2016learning, jacq2016building,
+baxter2015wider,kennedy2016cautious,senft2018robots,lemaignan2022social}, at
+people's home~\autocite{mondada2015ranger}, in public
+spaces~\autocite{alhafnawi2022deliberative}, or in healthcare environments
+(including hospitals and care
+home)~\autocite{winkle2020couch,cooper2023challenges}, I have led 20+
+deployments of social robots in real-world environments, ranging from a few
+days, to several weeks~\autocite{jacq2016building,lemaignan2022social} or
+months~\autocite{winkle2020couch}.
+
+%The experimental programme of \project includes large data collection. This will
+%be facilitated by my collaboration with Paris' APHP, where they already have
+%extensive experience in running data collection protocols with robotic
+%platforms (involvment in multiple national and European research projects, like
+%SPRING, \TODO{complete}).
+
+
+
 
 \section{Workpackages overview and interrelations}\label{workpackage-interrelations}
 
