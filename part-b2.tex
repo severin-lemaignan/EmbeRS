@@ -298,7 +298,7 @@ learning}, \emph{social prediction}.
 
 \begin{enumerate}[label=\textbf{O\arabic*}]
     \setcounter{enumi}{1}
-    \item \label{T5} To use social embeddings to \textbf{automatically appraise
+    \item \label{O2.1} To use social embeddings to \textbf{automatically appraise
         social situations}, taking into account their \textbf{context}. Using
         a set of prototypical reference situations, social embeddings
         can be used to relate the current social situation to known ones.
@@ -306,7 +306,14 @@ learning}, \emph{social prediction}.
         social context by simply attaching context descriptions, the appraisal
         of the social situation can be made \emph{context-aware};
 
-    \item \label{T4} To \textbf{learn socially-appropriate behaviours} by using
+    \item \label{O2.2} To use social embeddings to model \textbf{social dynamics}
+        by characterizing the trajectories of on-going social situations in the
+        embedding space. I will look in particular into trajectories'
+        \emph{discontinuties}, that might represent unexpected changes of social
+        dynamics, and trajectories' extrapolations, that might represent
+        \textbf{social situation \emph{predictions}}.
+
+    \item \label{O2.3} To \textbf{learn socially-appropriate behaviours} by using
         social embeddings as an additional input feature to existing behaviour
         generation algorithms like Generative Adversarial
         Networks~\cite{marmpena2019generating,suguitan2020moveae}; and by
@@ -314,13 +321,6 @@ learning}, \emph{social prediction}.
         in-the-loop' social learning, that I pioneered in social
         robotics~\cite{senft2017supervised, winkle2020couch,winkle2021leador})
         with representations of the social environment;
-
-    \item \label{T2} To use social embeddings to model \textbf{social dynamics}
-        by characterizing the trajectories of on-going social situations in the
-        embedding space. I will look in particular into trajectories'
-        \emph{discontinuties}, that might represent unexpected changes of social
-        dynamics, and trajectories' extrapolations, that might represent
-        \textbf{social situation \emph{predictions}}.
 
 \end{enumerate}
 
@@ -437,12 +437,12 @@ deployment is a one-year experiment, taking place at the Bristol science centre
 (T1.1). This `public-in-the-loop' experiment is analysed and lead to the
 definition of core interaction principles (T1.2). These are in turn translated
 into algorithmic models, guiding the social teleology of the cognitive
-architecture (T4.1).
+architecture (O2.3.1).
 
 This first experiment is immediately followed by two other long-term
 experimental deployments: a one-year deployment in one of Bristol's Special
-Education Need (SEN) school (T5.1), followed by a one-year deployment at
-Bristol's Children's hospital (T5.2). These two additional experiments are both
+Education Need (SEN) school (O2.1.1), followed by a one-year deployment at
+Bristol's Children's hospital (O2.1.2). These two additional experiments are both
 inputs for WP2 and WP3, and demonstrator for the robot socio-cognitive
 architecture (WP4).
 
@@ -452,19 +452,19 @@ the robot. Reference interaction situations and the data required to support
 this workpackage is directly drawn from the experimental fieldwork that will
 take place at the same time in WP1 and WP5. The perceptual capabilities
 delivered by WP2 are continuously integrated into the robot's cognitive
-architecture (T4.3), iteratively improving the socio-cognitive performances of
+architecture (O2.3.3), iteratively improving the socio-cognitive performances of
 the robot.
 
 Workpackage WP3 looks into behaviour generation using machine learning (T3.2)
 and non-verbal affective modalities (T3.3). T3.2 is data-intensive, and will use
-datasets acquired during the field deployments (T1.1, T5.1, T5.2), as well as
+datasets acquired during the field deployments (T1.1, O2.1.1, O2.1.2), as well as
 lab-recorded dataset of social interactions. Similar to WP2, the capabilities
-built in WP3 are integrated in the robot architecture in T4.3.
+built in WP3 are integrated in the robot architecture in O2.3.3.
 
 In addition to the integration of WP2 and WP3 capabilities, WP4 is also
 researching and developing the socio-cognitive drives of the architecture. They
 come both from T1.2 (as previously mentioned), and
-human-in-the-loop/public-in-the-loop machine learning (T4.2). T4.2, in
+human-in-the-loop/public-in-the-loop machine learning (O2.3.2). O2.3.2, in
 particular, is tighly connected to the experimental fieldwork, where the
 learning-from-end-users take place.
 
@@ -738,7 +738,7 @@ social agents (in order to acknowledge and respond to a human who would like
 to engage with the robot, the robot must first adequately model and
 recognise the corresponding social situation).
 
-Work package WP2 focuses on research objectives \ref{T5}, \ref{T4} and \ref{T2}:
+Work package WP2 focuses on research objectives \ref{O2.1}, \ref{O2.3} and \ref{O2.2}:
 expanding social embeddings beyond their fundamental properties, to build a
 `social awareness' cognitive skill for social robots.
 
@@ -755,7 +755,7 @@ expanding social embeddings beyond their fundamental properties, to build a
 
 The first task of this workpackage focuses on \emph{social appraisal}.
 
-Social appraisal (Objective~\ref{T5}) is about interpreting the results of WP1
+Social appraisal (Objective~\ref{O2.1}) is about interpreting the results of WP1
 in terms of social situations\TODO{...}
 
 Context-awareness is another critical aspect of social situation appraisal.
@@ -786,7 +786,25 @@ This task is linked to the experimental task \TDB.
 
 \paragraph{\TBB}
 
-Objective~\ref{T4} and the learning of socially-appropriate behaviour
+This task looks onto how social embeddings can offer a novel approach to the
+modelling and interpretation of \emph{social dynamics}. I hypothesise that
+social dynamics correspond to \emph{trajectories} of social situations in the
+embedding space.  For instance, the velocity in the embedding space should
+reflect the rate of change of a social situation in the physical space;
+trajectory extrapolation could be employed by robots to anticipate upcoming
+social situations; discontinuities in the embedding space would reflect brutal
+social changes that could trigger specific robot behaviours (for instance to
+acknowledge or attempt to repair social situations).  \TODO{need to be SMART:
+reference specific techniques + metrics}
+
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tBC:} lorem ipsum 
+\end{framed}
+
+\paragraph{\TBC}
+
+Objective~\ref{O2.3} and the learning of socially-appropriate behaviour
 generation, \project aims at significantly advancing the state of the art in
 this regard, by combining two techniques: (1) generative neural networks
 for affective robot motion
@@ -804,24 +822,6 @@ This task is linked to the experimental task \tDD.
 
 \begin{framed}
     {\noindent\bf Main outcomes of \tBB:} lorem ipsum 
-\end{framed}
-
-\paragraph{\TBC}
-
-This task looks onto how social embeddings can offer a novel approach to the
-modelling and interpretation of \emph{social dynamics}. I hypothesise that
-social dynamics correspond to \emph{trajectories} of social situations in the
-embedding space.  For instance, the velocity in the embedding space should
-reflect the rate of change of a social situation in the physical space;
-trajectory extrapolation could be employed by robots to anticipate upcoming
-social situations; discontinuities in the embedding space would reflect brutal
-social changes that could trigger specific robot behaviours (for instance to
-acknowledge or attempt to repair social situations).  \TODO{need to be SMART:
-reference specific techniques + metrics}
-
-
-\begin{framed}
-    {\noindent\bf Main outcomes of \tBC:} lorem ipsum 
 \end{framed}
 
 
@@ -969,11 +969,11 @@ lorem ipsum
 \project has the ambition to demonstrate long-term, co-designed social
 interactions in two complex, socially sensitive spaces.
 The first one involves the deployment of social robots in special needs schools
-(SEN schools) in Bristol (T5.1). Building on a rigorous participatory approach
+(SEN schools) in Bristol (O2.1.1). Building on a rigorous participatory approach
 involving the school teachers, as well as the parents, we will seek to integrate
 the robot in the daily life of the school, supporting the development of the
 students' physical and social skills. The second one takes place in Bristol's
-Children's Hospital (T5.2), supporting isolated children who suffer long-term
+Children's Hospital (O2.1.2), supporting isolated children who suffer long-term
 conditions, in close cooperation with the hospital staff. In both cases, a
 social robot will be deployed on premises, for one un-interrupted year. It will
 integrate the daily routines of the institutions, under supervised
@@ -1006,7 +1006,7 @@ on ethics, uploaded alongside this proposal.
 \TODO{explain that these 2 large experiments will be scaffolded by many smaller
 ones}
 
-\textbf{T5.1: A robot companion to support physical, mental and social
+\textbf{O2.1.1: A robot companion to support physical, mental and social
 well-being in SEN schools}
 
 Inspired by a similar large-scale deployment of social robots in Hong-Kong's SEN
@@ -1052,7 +1052,7 @@ based at the school. The robot will take part in the
 regular teaching and other daily routines of the school, and will directly
 interact with the children, learning its action policy (`when to do what') from
 initial co-design with the teachers, followed by progressive in-situ teaching (see
-T4.2).
+O2.3.2).
 
 During selected `observation days', observations will be conducted by the
 research team, and regular semi-structured interviews will be conducted with the
@@ -1064,7 +1064,7 @@ the school dynamics  (both positively and potentially negatively).
 The task will be jointly supervised with local colleague and expert Dr.Nigel Newbutt,
 who has a long track record of working with special needs schools.
 
-\textbf{T5.2 -- A robot companion to support isolated children during their
+\textbf{O2.1.2 -- A robot companion to support isolated children during their
 hospital stay}
 
 The second experiment will take place within the paediatric ward for long-term
@@ -1364,7 +1364,7 @@ approval process for the three long-term \project studies. It will be
 additionally supported by my extensive experience in seeking ethics approval for
 studies involving robots and vulnerable populations (in particular,
 children~\cite{lemaignan2016learning,lemaignan2018pinsoro,senft2019teaching}),
-the expertise of Dr. Newbutt in conducting research with SEN schools (T5.1), and
+the expertise of Dr. Newbutt in conducting research with SEN schools (O2.1.1), and
 the support of J. Bowyer at the Bristol's Children's Hospital to obtain NHS ethics
 approval. \textbf{As per requested, details of the ethics approval process,
 children safeguarding, research Code of Conduct, and Data Management Plan are
@@ -1421,7 +1421,7 @@ independently relatively mature and well understood, and the principles of the
 integration itself is already well researched. Besides, it falls well within the
 PI
 expertise~\cite{lemaignan2018underworlds,sallami2019simulation,lemaignan2010oro}.
-As such, T2.1 can be described as \ul{\bf low-risk, medium-gain}.
+As such, O2.2.1 can be described as \ul{\bf low-risk, medium-gain}.
 
 \textbf{Tasks 2.2, 2.3, 2.4} Work on real-time modeling of social dynamics in
 real-world environments are only begining to be studied in robotics. While the
