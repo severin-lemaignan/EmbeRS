@@ -34,7 +34,7 @@
         link label node/.append style={below left=-2pt and 0pt,
         milestone/.append style={circle},
         milestone inline label node/.append style={left=5mm}}
-    ]{2021-01}{2025-12}
+    ]{2026-01}{2030-12}
     
         %\gantttitle[
         %    title label node/.append style={below left=7pt and -3pt}
@@ -44,82 +44,92 @@
         %\gantttitlelist{0,5,...,60}{1} \\
         %% WP1
         \definecolor{barcolor}{RGB}{153,204,254}
-        \ganttgroup[]{WP1 \wpOneShort}{2021-01}{2023-12} \\
-            \ganttbar[name=WP11]{\textbf{1.1} Conceptual framing \& ethics}{2021-01}{2023-12} \\
-            \ganttbar[name=WP12prep,inline,bar/.append style={fill=gray!20}]{preparation}{2021-07}{2021-12}
-            \ganttbar[name=WP12exp,inline]{WeTheCurious experiment}{2022-01}{2022-12}
-            \ganttbar[name=WP12]{\textbf{1.2} Principles of r-HHI}{2023-01}{2023-06} \\
+        \ganttgroup[]{WP1 \wpA}{2026-01}{2029-06} \\
+            \ganttbar[name=TAA]{\TAA}{2026-01}{2026-12} \\
+            \ganttbar[name=TAB]{\TAB}{2026-07}{2027-06} \\
+            \ganttbar[name=TAC]{\TAC}{2027-01}{2027-12} \\
+            \ganttbar[name=TAD]{\TAD}{2028-01}{2029-06} \\
+            %\ganttbar[name=WP12prep,inline,bar/.append style={fill=gray!20}]{preparation}{2026-07}{2026-12}
+            %\ganttbar[name=WP12exp,inline]{WeTheCurious experiment}{2027-01}{2027-12}
+            %\ganttbar[name=WP12]{\textbf{1.2} Principles of r-HHI}{2028-01}{2028-06} \\
 
         %\ganttlink[link type=f-s]{WBS1A}{WBS1B}
 
         %% WP2
         \definecolor{barcolor}{RGB}{153,2,254}
-        \ganttgroup[]{WP2 \wpTwoShort}{2021-01}{2024-12} \\
-            \ganttbar[name=WP21]{\textbf{2.1} Situation assessment}{2021-01}{2022-06} \\
-            \ganttbar[name=WP22]{\textbf{2.2} Human model}{2022-01}{2023-12} \\
-            \ganttbar[name=WP23]{\textbf{2.3} Interactions \& social groups}{2024-01}{2024-12} \\
-            \ganttbar[name=WP24]{\textbf{2.4} Social situation assessment}{2022-07}{2024-12} \\
+        \ganttgroup[]{WP2 \wpB}{2027-01}{2029-12} \\
+            \ganttbar[name=TBA]{\TBA}{2027-01}{2027-12} \\
+            \ganttbar[name=TBB]{\TBB}{2028-01}{2028-12} \\
+            \ganttbar[name=TBC]{\TBC}{2029-01}{2029-12} \\
+            %\ganttbar[name=WP21]{\textbf{2.1} Situation assessment}{2026-01}{2027-06} \\
+            %\ganttbar[name=WP22]{\textbf{2.2} Human model}{2027-01}{2028-12} \\
+            %\ganttbar[name=WP23]{\textbf{2.3} Interactions \& social groups}{2029-01}{2029-12} \\
+            %\ganttbar[name=WP24]{\textbf{2.4} Social situation assessment}{2027-07}{2029-12} \\
 
         %\ganttlink[link type=f-s]{WP21}{WP24}
         %\ganttlink[link type=f-s]{WP22}{WP23}
 
         %% WP3
         \definecolor{barcolor}{RGB}{50,220,134}
-        \ganttgroup[]{WP3 \wpThreeShort}{2021-07}{2025-12} \\
-            \ganttbar[name=WP31]{\textbf{3.1} Behaviours baselining}{2021-07}{2022-12} \\
-            \ganttbar[name=WP32]{\textbf{3.2} Generative behaviours}{2023-01}{2023-12} \\
-            \ganttbar[name=WP33]{\textbf{3.3} Non-verbal behaviours}{2023-07}{2025-12} \\
-        %\ganttlink[link type=f-s]{WP12}{WP32}
+        \ganttgroup[]{WP3 \wpC}{2026-07}{2029-12} \\
+            \ganttbar[name=TCA]{\TCA}{2026-07}{2027-06} \\
+            \ganttbar[name=TCB]{\TCB}{2027-07}{2028-06} \\
+            \ganttbar[name=TCC]{\TCC}{2028-01}{2029-12} \\
+            %\ganttbar[name=WP31]{\textbf{3.1} Behaviours baselining}{2026-07}{2027-12} \\
+            %\ganttbar[name=WP32]{\textbf{3.2} Generative behaviours}{2028-01}{2028-12} \\
+            %\ganttbar[name=WP33]{\textbf{3.3} Non-verbal behaviours}{2028-07}{2030-12} \\
+            %\ganttbar[name=WP41]{\textbf{4.1} Social teleology}{2028-01}{2029-12} \\
+            %\ganttbar[name=WP42]{\textbf{4.2} Human-in-the-loop ML}{2026-07}{2030-06} \\
+            %\ganttbar[name=WP43]{\textbf{4.3} Integrated cognitive arch.}{2026-01}{2030-06} \\
 
         %% WP4
-        \definecolor{barcolor}{RGB}{244,50,20}
-        \ganttgroup[]{WP4 \wpFourShort}{2021-01}{2025-12} \\
-            \ganttbar[name=WP41]{\textbf{4.1} Social teleology}{2023-01}{2024-12} \\
-            \ganttbar[name=WP42]{\textbf{4.2} Human-in-the-loop ML}{2021-07}{2025-06} \\
-            \ganttbar[name=WP43]{\textbf{4.3} Integrated cognitive arch.}{2021-01}{2025-06} \\
-
-
-        %% WP5
         \definecolor{barcolor}{RGB}{234,200,20}
-        \ganttgroup[]{WP5 \wpFiveShort}{2022-07}{2025-12} \\
-            \ganttbar[name=WP51prep,inline,bar/.append style={fill=gray!20}]{preparation}{2022-07}{2022-12}
-            \ganttbar[name=WP51]{\textbf{5.1} SEN schools experiment}{2023-01}{2023-12} 
-            \ganttbar[name=WP51expl,inline,bar/.append style={fill=gray!20}]{analysis}{2024-01}{2024-06} \\
-            \ganttbar[name=WP52prep,inline,bar/.append style={fill=gray!20}]{preparation}{2024-01}{2024-06}
-            \ganttbar[name=WP52]{\textbf{5.2} Children's hospital experiment}{2024-07}{2025-06}
-            \ganttbar[name=WP52expl,inline,bar/.append style={fill=gray!20}]{analysis}{2025-07}{2025-12} \ganttnewline[thick]
+        \ganttgroup[]{WP4 \wpD}{2026-07}{2030-12} \\
+            \ganttbar[name=TDA]{\TDA}{2026-07}{2027-06} \\
+            \ganttbar[name=TDB]{\TDB}{2027-07}{2027-12} \\
+            \ganttbar[name=TDD]{\TDB}{2028-01}{2028-06} \\
+            \ganttbar[name=TDCprep,inline,bar/.append style={fill=gray!20}]{preparation}{2029-01}{2029-06} 
+            \ganttbar[name=TDC]{\TDC}{2029-07}{2030-06} 
+            \ganttbar[name=TDCexpl,inline,bar/.append style={fill=gray!20}]{analysis}{2030-07}{2030-12} 
+
+            %\ganttbar[name=WP51prep,inline,bar/.append style={fill=gray!20}]{preparation}{2027-07}{2027-12}
+            %\ganttbar[name=WP51]{\textbf{5.1} SEN schools experiment}{2028-01}{2028-12} 
+            %\ganttbar[name=WP51expl,inline,bar/.append style={fill=gray!20}]{analysis}{2029-01}{2029-06} \\
+            %\ganttbar[name=WP52prep,inline,bar/.append style={fill=gray!20}]{preparation}{2029-01}{2029-06}
+            %\ganttbar[name=WP52]{\textbf{5.2} Children's hospital experiment}{2029-07}{2030-06}
 
         %\ganttlink[link type=f-s]{WP41}{WP51}
 
 
         %\ganttlink[link type=f-s]{WBS1B}{WBS1C}
         %\ganttlink[link type=f-f,link label node/.append style=left]{WBS1C}{WBS1D}
+        \ganttnewline[thick]
 
-        \ganttmilestone{\bf\sc Ethics workshops}{2021-04}
-        \ganttmilestone{}{2022-09}
-        \ganttmilestone{}{2023-09}
-        \ganttmilestone{}{2025-03} \ganttnewline[gray,dotted]
+        \ganttmilestone{\bf\sc Ethics workshops}{2026-04}
+        \ganttmilestone{}{2027-09}
+        \ganttmilestone{}{2028-09}
+        \ganttmilestone{}{2030-03} \ganttnewline[gray,dotted]
 
 
-        \ganttmilestone{\bf\sc Integration sprints}{2021-06}
-        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2021-11}
-        \ganttmilestone{}{2022-06}
-        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2022-11}
-        \ganttmilestone{}{2023-06}
-        \ganttmilestone{}{2023-12}
-        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2024-05}
-        \ganttmilestone{}{2024-12}
+        \ganttmilestone{\bf\sc Integration sprints}{2026-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2026-11}
+        \ganttmilestone{\bf\sc Integration sprints}{2027-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2027-11}
+        \ganttmilestone{\bf\sc Integration sprints}{2028-06}
+        \ganttmilestone{\bf\sc Integration sprints}{2028-12}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2029-05}
 
         % separate years
-        \ganttvrule{}{2021-12}
-        \ganttvrule{}{2022-12}
-        \ganttvrule{}{2023-12}
-        \ganttvrule{}{2024-12}
-        \ganttvrule{}{2025-12}
+        \ganttvrule{}{2026-12}
+        \ganttvrule{}{2027-12}
+        \ganttvrule{}{2028-12}
+        \ganttvrule{}{2029-12}
+        \ganttvrule{}{2030-12}
 
 
-        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @WeTheCurious}{2021-12}
-        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @SEN school}{2022-12}
-        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @Children hospital}{2024-06}
+        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @WeTheCurious}{2026-12}
+        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @SEN school}{2027-12}
+        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @Broca
+        hospital}{2029-06}
 
 \end{ganttchart}

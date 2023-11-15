@@ -39,7 +39,12 @@ justified by the scientific added value they bring to the project.  }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{State-of-art: social representations for intelligent robots}
 
+\subsubsection{Context and motivation}
+
+
 \TODO{copy-paste from the HRI paper}
+
+\begin{rewrite}
 
 The basic idea of \emph{social robots} refers to robots that are situated in a
 human social environment. In this context, we expect social robots to exhibit
@@ -54,6 +59,17 @@ do not navigate in the middle of a group, or do not suddenly interrupt a
 conversation); or create proactive social agents (in order to acknowledge and
 respond to a human who would like to engage with the robot, the robot must first
 adequately model and recognise the corresponding social situation).
+
+\end{rewrite}
+
+\subsubsection{Social situation assessment}
+
+
+\TODO{copy-paste from the HRI paper}
+
+\begin{rewrite}
+
+
 
 \emph{Social situations} have indeed been an important object of study in social
 psychology for a long time~\cite{argyle1981social}, with, for instance, the
@@ -76,8 +92,12 @@ It requires to build and maintain a task-appropriate model of the situations,
 and represent it in such a way that a machine can reason about it.
 \emph{Embeddings} are such representations.
 
+\end{rewrite}
 
 \subsubsection{Embeddings}
+
+\TODO{copy-paste from the HRI paper}
+\begin{rewrite}
 
 In the context of machine learning, we refer to an \emph{embedding} as a
 real-valued vector representation of a typically much higher dimensionality
@@ -128,8 +148,11 @@ a numerical vector~\cite{reimers2019sentencebert,muennighoff2022sgpt}. The
 resulting embeddings can be then used to measure text-relatedness for instance,
 as in the BEIR benchmark~\cite{thakur2021beir}.
 
-\subsection{Key insight}
+\end{rewrite}
 
+\subsection{Social embeddings}
+
+\begin{rewrite}
 Combining the above concepts of social situations and text embeddings, we introduce in
 this paper the idea of \emph{social embeddings}. A \emph{social embedding} is a
 compact, real-valued numerical representation (a vector) of a social
@@ -219,11 +242,15 @@ than situations~\ref{soc_sit_a} and \ref{soc_sit_b}: by doing so, a robot could
 correctly compute similarities between social scenes, and e.g. recognise a
 situation as similar to one it would have previously experienced.
 
+\end{rewrite}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Objectives of \project}
 
 \TODO{currently copy-paste of part B1}
+
+\begin{rewrite}
+
 %\project is built around three axes: a basic research programme; an experimental
 %programme that looks specifically at the application of social embeddings to
 %social robotics; and, running in parallel to those first two axes, a scientific
@@ -276,6 +303,7 @@ learning}, \emph{social prediction}.
 
 \end{enumerate}
 
+\end{rewrite}
 
 \subsection{Basic research objectives}
 
@@ -285,7 +313,7 @@ learning}, \emph{social prediction}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Importance and impact of the project}
 
-\TODO{rework}
+\begin{rewrite}
 
 Academically, the \project project represents a timely combination of
 very recent advances in supervised machine learning for social robot
@@ -312,11 +340,13 @@ domain, and, beyond the specific deliverables of this 5-years project,
 establishing the PI as a world-leader in goal-driven, socially-responsible
 robotics.
 
+\end{rewrite}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Interdiscplinary nature of the project}
 
-\TODO{rework}
+\begin{rewrite}
+
 
 \project paves the way for a better understanding of the societal challenges
 raised by the rapid development of AI and robotics. Grounded in both the
@@ -345,7 +375,7 @@ in large-scale public engagement; the Bristol Children's hospital will bring the
 required expertise in working with young patients; the RustySquid company will
 provide expertise in expressive arts and puppetering.
 
-
+\end{rewrite}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -356,7 +386,7 @@ provide expertise in expressive arts and puppetering.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Overview of \project methodology}
 
-\TODO{section to fully update}
+\begin{rewrite}
 
 The four research questions previously listed are addressed across five
 work-packages: \textbf{WP1} is dedicated to the conceptual framing of the
@@ -417,16 +447,18 @@ human-in-the-loop/public-in-the-loop machine learning (T4.2). T4.2, in
 particular, is tighly connected to the experimental fieldwork, where the
 learning-from-end-users take place.
 
+\end{rewrite}
+
 \subsubsection{Integration sprints}
 
 \project is a complex project, with numerous interdependencies between tasks.
 To ensure the interdependencies are properly understood, and support effective
-integration of the outputs of each workpackage, I will organise every 6 months
-\textbf{integration sprints} (see Gantt diagram). Integration sprints are
-one-week long integration retreat during which the whole \project team gather
-and work together to effectively implement and test on the robot the different
-components. In addition to providing regular `check points' for the projects,
-they also set a stable schedule to deliver project components.
+integration of the outputs of each workpackage, I will organise every 6 months,
+and for the first 4 years, \textbf{integration sprints} (see Gantt diagram).
+Integration sprints are one-week long integration retreat during which the whole
+\project team gather and work together to effectively implement and test on the
+robot the different components. In addition to providing regular `check points'
+for the projects, they also set a stable schedule to deliver project components.
 
 This methodology was used by the PI in  several previous projects (FP7 CHRIS
 project, H2020 SPRING for instance), and had proved to be of great value to
@@ -468,6 +500,8 @@ particular importance, and will be extended to ten days.
 
 \TODO{useful?}
 
+\begin{rewrite}
+
 Detail use of:
 \begin{itemize}
     \item use of ROS2
@@ -475,6 +509,8 @@ Detail use of:
     \item CI/CD for automatic code testing
     \item integration testing using DOcker/Docker compose
 \end{itemize}
+
+\end{rewrite}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Expertise and Research team}
@@ -573,11 +609,14 @@ studies with social robots on the hospital' premisses).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Workpackages}
 
-\subsubsection{WP1: \textbf{\wpOne}}
+\subsubsection{WP1: \textbf{\WPA}}
 
 WP1 addresses Objective \textbf{O1}. I will first systematically investigate the
 three steps of social embeddings construction, and then characterize the
 resulting embeddings.
+
+
+\paragraph{\TAA}
 
 Social embeddings construction requires first to extract descriptors, then to
 build complete textual descriptions, and finally to embed these descriptions.  I
@@ -609,56 +648,91 @@ will be developed with the help of the PHASE simulator and
 dataset~\cite{netanyahu2021phase}, that includes a large number of annotated
 social interaction sequences.
 
-Last, the text embedding process itself. Due to the fast pace of progress in the
-LLMs landscape, it is likely that current
-methods (including e.g.~\cite{reimers2019sentencebert,muennighoff2022sgpt}) will
-have been superseeded by new methods. I will closely monitor
-advances in the domain, especially on the question of semantic
-relatedness~\cite{thakur2021beir}, as this is critical for social
-embeddings. I plan to also perform fine-tuning~\cite{hadsell2006dimensionality}
-of the selected text embedders to specialize them for social situation
-representation. I will do so by leveraging existing open-access annotated
-datasets of social interaction like AMI~\cite{carletta2007ami},
-D64~\cite{oertel2013d64}, SALSA~\cite{alameda2015salsa}, or my own SoGrIn
-dataset~\cite{webb2023sogrin}, and datasets of social questions-answers like
-SocialIQa~\cite{sap2019social}.
+\begin{framed}
+    {\noindent\bf Main outcomes of \tAA:} lorem ipsum 
+\end{framed}
 
+\paragraph{\TAB}
+
+This task focuses on the text embedding process itself. Due to the fast pace of
+progress in the LLMs landscape, it is likely that current methods (including
+e.g.~\cite{reimers2019sentencebert,muennighoff2022sgpt}) will have been
+superseeded by new methods. I will closely monitor advances in the domain,
+especially on the question of semantic relatedness~\cite{thakur2021beir}, as
+this is critical for social embeddings. I plan to also perform
+fine-tuning~\cite{hadsell2006dimensionality} of the selected text embedders to
+specialize them for social situation representation. I will do so by leveraging
+existing open-access annotated datasets of social interaction like
+AMI~\cite{carletta2007ami}, D64~\cite{oertel2013d64},
+SALSA~\cite{alameda2015salsa}, or my own SoGrIn dataset~\cite{webb2023sogrin},
+and datasets of social questions-answers like SocialIQa~\cite{sap2019social}.
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tAB:} lorem ipsum 
+\end{framed}
+
+    \paragraph{\TAC}
+
+\begin{rewrite}
 I will then characterise social embeddings, starting with the fundamental
 properties that I identified in~\cite{lemaignan2024social}: invariance to
-syntax, social similarity and continuity. Next, and of particular interest, is
-the characterization of the embeddings' \emph{latent semantics}: For instance,
-social descriptions like `two persons chatting and laughing
-together'; or `a group of three people walking together'; or `one single person
-walking towards the robot, looking agitated'; etc.  are all semantically
-distinct, and, consequently, would belong to distinct regions in the embedding
-space. Identifying such clusters to characterize the semantic topology of the
-embedding space~\cite{sun2023topological} will be achieved by exploiting
-existing annotated datasets to identify and extract prototypical reference social situations.
+syntax, social similarity and continuity. 
+\end{rewrite}
 
-\vspace{1em}
-\noindent\emph{ Timeframe: Y1-Y3; one post-doc (PD1) with expertise in
-    deep learning/text embedding; one post-doc (PD2) in data-driven sociology.}
+\begin{framed}
+    {\noindent\bf Main outcomes of \tAC:} lorem ipsum 
+\end{framed}
 
+\paragraph{\TAD}
 
-\subsubsection{WP2: \textbf{\wpTwo}}
+\TODO{rephrase; be more specific (eg cf Sun's paper)}
 
-Work package WP2 focuses on research objectives \ref{T5}, \ref{T4} and \ref{T2}: expanding
-social embeddings beyond their fundamental properties, to build a `social
-awareness' cognitive skill for social robots.
+This task will look into the characterization of the embeddings' \emph{latent
+semantics}: For instance, social descriptions like `two persons chatting and
+laughing together'; or `a group of three people walking together'; or `one
+single person walking towards the robot, looking agitated'; etc.  are all
+semantically distinct, and, consequently, would belong to distinct regions in
+the embedding space. Identifying such clusters to characterize the semantic
+topology of the embedding space~\cite{sun2023topological} will be achieved by
+exploiting existing annotated datasets to identify and extract prototypical
+reference social situations.
 
-%\emph{Social awareness} is a socio-cognitive skill that is essential for
-%artificial social system, like social robots, to e.g.  act in a
-%context-sensitive manner, reason and apply social norms,
-%or create proactive social agents (in order to acknowledge and respond to a
-%human who would like to engage with the robot, the robot must first adequately
-%model and recognise the corresponding social situation).
+\begin{framed}
+    {\noindent\bf Main outcomes of \tAD:} lorem ipsum 
+\end{framed}
 
 
-% METHODS for the 3 objectives?
-%- appraise social situations, also taking into account the social context
-%- learn socially-appropriate behaviours
-%- anticipate future social states
+\begin{framed}
+    \noindent{\bf WP Timeframe:} Y1-Y3.5; one post-doc ({\bf PD1}) with expertise in
+    deep learning/text embedding; one post-doc ({\bf PD2}) in data-driven
+    sociology.
+\end{framed}
 
+\subsubsection{WP2: \textbf{\WPB}}
+
+\emph{Social awareness} is a socio-cognitive skill that is essential for
+artificial social system, like social robots, to e.g.  act in a
+context-sensitive manner, reason and apply social norms, or create proactive
+social agents (in order to acknowledge and respond to a human who would like
+to engage with the robot, the robot must first adequately model and
+recognise the corresponding social situation).
+
+Work package WP2 focuses on research objectives \ref{T5}, \ref{T4} and \ref{T2}:
+expanding social embeddings beyond their fundamental properties, to build a
+`social awareness' cognitive skill for social robots.
+
+\TODO{justify these 3 objectives}
+\begin{itemize}
+    \item appraise social situations, also taking into account the social context
+    \item learn socially-appropriate behaviours
+    \item anticipate future social states
+\end{itemize}
+
+
+
+\paragraph{\TBA}
+
+The first task of this workpackage focuses on \emph{social appraisal}.
 
 Social appraisal (Objective~\ref{T5}) is about interpreting the results of WP1
 in terms of social situations\TODO{...}
@@ -682,6 +756,14 @@ task, etc}
 
 \TODO{need to be SMART: reference specific techniques + metrics}
 
+This task is linked to the experimental task \TDB.
+
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tBA:} lorem ipsum 
+\end{framed}
+
+\paragraph{\TBB}
 
 Objective~\ref{T4} and the learning of socially-appropriate behaviour
 generation, \project aims at significantly advancing the state of the art in
@@ -697,37 +779,43 @@ appropriate behaviours (gestures, motions, gazing behaviours, facial
 expressions); augmenting the input space of (2) with social embeddings will
 enable the robot to learn contextualised social policies
 
-Objective~\ref{T2}, finally, is about analysing \emph{social dynamics} by
-studying the \emph{trajectories} of social situations in the embedding space.
-For instance, the velocity in the embedding space should reflect the rate of
-change of a social situation in the physical space; trajectory extrapolation
-could be employed by robots to anticipate upcoming social situations;
-discontinuities in the embedding space would reflect brutal social changes that
-could trigger specific robot behaviours (for instance to acknowledge or attempt
-to repair social situations).
-\TODO{need to be SMART: reference specific techniques + metrics}
+This task is linked to the experimental task \tDD.
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tBB:} lorem ipsum 
+\end{framed}
+
+\paragraph{\TBC}
+
+This task looks onto how social embeddings can offer a novel approach to the
+modelling and interpretation of \emph{social dynamics}. I hypothesise that
+social dynamics correspond to \emph{trajectories} of social situations in the
+embedding space.  For instance, the velocity in the embedding space should
+reflect the rate of change of a social situation in the physical space;
+trajectory extrapolation could be employed by robots to anticipate upcoming
+social situations; discontinuities in the embedding space would reflect brutal
+social changes that could trigger specific robot behaviours (for instance to
+acknowledge or attempt to repair social situations).  \TODO{need to be SMART:
+reference specific techniques + metrics}
 
 
-WP2 also include a specific experimental program that aims at setting a new
-benchmark for social awareness in social robots. I will adapt to social
-robotics~\cite{lemaignan2015mutual} experimental protocols originally designed
-by Frith and Happé~\cite{frith1994autism} to investigate social representation
-and mental modelling in autistic children.  This protocol include tasks like
-distinguishing \emph{happiness} or \emph{sadness} from \emph{surprise}, or
-distinguishing \emph{sabotage} from \emph{deception}: these nuances, quite
-self-explanatory to experienced social agents, require subtle modelling of the
-context and mental state of agents, and, until now, have not been successfully
-reproduced on robots. I aim to show that social embeddings offer a generic
-methodology to implement this kind of advanced social awareness.
+\begin{framed}
+    {\noindent\bf Main outcomes of \tBC:} lorem ipsum 
+\end{framed}
 
 
-\vspace{1em}
-\noindent\emph{Timeframe: Y1-Y4; one post-doc PD3 in cognitive sciences; one PhD student in data-driven sociology (PHD1)}
+\begin{framed}
+    \noindent{\bf WP Timeframe:} Y2-Y4; one post-doc ({\bf PD3}) in cognitive
+    sciences; one PhD student in data-driven sociology ({\bf PHD1}).
+\end{framed}
 
 
 
 
-\subsubsection{WP3: \textbf{\wpThree}}
+
+\subsubsection{WP3: \textbf{\WPC}}
+
+\begin{rewrite}
 
 WP3 design and implement on the TIAGoPro robot the principled cognitive architecture
 that binds together the socio-cognitive perceptual capabilities of the robot
@@ -810,8 +898,52 @@ specific experience (here, the end-user-taught policy).
     end-users themselves.
 \end{framed}
 
+\end{rewrite}
 
-\subsubsection{WP4: \textbf{\wpFour}}
+
+\paragraph{\TCA}
+
+lorem ipsum
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tCA:} lorem ipsum 
+\end{framed}
+
+\paragraph{\TCB}
+
+lorem ipsum
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tCB:} lorem ipsum 
+\end{framed}
+
+\paragraph{\TCC}
+
+lorem ipsum
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tCC:} lorem ipsum 
+\end{framed}
+
+
+\begin{framed}
+    \noindent{\bf WP Timeframe:} Y1.5-Y4; one ... ({\bf PDx}) with expertise in
+    ...; one ... ({\bf PDx}) in ...
+\end{framed}
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{WP4: \textbf{\WPD}}
+
+\begin{rewrite}
 
 \project has the ambition to demonstrate long-term, co-designed social
 interactions in two complex, socially sensitive spaces.
@@ -939,8 +1071,60 @@ affective engagement between the robot and the other ward's `inhabitants'.
 Specific safeguarding measures will be put in place with the hospital team, and
 resulting observations will feed into the ethical guidelines of T1.1.
 
+\end{rewrite}
 
-\subsubsection{WP5: \textbf{\wpSeven}}
+
+\paragraph{\TDA}
+
+lorem ipsum
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tDA:} lorem ipsum 
+\end{framed}
+
+\paragraph{\TDB}
+
+I will adapt to social
+robotics~\cite{lemaignan2015mutual} experimental protocols originally designed
+by Frith and Happé~\cite{frith1994autism} to investigate social representation
+and mental modelling in autistic children.  This protocol include tasks like
+distinguishing \emph{happiness} or \emph{sadness} from \emph{surprise}, or
+distinguishing \emph{sabotage} from \emph{deception}: these nuances, quite
+self-explanatory to experienced social agents, require subtle modelling of the
+context and mental state of agents, and, until now, have not been successfully
+reproduced on robots. I aim to show that social embeddings offer a generic
+methodology to implement this kind of advanced social awareness.
+
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tDB:} lorem ipsum 
+\end{framed}
+
+\paragraph{\TDD}
+
+lorem ipsum
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tDD:} lorem ipsum 
+\end{framed}
+
+
+\paragraph{\TDC}
+
+lorem ipsum
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tDC:} lorem ipsum 
+\end{framed}
+
+
+\begin{framed}
+    \noindent{\bf WP Timeframe:} Y1.5-Y4; one ... ({\bf PDx}) with expertise in
+    ...; one ... ({\bf PDx}) in ...
+\end{framed}
+
+
+\subsubsection{WP5: \textbf{\WPZ}}
 
 The last workpackage groups all the task related to the grant management, as
 well as the dissemination and exploitation tasks.
@@ -956,18 +1140,35 @@ disseminate this work to a range of academic communities, from pure AI, to the
 emerging field of data-driven sociology.
 
 
+\paragraph{\TZA}
+
+lorem ipsum
+
 \begin{framed}
-    \textbf{Main outcomes:} 
-    \textbf{Timeframe:} \textbf{Y1-Y5}
+    {\noindent\bf Main outcomes of \tZA:} lorem ipsum 
 \end{framed}
 
-This work package includes the following tasks:
+\paragraph{\TZB}
 
-\begin{enumerate}[label=\textbf{T6.\arabic*}]
-    \item Management
-    \item Dissemination actions
-    \item Exploitation actions
-\end{enumerate}
+lorem ipsum
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tZB:} lorem ipsum 
+\end{framed}
+
+\paragraph{\TZC}
+
+lorem ipsum
+
+\begin{framed}
+    {\noindent\bf Main outcomes of \tZC:} lorem ipsum 
+\end{framed}
+
+
+\begin{framed}
+    \noindent{\bf WP Timeframe:} Y1.5-Y4; one ... ({\bf PDx}) with expertise in
+    ...; one ... ({\bf PDx}) in ...
+\end{framed}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -977,7 +1178,7 @@ This work package includes the following tasks:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Towards Responsible Robotics research}
 
-\TODO{section to entirely update}
+\begin{rewrite}
 
 Because the development of socially-intelligent robots has
 complex ethical ramifications -- including the potential of alienating
@@ -1164,19 +1365,14 @@ that I will use to guide the research strategy over the course of the project.
 An additional role of the Ethics Advisory Board will be to advise and audit the
 project with regards to this framework for responsible research.
 
-
-
-
-
-
-
+\end{rewrite}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Risk/gain analysis}
 
-\TODO{section to entirely update}
+\begin{rewrite}
 
 \textbf{Tasks 1.1, 1.2} develop a novel methodology, `public-in-the-loop' machine
 learning, for large-scale co-design of social interactions with the public. If
@@ -1326,6 +1522,7 @@ contributing ideas to integrate the robots in their daily routines, and
 ready to dedicate time and effort for its success.
 
 
+\end{rewrite}
 
 
 

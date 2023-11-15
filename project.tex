@@ -85,6 +85,16 @@
 \newcommand{\TODO}[1]{{\color{red}\textbf{TODO: #1}}}
 %\newcommand{\TODO}[1]{}
 
+\newenvironment{rewrite}
+{
+  \TODO{TO REWRITE}
+  \color{gray}
+  \itshape
+}
+{
+}
+
+
 \newcommand{\severin}[1]{{\color{red}\textbf{Severin: #1}}}
 \newcommand{\toseverin}[1]{{\color{red}\textbf{To Severin: #1}}}
 %\newcommand{\eu}[1]{{\color{teal}\textbf{Guidelines EU ERC: #1}}}
@@ -100,40 +110,72 @@
 \author{Séverin Lemaignan}
 \fancyhead[R]{}
 \fancyfoot[C]{\thepage}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Names of the Work packages
 
-\newcommand{\wpOne}{Social Embeddings construction and characterising}
-\newcommand{\wpOneShort}{Social Embeddings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Names of the Work packages and tasks
 
-\newcommand{\wpTwo}{Social awareness}
-\newcommand{\wpTwoShort}{Social awareness}
+\newcommand{\WPA}{Social Embeddings construction and characterising}
+\newcommand{\wpA}{Social Embeddings}
 
-\newcommand{\wpThree}{Socially-aware robots}
-\newcommand{\wpThreeShort}{Socially-aware robots}
+\def\tAA{T1.1}
+\newcommand{\TAA}{{\bf \tAA} -- Social description construction}
+\def\tAB{T1.2}
+\newcommand{\TAB}{{\bf \tAB} -- Embeddings and fine-tuning}
+\def\tAC{T1.3}
+\newcommand{\TAC}{{\bf \tAC} -- Characterization of basic properties}
+\def\tAD{T1.4}
+\newcommand{\TAD}{{\bf \tAD} -- Latent space topology}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\WPB}{Social awareness}
+\newcommand{\wpB}{Social awareness}
 
-\newcommand{\wpFour}{Empirical study of social embeddings}
-\newcommand{\wpFourShort}{Experimental research}
+\def\tBA{T2.1}
+\newcommand{\TBA}{{\bf \tBA} -- Social appraisal and context}
+\def\tBB{T2.2}
+\newcommand{\TBB}{{\bf \tBB} -- Social learning}
+\def\tBC{T2.3}
+\newcommand{\TBC}{{\bf \tBC} -- Social dynamics and predictions}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\WPC}{Socially-aware robots}
+\newcommand{\wpC}{Socially-aware robots}
 
-%\newcommand{\wpFive}{Interactive Machine Learning for lifelong social learning}
-%\newcommand{\wpFiveShort}{Interactive machine learning}
+\def\tCA{T3.1}
+\newcommand{\TCA}{{\bf \tCA} -- Integration of perception routines to generate
+social descriptions}
+\def\tCB{T3.2}
+\newcommand{\TCB}{{\bf \tCB} -- Socially-aware supervisor}
+\def\tCC{T3.3}
+\newcommand{\TCC}{{\bf \tCC} -- Integration of the complete cognitive architecture}
 
-\newcommand{\wpFive}{TO REMOVE}
-\newcommand{\wpFiveShort}{TO REMOVE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\WPD}{Empirical study of social embeddings}
+\newcommand{\wpD}{Experimental research}
 
-\newcommand{\wpSix}{Social Embeddings and Responsible Research}
-\newcommand{\wpSixShort}{Responsible Robotics}
+\def\tDA{T4.1}
+\newcommand{\TDA}{{\bf \tDA} -- Demonstrating social awareness}
+\def\tDB{T4.2}
+\newcommand{\TDB}{{\bf \tDB} -- Social embeddings for mentalizing tasks}
+\def\tDD{T4.3}
+\newcommand{\TDD}{{\bf \tDD} -- Social embeddigns to facilitate social learning}
+\def\tDC{T4.4}
+\newcommand{\TDC}{{\bf \tDC} -- Social embeddings as enabler of social autonomy}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\WPZ}{Administration, Dissemination and Exploitation}
+\newcommand{\wpZ}{Management}
 
-\newcommand{\wpSeven}{Administration, Dissemination and Exploitation}
-\newcommand{\wpSevenShort}{Dissemination}
+\def\tZA{T5.1}
+\newcommand{\TZA}{{\bf \tZA} -- Grant management}
+\def\tZB{T5.2}
+\newcommand{\TZB}{{\bf \tZB} -- Dissemination activities}
+\def\tZC{T5.3}
+\newcommand{\TZC}{{\bf \tZC} -- Research exploitation}
 
-
-%\newcommand{\wpOne}{Project management \& dissemination}
-%\newcommand{\wpOneShort}{\wpOne{}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 \maketitle
