@@ -39,6 +39,63 @@ justified by the scientific added value they bring to the project.  }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{State-of-art: social representations for intelligent robots}
 
+Correctly interpreting our social environment is tremendously complex for
+machines. Let's consider a simple example: a waiter, serving customer in a
+restaurant, tell a joke. The guests look at him, smile and laugh, and go on with ordering
+their dinner. As social beings, we can easily interpret this simple description,
+and understand that the waiter is friendly, the guest in a good mood, and the
+overall interaction is going well. Let's now consider the same example, but the
+guests do not laugh. This indicates that either the joke was not appropriate in
+this context, or that the guests are not in the mood for a joke. Either way, the
+interaction is not satisfactory. Finally, let consider the same example, but
+this time, the waiter did not tell any joke, but still, the guests start
+laughing. This behaviour breaches the expected social norms.
+
+Understanding and navigating the nuances of social situations is imperative for
+autonomous social robots to function effectively and harmoniously within human
+environments. An autonomous robot operating in a social domain must discern
+subtleties in human behavior and context to respond appropriately and maintain
+social cohesion.
+
+Correct interpretation of non-verbal cues, such as facial expressions, body
+language, and prosody, along with the verbal content, is essential for a social
+robot to comprehend the emotional state and intentions of the humans it
+interacts with (Breazeal, 2003). When a robot misinterprets these cues, it risks
+responding in a manner that may be perceived as insensitive or inappropriate,
+which could undermine trust and acceptance among human users (Cameron et al.,
+2015).
+
+Moreover, in a service context like a restaurant, where a robot may take on a
+role similar to a waiter, misreading a social cue can lead to a breakdown in
+service quality or even disrupt the customer experience. For instance, failing
+to recognize a patron's displeasure with a joke might lead to repeated behavior
+that further damages the relationship, whereas a socially aware robot could
+adapt its interaction strategy, perhaps by offering an apology and altering its
+behavior to better align with the guests' preferences (Mutlu et al., 2009).
+
+Therefore, developing a concise representation of social situations for
+autonomous social robots is crucial. Such a representation should include the
+ability to model and predict the outcomes of social interactions, incorporating
+an understanding of social norms, cultural context, and the potential
+ramifications of deviating from expected behaviors. By doing so, social robots
+can achieve a more natural and effective integration into human social spaces,
+fostering positive human-robot interactions and ensuring the success of their
+service functions~\cite{gockley2005designing}.
+
+In summary, the critical need for social robots to accurately interpret and
+represent complex social dynamics is well-recognized in the field. Achieving
+this level of social understanding will be a significant step toward realizing
+robots that can operate autonomously while addressing the intricate and varied
+needs of human users in social settings.
+
+References:
+- Breazeal, C. (2003). Emotion and sociable humanoid robots. International Journal of Human-Computer Studies, 59(1-2), 119-155.
+- Cameron, D., Fernando, S., Collins, E. C., Millings, A., Moore, R. K., Sharkey, A., ... & Prescott, T. (2015). Framework for a social robot. Robophilosophy 2015 / TRANSOR 2015, 96.
+- Gockley, R., Bruce, A., Forlizzi, J., Michalowski, M., Mundell, A., Rosenthal, S., Sellner, B., Simmons, R., Snipes, K., Schultz, A. C., & Wang, J. (2005). Designing robots for long-term social interaction. 2005 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). 
+- Mutlu, B., Forlizzi, J., & Hodgins, J. (2009). A storytelling robot: Modeling and evaluation of human-like gaze behavior. 2009 4th ACM/IEEE International Conference on Human-Robot Interaction (HRI).
+
+
+
 \subsubsection{Context and motivation}
 
 
@@ -64,6 +121,34 @@ adequately model and recognise the corresponding social situation).
 
 \subsubsection{Social situation assessment}
 
+Artificial social intelligence~\cite{bainbridge1994artificial}
+
+researchers describe the results of social
+interaction as a function not only of the individuals involved
+but also of the social situation~\cite{rusbult2003interdependence}
+
+Sociologists and social psychologists have long
+recognized the importance of the situation as a determining
+factor of interpersonal interaction: Atlas of Interpersonal Situations~\cite{kelley2003atlas}
+
+Social psychologists, on the other hand, have long
+considered the situation-specific aspects of interpersonal
+interaction [9]. The use of social situations for examining
+social interaction is widespread within both neuroscience [16]
+and experimental economics [17]. Interdependence theory is a
+social psychological theory developed as a means for
+understanding and analyzing interpersonal situations and
+interaction [9]. The term interdependence describes the extent
+to which one individual of a dyad influences the other.
+
+
+
+Wagner's \emph{outcome matrices}
+\cite{wagner2006framework} \cite{wagner2009creating}
+
+Mutual modelling:
+\cite{dillenbourg2016symmetry}
+stereotyping: \cite{wagner2015robots}
 
 \TODO{copy-paste from the HRI paper}
 
@@ -177,70 +262,6 @@ a simple algorithm to generate scene descriptions and derive embeddings; we
 analyse and discuss several key characteristics and parameters of the derived
 embeddings -- like their application as a quantitative \emph{social distance};
 and we discuss several promising directions for follow-up research.
-
-
-\subsection{Motivating example}
-
-\begin{figure}[ht!]
-     \centering
-     \begin{subfigure}[b]{0.3\columnwidth}
-         \centering
-         \includegraphics[width=\textwidth]{figs/sit1.png}
-         \caption{``I'm chatting with one person; another group of two people
-         are discussing on the side."}
-         % short code: eJxtUktqwzAQvYrR2hEjaUafLgvd9ADtIoRgUzUxcW1I3LSh9O4dKQlYpsLYwzPzfvZ6Lb5FXYlLuk37ODVpOGfsfAWb/tANuzTGYdfs4tv2q5v2YlNXa3Ec23HiVystwcD8aAZBWh2KU1dwv96b/hSZg3nE00fXJzHecCY/vC/YGFTWS09OKVCorAV3J5qOn3ee167vmQbYjKbF/kpJS2oOJ5DYuCVPzBeItPNZHcpt0DqTgsZ5GLSuUH/pxj7e2lBsmEPUFXmpA/sGYwADav9f/udmiCJtBHSUrarCabaKXhpr0YK1BplTJU/ocVFwaj0sw8/FHsc2d4ShiONcNm7CsiNljHREbB88AtDtC/FUdASIV9y4Oa1Fmsmz/o84xThs24t4qG7/z+/mD6BekW4=
-         % generated description: Bob is not far from me; Emily is close to me; Emily and I are looking at each other; Bob and Will are looking at each other; Will is talking; Emily is talking; Bob is looking at me
-
-         \label{soc_sit_a}
-     \end{subfigure}
-     \begin{subfigure}[b]{0.3\columnwidth}
-         \centering
-         \includegraphics[width=\textwidth]{figs/sit2.png}
-         \caption{``In front of me, three people chatting together;
-         someone is walking towards me."}
-         % short-code: eJx1UttOwzAM/ZUqzyOKnYsTHpF44QPgoZqmVoStorTSVgYT4t9x0g41SFhtY53E59g5rWvxKTaVuKTPdIhTk5Jzxs4z2PSv3bBPaRz2zT4+7z666SC2m6oWx7EdJ966Qam0WgcyqKTDUMSmUtfnpelPkTmYR9y/dX0S4wqDuKYByyhIcilJhVIpXwgpynUMr4V8oFLiqet7VgCpAxpw1/AmV4OCdTW5pEpOKuO0tY4MEzqfj/Lq9W+gnes1/Jlzrf3YjX1M14TSmHkgQ0CcWS8xeEtKa2WCQZ8m1FTMBwlzEMz/Ag/NEEU+5mnmR4K0opJondEEPAcGXO4KCq6wmKXQFQ6mVtcqd2M7i5T9YbYfgXsCa2W6HGLf+DV24S0NA3/toqDRbMV0fM9qLPclTjEOu/YibqvlP/ve/gBPLpnY
-         % generated desc: Bob is not far from me; Will is walking towards me; Bob is talking; Will and I are looking at each other; Will is not far from me; Bob is looking at Emily; Bob is looking at me
-         \label{soc_sit_b}
-     \end{subfigure}
-     \begin{subfigure}[b]{0.3\columnwidth}
-         \centering
-         \includegraphics[width=\textwidth]{figs/sit3.png}
-         \caption{``A group of two people are chatting;
-         someone is walking towards me."}
-         % short-code: eJxtkNFuwyAMRX8l4jlBYHCAvu8XtoeoqhKVpag0kRLWrZr27wPWTElVC4FlfM81NA35ImVBbmkLJxvalFxz7fpXbP3ZDX1K7dC3vT0ePl04kX1ZNGQauzHEqwqorOPBqEG2DigLtqz31s82qqKSvFycT3hGgZt1KMwYhE1VrzBh+lgob877COFUiE27yQwZVRVXinIjajBKauBc6WfjvLrR25DnQSkfURCHVLh9FUekTHEE1LVEoZXInnqrTmZUwqP43zp6f5PZ2uHQ3ciuuP/nz/4XWRhgxw==
-         % generated desc: Emily and Will are looking at each other; Violet is not far from me; Violet is looking at me; Violet is walking towards me; Will and I are looking at each other; Will is not far from me; Emily is talking
-         \label{soc_sit_c}
-     \end{subfigure}
-
-        \caption{Three simple social situations, described
-        from the perspective of the yellow agent (arrows indicate direction and
-        magnitude of motion).}
-        \label{fig:social-situations}
-\end{figure}
-
-
-Figure~\ref{fig:social-situations} shows three schematic social situations,
-described from the egocentric perspective of the yellow character. In
-Figure~\ref{soc_sit_a}, the character is engaged with one person, and another
-group of two people are chatting; in Figure~\ref{soc_sit_b}, no one is
-interacting directly with the character (but someone is walking towards
-her/him), and three people seem to be chatting
-together on the side; similarly in Figure~\ref{soc_sit_c}, someone is walking
-towards the character, with another group of two people chatting together.
-
-From the perspective of the yellow person the social situations depicted in \ref{soc_sit_b} and \ref{soc_sit_c}
-are more similar: in both cases, the person is not actively engaged in an
-interaction yet, but someone seems about to do so. However, a cursory
-look at the scene could lead to think that \ref{soc_sit_a} and
-\ref{soc_sit_b} are closer to each other, since they both involve more people
-than \ref{soc_sit_c}, and most people seem located at the left of the main
-character.
-
-Accordingly, social embeddings are to be designed so that the situations from
-Figures~\ref{soc_sit_b} and \ref{soc_sit_c} are closer in the embedding space
-than situations~\ref{soc_sit_a} and \ref{soc_sit_b}: by doing so, a robot could
-correctly compute similarities between social scenes, and e.g. recognise a
-situation as similar to one it would have previously experienced.
 
 \end{rewrite}
 
