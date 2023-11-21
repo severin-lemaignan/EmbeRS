@@ -39,31 +39,66 @@ justified by the scientific added value they bring to the project.  }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{State-of-art: social representations for intelligent robots}
 
-Correctly interpreting our social environment is tremendously complex for
-machines. Let's consider a simple example: a waiter, serving customer in a
-restaurant, tell a joke. The guests look at him, smile and laugh, and go on with ordering
-their dinner. As social beings, we can easily interpret this simple description,
-and understand that the waiter is friendly, the guest in a good mood, and the
-overall interaction is going well. Let's now consider the same example, but the
-guests do not laugh. This indicates that either the joke was not appropriate in
-this context, or that the guests are not in the mood for a joke. Either way, the
-interaction is not satisfactory. Finally, let consider the same example, but
-this time, the waiter did not tell any joke, but still, the guests start
-laughing. This behaviour breaches the expected social norms.
+Correctly interpreting our social environment is complex for machines, and has
+long been identified as a key challenge on the road to competent social
+robots~\cite{yang2018grand}. Accordingly, a significant, and growing, amount of
+research has been dedicated to this question over the past 15
+years~\cite{bartneck2020human}, without however satisfactorily coming to a
+conclusion.
 
-Understanding and navigating the nuances of social situations is imperative for
-autonomous social robots to function effectively and harmoniously within human
-environments. An autonomous robot operating in a social domain must discern
-subtleties in human behavior and context to respond appropriately and maintain
-social cohesion.
+Let's consider the following simple illustrative example: a waiter, serving
+customer in a restaurant, tell a joke. The guests look at him, smile and laugh,
+and go on with ordering their dinner. As social beings, we can easily interpret
+this simple description, and understand that the waiter is friendly, the guest
+in a good mood, and the overall interaction is going well. Let's now consider
+the same example, but the patrons do not laugh. This indicates that either the
+joke was not appropriate in this context, or that the guests are not in the mood
+for a joke. Either way, the interaction is not satisfactory. Finally, let
+consider the same example, but this time, the waiter did not tell any joke and
+was simply taking orders. Still, the guests start laughing. In this context, the
+unexpected laughing tells us that something went wrong with the waiter's
+behaviour.  Laughing is a relatively simple social signal to detect for a robot,
+but without proper representation of the social and physical context -- and its
+attached social norms -- a robot-waiter would not be able to properly understand
+the situation.
 
-Correct interpretation of non-verbal cues, such as facial expressions, body
-language, and prosody, along with the verbal content, is essential for a social
-robot to comprehend the emotional state and intentions of the humans it
-interacts with (Breazeal, 2003). When a robot misinterprets these cues, it risks
-responding in a manner that may be perceived as insensitive or inappropriate,
-which could undermine trust and acceptance among human users (Cameron et al.,
-2015).
+To effectively interpret this situation, a robot needs a \emph{joint}
+computational model of (1) the social agents relevant to the situation; (2) the
+physical environment (locations and relationships between objects and other
+spatial features); (3) the plans, on-going actions, and predicted results of the
+tasks performed both by the robot and by the other agents; (4) a common-sense
+knowledge of the social rules and norms associated to this task and context.
+
+In addition, models for (1), (2) and (3) also have to represent \emph{dynamics} as
+well: changes in the agents' behaviours, expressions, interactions; expected or
+unexpected changes in the physical environment; change of plans and actions.
+
+We review below the main approaches to build models for each of these four
+aspects, as well as existing attempts to build complete models of social situations.
+
+
+\subsubsection{Modelling social agents and social groups}
+
+
+
+The importance of correctly interpreting non-verbal cues, such as facial
+expressions, body language, and prosody, along with the verbal content, is well
+understood in robotics as required to comprehend the emotional state and
+intentions of the humans it interacts with~\cite{breazeal2003emotion}.
+
+While the \emph{perception} of social signal has been studied in depth in the
+HRI community (for instance,~\cite{pantic2011social}), and the \emph{evaluation} of
+the social situation is usually handled as an aspect of the robot's decision
+making, the \emph{interpretation} of social situations is a difficult problem.
+It requires to build and maintain a task-appropriate model of the situations,
+and represent it in such a way that a machine can reason about it.
+
+
+\subsubsection{Modelling the physical context}
+
+\subsubsection{Task modelling and action prediction}
+
+
 
 Moreover, in a service context like a restaurant, where a robot may take on a
 role similar to a waiter, misreading a social cue can lead to a breakdown in
@@ -71,7 +106,9 @@ service quality or even disrupt the customer experience. For instance, failing
 to recognize a patron's displeasure with a joke might lead to repeated behavior
 that further damages the relationship, whereas a socially aware robot could
 adapt its interaction strategy, perhaps by offering an apology and altering its
-behavior to better align with the guests' preferences (Mutlu et al., 2009).
+behavior to better align with the guests' preferences~\cite{mutlu2006storytelling}.
+
+\subsubsection{Modelling social norms}
 
 Therefore, developing a concise representation of social situations for
 autonomous social robots is crucial. Such a representation should include the
@@ -82,44 +119,10 @@ can achieve a more natural and effective integration into human social spaces,
 fostering positive human-robot interactions and ensuring the success of their
 service functions~\cite{gockley2005designing}.
 
-In summary, the critical need for social robots to accurately interpret and
-represent complex social dynamics is well-recognized in the field. Achieving
-this level of social understanding will be a significant step toward realizing
-robots that can operate autonomously while addressing the intricate and varied
-needs of human users in social settings.
 
-References:
-- Breazeal, C. (2003). Emotion and sociable humanoid robots. International Journal of Human-Computer Studies, 59(1-2), 119-155.
-- Cameron, D., Fernando, S., Collins, E. C., Millings, A., Moore, R. K., Sharkey, A., ... & Prescott, T. (2015). Framework for a social robot. Robophilosophy 2015 / TRANSOR 2015, 96.
-- Gockley, R., Bruce, A., Forlizzi, J., Michalowski, M., Mundell, A., Rosenthal, S., Sellner, B., Simmons, R., Snipes, K., Schultz, A. C., & Wang, J. (2005). Designing robots for long-term social interaction. 2005 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). 
-- Mutlu, B., Forlizzi, J., & Hodgins, J. (2009). A storytelling robot: Modeling and evaluation of human-like gaze behavior. 2009 4th ACM/IEEE International Conference on Human-Robot Interaction (HRI).
+\subsubsection{Joint models of social situations}
 
 
-
-\subsubsection{Context and motivation}
-
-
-\TODO{copy-paste from the HRI paper}
-
-\begin{rewrite}
-
-The basic idea of \emph{social robots} refers to robots that are situated in a
-human social environment. In this context, we expect social robots to exhibit
-\emph{social awareness}, i.e. to appraise and maintain a model of the social
-situation in which they are embedded. Depending on the role of the robot, this
-might include understanding who is present, who is interacting with whom, which
-are the resulting groups,  what are the in-group roles,  etc.
-
-Social awareness, as a socio-cognitive skill, is essential for the robot to e.g.
-act in a context-sensitive manner; reason and apply social norms (for instance,
-do not navigate in the middle of a group, or do not suddenly interrupt a
-conversation); or create proactive social agents (in order to acknowledge and
-respond to a human who would like to engage with the robot, the robot must first
-adequately model and recognise the corresponding social situation).
-
-\end{rewrite}
-
-\subsubsection{Social situation assessment}
 
 Artificial social intelligence~\cite{bainbridge1994artificial}
 
@@ -141,8 +144,6 @@ understanding and analyzing interpersonal situations and
 interaction [9]. The term interdependence describes the extent
 to which one individual of a dyad influences the other.
 
-
-
 Wagner's \emph{outcome matrices}
 \cite{wagner2006framework} \cite{wagner2009creating}
 
@@ -150,39 +151,38 @@ Mutual modelling:
 \cite{dillenbourg2016symmetry}
 stereotyping: \cite{wagner2015robots}
 
-\TODO{copy-paste from the HRI paper}
 
-\begin{rewrite}
+\TODO{copy paste from part b1}
+
+Endsley identify in~\cite{endsley1995theory} three levels to the related concept
+of \textit{situational awareness} :\emph{perception}, \emph{comprehension}, and
+\emph{projection of future states}. Applied to social awareness,
+the \emph{perception} of social signals has already been studied in depth in the
+community~\cite{pantic2011social,vinciarelli2009social}.  However, relating the
+resulting percepts into a comprehensive representation of a social situation
+(\emph{comprehension}) and reasoning about this representation to derive an
+interpretation (for instance, in terms of \emph{projections} of future social
+states) are hard problems that arguably hinder further progress in social AI and
+robotics~\cite{yang2018grand}. Current research is fragmented, and proposed
+methods are either abstract models~\cite{gordon2016commonsense}, or task-specfic
+approaches: for instance, group activity
+recognition~\cite{shu2017cern,wu2019learning}; pedestrians modelling for robotic
+social navigation~\cite{alahi2016social}; on-going state of an
+interaction~\cite{garcía2020explainable}. We are however lacking a more
+principled, general methodology to represent and reason about complex social
+situations. As put by Scassellati in 2018 in the \emph{Science Robotics}' list of
+ten Grand Challenges for Robotics~\cite{yang2018grand}, \emph{we have very few
+comprehensive, quantitative analyses of human social responses}, and little
+progress has been achieved since then.
 
 
+\subsubsection{The gap in our knowledge: holistic social situations
+representations}
 
-\emph{Social situations} have indeed been an important object of study in social
-psychology for a long time~\cite{argyle1981social}, with, for instance, the
-following definition by Garbett~\cite{garbett1970analysis}: \emph{a social
-situation is a temporally and spatially bounded series of events abstracted by
-the observer from the on-going flow of social life}. When specifically looking
-at artificial agents like robots, their level of social cognition depends on
-their ability to identify and interpret the world surrounding
-them~\cite{szczepanowski2017computational}, and in particular, correctly interpret
-transactions of social signals -- specific events in which an agent performs a
-social action aimed at another agent~\cite{pantic2011social}. This process is known as
-\textit{situational awareness}, of which Endsley~\cite{endsley1995theory} defines
-three levels:\emph{perception}, \emph{interpretation}, and \emph{evaluation}.
 
-While the \emph{perception} of social signal has been studied in depth in the
-HRI community (for instance,~\cite{pantic2011social}), and the \emph{evaluation} of
-the social situation is usually handled as an aspect of the robot's decision
-making, the \emph{interpretation} of social situations is a difficult problem.
-It requires to build and maintain a task-appropriate model of the situations,
-and represent it in such a way that a machine can reason about it.
-\emph{Embeddings} are such representations.
+\subsection{Embeddings as representations for social situations}
 
-\end{rewrite}
-
-\subsubsection{Embeddings}
-
-\TODO{copy-paste from the HRI paper}
-\begin{rewrite}
+\subsubsection{Embeddings in Machine Learning}
 
 In the context of machine learning, we refer to an \emph{embedding} as a
 real-valued vector representation of a typically much higher dimensionality
@@ -233,9 +233,7 @@ a numerical vector~\cite{reimers2019sentencebert,muennighoff2022sgpt}. The
 resulting embeddings can be then used to measure text-relatedness for instance,
 as in the BEIR benchmark~\cite{thakur2021beir}.
 
-\end{rewrite}
-
-\subsection{Social embeddings}
+\subsubsection{Social embeddings}
 
 \begin{rewrite}
 Combining the above concepts of social situations and text embeddings, we introduce in
@@ -326,9 +324,9 @@ learning}, \emph{social prediction}.
 
 \end{rewrite}
 
-\subsection{Basic research objectives}
+\subsubsection{Basic research objectives}
 
-\subsection{Empirical research objectives}
+\subsubsection{Empirical research objectives}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1232,7 +1230,7 @@ lorem ipsum
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Towards Responsible Robotics research}
+\subsection{Measures for a Responsible Robotics research}
 
 \begin{rewrite}
 
@@ -1274,7 +1272,7 @@ socially sensitive environment?).
 
 
 
-\subsection{Background on social robotic ethics}\label{ethics}
+\subsubsection{Background on social robotic ethics}\label{ethics}
 
 The ethical questions raised by social robotics have been actively studied over
 the last 5 years, attempting to address issues like:
@@ -1379,7 +1377,7 @@ robotics~\cite{sharkey2012granny}, have seen some additional work, but social
 robotics is still not equipped with operational guidelines, similar to the EU
 guidelines on trustworthy AI.
 
-\subsection{\project-specific measures}
+\subsubsection{\project-specific measures}
 
 I have chosen to focus the first workpackage task (T1.1) on building an
 operational ethical framework for social robots which engage over long period of
