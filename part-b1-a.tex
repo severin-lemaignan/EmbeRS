@@ -36,12 +36,14 @@ interpret and interact with the world surrounding
 them~\cite{szczepanowski2017computational}, and in particular, correctly
 interpret transactions of social signals -- specific events in which an agent
 performs a social action aimed at another agent~\cite{pantic2011social}. This
-socio-cognitive skill, \emph{social awareness}, is essential to build
+socio-cognitive skill, \emph{social situation awareness}, is essential to build
 intelligent social agents.
 
+\TODO{rephrase -> Endsley situation awareness is not exactly the same thing}
+
 Endsley identify in~\cite{endsley1995theory} three levels to the related concept
-of \textit{situational awareness} :\emph{perception}, \emph{comprehension}, and
-\emph{projection of future states}. Applied to social awareness,
+of \textit{situation awareness} :\emph{perception}, \emph{comprehension}, and
+\emph{projection of future states}. Applied to social situation awareness,
 the \emph{perception} of social signals has already been studied in depth in the
 community~\cite{pantic2011social,vinciarelli2009social}.  However, relating the
 resulting percepts into a comprehensive representation of a social situation
@@ -165,12 +167,12 @@ interactions, as detailed below.
 %
 %The basic idea of \emph{social robots} refers to robots that are situated in a
 %human social environment. In this context, we expect social robots to exhibit
-%\emph{social awareness}, i.e. to appraise and maintain a model of the social
+%\emph{social situation awareness}, i.e. to appraise and maintain a model of the social
 %situation in which they are embedded. Depending on the role of the robot, this
 %might include understanding who is present, who is interacting with whom, which
 %are the resulting groups,  what are the in-group roles,  etc.
 %
-%Social awareness, as a socio-cognitive skill, is essential for the robot to e.g.
+%social situation awareness, as a socio-cognitive skill, is essential for the robot to e.g.
 %act in a context-sensitive manner; reason and apply social norms (for instance,
 %do not navigate in the middle of a group, or do not suddenly interrupt a
 %conversation); or create proactive social agents (in order to acknowledge and
@@ -236,7 +238,7 @@ properties of social embeddings}.
 \end{enumerate}
 
     \item to precisely \textbf{define and implement the socio-cognitive skill of
-        \emph{social awareness} enabled by social embeddings}. I split this
+        \emph{social sitation awareness} enabled by social embeddings}. I split this
         second goal into three specific objectives: \emph{social appraisal},
         \emph{social prediction}, \emph{social learning}.
 
@@ -311,18 +313,38 @@ objectives:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Methodology}
+\section{Methodology and implementation}
 %\section{Feasibility of the project}
 
-Accordingly, the \project project work programme is organised in four main work
-packages that I briefly outline hereafter, with the key research methods that I
-will employ.
+\project delivers on its programme by combining a range of scientific methods.
+Embedding-based data representation is the central method underpinning the
+generation of social embeddings. From a computational point of view, it relies
+on specialized deep learning models to generate the source descriptors, and
+knowledge graph and propositional logic to combine descriptors into full text
+descriptions. The selection of descriptors and their combination is however also
+informed by social psychology and sociology, and I accordinlgy perform
+qualitative field observations of social situations.
+
+\TODO{make sure we have tasks for that}
+
+The analysis of the resulting embeddings uses... \TODO{complete}
+
+%machine learning large language models fine-tuning and embedding learning learning;
+%user-centered design; ethnographic and sociological investigation; expressive
+%non-verbal communication; embodied cognition; symbolic AI; neural nets and
+%sub-symbolic AI; interactive machine learning.
+
+In terms of implementation, the \project project work programme is organised in
+four main work packages that I briefly outline hereafter, with the key research
+methods that I will employ in each of them.
 
 %The first one, \emph{\WPA}, focuses on basic research; the second
 %one, \emph{\WPB}, focuses on the artificial socio-cognitive skills enabled by
 %social embeddings; the third one, \emph{\WPC}, specifically look at the
 %application and impact on social robots; and the final one, \emph{\WPD},
 %organises the experimental work.
+
+\TODO{list and explicitely name the employed methodologies}
 
 \subsection{WP1: \textbf{\WPA}}
 
@@ -395,9 +417,9 @@ existing annotated datasets to identify and extract prototypical reference socia
 
 Work package WP2 focuses on research objectives \ref{O2.1}, \ref{O2.2} and \ref{O2.3}:
 expanding social embeddings beyond their fundamental properties, to build a
-`social awareness' cognitive skill for social robots.
+`social situation awareness' cognitive skill for social robots.
 
-%\emph{Social awareness} is a socio-cognitive skill that is essential for
+%\emph{social situation awareness} is a socio-cognitive skill that is essential for
 %artificial social system, like social robots, to e.g.  act in a
 %context-sensitive manner, reason and apply social norms,
 %or create proactive social agents (in order to acknowledge and respond to a
@@ -502,12 +524,12 @@ experience~\cite{lemaignan2017artificial, lemaignan2015pyrobots,lemaignan2011wha
 
 \subsection{WP4: \textbf{\WPD}}
 
-
-Finally, WP4 organises the experimental work, and aim at achieving~\ref{O4}. I intent to run both controlled
-experiments in lab settings to evidence some of the basic properties of social
-embeddings, as well as more complex deployments in real-world, naturalistic
-settings, to demonstrate how social embeddings might push the boundaries of
-social intelligence for service robots.
+Finally, WP4 organises the experimental work, and aim at achieving~\ref{O4}. I
+intent to run both controlled experiments in lab settings to evidence the basic
+properties of social embeddings, their translation in terms of social situation awareness,
+as well as more complex deployments in real-world, naturalistic settings, to
+demonstrate how social embeddings might push the boundaries of social
+intelligence for service robots.
 
 As an example of controlled experiment, I will adapt to social
 robotics~\cite{lemaignan2015mutual} experimental protocols originally designed
@@ -528,7 +550,7 @@ experience
 (e.g.~\cite{hood2015when,mondada2015ranger,winkle2018social,cooper2023challenges}),
 and my on-going collaboration with Pr. Pino, coordinator of the Broca Living Lab, I will
 deploy an autonomous social robot for several weeks, using social embeddings to
-implement a level of social awareness and social appropriateness not yet
+implement a level of social situation awareness and social appropriateness not yet
 achieved in this type of application.
 
 \vspace{1em}
