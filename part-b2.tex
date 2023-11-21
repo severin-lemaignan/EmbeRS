@@ -270,57 +270,85 @@ and we discuss several promising directions for follow-up research.
 
 \begin{rewrite}
 
-%\project is built around three axes: a basic research programme; an experimental
-%programme that looks specifically at the application of social embeddings to
-%social robotics; and, running in parallel to those first two axes, a scientific
-%investigation of the ethical dimension of social embeddings.
+\noindent At the basic research level, \project targets two overarching research goals:
 
-At the basic research level, \project targets two overarching research goals:
-
-(1) to build compact, yet semantics-preserving, embeddings to represent
-arbitrary social environments; and to fully characterize these embeddings,
+\begin{enumerate}[label=\textbf{(\arabic*)}]
+    \item to build compact, yet semantics-preserving, embeddings to represent
+arbitrary social situations; and to fully characterize these embeddings,
 including their latent semantics. I translate this first goal into objective
-{\bf O1}: To \textbf{construct and characterize the fundamental
-properties of social embeddings}.
-
-(2) to precisely \textbf{define and implement the socio-cognitive skill of \emph{social awareness} enabled
-by social embeddings}, and demonstrate it on social robots. I split this second
-goal into three specific objectives: \emph{social appraisal}, \emph{social
-learning}, \emph{social prediction}.
-
-% 3 objectives:
-%- appraise social situations, also taking into account the social context
-%- learn socially-appropriate behaviours
-%- anticipate future social states
-
+{\bf O1}:
 
 \begin{enumerate}[label=\textbf{O\arabic*}]
-    \setcounter{enumi}{1}
+    \item \label{O1} To \textbf{construct and characterize the fundamental
+properties of social embeddings}.
+\end{enumerate}
+
+    \item to precisely \textbf{define and implement the socio-cognitive skill of
+        \emph{social awareness} enabled by social embeddings}. I split this
+        second goal into three specific objectives: \emph{social appraisal},
+        \emph{social prediction}, \emph{social learning}.
+
+\begin{enumerate}[label=\textbf{O2.\arabic*}]
     \item \label{O2.1} To use social embeddings to \textbf{automatically appraise
         social situations}, taking into account their \textbf{context}. Using
-        a set of prototypical reference situations, social embeddings
+        a set of prototypical reference situations~\cite{kelley2003atlas}, social embeddings
         can be used to relate the current social situation to known ones.
         Besides, because social embeddings lend themselves to jointly encode
         social context by simply attaching context descriptions, the appraisal
         of the social situation can be made \emph{context-aware};
 
-    \item \label{O2.2} To use social embeddings to model \textbf{social dynamics}
-        by characterizing the trajectories of on-going social situations in the
+    \item \label{O2.2} To use social embeddings to model \textbf{social
+        dynamics} by characterizing the trajectories of on-going social situations in the
         embedding space. I will look in particular into trajectories'
         \emph{discontinuties}, that might represent unexpected changes of social
-        dynamics, and trajectories' extrapolations, that might represent
+        dynamics, and trajectories' \emph{extrapolations}, that might represent
         \textbf{social situation \emph{predictions}}.
 
     \item \label{O2.3} To \textbf{learn socially-appropriate behaviours} by using
-        social embeddings as an additional input feature to existing behaviour
-        generation algorithms like Generative Adversarial
-        Networks~\cite{marmpena2019generating,suguitan2020moveae}; and by
-        augmenting existing interactive machine learning techniques (`user
-        in-the-loop' social learning, that I pioneered in social
-        robotics~\cite{senft2017supervised, winkle2020couch,winkle2021leador})
-        with representations of the social environment;
+        social embeddings as an additional input feature to existing robot behaviour
+        generation algorithms, and by augmenting existing interactive machine
+        learning techniques (`user in-the-loop' social learning for robots, that I
+        pioneered in e.g.~\cite{winkle2021leador}) with
+        representations of the social situation;
 
 \end{enumerate}
+\end{enumerate}
+
+\noindent To illustrate these objectives, let consider the following imaginary
+scenario: a robot is welcoming visitors at the entrance of an hospital; a group
+of 3 persons are discussing together; one person is standing in the middle of
+the room, glancing around; one last person is entering the hospital and
+walks toward the reception. \ref{O2.1} will show that social embeddings can
+represent and appraise this situation, accounting for the `hospital entrance' context: while
+the person walking towards the reception probably does not need help from the
+robot, the one in the middle seems uncertain, and might appreciate a pro-active
+helping behaviour from the robot. \ref{O2.2} adds the temporal dimension: if we
+sample the scene at regular time steps, and build a sequence of social
+embeddings, what trajectory do they follow in the embedding space? Is it
+continuous? Is there any rapid changes? Can we extrapolate this trajectory to
+predict where the situation is going? \ref{O2.3}, finally, looks at exploiting
+social embeddings for socially-aware behaviour learning. In our scenario, a
+member of the hospital staff would for instance teach the robot an
+context-appropriate response, and the robot would be able to generalise it to
+other, similar social situations.
+
+
+I want to evidence these properties in both lab-based experiments and
+real-world deployments on social robots. Accordingly, \project has two addtional
+objectives:
+
+\begin{enumerate}[label=\textbf{O\arabic*}]
+    \setcounter{enumi}{2}
+    \item \label{O3} To fully {\bf integrate social embeddings onto a
+        socio-cognitive architecture for autonomous service robots} and,
+
+    \item \label{O4} To conduct an {\bf ambitious experimental programme},
+        including both lab-based and field research, to demonstrate the
+        effectiveness of social embeddings in complex, real world conditions.
+        This means deploying the \project robot into existing social eco-systems
+        that are sufficiently complex, yet open to explore novel social interactions.
+\end{enumerate}
+
 
 \end{rewrite}
 
@@ -405,70 +433,30 @@ provide expertise in expressive arts and puppetering.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Overview of \project methodology}
 
-\begin{rewrite}
 
-The four research questions previously listed are addressed across five
-work-packages: \textbf{WP1} is dedicated to the conceptual framing of the
-project (R1) and the identification of interaction principles; \textbf{WP2}
-extracts from these principles the set of requirements in term of
-socio-cognitive capabilities for the robot (R3), and implement them; in parallel
-to WP2,  \textbf{WP3} looks at how social robots can generate congruent social
-behaviours (R3); \textbf{WP4} transposes the conceptual framework of WP1 into a
-principled cognitive architecture and integrates together the cognitive
-functions of WP2 and WP3 (R2);and \textbf{WP5} organises the experimental
-fieldwork that demonstrates the \project approach in ambitious and complementary
-real-world situations (R4).
-
+The four research objectives previously listed are addressed across four
+work-packages (Figure~\ref{fig:wps}): \textbf{WP1} is dedicated to the construction and
+characterization of social embeddings; \textbf{WP2}
+exploits social embeddings to develop a new form of artifical social awareness;
+\textbf{WP3} looks at how social robots can make use of this skill by
+integrating social embeddings into existing cognitive architectures for
+service robots; and \textbf{WP4} organises the experimental work, both lab-based
+and in-the-wild, that demonstrates the \project approach in ambitious and complementary
+situations.
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=\linewidth]{figs/wps}
+\includegraphics[height=0.6\linewidth]{figs/wps}
 \caption{Overview of the workpackages and tasks, and tasks inter-relations.}
 \label{fig:wps}
 \end{figure}
 
 More specifically, Figure~\ref{fig:wps} gives an overview of the project
-workpackages, and their interrelations. Fieldwork plays a central role in the
-project, and appears in the centre of the figure. The first important field
-deployment is a one-year experiment, taking place at the Bristol science centre
-(T1.1). This `public-in-the-loop' experiment is analysed and lead to the
-definition of core interaction principles (T1.2). These are in turn translated
-into algorithmic models, guiding the social teleology of the cognitive
-architecture (O2.3.1).
+workpackages, and their interrelations.
 
-This first experiment is immediately followed by two other long-term
-experimental deployments: a one-year deployment in one of Bristol's Special
-Education Need (SEN) school (O2.1.1), followed by a one-year deployment at
-Bristol's Children's hospital (O2.1.2). These two additional experiments are both
-inputs for WP2 and WP3, and demonstrator for the robot socio-cognitive
-architecture (WP4).
 
-Specifically, workpackage WP2 research, develop, and integrate all the components
-pertaining to the assessment of the spatio-temporal and social environment of
-the robot. Reference interaction situations and the data required to support
-this workpackage is directly drawn from the experimental fieldwork that will
-take place at the same time in WP1 and WP5. The perceptual capabilities
-delivered by WP2 are continuously integrated into the robot's cognitive
-architecture (O2.3.3), iteratively improving the socio-cognitive performances of
-the robot.
-
-Workpackage WP3 looks into behaviour generation using machine learning (T3.2)
-and non-verbal affective modalities (T3.3). T3.2 is data-intensive, and will use
-datasets acquired during the field deployments (T1.1, O2.1.1, O2.1.2), as well as
-lab-recorded dataset of social interactions. Similar to WP2, the capabilities
-built in WP3 are integrated in the robot architecture in O2.3.3.
-
-In addition to the integration of WP2 and WP3 capabilities, WP4 is also
-researching and developing the socio-cognitive drives of the architecture. They
-come both from T1.2 (as previously mentioned), and
-human-in-the-loop/public-in-the-loop machine learning (O2.3.2). O2.3.2, in
-particular, is tighly connected to the experimental fieldwork, where the
-learning-from-end-users take place.
-
-\end{rewrite}
-
-\subsubsection{Application to Social Robotics}
+\subsubsection{Social Robotics as an experimental framework}
 
 As a \emph{methodology} to represent and reason about social situations, social
 embeddings are fundamentally agnostic from their final domain of application.
@@ -503,33 +491,14 @@ reason about the social environment of robots. By specifically applying social
 embeddings to social robotics, I also aim to provide new, groundbreaking
 tools to the robotic community to build more intelligent social robots.
 
-\subsubsection{Integration sprints}
-
-\project is a complex project, with numerous interdependencies between tasks.
-To ensure the interdependencies are properly understood, and support effective
-integration of the outputs of each workpackage, I will organise every 6 months,
-and for the first 4 years, \textbf{integration sprints} (see Gantt diagram).
-Integration sprints are one-week long integration retreat during which the whole
-\project team gather and work together to effectively implement and test on the
-robot the different components. In addition to providing regular `check points'
-for the projects, they also set a stable schedule to deliver project components.
-
-This methodology was used by the PI in  several previous projects (FP7 CHRIS
-project, H2020 SPRING for instance), and had proved to be of great value to
-ensure project-wide cohesion and steady progress.
-
-The three integration sprints taking place before the beginning of the
-experimental deployments (display as orange circles on the Gantt chart) are of
-particular importance, and will be extended to ten days.
-
-
 \subsubsection{Gantt chart}
 
 %\begin{landscape}
-\begin{figure}[!ht]
+\begin{figure}[!h]
 \resizebox{\linewidth}{!}{
     \input{gantt}
 }
+\label{gantt}
 \end{figure}
 %\end{landscape}
 
@@ -550,21 +519,49 @@ particular importance, and will be extended to ten days.
     \label{milestones}
 \end{table}
 
-\subsubsection{Engineering methodology}
+\subsubsection{Additional methodological measures}
 
-\TODO{useful?}
+\paragraph{Integration sprints}
 
-\begin{rewrite}
+\project is a complex project, with numerous interdependencies between tasks.
+To ensure the interdependencies are properly understood, and support effective
+integration of the outputs of each workpackage, I will organise every 6 months,
+and for the first 4 years, \textbf{integration sprints} (see Gantt diagram).
+Integration sprints are one-week long integration retreats during which the whole
+\project team gather and work together to effectively implement and test on the
+robot the different components. In addition to providing regular `check points'
+for the project, they also set a stable schedule to deliver project components.
 
-Detail use of:
+This methodology was used by the PI in  several previous projects (FP7 CHRIS
+project, H2020 SPRING for instance), and had proved to be of great value to
+ensure project-wide cohesion and steady progress.
+
+\paragraph{Software engineering and open-access}
+
+The project will follow strict software engineering guidelines, based on the
+experience I gained while working in the industry, with specific measures to
+ensure the public access and long-term archival of the artifacts produced during
+the project. In particular:
+
 \begin{itemize}
-    \item use of ROS2
-    \item coding guidelines enforced with linters
-    \item CI/CD for automatic code testing
-    \item integration testing using DOcker/Docker compose
+    \item code development will exclusively take place on a public code versioning
+        platform (e.g. GitHub), under a permissive open-source license (Apache
+        2.0);
+    \item where relevant, code will be systematically accompanied of
+        documentation, unit-tests, and easy-to-run examples;
+    \item I will make use of the Continuous Integration and Continuous
+        Deployment (CI/CD) capabilities of the code platform to automatically
+        run code linting and unit-tests before merging code to the repository's
+        main branch;
+    \item robot-specific code will be developed using the ROS 2 standard,
+        ensuring a high degree of compatibility with other projects;
+    \item the integration of the robot architecture (\tCC) will be based on individual Dockerized
+        components for each of the robot's capabilities, continuously integrated
+        and tested via \texttt{docker compose} and dedicated integration tests;
+    \item the project's code repositories and artifacts (e.g. fine-tuned models)
+        will be indexed and synchronized on EU-compatible long-term archival
+        repositories like Zenodo.  
 \end{itemize}
-
-\end{rewrite}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Expertise and Research team}
