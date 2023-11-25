@@ -41,7 +41,7 @@ intelligent social agents.
 
 \TODO{rephrase -> Endsley situation awareness is not exactly the same thing}
 
-Endsley identify in~\cite{endsley1995theory} three levels to the related concept
+Endsley identifies in~\cite{endsley1995theory} three levels to the related concept
 of \textit{situation awareness} :\emph{perception}, \emph{comprehension}, and
 \emph{projection of future states}. Applied to social situation awareness,
 the \emph{perception} of social signals has already been studied in depth in the
@@ -296,11 +296,11 @@ objectives:
     \item \label{O3} To fully {\bf integrate social embeddings onto a
         socio-cognitive architecture for autonomous service robots} and,
 
-    \item \label{O4} To conduct an {\bf ambitious experimental programme},
-        including both lab-based and field research, to demonstrate the
-        effectiveness of social embeddings in complex, real world conditions.
-        This means deploying the \project robot into existing social eco-systems
-        that are sufficiently complex, yet open to explore novel social interactions.
+    \item \label{O4} To conduct an {\bf ambitious experimental programme} --
+        including social observations, and both lab-based studies and field
+        studies -- to demonstrate the effectiveness of social embeddings in
+        complex, real world conditions.  This means deploying the \project robot
+        into existing complex social eco-systems.
 \end{enumerate}
 
 
@@ -435,24 +435,30 @@ expanding social embeddings beyond their fundamental properties, to build a
 
 Social appraisal (Objective~\ref{O2.1}) is about interpreting the results of WP1
 in terms of social situations. This includes, in particular, mapping regions of
-the embedding space to known social situations, as identified for instance
-in~\cite{kelley2003atlas}. \TODO{complete}
+the embedding space to known social situations. To do so, I will first create a
+taxonomy, represented as a knowledge graph, of social situations. This taxonomy
+will be grounded in literature (e.g.~\cite{kelley2003atlas}) and in my own field
+observations (WP4).  Using knowledge graph embedding
+techniques~\cite{ji2022survey}, I will research possible isomorphisms between
+social embeddings and the embedding of this expert-build social situation
+taxonomy. As a result, it should be possible to automatically characterize any
+new observed social situation in term of its relatedness to prototypical
+situations, referenced in the taxonomy.
 
-Context-awareness is another critical aspect of social situation appraisal.
-\emph{Context} has been defined in various way, including as \emph{who},
-\emph{what}, \emph{when}, \emph{where}, and \emph{why} of
-interactions~\cite{vinciarelli2009social}; as high-level task/environment
-characteristics, such as `studying' or `dining'~\cite{nigam2015social}; as
-relationships between agents in the scene, such as `interacting in a group',
-`standing in a line'~\cite{althaus2004navigation}; or as
-task-based~\cite{castellano2012detecting}. Social embeddings lend themselves
-well to context encoding: as long as a context description can be generated, it
-can be appended to the social situation description, and jointly embedded.
-
-%\emph{Characterizing} how context impacts the resulting social embeddings
-%requires extensive research, from defining and specifying a taxonomy of
-%contexts, to characterizing their impact on the social embedding space.
-
+Context representation is another critical aspect of social situation appraisal
+that I will study in WP2: depending on the context, the interpretation of a
+social situation might vary wildly, something that current approaches struggle
+to represent~\cite{yang2018grand}. For instance, laughing in the context of a
+joke is expected; laughing in a serious context, however, might indicate that
+something went (funnily) wrong with the agent's behaviour or actions. The
+hypothesis that I want to verify is whether large language models encode
+sufficiently well expected social norms, so that adding context to the social
+situation descriptions is sufficient to correctly interpret the
+\emph{contextualized} social situation. In other words, can we verify that the
+embedding of a description like `\emph{I am telling a joke; people are
+laughing}' is systematically closer to the embedding of `\emph{The social
+situation is going well}', than a description like `\emph{I am taking orders
+from the patrons; people are laughing}'?
 
 Objective~\ref{O2.3} is about analysing \emph{social dynamics} by
 studying the \emph{trajectories} of social situations in the embedding space.
@@ -525,11 +531,13 @@ experience~\cite{lemaignan2017artificial, lemaignan2015pyrobots,lemaignan2011wha
 \subsection{WP4: \textbf{\WPD}}
 
 Finally, WP4 organises the experimental work, and aim at achieving~\ref{O4}. I
-intent to run both controlled experiments in lab settings to evidence the basic
-properties of social embeddings, their translation in terms of social situation awareness,
-as well as more complex deployments in real-world, naturalistic settings, to
-demonstrate how social embeddings might push the boundaries of social
-intelligence for service robots.
+intent to run (1) qualitative field observations, supervised by one researcher
+in data-driven sociology (PD2), to e.g. ground our taxonomy of social situation
+(WP2); (2) controlled experiments in lab
+settings to evidence the basic properties of social embeddings, their
+translation in terms of social situation awareness, as well as more complex
+deployments in real-world, naturalistic settings, to demonstrate how social
+embeddings might push the boundaries of social intelligence for service robots.
 
 As an example of controlled experiment, I will adapt to social
 robotics~\cite{lemaignan2015mutual} experimental protocols originally designed
