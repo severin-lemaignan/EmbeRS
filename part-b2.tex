@@ -669,9 +669,19 @@ studies with social robots on the hospital' premisses).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Workpackages}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{WP1: \textbf{\WPA}}
+
+\begin{framed}
+\noindent{\bf WP Timeframe:} Y1-Y3.5; {\bf Team:} one senior post-doc ({\bf
+PD1}) with expertise in data-driven sociology; one senior post-doc ({\bf PD2})
+in deep learning/text embedding; one PhD student ({\bf PHD2}) in deep learning.
+\end{framed}
+
 
 WP1 addresses Objective \textbf{O1}. I will first systematically investigate
 the three steps of social embeddings construction, and then characterize the
@@ -781,13 +791,14 @@ reference social situations.
 \end{framed}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{WP2: \textbf{\WPB}}
+
 \begin{framed}
-    \noindent{\bf WP Timeframe:} Y1-Y3.5; one post-doc ({\bf PD1}) with expertise in
-    deep learning/text embedding; one post-doc ({\bf PD2}) in data-driven
-    sociology.
+\noindent{\bf WP Timeframe:} Y2-Y4; {\bf Team:} one post-doc ({\bf PD3}) in
+cognitive sciences; one PhD student in data-driven sociology ({\bf PHD1}).
 \end{framed}
 
-\subsubsection{WP2: \textbf{\WPB}}
 
 \emph{Social situation awareness} is a socio-cognitive skill that is essential for
 artificial social system, like social robots, to e.g.  act in a
@@ -883,16 +894,13 @@ This task is linked to the experimental task \tDD.
 \end{framed}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{WP3: \textbf{\WPC}}
+
 \begin{framed}
-    \noindent{\bf WP Timeframe:} Y2-Y4; one post-doc ({\bf PD3}) in cognitive
-    sciences; one PhD student in data-driven sociology ({\bf PHD1}).
+\noindent{\bf WP Timeframe:} Y1.5-Y4; {\bf Team:} one PhD student ({\bf PHD3}) in Cognitive Robotics.
 \end{framed}
 
-
-
-
-
-\subsubsection{WP3: \textbf{\WPC}}
 
 \begin{rewrite}
 
@@ -934,46 +942,6 @@ behaviours, thus offering a level of behavioural transparency to the end-users.
 \begin{framed}
     {\noindent\bf Main outcomes of T3.2:} a human-in-the-loop reinforcement
     learning paradigm, suitable for in-situ teaching of the robot by the
-    end-users themselves.
-\end{framed}
-
-\textbf{T3.3 -- Integrating a socially-driven architecture for long-term interaction}
-This task builds on the state of art in cognitive architectures (disembodied
-ones~\cite{chong2007integrated,vernon2007survey,kingdon2008review,duch2008cognitive,langley2009cognitive,taatgen2010past,thorisson2012cognitive},
-as well as ones specifically developed for robotics:
-ACT-R/E~\cite{trafton2013act}, HAMMER~\cite{demiris2006hierarchical}, PEIS
-Ecology~\cite{saffiotti2005peis,daoutis2012cooperative},
-CRAM/KnowRob~\cite{beetz2010cram, tenorth2009knowrob},
-KeJia~\cite{chen2010developing}, POETICON++~\cite{antunes2016human}, and my own,
-the LAAS Architecture for Social Interaction~\cite{lemaignan2017artificial}):
-the overall purpose of the socio-cognitive architecture of \project is to
-integrate in a principled way the spatio-temporal and social knowledge of the
-robot (WP2) with a decision-making mechanism, to eventually produce
-socially-suitable actions (WP3). 
-
-The decision-making mechanism is the heart of the \project AI engine: the robot
-will rely on it to generate action decision that are purposeful, legible and engaging on the
-long run, something that none of the existing architectures have been able to
-successfully demonstrate to date. I aim at a breakthrough, and will
-introduce a novel approach: drawing from the interaction patterns identified
-in T1.2, I will combine long-term, socially-driven goals (\emph{social teleology}, T3.1), and
-human-in-the-loop machine learning (T3.2) using a novel arbitration mechanism.
-
-to make ensure local adaptation  progressively learn an social
-policy enabling long-term autonomy. This task focuses on `bringing the pieces
-together' in a principled manner.
-
-
-The arbitration mechanism itself will build on research on reinforcement
-learning for experience transfer~\cite{madden2004transfer} that enables the
-re-assessement of a policy (here, our long-term social teleology) based on
-specific experience (here, the end-user-taught policy).
-
-
-\begin{framed}
-    {\noindent\bf Main outcomes of T3.3:} A cognitive architecture, implemented
-    on the TIAGoPro robot, that enables long-term social engagement, by combining
-    long-term goals with domain-specific action policies, taught by the
     end-users themselves.
 \end{framed}
 
@@ -1019,29 +987,48 @@ lorem ipsum
 
 \paragraph{\TCC}
 
-lorem ipsum
+Task \TCC is about designing and implementing a complete socio-cognitive
+architecture for \project, by integrating in a principled way social embeddings
+with the robot's decision-making mechanisms.
+
+Developing a full cognitive architecture for service robots is beyond the scope
+of the \project project. As such, this task will build on the extensive state
+of art in cognitive architectures: disembodied
+ones~\cite{chong2007integrated,vernon2007survey,kingdon2008review,duch2008cognitive,langley2009cognitive,taatgen2010past,thorisson2012cognitive},
+as well as ones specifically developed for robotics like
+ACT-R/E~\cite{trafton2013act}, HAMMER~\cite{demiris2006hierarchical}, KnowRob
+2.0/CRAM~\cite{beetz2010cram, beetz2018knowrob},
+POETICON++~\cite{antunes2016human}, and my own, the LAAS Architecture for
+Social Interaction~\cite{lemaignan2017artificial}. This last one, in
+particular, is already partially implemented on the TIAGoPro robot, and will
+serve as the basis for this task.
+
+While the results of WP2 should enable a range of new social capabilities for
+the robot, their principled integration in a cognitive architecture is an open
+research question, that will lay at the centre of research project of the PHD3
+student. One current and promissing direction of research that would support
+this integration can be found in the \emph{predictive processing}
+framework~\cite{schillaci2016exploration} that reframes the traditional
+perception--reasoning--action loop as a single inferential process, aiming at
+both predicting future perceptions, and continously acting to minimizing
+possible prediction errors. While until now this framework has mainly been
+applied to simple control problems in robotics~\cite{ciria2021predictive}, it
+could provide solid theoretical foundation for the integration of social embeddings in practical cognitive architectures for robot like~\cite{lemaignan2017artificial}.
 
 \begin{framed}
-    {\noindent\bf Main outcomes of \tCC:} lorem ipsum 
+\noindent {\bf Main outcomes of \tCC:} The principled integration of social
+embeddings in a complete cognitive architecture, implemented on the
+    TIAGoPro robot. This architecture enables the experimental task~\tDD and effectively demonstrates socio-cognitive skills in line with the criteria laid out in WP4.\TODO{check that we indeed define such criterias}
 \end{framed}
 
 
-\begin{framed}
-    \noindent{\bf WP Timeframe:} Y1.5-Y4; one ... ({\bf PDx}) with expertise in
-    ...; one ... ({\bf PDx}) in ...
-\end{framed}
 
-
-
-
-
-
-
-
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{WP4: \textbf{\WPD}}
+
+\begin{framed}
+\noindent{\bf WP Timeframe:} Y1.5-Y4; {\bf Team:} all, but primarily PD1, PD3, PHD1, PHD3.
+\end{framed}
 
 
 \begin{rewrite}
@@ -1242,13 +1229,13 @@ lorem ipsum
 \end{framed}
 
 
-\begin{framed}
-    \noindent{\bf WP Timeframe:} Y1.5-Y4; one ... ({\bf PDx}) with expertise in
-    ...; one ... ({\bf PDx}) in ...
-\end{framed}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{WP5: \textbf{\WPZ}}
+
+\begin{framed}
+\noindent{\bf WP Timeframe:} Y1-Y5; {\bf Team:} all
+\end{framed}
 
 The last workpackage groups all the task related to the grant management, as
 well as the dissemination and exploitation tasks.
@@ -1257,12 +1244,13 @@ The interdiscplinary nature of the project means that dissemination actions, in
 particular, needs to target a broader range of practionners and stakeholders
 than in typical projects.
 
-\project has the ambition to disrupt how we study social interactions. While the
-experimental side of the project is focused on applications in social robotics,
-the impact of the project is not limited to this field, and I intend to
-disseminate this work to a range of academic communities, from pure AI, to the
-emerging field of data-driven sociology.
+\project has the ambition to disrupt how we study social interactions. While
+the experimental side of the project is focused on applications in social
+robotics, the impact of the project is not limited to this field, and I intend
+to disseminate this work to a range of academic communities, from pure AI, to
+the emerging field of data-driven sociology.
 
+\TODO{how specific about dissemination/exploitation actions?}
 
 \paragraph{\TZA}
 
@@ -1289,13 +1277,10 @@ lorem ipsum
 \end{framed}
 
 
-\begin{framed}
-    \noindent{\bf WP Timeframe:} Y1.5-Y4; one ... ({\bf PDx}) with expertise in
-    ...; one ... ({\bf PDx}) in ...
-\end{framed}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Measures for a Responsible Robotics research}
 
