@@ -673,45 +673,62 @@ studies with social robots on the hospital' premisses).
 
 \subsubsection{WP1: \textbf{\WPA}}
 
-WP1 addresses Objective \textbf{O1}. I will first systematically investigate the
-three steps of social embeddings construction, and then characterize the
+WP1 addresses Objective \textbf{O1}. I will first systematically investigate
+the three steps of social embeddings construction, and then characterize the
 resulting embeddings.
 
+Indeed, we have previously described the social embedding process as the
+sequence of three steps: (1) a \emph{descriptor extraction} step; (2) a
+\emph{description} step; and (3) the embedding process itself.  Steps (1) and
+(2) are treated in task \tAA (and \tCA for the actual robot implementation),
+while step (3) is treated in task \tAB.
+
+Tasks \tAC and \tAD then look at the characterization of social embeddings.
 
 \paragraph{\TAA}
 
-Social embeddings construction requires first to extract descriptors, then to
-build complete textual descriptions, and finally to embed these descriptions.  I
-will extract basic social descriptors using the ROS4HRI social perception
-approach, as it formalize a multi-modal model of humans~\cite{lemaignan2022ros},
-and run in real-time on current robots. I will augment these basic descriptors
-with more complex percepts, including (1) descriptors of human-objects
-interactions (HOI), using transformer-based techniques
-like~\cite{iftekhar2022what} ; (2) affective
-descriptors~\cite{vinciarelli2009social}, using e.g. facial expressions based on
-facial action units classification~\cite{martinez2019automatic}; (3) group-level
-interactions, including $f$-formations~\cite{setti2015fformation}, and group
-activity recognition, using deep convolutional graph techniques like
-ARG~\cite{wu2019learning}.
+Task \tAA looks into designing the algorithm required to generate textual
+descriptions of social situations.
 
-%(3) a novel contextual model of
-%attention~\cite{ferrini2024percepts} that allows fine-grained assessment of what
-%the person around the robot are focusing on.
+I treat social \emph{situations} as a short sequence of snapshots of the social
+environment ($d=10s$ to $25s$, according to~\cite{netanyahu2021phase}).
 
-The generation of textual descriptions consists in both the combination of
-descriptors into textual \emph{snapshots} of the social environment at a
-specific time, and the combination of these snapshots over time, to build a
-textual description of complete situations with a time horizon of 10s to
-25s~\cite{netanyahu2021phase}. I will initially build snapshots using text
-templates, and then extend the methodology using techniques based on
+In this context, a social snapshot is a description of the social environment
+at a time $t$. This description is generated out of a set of social descriptors
+(including number of people; their position and orientation; their gaze
+direction and focus of attention; whether or not they are speaking; their
+gesture; relative distance between people; groups and group membership;
+elements of theory of mind), scene descriptors (including location; overall
+structure of the space; objects in the environment; relationships between
+objects like relative placement and affordances) and context descriptors
+(including nature of the on-going task; on-going actions performed by the
+agents; expected roles of each agent).
+
+The list of descriptors that are actually relevant to characterize a social
+situation will be informed by the observations conducted in \tDA, also using a series of ablation studies to narrow down the list.
+
+These quantitative descriptors must then first be combined into qualitative
+description of full social environments, and then combined over time to
+describe on-going social situations. I will initially build snapshots using
+text templates, and then extend the methodology using techniques based on
 social knowledge graphs~\cite{sap2019atomic} and propositional
 logic~\cite{tsoi2022sean}. The combination of snapshots into social situations
 will be developed with the help of the PHASE simulator and
 dataset~\cite{netanyahu2021phase}, that includes a large number of annotated
 social interaction sequences.
 
+As naive approaches to descriptors' combinations would lead to combinatorial
+explosion, pruning strategies will be implemented, initially based on manual
+heuristics.
+
+%(3) a novel contextual model of
+%attention~\cite{ferrini2024percepts} that allows fine-grained assessment of what
+%the person around the robot are focusing on.
+
+
+
 \begin{framed}
-    {\noindent\bf Main outcomes of \tAA:} lorem ipsum 
+    {\noindent\bf Main outcomes of \tAA:} a set of descriptors and the algorithm to automatically generate textual descriptions of social situations.
 \end{framed}
 
 \paragraph{\TAB}
@@ -965,7 +982,28 @@ specific experience (here, the end-user-taught policy).
 
 \paragraph{\TCA}
 
-lorem ipsum
+While Task \tAA selected a set of descriptors to build social embeddings, I will implement the automatic extraction of these descriptors on the TIAGoPro robot in Task \TCA.
+
+I will extract basic social descriptors using the ROS4HRI social perception
+framework~\cite{lemaignan2022ros}, and is already available on robots like
+TIAGoPro. ROS4HRI provides information like the position, velocity, gaze
+direction of every person in the vicinity of the robot. 
+
+I will augment these basic descriptors with more complex percepts, including
+(1) descriptors of human-objects interactions (HOI), using transformer-based
+techniques like~\cite{iftekhar2022what}; (2) affective
+descriptors~\cite{vinciarelli2009social}, using e.g. facial expressions based
+on facial action units classification~\cite{martinez2019automatic}; (3)
+group-level interactions, including $f$-formations~\cite{setti2015fformation},
+and group activity recognition, using deep convolutional graph techniques like
+ARG~\cite{wu2019learning}.
+
+The TIAGoPro robot that I will acquire in \project is equipped with an on-board
+GPU (NVidia Jetson family), that should provide the necessary compute resources
+to run these algorithm in real-time on the robot itself. However, adding
+additional compute resources could be easily achieved if necessary, since the
+robot runs on the distributed ROS middleware, thus making it transparent to add
+additional networked compute nodes.
 
 \begin{framed}
     {\noindent\bf Main outcomes of \tCA:} lorem ipsum 

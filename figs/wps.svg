@@ -264,7 +264,7 @@
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1887"
+     inkscape:current-layer="svg341"
      inkscape:snap-global="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -2403,4 +2403,20 @@
      d="m 442.14774,493.79947 -20.53429,32.72584 36.76598,-11.87022 z"
      inkscape:connector-curvature="0"
      style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-miterlimit:10" />
+  <g
+     id="g1674"
+     transform="rotate(130.09005,872.51776,340.11582)"
+     style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10">
+    <path
+       id="path1670"
+       d="M 388.4975,12.282336 C 547.86969,440.0639 847.19408,732.87534 898.93945,774.92127"
+       inkscape:connector-curvature="0"
+       style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7.99999996, 7.99999996;stroke-dashoffset:0"
+       sodipodi:nodetypes="cc" />
+    <path
+       id="path1672"
+       d="m 891.59796,785.908 37.52734,9.18372 -22.84442,-31.15723 z"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt" />
+  </g>
 </svg>
