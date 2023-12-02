@@ -75,21 +75,9 @@ principled, general computational model to represent and reason about complex
 social situations. As put by Scassellati in the \emph{Science Robotics}' list of
 ten Grand Challenges for Robotics~\cite{yang2018grand} in 2018 (and little has
 changed since then), \emph{we have very few comprehensive, quantitative analyses
-of human social responses}.
+of human social responses}. \project aims at a breakthrough on that question, and introduces the
+fundamentally new idea of \emph{social embeddings}
 
-\project aims at a breakthrough on that question, and introduces the
-fundamentally new idea of \emph{social embeddings}: a data-driven and
-semantics-preserving computational representation of contextualized social
-situations.  As presented below, social embeddings represent a paradigm shift
-for the domain: they open the way to generic, task-agnostic representations and
-quantitative measurement of the social situations in which an agent is embedded,
-something that was until now only possible using time-consuming qualitative
-methodologies or non-generalizable model-based techniques. The results of
-\project have the potential to significantly accelerate the development of
-generic artificial agents that are socially-aware, also creating an
-interdisciplinary bridge between the current trends in machine learning, social
-robotics, and a broad range of discipline relying on data-driven social
-sciences.
 
 \subsection{Core concept of \project}
 
@@ -244,7 +232,7 @@ socially intelligent robot in an hospital environment.
 
 Specifically, \project has the following objectives:
 
-\begin{enumerate}[label=\textbf{(\arabic*)}]
+\begin{enumerate}[label=\textbf{O\arabic*}]
     \item \label{O1} To \textbf{construct and characterize the fundamental
         properties of social embeddings}: build compact, yet
         semantics-preserving, embeddings to represent arbitrary social
@@ -284,26 +272,27 @@ Specifically, \project has the following objectives:
 %\section{Feasibility of the project}
 
 \project delivers on its programme by combining a range of scientific methods.
-Embedding-based data representation is the central method underpinning the
-generation of social embeddings. From a computational point of view, it relies
-on specialized deep learning models to generate the source descriptors, and
-knowledge graph and propositional logic to combine descriptors into full text
-descriptions. The selection of descriptors and their combination is however also
-informed by social psychology and sociology, and I accordinlgy perform
-qualitative field observations of social situations.
+Embedding-based data representation is the central computational methodology
+underpinning the generation of social embeddings.  I briefly outline hereafter
+the four main work packages, with the key research methods that I will employ in
+each of them.
 
-\TODO{make sure we have tasks for that}
+%From a computational point of view, it relies
+%on specialized deep learning models to generate the source descriptors, and
+%knowledge graph and propositional logic to combine descriptors into full text
+%descriptions. The selection of descriptors and their combination is however also
+%informed by social psychology and sociology, and I accordinlgy perform
+%qualitative field observations of social situations.
 
-The analysis of the resulting embeddings uses... \TODO{complete}
+%\TODO{make sure we have tasks for that}
+
+%The analysis of the resulting embeddings uses... \TODO{complete}
 
 %machine learning large language models fine-tuning and embedding learning learning;
 %user-centered design; ethnographic and sociological investigation; expressive
 %non-verbal communication; embodied cognition; symbolic AI; neural nets and
 %sub-symbolic AI; interactive machine learning.
 
-In terms of implementation, the \project project work programme is organised in
-four main work packages that I briefly outline hereafter, with the key research
-methods that I will employ in each of them.
 
 %The first one, \emph{\WPA}, focuses on basic research; the second
 %one, \emph{\WPB}, focuses on the artificial socio-cognitive skills enabled by
@@ -311,7 +300,6 @@ methods that I will employ in each of them.
 %application and impact on social robots; and the final one, \emph{\WPD},
 %organises the experimental work.
 
-\TODO{list and explicitely name the employed methodologies}
 
 \subsection{WP1: \textbf{\WPA}}
 
@@ -467,18 +455,10 @@ capabilities of the robot, implement the real-time generation of social
 embeddings, and integrate together a principled socially-aware robot supervisor,
 that exploits social embeddings.
 
-\begin{wrapfigure}[11]{l}{0.15\linewidth}
-    \centering
-    \vspace{-10pt}
-    \includegraphics[width=\linewidth]{tiagopro}
-    \label{fig:tiagopro}
-\end{wrapfigure}
-
 As \project focuses specifically on the AI engine of the robot, I will use an
-existing off-the-shelf social robot, a PAL Robotics TIAGoPro
-(pictured on the left). TIAGoPro offers out-of-the-box advanced human perception
-based on the ROS4HRI framework (that I myself originally
-designed~\cite{mohamed2021ros4hri} as an international standard for Human-Robot
+existing off-the-shelf social robot, a PAL Robotics TIAGo Pro, that offers
+out-of-the-box advanced human perception based on the ROS4HRI framework (that I
+myself originally designed as an international standard for Human-Robot
 Interaction~\cite{lemaignan2022ros}). It also offers on-board GPU options that
 are appropriate to implement a fully AI-based autonomous system. I have
 extensive experience with this platform, having actually directly taken part to
@@ -581,23 +561,73 @@ achieved in this type of application.
 %well as the dissemination and exploitation tasks. Details of the dissemination
 %and exploitation activities are provided in Part B2 of the proposal.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Ambition of the \project project}
+\section{Research group}
 
-\TODO{rephrase + clarify what goes in this section}
+I plan to conduct the \project project at the French Institut National de
+Recherche en Informatique et Automatique (INRIA), a world-leading institution in
+computer science and robotics. While I will create and manage my own team, I
+will closely collaborate with the INRIA RobotLearn team (Dr. Xavier Almeida-Pineda),
+whose unique expertise in machine learning applied to robotics perfectly
+complement my own expertise in social robotics.
+I will dedicate 70\% of my time to \project, keeping the other 30\% for team
+management, general academic engagement and other collaborations beyond the
+\project project. In addition, I plan to recruit six researchers:
+two researchers with expertise in deep machine learning and large language
+models (one senior post-doc, one PhD student); two researchers with expertise in
+data-driven socio-psychology (one senior post-doc, one PhD student); one
+researcher in cognitive sciences (post-doc); and finally one researcher in
+cognitive robotics (PhD student).
 
-Social robots are emerging as key enablers to address several
-emerging societal challenges, like the ageing society or increasing social
-isolation. In this context, not only we lack appropriate tools to model the
-social environment of robots, severely limiting their effectiveness, but also
-researchers in social robotics have the prime responsibility to ensure that
-robots can properly understand and reason about their spatial and social
-environment, also ensuring responsible and positive societal impact. As such,
-beyond using robots as an experimental methodology, \project also has the
-ambition to significantly transform the field of social robotics itself.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Feasibility and impact of the \project project}
+
+The main foreseen risk of the \project project is the failure to establish a
+stable mapping between real-world social situations and the social embedding
+space (Objective~\ref{O2}). I have already partially mitigated this risk by
+running a series of prototypes (including the ones published
+in~\cite{lemaignan2024social}) showing promising early results, and the \project
+research team is designed to bring in the required know-how. I might however
+benefit from access to additional domain expertise in neural network latent space
+analysis, which I will secure through the \project Scientific
+Advisory Board (presented in details in Part B2), whose members will include
+leading figures in the field of deep network analysis.
+
+Other major risks include (1) the lack of sufficiently large datasets of
+annotated social interactions to fully characterize social embeddings. This is a
+medium risk, as the project is designed so that existing public datasets would
+be sufficient. It might however be further mitigated by reducing the breadth of
+social situations that I consider; (2) difficulties to deploy an autonomous
+social robots in a real-world environment. Since this is one of my core
+expertise, this is a medium risk, that can be mitigated by reducing the
+effective level of autonomy of the robot.
+
+If those risks are successfully managed, \project will have a major scientific
+impact by realising a breakthrough on the wicked problem~\cite{west1967wicked}
+of representing and automatically reasoning about our social environment.  By
+introducing the fundamentally new idea of \emph{social embeddings} as a
+data-driven and semantics-preserving computational representation of
+contextualized social situations, the \project computational model represents a
+paradigm shift for the domain: it paves the way to generic, task-agnostic
+representations and quantitative measurement of the social situations in which
+social agents are embedded, something that was until now only possible using
+time-consuming qualitative methodologies or non-generalizable model-based
+techniques.
+
+\begin{framed}
+As such, \bf the output of \project has the potential to significantly
+accelerate the development of generic artificial agents that are socially-aware,
+also creating an interdisciplinary bridge between the current trends in AI, machine
+learning, virtual worlds, social robotics, and the broad family of discipline relying on
+data-driven social sciences.
+\end{framed}
 
 
 \newpage
