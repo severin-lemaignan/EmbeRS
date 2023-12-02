@@ -36,6 +36,58 @@ justified by the scientific added value they bring to the project.  }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A. State-of-art and objectives}
 
+\subsection{PartB1 intro}
+Social situations -- i.e. \emph{temporally and spatially bounded series of
+events abstracted by the observer from the on-going flow of social life}, as put
+by Garbett in~\cite{garbett1970analysis} -- are a fundamental building block in
+social psychology~\cite{argyle1981social}. When specifically looking at
+artificial agents like social robots, making sense of these situations is
+critical: their level of social cognition depends on their ability to identify,
+interpret and interact with the world surrounding
+them~\cite{szczepanowski2017computational}, and in particular, correctly
+interpret transactions of social signals -- specific events in which an agent
+performs a social action aimed at another agent~\cite{pantic2011social}. This
+socio-cognitive skill, \emph{social situation awareness}, is essential to build
+intelligent social agents.
+
+\TODO{rephrase -> Endsley situation awareness is not exactly the same thing}
+
+Endsley identifies in~\cite{endsley1995theory} three levels to the related concept
+of \textit{situation awareness} (SA) :\emph{perception}, \emph{comprehension}, and
+\emph{projection of future states}. Applied to social situation awareness,
+the \emph{perception} of social signals has already been studied in depth in the
+community~\cite{pantic2011social,vinciarelli2009social}.  However, relating the
+resulting percepts into a comprehensive representation of a social situation
+(\emph{comprehension}) and reasoning about this representation to derive an
+interpretation (for instance, in terms of \emph{projections} of future social
+states) are hard problems that arguably hinder further progress in social AI and
+robotics~\cite{yang2018grand}. Current research is fragmented, and proposed
+methods are either abstract models~\cite{gordon2016commonsense}, or task-specfic
+approaches: for instance, group activity
+recognition~\cite{shu2017cern,wu2019learning}; pedestrians modelling for robotic
+social navigation~\cite{alahi2016social}; on-going state of an
+interaction~\cite{garcía2020explainable}. We are however lacking a more
+principled, general methodology to represent and reason about complex social
+situations. As put by Scassellati in 2018 in the \emph{Science Robotics}' list of
+ten Grand Challenges for Robotics~\cite{yang2018grand}, \emph{we have very few
+comprehensive, quantitative analyses of human social responses}, and little
+progress has been achieved since then.
+
+\project aims at a breakthrough on that issue, and introduces the fundamentally new
+idea of \emph{social embeddings}: a data-driven and semantics-preserving
+computational representation of contextualized social situations.  As presented
+below, social embeddings represent a paradigm shift for the domain: they open
+the way to generic, task-agnostic representations and quantitative measurement
+of the social situations in which an agent is embedded, something that was until
+now only possible using time-consuming qualitative methodologies or
+non-generalizable model-based techniques.  The results of \project have the
+potential to significantly accelerate the development of generic artifical
+agents that are socially-aware, also creating an interdiscplinary bridge between
+the current trends in machine learning, social robotics, and a broad range of discipline relying
+on data-driven social sciences.
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{State-of-art: social representations for intelligent robots}
 
