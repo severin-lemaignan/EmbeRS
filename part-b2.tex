@@ -47,36 +47,36 @@ block in social psychology~\cite{argyle1981social}. When specifically looking
 at artificial agents like non-playing characters (NPCs) in online multiplayer
 games, or social robots, making sense of these situations is critical: their
 level of social cognition -- and therefore, their perceived social intelligence
--- depends on their ability to identify, interpret and interact with the world
+-- depends on their ability to identify, interpret and interact with the social world
 surrounding them~\cite{szczepanowski2017computational}. In particular, these
 agents need to correctly interpret transactions of social signals -- specific
 events in which an agent performs a social action aimed at another
 agent~\cite{pantic2011social}. This socio-cognitive skill, \emph{social
-situation awareness}, is essential to build intelligent social agents. Not only
+situation awareness}, is essential in order to build intelligent social agents. Not only
 the agent needs to accurately \emph{perceive} social signals (in itself an
 established research field~\cite{pantic2011social,vinciarelli2009social}), but
-it also need to interpret them, by grounding the perceptions in the context of
+it also need to interpret them, by grounding social perceptions in the context of
 the task, in existing social norms, in past experiences, etc.  This is a hard
-problem (even termed as a \emph{wicked problem}~\cite{west1967wicked})  that
-hinder further progress in social AI and robotics~\cite{yang2018grand}, and
-most of the difficulty comes from the lack of an adequate framing and
-representation system for social situations~\cite{webb2021framing}.
+problem -- even a \emph{wicked problem}~\cite{west1967wicked} --  that
+hinders further progress in social AI and robotics~\cite{yang2018grand}.
 
+The difficulty of this problem primarily comes from the lack of an adequate
+framing and representation system for social situations~\cite{webb2021framing}.
 Let's consider the following simple illustrative example: a waiter, serving
 customer in a restaurant, tell a joke. The guests look at him, smile and laugh,
 and go on with ordering their dinner. As social beings, we can easily interpret
 this simple description, and understand that the waiter is friendly, the guest
 in a good mood, and the overall interaction is going well. Let's now consider
 the same example, but the patrons do not laugh. This indicates that either the
-joke was not appropriate in this context, or that the guests are not in the mood
-for a joke. Either way, the interaction is not satisfactory. Finally, let
+joke was not appropriate in this context, or that the guests are not in the
+mood for a joke. Either way, the interaction is not satisfactory. Finally, let
 consider the same example, but this time, the waiter did not tell any joke and
-was simply taking orders. Still, the guests start laughing. In this context, the
-unexpected laughing tells us that something went wrong with the waiter's
-behaviour.  Laughing is a relatively simple social signal to detect for a robot,
-but without proper representation of the social and physical context -- and its
-attached social norms -- a robot-waiter would not be able to properly understand
-the situation.
+was simply taking orders. Still, the guests start laughing. In this context,
+the unexpected laughing tells us that something went wrong with the waiter's
+behaviour.  Laughing is a relatively simple social signal to detect for a
+robot, but without proper representation of the social and physical context --
+and its attached social norms -- a robot-waiter would not be able to properly
+understand the situation.
 
 To effectively interpret this situation, an artificial social agent needs a \emph{joint}
 computational model of (1) the social agents relevant to the situation; (2) the
@@ -366,107 +366,102 @@ and we discuss several promising directions for follow-up research.
 \subsection{Objectives of \project}
 \label{sec:objectives}
 
-%\project is built around three axes: a basic research programme; an experimental
-%programme that looks specifically at the application of social embeddings to
-%social robotics; and, running in parallel to those first two axes, a scientific
-%investigation of the ethical dimension of social embeddings.
+\begin{framed}
+\noindent At the basic research level, \project overarching research
+goal is to \textbf{design a computational model of social situations,
+appropriate for artificial social agents to develop autonomous social awareness}.
+\end{framed}
 
-This idea of \emph{social embeddings} builds on a proof-of-concept that I
-validated in~\cite{lemaignan2024social}. \project will turn that early concept
-into a mature mathematical tool for social sciences and artificial social
-agents. As I explain below, I will formalize their construction,  fully
-characterise their properties, expand their scope to complex, real-world social
-situations, and demonstrate their transformative potential through deployment of
-socially intelligent robots in multiple experimental settings.
-
-\vspace{1em}
-
-\noindent At the basic research level, \project targets two overarching research goals:
-
-\begin{enumerate}[label=\textbf{(\arabic*)}]
-    \item to build compact, yet semantics-preserving, embeddings to represent
-arbitrary social situations; and to fully characterize these embeddings,
-including their latent semantics. I translate this first goal into objective
-{\bf O1}:
+I split this goal into four concrete research objectives.
 
 \begin{enumerate}[label=\textbf{O\arabic*}]
-    \item \label{O1} To \textbf{construct and characterize the fundamental
-properties of social embeddings}.
+    \item \label{_O1} First, I will \textbf{construct the \project model, based
+        on social embeddings, and characterize its fundamental properties}.
+        This objective focuses on developing and fine-tuning machine learning
+        techniques to first build compact, yet semantics-preserving, embeddings
+        of social situations, and second characterize their latent semantics. 
+
+    \item \label{_O2} Next, I will \textbf{precisely frame the socio-cognitive skill of
+        \emph{social situation awareness}} for artificial social agents, and leverage the \project
+        computational model to effectively implement this skill.
+        I identify three specific sub-objectives:
+
+    \begin{enumerate}[label=\textbf{O2.\arabic*}]
+        \item \label{O2.1} Use social embeddings to \textbf{automatically appraise
+            social situations}, taking into account their \textbf{context}. Using
+            a set of prototypical reference situations~\cite{kelley2003atlas}, social embeddings
+            can be used to relate the current social situation to known ones.
+            Besides, because social embeddings lend themselves to jointly encode
+            social context by simply attaching context descriptions, the appraisal
+            of the social situation can be made \emph{context-aware};
+
+        \item \label{O2.2} Use social embeddings to model \textbf{social
+            dynamics} by characterizing the trajectories of on-going social situations in the
+            embedding space. I will investigate in particular into trajectories'
+            \emph{discontinuties}, that might represent unexpected changes of social
+            dynamics, and trajectories' \emph{extrapolation}, that might represent
+            \textbf{social situation \emph{predictions}};
+
+        \item \label{O2.3} \textbf{Learn socially-appropriate action policies} by using
+            social embeddings as an additional input feature to existing robot behaviour
+            generation algorithms, and by augmenting existing interactive machine
+            learning techniques (`user in-the-loop' social learning for robots, that I
+            pioneered in e.g.~\cite{winkle2021leador}) with
+            representations of the social situation.
+
+    \end{enumerate}
+
+    \item \label{_O3} My third objective is to {\bf integrate the \project computation model into a
+        practical socio-cognitive architecture for autonomous artificial agent}. 
+
+    \item \label{_O4} Finally, my last objective is to evidence the
+        contribution and impact of the \project model with an {\bf ambitious
+        experimental programme}.
+        This objective is two-fold:
+
+        \begin{enumerate}[label=\textbf{O4.\arabic*}]
+            \item \label{O4.1} first, to demonstrate the value of the model
+                with respect to the state-of-art in socio-cognitive AI, by
+                showing significant improvements on a set of socio-cognitive
+                tasks and benchmarks;
+            \item \label{O4.2} second, to demonstrate real-world impact, by
+                applying the \project computational model to actual artificial
+                social agents, both disembodied (for instance, virtual agents in an online
+                multiplayer game) and embodied (for instance, a social robot in
+                interactive situations).
+        \end{enumerate}
 \end{enumerate}
 
-    \item to precisely \textbf{define and implement the socio-cognitive skill of
-        \emph{social sitation awareness} enabled by social embeddings}. I split this
-        second goal into three specific objectives: \emph{social appraisal},
-        \emph{social prediction}, \emph{social learning}.
+\vspace{1.5em}
 
-\begin{enumerate}[label=\textbf{O2.\arabic*}]
-    \item \label{O2.1} To use social embeddings to \textbf{automatically appraise
-        social situations}, taking into account their \textbf{context}. Using
-        a set of prototypical reference situations~\cite{kelley2003atlas}, social embeddings
-        can be used to relate the current social situation to known ones.
-        Besides, because social embeddings lend themselves to jointly encode
-        social context by simply attaching context descriptions, the appraisal
-        of the social situation can be made \emph{context-aware};
-
-    \item \label{O2.2} To use social embeddings to model \textbf{social
-        dynamics} by characterizing the trajectories of on-going social situations in the
-        embedding space. I will look in particular into trajectories'
-        \emph{discontinuties}, that might represent unexpected changes of social
-        dynamics, and trajectories' \emph{extrapolations}, that might represent
-        \textbf{social situation \emph{predictions}}.
-
-    \item \label{O2.3} To \textbf{learn socially-appropriate behaviours} by using
-        social embeddings as an additional input feature to existing robot behaviour
-        generation algorithms, and by augmenting existing interactive machine
-        learning techniques (`user in-the-loop' social learning for robots, that I
-        pioneered in e.g.~\cite{winkle2021leador}) with
-        representations of the social situation;
-
-\end{enumerate}
-\end{enumerate}
-
-\noindent To illustrate these objectives, let consider the following imaginary
-scenario: a robot is welcoming visitors at the entrance of an hospital; a group
-of 3 persons are discussing together; one person is standing in the middle of
-the room, glancing around; one last person is entering the hospital and
-walks toward the reception. \ref{O2.1} will show that social embeddings can
-represent and appraise this situation, accounting for the `hospital entrance' context: while
-the person walking towards the reception probably does not need help from the
-robot, the one in the middle seems uncertain, and might appreciate a pro-active
-helping behaviour from the robot. \ref{O2.2} adds the temporal dimension: if we
-sample the scene at regular time steps, and build a sequence of social
-embeddings, what trajectory do they follow in the embedding space? Is it
-continuous? Is there any rapid changes? Can we extrapolate this trajectory to
-predict where the situation is going? \ref{O2.3}, finally, looks at exploiting
-social embeddings for socially-aware behaviour learning. In our scenario, a
-member of the hospital staff would for instance teach the robot an
+To illustrate how some of these objectives relate to each other, let consider
+the following imaginary scenario: a robot (or a virtual avatar) is welcoming
+visitors at the entrance of an hospital; a group of 3 persons are discussing
+together in the lobby; one person is standing in the middle of the hall,
+glancing around; one last person is entering the hospital and walks toward the
+reception desk.  \ref{O1} aims at providing the computational model to define
+the \emph{projection} of this situation into a `social' embedding. Then,
+\ref{O2.1} aims at showing that the resulting social embedding allows to
+effectively appraise the situation (for instance, by relating it to previously
+experienced similar situations), also accounting for the `hospital entrance'
+context: while the person walking towards the reception desk probably does not
+need help from the robot, the one in the middle seems uncertain, and might be
+thankful for a pro-active helping behaviour from the robot. \ref{O2.2} adds the
+temporal dimension: if we sample the scene at regular time steps, and build a
+sequence of social embeddings, what trajectory do they follow in the embedding
+space? Is it continuous? Is there any rapid changes? Can we extrapolate this
+trajectory to predict where the situation is going? \ref{O2.3}, finally, looks
+at exploiting social embeddings for socially-aware behaviour learning. In our
+scenario, a member of the hospital staff would for instance teach the robot an
 context-appropriate response, and the robot would be able to generalise it to
-other, similar social situations.
+other, similar social situations.  Finally, \ref{O3} is about exploiting this
+interpretation to effectively control an agent, through a cognitive architecture
+that will integrate perception, modelling as well as behaviour generation, in
+one autonomous system.
 
-
-I want to evidence these properties in both lab-based experiments and
-real-world deployments on social robots. Accordingly, \project has two addtional
-objectives:
-
-\begin{enumerate}[label=\textbf{O\arabic*}]
-    \setcounter{enumi}{2}
-    \item \label{O3} To fully {\bf integrate social embeddings onto a
-        socio-cognitive architecture for autonomous service robots} and,
-
-    \item \label{O4} To conduct an {\bf ambitious experimental programme} --
-        including social observations, and both lab-based studies and field
-        studies -- to demonstrate the effectiveness of social embeddings in
-        complex, real world conditions.  This means deploying the \project robot
-        into existing complex social eco-systems.
-\end{enumerate}
-
-
-%Once completed, these four objectives will provide solid theoretical and
-%empirical foundations to social embeddings.
-%
-%Each of these four objectives involve both basic and experimental research,
-%presented in the next section.
-
+As detailed below, this scenario is actually the basis of the experimental tasks
+\tDC (virtual agent in an online multiplayer game) and \tDD (social robot in an
+hospital), that will together address objective~\ref{O4.2}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Importance and impact of the project}
