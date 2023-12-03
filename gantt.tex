@@ -87,10 +87,12 @@
         \ganttgroup[]{WP4 \wpD}{2026-07}{2030-12} \\
             \ganttbar[name=TDA]{\TDA}{2026-07}{2027-06} \\
             \ganttbar[name=TDB]{\TDB}{2027-07}{2027-12} \\
-            \ganttbar[name=TDD]{\TDB}{2028-01}{2028-06} \\
-            \ganttbar[name=TDCprep,inline,bar/.append style={fill=gray!20}]{preparation}{2029-01}{2029-06} 
-            \ganttbar[name=TDC]{\TDC}{2029-07}{2030-06} 
-            \ganttbar[name=TDCexpl,inline,bar/.append style={fill=gray!20}]{analysis}{2030-07}{2030-12} 
+            \ganttbar[name=TDCprep,inline,bar/.append style={fill=gray!20}]{prep.}{2028-01}{2028-06} 
+            \ganttbar[name=TDC]{\TDC}{2028-07}{2028-10} 
+            \ganttbar[name=TDCexpl,inline,bar/.append style={fill=gray!20}]{analysis}{2028-11}{2029-03} \\
+            \ganttbar[name=TDDprep,inline,bar/.append style={fill=gray!20}]{preparation}{2029-01}{2029-06} 
+            \ganttbar[name=TDD]{\TDD}{2029-07}{2030-06} 
+            \ganttbar[name=TDDexpl,inline,bar/.append style={fill=gray!20}]{analysis}{2030-07}{2030-12} 
 
             %\ganttbar[name=WP51prep,inline,bar/.append style={fill=gray!20}]{preparation}{2027-07}{2027-12}
             %\ganttbar[name=WP51]{\textbf{5.1} SEN schools experiment}{2028-01}{2028-12} 
@@ -105,19 +107,10 @@
         %\ganttlink[link type=f-f,link label node/.append style=left]{WBS1C}{WBS1D}
         \ganttnewline[thick]
 
-        \ganttmilestone{\bf\sc Ethics workshops}{2026-04}
-        \ganttmilestone{}{2027-09}
-        \ganttmilestone{}{2028-09}
-        \ganttmilestone{}{2030-03} \ganttnewline[gray,dotted]
-
-
-        \ganttmilestone{\bf\sc Integration sprints}{2026-06}
-        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2026-11}
-        \ganttmilestone{\bf\sc Integration sprints}{2027-06}
-        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2027-11}
-        \ganttmilestone{\bf\sc Integration sprints}{2028-06}
-        \ganttmilestone{\bf\sc Integration sprints}{2028-12}
-        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2029-05}
+        %\ganttmilestone{\bf\sc Ethics workshops}{2026-04}
+        %\ganttmilestone{}{2027-09}
+        %\ganttmilestone{}{2028-09}
+        %\ganttmilestone{}{2030-03} \ganttnewline[gray,dotted]
 
         % separate years
         \ganttvrule{}{2026-12}
@@ -127,9 +120,18 @@
         \ganttvrule{}{2030-12}
 
 
-        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @WeTheCurious}{2026-12}
-        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @SEN school}{2027-12}
-        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @Broca
-        hospital}{2029-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{\bf Integration sprints}{2026-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2026-12}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2027-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2027-12}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2028-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2028-12}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2029-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2029-12}
+
+
+        \ganttvrule[vrule/.append style={orange, solid, thin}]{MS1: social embeddings}{2027-06}
+        \ganttvrule[vrule/.append style={orange, solid, thin}]{MS2: study MMO game}{2028-06}
+        \ganttvrule[vrule/.append style={orange, solid, thin}]{MS3: study robot}{2029-06}
 
 \end{ganttchart}
