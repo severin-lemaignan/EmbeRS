@@ -36,67 +36,31 @@ justified by the scientific added value they bring to the project.  }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A. State-of-art and objectives}
 
-\subsection{PartB1 intro}
-Social situations -- i.e. \emph{temporally and spatially bounded series of
-events abstracted by the observer from the on-going flow of social life}, as put
-by Garbett in~\cite{garbett1970analysis} -- are a fundamental building block in
-social psychology~\cite{argyle1981social}. When specifically looking at
-artificial agents like social robots, making sense of these situations is
-critical: their level of social cognition depends on their ability to identify,
-interpret and interact with the world surrounding
-them~\cite{szczepanowski2017computational}, and in particular, correctly
-interpret transactions of social signals -- specific events in which an agent
-performs a social action aimed at another agent~\cite{pantic2011social}. This
-socio-cognitive skill, \emph{social situation awareness}, is essential to build
-intelligent social agents.
-
-\TODO{rephrase -> Endsley situation awareness is not exactly the same thing}
-
-Endsley identifies in~\cite{endsley1995theory} three levels to the related concept
-of \textit{situation awareness} (SA) :\emph{perception}, \emph{comprehension}, and
-\emph{projection of future states}. Applied to social situation awareness,
-the \emph{perception} of social signals has already been studied in depth in the
-community~\cite{pantic2011social,vinciarelli2009social}.  However, relating the
-resulting percepts into a comprehensive representation of a social situation
-(\emph{comprehension}) and reasoning about this representation to derive an
-interpretation (for instance, in terms of \emph{projections} of future social
-states) are hard problems that arguably hinder further progress in social AI and
-robotics~\cite{yang2018grand}. Current research is fragmented, and proposed
-methods are either abstract models~\cite{gordon2016commonsense}, or task-specfic
-approaches: for instance, group activity
-recognition~\cite{shu2017cern,wu2019learning}; pedestrians modelling for robotic
-social navigation~\cite{alahi2016social}; on-going state of an
-interaction~\cite{garcía2020explainable}. We are however lacking a more
-principled, general methodology to represent and reason about complex social
-situations. As put by Scassellati in 2018 in the \emph{Science Robotics}' list of
-ten Grand Challenges for Robotics~\cite{yang2018grand}, \emph{we have very few
-comprehensive, quantitative analyses of human social responses}, and little
-progress has been achieved since then.
-
-\project aims at a breakthrough on that issue, and introduces the fundamentally new
-idea of \emph{social embeddings}: a data-driven and semantics-preserving
-computational representation of contextualized social situations.  As presented
-below, social embeddings represent a paradigm shift for the domain: they open
-the way to generic, task-agnostic representations and quantitative measurement
-of the social situations in which an agent is embedded, something that was until
-now only possible using time-consuming qualitative methodologies or
-non-generalizable model-based techniques.  The results of \project have the
-potential to significantly accelerate the development of generic artifical
-agents that are socially-aware, also creating an interdiscplinary bridge between
-the current trends in machine learning, social robotics, and a broad range of discipline relying
-on data-driven social sciences.
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{State-of-art: social representations for intelligent robots}
+\subsection{State-of-art: social representations and artificial social agents}
 
-Correctly interpreting our social environment is complex for machines, and has
-long been identified as a key challenge on the road to competent social
-robots~\cite{yang2018grand}. Accordingly, a significant, and growing, amount of
-research has been dedicated to this question over the past 15
-years~\cite{bartneck2020human}, without however satisfactorily coming to a
-conclusion.
+Social situations -- i.e. \emph{temporally and spatially bounded series of
+events abstracted by the observer from the on-going flow of social life}, as
+put by Garbett in~\cite{garbett1970analysis} -- are a fundamental building
+block in social psychology~\cite{argyle1981social}. When specifically looking
+at artificial agents like non-playing characters (NPCs) in online multiplayer
+games, or social robots, making sense of these situations is critical: their
+level of social cognition -- and therefore, their perceived social intelligence
+-- depends on their ability to identify, interpret and interact with the world
+surrounding them~\cite{szczepanowski2017computational}. In particular, these
+agents need to correctly interpret transactions of social signals -- specific
+events in which an agent performs a social action aimed at another
+agent~\cite{pantic2011social}. This socio-cognitive skill, \emph{social
+situation awareness}, is essential to build intelligent social agents. Not only
+the agent needs to accurately \emph{perceive} social signals (in itself an
+established research field~\cite{pantic2011social,vinciarelli2009social}), but
+it also need to interpret them, by grounding the perceptions in the context of
+the task, in existing social norms, in past experiences, etc.  This is a hard
+problem (even termed as a \emph{wicked problem}~\cite{west1967wicked})  that
+hinder further progress in social AI and robotics~\cite{yang2018grand}, and
+most of the difficulty comes from the lack of an adequate framing and
+representation system for social situations~\cite{webb2021framing}.
 
 Let's consider the following simple illustrative example: a waiter, serving
 customer in a restaurant, tell a joke. The guests look at him, smile and laugh,
@@ -114,11 +78,11 @@ but without proper representation of the social and physical context -- and its
 attached social norms -- a robot-waiter would not be able to properly understand
 the situation.
 
-To effectively interpret this situation, a robot needs a \emph{joint}
+To effectively interpret this situation, an artificial social agent needs a \emph{joint}
 computational model of (1) the social agents relevant to the situation; (2) the
 physical environment (locations and relationships between objects and other
 spatial features); (3) the plans, on-going actions, and predicted results of the
-tasks performed both by the robot and by the other agents; (4) a common-sense
+tasks performed both by the AI agent and by the other agents; (4) a common-sense
 knowledge of the social rules and norms associated to this task and context.
 
 In addition, models for (1), (2) and (3) also have to represent \emph{dynamics} as
@@ -130,8 +94,6 @@ aspects, as well as existing attempts to build complete models of social situati
 
 
 \subsubsection{Modelling social agents and social groups}
-
-
 
 The importance of correctly interpreting non-verbal cues, such as facial
 expressions, body language, and prosody, along with the verbal content, is well
@@ -145,8 +107,48 @@ making, the \emph{interpretation} of social situations is a difficult problem.
 It requires to build and maintain a task-appropriate model of the situations,
 and represent it in such a way that a machine can reason about it.
 
+\begin{rewrite}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo eu
+lorem aliquet rutrum sed in ligula. Mauris sit amet orci quis nisl commodo
+finibus tincidunt ac neque. Nam vel sem tempus, faucibus sapien eu,
+imperdiet velit. Aenean ullamcorper finibus ipsum ut vestibulum. In dictum
+suscipit tellus a volutpat. Duis pharetra lorem tristique vehicula volutpat.
+Cras pellentesque, metus lacinia sagittis blandit, massa magna dignissim
+elit, sed feugiat erat mauris tristique ipsum. Sed eget diam vitae magna
+sollicitudin malesuada. Aenean vitae nisl ullamcorper, mattis ex sit amet,
+convallis lorem. Donec maximus nec diam a fermentum. Quisque sed malesuada
+nunc. Phasellus sagittis, erat feugiat sodales accumsan, libero libero
+consectetur diam, vitae dignissim orci purus id enim.
+\end{rewrite}
+
+
 
 \subsubsection{Modelling the physical context}
+
+\begin{rewrite}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo eu
+lorem aliquet rutrum sed in ligula. Mauris sit amet orci quis nisl commodo
+finibus tincidunt ac neque. Nam vel sem tempus, faucibus sapien eu,
+imperdiet velit. Aenean ullamcorper finibus ipsum ut vestibulum. In dictum
+suscipit tellus a volutpat. Duis pharetra lorem tristique vehicula volutpat.
+Cras pellentesque, metus lacinia sagittis blandit, massa magna dignissim
+elit, sed feugiat erat mauris tristique ipsum. Sed eget diam vitae magna
+sollicitudin malesuada. Aenean vitae nisl ullamcorper, mattis ex sit amet,
+convallis lorem. Donec maximus nec diam a fermentum. Quisque sed malesuada
+nunc. Phasellus sagittis, erat feugiat sodales accumsan, libero libero
+consectetur diam, vitae dignissim orci purus id enim.
+
+Suspendisse vel felis hendrerit, elementum nunc imperdiet, semper massa. Cras id
+sollicitudin massa. Etiam vel consequat eros. Fusce egestas placerat
+pulvinar. Integer nulla ex, cursus vitae lobortis eget, congue at orci.
+Donec non porttitor turpis, eu porttitor justo. Morbi non velit bibendum
+mauris hendrerit efficitur. Proin malesuada sem at felis posuere, ac
+tincidunt ligula hendrerit. Praesent non est vestibulum nunc commodo
+tincidunt. Sed laoreet convallis augue eget ornare. Duis auctor nisi eu
+egestas hendrerit. Ut porttitor gravida arcu, sed ornare metus scelerisque
+sit amet. 
+\end{rewrite}
+
 
 \subsubsection{Task modelling and action prediction}
 
@@ -160,6 +162,21 @@ that further damages the relationship, whereas a socially aware robot could
 adapt its interaction strategy, perhaps by offering an apology and altering its
 behavior to better align with the guests' preferences~\cite{mutlu2006storytelling}.
 
+\begin{rewrite}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo eu
+lorem aliquet rutrum sed in ligula. Mauris sit amet orci quis nisl commodo
+finibus tincidunt ac neque. Nam vel sem tempus, faucibus sapien eu,
+imperdiet velit. Aenean ullamcorper finibus ipsum ut vestibulum. In dictum
+suscipit tellus a volutpat. Duis pharetra lorem tristique vehicula volutpat.
+Cras pellentesque, metus lacinia sagittis blandit, massa magna dignissim
+elit, sed feugiat erat mauris tristique ipsum. Sed eget diam vitae magna
+sollicitudin malesuada. Aenean vitae nisl ullamcorper, mattis ex sit amet,
+convallis lorem. Donec maximus nec diam a fermentum. Quisque sed malesuada
+nunc. Phasellus sagittis, erat feugiat sodales accumsan, libero libero
+consectetur diam, vitae dignissim orci purus id enim.
+\end{rewrite}
+
+
 \subsubsection{Modelling social norms}
 
 Therefore, developing a concise representation of social situations for
@@ -170,6 +187,21 @@ ramifications of deviating from expected behaviors. By doing so, social robots
 can achieve a more natural and effective integration into human social spaces,
 fostering positive human-robot interactions and ensuring the success of their
 service functions~\cite{gockley2005designing}.
+
+\begin{rewrite}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo eu
+lorem aliquet rutrum sed in ligula. Mauris sit amet orci quis nisl commodo
+finibus tincidunt ac neque. Nam vel sem tempus, faucibus sapien eu,
+imperdiet velit. Aenean ullamcorper finibus ipsum ut vestibulum. In dictum
+suscipit tellus a volutpat. Duis pharetra lorem tristique vehicula volutpat.
+Cras pellentesque, metus lacinia sagittis blandit, massa magna dignissim
+elit, sed feugiat erat mauris tristique ipsum. Sed eget diam vitae magna
+sollicitudin malesuada. Aenean vitae nisl ullamcorper, mattis ex sit amet,
+convallis lorem. Donec maximus nec diam a fermentum. Quisque sed malesuada
+nunc. Phasellus sagittis, erat feugiat sodales accumsan, libero libero
+consectetur diam, vitae dignissim orci purus id enim.
+\end{rewrite}
+
 
 
 \subsubsection{Joint models of social situations}
@@ -204,7 +236,7 @@ Mutual modelling:
 stereotyping: \cite{wagner2015robots}
 
 
-\TODO{copy paste from part b1}
+\paragraph{Situational awareness}
 
 Endsley identify in~\cite{endsley1995theory} three levels to the related concept
 of \textit{situational awareness} :\emph{perception}, \emph{comprehension}, and
@@ -230,6 +262,21 @@ progress has been achieved since then.
 
 \subsubsection{The gap in our knowledge: holistic social situations
 representations}
+
+\begin{rewrite}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo eu
+lorem aliquet rutrum sed in ligula. Mauris sit amet orci quis nisl commodo
+finibus tincidunt ac neque. Nam vel sem tempus, faucibus sapien eu,
+imperdiet velit. Aenean ullamcorper finibus ipsum ut vestibulum. In dictum
+suscipit tellus a volutpat. Duis pharetra lorem tristique vehicula volutpat.
+Cras pellentesque, metus lacinia sagittis blandit, massa magna dignissim
+elit, sed feugiat erat mauris tristique ipsum. Sed eget diam vitae magna
+sollicitudin malesuada. Aenean vitae nisl ullamcorper, mattis ex sit amet,
+convallis lorem. Donec maximus nec diam a fermentum. Quisque sed malesuada
+nunc. Phasellus sagittis, erat feugiat sodales accumsan, libero libero
+consectetur diam, vitae dignissim orci purus id enim.
+\end{rewrite}
+
 
 
 \subsection{Embeddings as representations for social situations}
@@ -421,11 +468,6 @@ objectives:
 %presented in the next section.
 
 
-\subsubsection{Basic research objectives}
-
-\subsubsection{Empirical research objectives}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Importance and impact of the project}
 
@@ -492,7 +534,6 @@ expertise to guide the work on ethics.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
 \section{B. Methodology}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1520,156 +1561,171 @@ Dagsthul roadmap arxiv}...
 \TODO{how much of that do we need?}
 
 \begin{rewrite}
-
-\textbf{Tasks 1.1, 1.2} develop a novel methodology, `public-in-the-loop' machine
-learning, for large-scale co-design of social interactions with the public. If
-successful, this will be of great value, well beyond the project. The
-proposed experimental setup (science centre visitors `taking control' of the robot)
-might however lead to interactions that are either too short or to artificial to
-create meaningful, generalisable social interaction. In addition, the messy and
-complex nature of the science centre environment is also currently beyond-state-of-the-art
-in term of extracting the useful social features required to train a classifier.
-
-However, the interaction principles that we want to uncover in T1.1 and T1.2
-(and that are feeding into WP2 and WP4) will principally come from a qualitative
-analysis of the interactions, carried in parallel to the machine learning
-approach. This well within the expertise of the PI, and, as such, is low-risk.
-T1.1 can thus be described as a \ul{\bf medium-risk, high-gain} component of
-\project.
-
-\vspace{1em}
-
-\textbf{Task 2.1} develops a novel situation assessment component, that
-integrates spatio-temporal modeling with knowledge representation. The resulting
-component is beyond-state-of-the-art, and would be highly relevant to a large range
-of robotic applications. This component relies on integrating tools that are
-independently relatively mature and well understood, and the principles of the
-integration itself is already well researched. Besides, it falls well within the
-PI
-expertise~\cite{lemaignan2018underworlds,sallami2019simulation,lemaignan2010oro}.
-As such, O2.2.1 can be described as \ul{\bf low-risk, medium-gain}.
-
-\textbf{Tasks 2.2, 2.3, 2.4} Work on real-time modeling of social dynamics in
-real-world environments are only begining to be studied in robotics. While the
-underpinning are well understood in neighbouring academic fields, a very
-significant work remain to be done to integrate disparate or partial approaches
-into one framework. These tasks also require the acquisition of novel datasets
-that focus on natural human-human social interactions. The PI has extensive
-experience in building and acquiring such
-datasets~\cite{lemaignan2018pinsoro,sallami2020unexpected}, and does not
-foreseen major difficulties. The resulting components have however the potential
-to unlock a new class of social robots, aware in real-time of their social
-surroundings and dynamics.  These tasks are thus considered \ul{\bf low-risk,
-high-gain}.
-
-\vspace{1em}
-
-\textbf{Task 3.1} The behavioural baseline implements the current state-of-the-art,
-and as such is \ul{\bf low-risk, low-gain}. T3.1 will guarantee early on in the
-project a `working' robot, yet with predictable/repetitive behaviours.
-
-\textbf{Task 3.2} The neural generation of complex social behaviours is a
-\ul{\bf medium-risk, high-gain} task: while it builds on solid existing
-state-of-the-art, it relies on very significant progress in both the modeling of the
-social dynamics (WP2) and the capacity of designing a machine learning approach
-to learn and generate these complex behaviours. While the former falls well
-within the PI expertise, machine learning for social motion generation is
-essentially a novel field. The success of this task will rely to a large
-extend on the quality of the post-doctoral researcher recruited to lead this
-effort. The main mitigation to the risk associated to T3.2 is the behavioural
-baseline created in T3.1: the behavioural capabilities generated in T3.2 can be
-complemented by ad-hoc behaviours whenever required.
-
-\textbf{Task 3.3} Non-verbal communication is a well established subfield of HRI
-research, well known to the PI. The creation of the novel interaction modality
-based on soundscape is novel, with potential for impact beyond the project. This
-new modality will be co-developped with an expert of sound design for
-interaction, and we do not foresee major risks. Overall, the task is \ul{\bf
-low-risk, medium-gain}.
-
-\vspace{1em}
-
-\textbf{Task 3.1} The conceptual framing of a \emph{socially-driven
-architecture} (social teleology) and its translation into decision-making
-algorithms are to a large extend open questions. This task might however lead to
-uncover a fundamental mechanism to enable long-term engagement of users
-with social robots. Building fundamentally on blue-sky research, this task is
-\ul{\bf high-risk, high-gain}. If not successful, I will instead rely on the
-decision-making strategy of T3.2, which is much lower risk.
-
-\textbf{Task 3.2} The techniques developed in T3.2 have been previously used and
-tested by the PI in two different real-world
-environments~\cite{senft2019teaching,winkle2020couch}. While they will require
-significant adjustments for this project, the task is overall \ul{\bf low-risk,
-low-gain}.
-
-\textbf{Task 3.3} The integration of the different cognitive functions of the
-robot into one principled cognitive architecture, that include cognitive
-redundancy, is one of the core expertise of the
-PI~\cite{lemaignan2017artificial}. This task however includes significant novel
-elements (cognitive mechanisms for long-term autonomy; decision arbitration)
-that bear unknowns. Besides, this task is a critical pre-requisite for WP5. As a
-result, T3.3 is considered as \ul{\bf high-risk}. The task is focused on
-integration to meet the requirements of the WP5 experiments, and parts
-of the resulting software architecture might be project-specific. However the
-overall aims of endowing the robot with long-term social autonomy would be a
-significant breakthrough, and as such, T3.3 is \ul{\bf high-gain}. The main
-mitigations comes from (1) the iterative development process of the
-architecture, that will start from the existing state-of-the-art, to which the
-PI has previously contributed~\cite{lemaignan2017artificial}. By doing so, a
-decisional architecture for the robot will be available early on in the project.
-While that architecture might be a scaled-down version of the initial ambition,
-it will still enable the fieldwork proposed in WP5, possibly with a lesser level
-of autonomy; (2) the possibility of using only one of the two action policies
-(T3.1 \ul{or} T3.2), thus removing the need for complex arbitration.
-
-\vspace{1em}
-
-\textbf{WP5: Experimental deployments}
-
-The two application scenarios (at the children hospital and in the SEN school)
-are ambitious and inherently risky, as they target vulnerable populations.
-However, first, demonstrating the importance of advanced social modelling, and
-convincingly proving the effectiveness of our approach does require accordingly
-complex social situations, and complex social dynamics. The two scenarios, which
-complement each other, provide both.
-
-Second, working with vulnerable populations, in constrained and complex
-environments (children hospital and SEN schools) adds significant risks to the
-project. But it is also what make the project in the unique position of
-delivering a high societal impact: a direct positive impact on children's lives
-(we anticipate 100+ hospitalised children and 50+ children with psycho-social
-impairements interacting over long periods of time with a robot over the course
-of the project), and a broader impact on the society, showing how robots can
-have a lasting, strong, positive impact on the society, also establishing the
-idea of \emph{robots supporting human interactions} instead of dehumanising our
-social relationships.
-
-\textbf{Together, Task 5.1 and 5.2 are \ul{high-risk, high-gain}.}
-
-The two main mitigations are (1) early and continuous engagement with the
-stakeholders, and (2) the decoupling of the two applications, meaning that the
-risks associated to each of them do not impact the other one.
-
-Early engagement will be ensured by relying on a participatory design
-methodology, involving all the stakeholders from the onset of the project; the
-methodology will involve regular joint workshops; on-site (hospital and SEN
-schools) research stay including engagement with the staff/charities and the
-children themselves; early field testing and prototyping, relying if necessary
-on provisional, yet well-known, robot platforms available at the host
-institution (for instance, Softbank Nao and Pepper). This user-centered approach
-will be championed by the post-doc recruited on the project on WP4 and WP5, who will
-have to have a strong expertise in user-centered design.
-
-It is also important to note that, while preparing this bid, initial discussions
-have been held with all the partners involved with the experimental fieldwork
-(WeTheCurious science centre, Bristol's Children Hospital, the network of SEN
-schools): each of these institutions is enthusiastic about the project, already
-contributing ideas to integrate the robots in their daily routines, and
-ready to dedicate time and effort for its success.
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non leo eu
+lorem aliquet rutrum sed in ligula. Mauris sit amet orci quis nisl commodo
+finibus tincidunt ac neque. Nam vel sem tempus, faucibus sapien eu,
+imperdiet velit. Aenean ullamcorper finibus ipsum ut vestibulum. In dictum
+suscipit tellus a volutpat. Duis pharetra lorem tristique vehicula volutpat.
+Cras pellentesque, metus lacinia sagittis blandit, massa magna dignissim
+elit, sed feugiat erat mauris tristique ipsum. Sed eget diam vitae magna
+sollicitudin malesuada. Aenean vitae nisl ullamcorper, mattis ex sit amet,
+convallis lorem. Donec maximus nec diam a fermentum. Quisque sed malesuada
+nunc. Phasellus sagittis, erat feugiat sodales accumsan, libero libero
+consectetur diam, vitae dignissim orci purus id enim.
 
 \end{rewrite}
+
+%\begin{rewrite}
+%
+%\textbf{Tasks 1.1, 1.2} develop a novel methodology, `public-in-the-loop' machine
+%learning, for large-scale co-design of social interactions with the public. If
+%successful, this will be of great value, well beyond the project. The
+%proposed experimental setup (science centre visitors `taking control' of the robot)
+%might however lead to interactions that are either too short or to artificial to
+%create meaningful, generalisable social interaction. In addition, the messy and
+%complex nature of the science centre environment is also currently beyond-state-of-the-art
+%in term of extracting the useful social features required to train a classifier.
+%
+%However, the interaction principles that we want to uncover in T1.1 and T1.2
+%(and that are feeding into WP2 and WP4) will principally come from a qualitative
+%analysis of the interactions, carried in parallel to the machine learning
+%approach. This well within the expertise of the PI, and, as such, is low-risk.
+%T1.1 can thus be described as a \ul{\bf medium-risk, high-gain} component of
+%\project.
+%
+%\vspace{1em}
+%
+%\textbf{Task 2.1} develops a novel situation assessment component, that
+%integrates spatio-temporal modeling with knowledge representation. The resulting
+%component is beyond-state-of-the-art, and would be highly relevant to a large range
+%of robotic applications. This component relies on integrating tools that are
+%independently relatively mature and well understood, and the principles of the
+%integration itself is already well researched. Besides, it falls well within the
+%PI
+%expertise~\cite{lemaignan2018underworlds,sallami2019simulation,lemaignan2010oro}.
+%As such, O2.2.1 can be described as \ul{\bf low-risk, medium-gain}.
+%
+%\textbf{Tasks 2.2, 2.3, 2.4} Work on real-time modeling of social dynamics in
+%real-world environments are only begining to be studied in robotics. While the
+%underpinning are well understood in neighbouring academic fields, a very
+%significant work remain to be done to integrate disparate or partial approaches
+%into one framework. These tasks also require the acquisition of novel datasets
+%that focus on natural human-human social interactions. The PI has extensive
+%experience in building and acquiring such
+%datasets~\cite{lemaignan2018pinsoro,sallami2020unexpected}, and does not
+%foreseen major difficulties. The resulting components have however the potential
+%to unlock a new class of social robots, aware in real-time of their social
+%surroundings and dynamics.  These tasks are thus considered \ul{\bf low-risk,
+%high-gain}.
+%
+%\vspace{1em}
+%
+%\textbf{Task 3.1} The behavioural baseline implements the current state-of-the-art,
+%and as such is \ul{\bf low-risk, low-gain}. T3.1 will guarantee early on in the
+%project a `working' robot, yet with predictable/repetitive behaviours.
+%
+%\textbf{Task 3.2} The neural generation of complex social behaviours is a
+%\ul{\bf medium-risk, high-gain} task: while it builds on solid existing
+%state-of-the-art, it relies on very significant progress in both the modeling of the
+%social dynamics (WP2) and the capacity of designing a machine learning approach
+%to learn and generate these complex behaviours. While the former falls well
+%within the PI expertise, machine learning for social motion generation is
+%essentially a novel field. The success of this task will rely to a large
+%extend on the quality of the post-doctoral researcher recruited to lead this
+%effort. The main mitigation to the risk associated to T3.2 is the behavioural
+%baseline created in T3.1: the behavioural capabilities generated in T3.2 can be
+%complemented by ad-hoc behaviours whenever required.
+%
+%\textbf{Task 3.3} Non-verbal communication is a well established subfield of HRI
+%research, well known to the PI. The creation of the novel interaction modality
+%based on soundscape is novel, with potential for impact beyond the project. This
+%new modality will be co-developped with an expert of sound design for
+%interaction, and we do not foresee major risks. Overall, the task is \ul{\bf
+%low-risk, medium-gain}.
+%
+%\vspace{1em}
+%
+%\textbf{Task 3.1} The conceptual framing of a \emph{socially-driven
+%architecture} (social teleology) and its translation into decision-making
+%algorithms are to a large extend open questions. This task might however lead to
+%uncover a fundamental mechanism to enable long-term engagement of users
+%with social robots. Building fundamentally on blue-sky research, this task is
+%\ul{\bf high-risk, high-gain}. If not successful, I will instead rely on the
+%decision-making strategy of T3.2, which is much lower risk.
+%
+%\textbf{Task 3.2} The techniques developed in T3.2 have been previously used and
+%tested by the PI in two different real-world
+%environments~\cite{senft2019teaching,winkle2020couch}. While they will require
+%significant adjustments for this project, the task is overall \ul{\bf low-risk,
+%low-gain}.
+%
+%\textbf{Task 3.3} The integration of the different cognitive functions of the
+%robot into one principled cognitive architecture, that include cognitive
+%redundancy, is one of the core expertise of the
+%PI~\cite{lemaignan2017artificial}. This task however includes significant novel
+%elements (cognitive mechanisms for long-term autonomy; decision arbitration)
+%that bear unknowns. Besides, this task is a critical pre-requisite for WP5. As a
+%result, T3.3 is considered as \ul{\bf high-risk}. The task is focused on
+%integration to meet the requirements of the WP5 experiments, and parts
+%of the resulting software architecture might be project-specific. However the
+%overall aims of endowing the robot with long-term social autonomy would be a
+%significant breakthrough, and as such, T3.3 is \ul{\bf high-gain}. The main
+%mitigations comes from (1) the iterative development process of the
+%architecture, that will start from the existing state-of-the-art, to which the
+%PI has previously contributed~\cite{lemaignan2017artificial}. By doing so, a
+%decisional architecture for the robot will be available early on in the project.
+%While that architecture might be a scaled-down version of the initial ambition,
+%it will still enable the fieldwork proposed in WP5, possibly with a lesser level
+%of autonomy; (2) the possibility of using only one of the two action policies
+%(T3.1 \ul{or} T3.2), thus removing the need for complex arbitration.
+%
+%\vspace{1em}
+%
+%\textbf{WP5: Experimental deployments}
+%
+%The two application scenarios (at the children hospital and in the SEN school)
+%are ambitious and inherently risky, as they target vulnerable populations.
+%However, first, demonstrating the importance of advanced social modelling, and
+%convincingly proving the effectiveness of our approach does require accordingly
+%complex social situations, and complex social dynamics. The two scenarios, which
+%complement each other, provide both.
+%
+%Second, working with vulnerable populations, in constrained and complex
+%environments (children hospital and SEN schools) adds significant risks to the
+%project. But it is also what make the project in the unique position of
+%delivering a high societal impact: a direct positive impact on children's lives
+%(we anticipate 100+ hospitalised children and 50+ children with psycho-social
+%impairements interacting over long periods of time with a robot over the course
+%of the project), and a broader impact on the society, showing how robots can
+%have a lasting, strong, positive impact on the society, also establishing the
+%idea of \emph{robots supporting human interactions} instead of dehumanising our
+%social relationships.
+%
+%\textbf{Together, Task 5.1 and 5.2 are \ul{high-risk, high-gain}.}
+%
+%The two main mitigations are (1) early and continuous engagement with the
+%stakeholders, and (2) the decoupling of the two applications, meaning that the
+%risks associated to each of them do not impact the other one.
+%
+%Early engagement will be ensured by relying on a participatory design
+%methodology, involving all the stakeholders from the onset of the project; the
+%methodology will involve regular joint workshops; on-site (hospital and SEN
+%schools) research stay including engagement with the staff/charities and the
+%children themselves; early field testing and prototyping, relying if necessary
+%on provisional, yet well-known, robot platforms available at the host
+%institution (for instance, Softbank Nao and Pepper). This user-centered approach
+%will be championed by the post-doc recruited on the project on WP4 and WP5, who will
+%have to have a strong expertise in user-centered design.
+%
+%It is also important to note that, while preparing this bid, initial discussions
+%have been held with all the partners involved with the experimental fieldwork
+%(WeTheCurious science centre, Bristol's Children Hospital, the network of SEN
+%schools): each of these institutions is enthusiastic about the project, already
+%contributing ideas to integrate the robots in their daily routines, and
+%ready to dedicate time and effort for its success.
+%
+%
+%\end{rewrite}
 
 
 
